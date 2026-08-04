@@ -221,9 +221,9 @@ function renderSetup(view, rest) {
 
   wrap.appendChild(el('h2', {}, ['2. Mode']));
   const modeSel = el('select', { id: 'setup-mode' });
-  [['timed', 'Timed mock (real exam feel)'],
-   ['chill', 'Chill mode (no timer, see answers as you go)'],
-   ['revision', 'Revision mode (answer + explanation upfront)']].forEach(([v, l]) => modeSel.appendChild(el('option', { value: v }, [l])));
+  [['chill', 'Chill mode (recommended for practice — see answers as you go, no timer)'],
+   ['timed', 'Timed mock (real CGL exam feel — countdown, answers only at the end)'],
+   ['revision', 'Revision mode (answer + explanation shown upfront — pure reading)']].forEach(([v, l]) => modeSel.appendChild(el('option', { value: v }, [l])));
   wrap.appendChild(el('label', { class: 'field' }, [el('span', { class: 'lbl' }, ['Mode']), modeSel]));
 
   const durInp = el('input', { type: 'number', id: 'setup-duration', min: '1', max: '180', value: String(settings.defaultDuration || 30) });
@@ -361,6 +361,7 @@ function renderTest(view) {
       el('span', { class: 'chip' }, ['Ch ' + q.chapter + ' · ' + q.chapterTitle]),
       el('span', { class: 'chip' }, [q.difficulty]),
       el('span', { class: 'grow' }),
+      el('span', { class: 'chip', style: { background: 'var(--accent)', color: 'var(--bg)', borderColor: 'var(--accent)' } }, [r.cfg.mode.toUpperCase()]),
       el('span', { class: 'muted' }, ['Q ' + (r.idx + 1) + ' / ' + r.total]),
     ]));
 
