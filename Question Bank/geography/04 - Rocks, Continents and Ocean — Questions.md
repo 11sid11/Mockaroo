@@ -2,8 +2,8 @@
 title: "Rocks, Continents and Ocean — Questions"
 subject: geography
 chapter: 4
-tags: [question-bank, ssc, geography, rocks-continents-ocean]
-topic_id: [geography.rocks_continents_ocean.questions]
+tags: [question-bank, ssc, geography]
+topic_id: [geography.rocks_continents_and_ocean.questions]
 ---
 
 # Rocks, Continents and Ocean — Questions
@@ -16,7 +16,7 @@ Scoring: SSC CGL rules — **+2 correct, -0.50 wrong, 0 unattempted**.
 
 ---
 
-@qgeo.rocks_continents_ocean.q1 difficulty=recall subject=geography chapter=4
+@qgeo.rocks_continents_and_ocean.q1 difficulty=recall subject=geography chapter=4
 Which rock type is formed by the cooling and solidification of magma or lava?
 
 - A) Sedimentary
@@ -33,12 +33,12 @@ Igneous rocks form by the cooling and solidification of magma (below surface, in
 
 **Trap:** Limestone is sedimentary, not igneous. Sedimentary rocks form by compaction of sediments, not cooling of magma.
 
-**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Rock types]]
+**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Igneous Rocks]]
 </details>
 
 ---
 
-@qgeo.rocks_continents_ocean.q2 difficulty=recall subject=geography chapter=4
+@qgeo.rocks_continents_and_ocean.q2 difficulty=recall subject=geography chapter=4
 The Taj Mahal is built primarily of which type of rock?
 
 - A) Granite
@@ -51,16 +51,16 @@ The Taj Mahal is built primarily of which type of rock?
 
 **Answer: C**
 
-The Taj Mahal in Agra is built primarily of white marble, a metamorphic rock formed from limestone under heat and pressure. The Red Fort in Delhi is built of red sandstone.
+The Taj Mahal in Agra is built primarily of white marble, a metamorphic rock formed from limestone under heat and pressure. The Red Fort in Delhi is built of red sandstone (sedimentary).
 
 **Trap:** Often confused with the Red Fort (sandstone). Both are in the same region but use different rock types.
 
-**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Rock types]]
+**See also:** [[../../geography/04 - Rocks, Continents and Ocean#METAMORPHIC ROCK]]
 </details>
 
 ---
 
-@qgeo.rocks_continents_ocean.q3 difficulty=recall subject=geography chapter=4
+@qgeo.rocks_continents_and_ocean.q3 difficulty=recall subject=geography chapter=4
 Who proposed the Continental Drift Theory, and in which year?
 
 - A) Arthur Holmes, 1930s
@@ -77,12 +77,12 @@ Alfred Wegener proposed the Continental Drift Theory in 1912, suggesting that al
 
 **Trap:** Holmes gave the Convection Current Theory (1930s); McKenzie and Parker gave Plate Tectonics (1967); Hess proposed seafloor spreading.
 
-**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Continental Drift]]
+**See also:** [[../../geography/04 - Rocks, Continents and Ocean#CONTINENTS AND OCEAN]]
 </details>
 
 ---
 
-@qgeo.rocks_continents_ocean.q4 difficulty=recall subject=geography chapter=4
+@qgeo.rocks_continents_and_ocean.q4 difficulty=recall subject=geography chapter=4
 Which is the deepest known point in the Earth's oceans?
 
 - A) Java Trench
@@ -95,126 +95,128 @@ Which is the deepest known point in the Earth's oceans?
 
 **Answer: C**
 
-The Mariana Trench in the western Pacific Ocean contains the Challenger Deep, the deepest known point in the Earth's oceans at about 11,000 metres (about 36,000 feet) below sea level.
+The Mariana Trench in the Pacific Ocean contains the Challenger Deep, the deepest known point in the Earth's oceans at about 11 km deep.
 
-**Trap:** Students often confuse the Mariana Trench with the Java Trench; the deepest in the Pacific is Mariana, but the deepest in the Indian Ocean is the Java (Sunda) Trench.
+**Trap:** Other ocean trenches are tempting distractors, but the chapter specifically identifies Challenger Deep in the Mariana Trench as the deepest point.
 
-**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Ocean floor]]
+**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Relief Features]]
 </details>
 
 ---
 
-@qgeo.rocks_continents_ocean.q5 difficulty=apply subject=geography chapter=4
-A geologist identifies a rock that is coarse-grained, contains visible quartz and feldspar crystals, and is found in a large body beneath the Earth's surface. Which rock is it most likely?
 
-- A) Basalt
-- B) Granite
-- C) Sandstone
-- D) Pumice
-@@
+@qgeo.rocks_continents_and_ocean.q5 difficulty=apply subject=geography chapter=4
+A geologist identifies a rock that contains fossils and is arranged in layers. What type of rock is this most likely to be?
 
-<details><summary>Answer & explanation</summary>
-
-**Answer: B**
-
-Granite is a coarse-grained, intrusive igneous rock with visible quartz and feldspar crystals. It cools slowly beneath the Earth's surface, allowing large crystals to form. Basalt is fine-grained extrusive; pumice is vesicular and floats.
-
-**Trap:** Sandstone is sedimentary, not igneous. Basalt is also igneous but fine-grained and extrusive — not coarse-grained.
-
-**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Rock types]]
-</details>
-
----
-
-@qgeo.rocks_continents_ocean.q6 difficulty=apply subject=geography chapter=4
-The Continental Shelf is best described as:
-
-- A) A steep slope descending from the coast to the deep ocean floor
-- B) A shallow, gently sloping extension of the continent into the sea
-- C) The flat, deep ocean floor
-- D) A deep ocean trench
-@@
-
-<details><summary>Answer & explanation</summary>
-
-**Answer: B**
-
-The Continental Shelf is the shallow, gently sloping (less than 2°) submerged extension of the continent, typically rich in petroleum and other resources. The Continental Slope is steeper (2 to 5°); the Abyssal Plain is the deep ocean floor.
-
-**Trap:** Option A describes the Continental Slope; option C describes the Abyssal Plain; option D describes an ocean trench.
-
-**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Ocean floor]]
-</details>
-
----
-
-@qgeo.rocks_continents_ocean.q7 difficulty=apply subject=geography chapter=4
-Which of the following is the largest ocean on Earth?
-
-- A) Atlantic Ocean
-- B) Indian Ocean
-- C) Arctic Ocean
-- D) Pacific Ocean
-@@
-
-<details><summary>Answer & explanation</summary>
-
-**Answer: D**
-
-The Pacific Ocean is the largest and deepest ocean, covering more than 60 million square miles (about 165 million sq km) — more than all the land area combined. The Atlantic is second.
-
-**Trap:** The Atlantic is often wrongly identified as the largest due to its historical importance in trade and exploration.
-
-**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Oceans]]
-</details>
-
----
-
-@qgeo.rocks_continents_ocean.q8 difficulty=apply subject=geography chapter=4
-Which of the following lists only metamorphic rocks?
-
-- A) Granite, basalt, pumice
-- B) Sandstone, limestone, shale
-- C) Marble, slate, quartzite
-- D) Coal, petroleum, natural gas
+- A) Igneous
+- B) Metamorphic
+- C) Sedimentary
+- D) Plutonic
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: C**
 
-Marble (from limestone), slate (from shale), and quartzite (from sandstone) are all metamorphic rocks formed by heat and pressure. Option A is igneous; option B is sedimentary; option D is fossil fuels.
+Sedimentary rocks form from the accumulation and consolidation of sediments through lithification (compaction + cementation). Their occurrence in layers or strata and the presence of fossils identify this sample as sedimentary.
 
-**Trap:** Limestone is sedimentary, not metamorphic — it is the parent rock of marble. Sandstone is the parent rock of quartzite. The trap is mixing parent rocks with their metamorphic products.
+**Trap:** Igneous rocks form from cooled magma, while metamorphic rocks form when existing rocks are altered by heat, pressure, or volume change. The chapter associates fossils and strata with sedimentary rocks.
 
-**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Rock types]]
+**See also:** [[../../geography/04 - Rocks, Continents and Ocean#SEDIMENTARY ROCKS]]
 </details>
 
 ---
 
-@qgeo.rocks_continents_ocean.q9 difficulty=apply subject=geography chapter=4
-Plutonic rock bodies that intrude parallel to the bedding planes of sedimentary rocks are called:
+@qgeo.rocks_continents_and_ocean.q6 difficulty=apply subject=geography chapter=4
+Which of the following is a plutonic body that is dome-shaped, has a flat base, and is connected by a pipe-like structure?
 
-- A) Dykes
-- B) Sills
-- C) Batholiths
-- D) Laccoliths
+- A) Batholith
+- B) Dyke
+- C) Sill
+- D) Laccolith
+@@
+
+<details><summary>Answer & explanation</summary>
+
+**Answer: D**
+
+Laccoliths are dome-shaped intrusions with a flat base that push overlying layers upward, connected by a pipe-like structure. Batholiths are large deep masses; dykes are vertical sheets; sills are horizontal sheets.
+
+**Trap:** Sills (horizontal, parallel) vs Dykes (vertical, across) is the classic trap. A simple mnemonic: 'D-yke cuts through; S-ill sits flat'.
+
+**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Plutonic Bodies]]
+</details>
+
+---
+
+@qgeo.rocks_continents_and_ocean.q7 difficulty=apply subject=geography chapter=4
+The collision of two tectonic plates at a convergent boundary typically results in:
+
+- A) New crust formation by lava eruption
+- B) Plates sliding past each other horizontally
+- C) Subduction of one plate beneath the other, destroying crust
+- D) Only earthquake activity, no crust change
+@@
+
+<details><summary>Answer & explanation</summary>
+
+**Answer: C**
+
+At a convergent boundary, plates collide, causing one plate to subduct beneath the other, creating a subduction zone that potentially destroys the crust. Divergent boundaries create new crust; transform boundaries slide past each other without creating or destroying crust.
+
+**Trap:** Option A describes a divergent boundary, and Option B describes a transform boundary. Convergent is the only boundary that destroys crust.
+
+**See also:** [[../../geography/04 - Rocks, Continents and Ocean#CONTINENTS AND OCEAN]]
+</details>
+
+---
+
+@qgeo.rocks_continents_and_ocean.q8 difficulty=apply subject=geography chapter=4
+Which relief feature of the ocean basin has the shallowest gradient (≤1°) and is the source of petroleum extraction?
+
+- A) Continental Slope
+- B) Continental Rise
+- C) Continental Shelf
+- D) Abyssal Plain
+@@
+
+<details><summary>Answer & explanation</summary>
+
+**Answer: C**
+
+The Continental Shelf is the shallowest part of the ocean basin (gradient ≤1°) and petroleum is extracted from it. The Continental Slope has a gradient of 2–5°; the Continental Rise and Abyssal Plain are deeper.
+
+**Trap:** Option A (Continental Slope) has a steeper gradient (2–5°), and the Abyssal Plain is the deepest. The Continental Shelf is the start of the ocean basin and is the shallowest.
+
+**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Relief Features]]
+</details>
+
+---
+
+@qgeo.rocks_continents_and_ocean.q9 difficulty=apply subject=geography chapter=4
+A geologist observes a volcanic landscape with basaltic, non-viscous fluid lava that flows for long distances. The volcano type is:
+
+- A) Cinder cone
+- B) Shield volcano
+- C) Composite volcano
+- D) Caldera
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: B**
 
-Sills are horizontal plutonic intrusions parallel to the bedding of the host rock. Dykes are vertical intrusions across the bedding. Batholiths are the largest intrusive bodies; laccoliths form dome shapes.
+Shield volcanoes are formed by eruption of basaltic lava which is non-viscous fluid, e.g. Kilauea Volcano in Hawaii. Cinder cones are small and steep; composite volcanoes are cool and viscous; calderas are the most explosive type.
 
-**Trap:** Sills (horizontal, parallel) vs Dykes (vertical, across) is the classic trap. A simple mnemonic: 'D-yke cuts through; S-ill sits flat'.
+**Trap:** Option C (Composite) is also a stratovolcano with viscous lava — trap for those who confuse basaltic (runny) with andesitic (viscous). The key is "non-viscous fluid" = Shield.
 
-**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Plutonic bodies]]
+**See also:** [[../../geography/04 - Rocks, Continents and Ocean#VOLCANO]]
 </details>
 
 ---
 
-@qgeo.rocks_continents_ocean.q10 difficulty=tricky subject=geography chapter=4
+
+@qgeo.rocks_continents_and_ocean.q10 difficulty=tricky subject=geography chapter=4
 Pangaea, the supercontinent proposed by Wegener, was surrounded by a single global ocean. What was its name?
 
 - A) Tethys
@@ -227,16 +229,16 @@ Pangaea, the supercontinent proposed by Wegener, was surrounded by a single glob
 
 **Answer: B**
 
-Pangaea was surrounded by a single global ocean called Panthalassa. As Pangaea broke up, Panthalassa became the Pacific Ocean. Tethys was the smaller sea between Laurasia and Gondwanaland that gave rise to the Mediterranean.
+Pangaea was surrounded by a single global ocean called Panthalassa, while the Tethys Sea lay inside.
 
-**Trap:** Tethys was the sea between Gondwanaland and Laurasia, not the global ocean. Laurasia and Gondwanaland are the two halves of Pangaea, not oceans.
+**Trap:** Tethys was the internal sea, not the ocean surrounding Pangaea. Laurasia and Gondwanaland are landmasses, not oceans.
 
-**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Continental Drift]]
+**See also:** [[../../geography/04 - Rocks, Continents and Ocean#CONTINENTS AND OCEAN]]
 </details>
 
 ---
 
-@qgeo.rocks_continents_ocean.q11 difficulty=tricky subject=geography chapter=4
+@qgeo.rocks_continents_and_ocean.q11 difficulty=tricky subject=geography chapter=4
 Which of the following correctly matches the parent rock with its metamorphic product?
 
 - A) Limestone → Marble; Sandstone → Quartzite; Shale → Slate
@@ -253,29 +255,29 @@ Under heat and pressure, limestone becomes marble, sandstone becomes quartzite, 
 
 **Trap:** Granite is igneous, not sedimentary, so it transforms into gneiss (a different metamorphic rock), not marble. The trap is mixing metamorphic outcomes.
 
-**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Rock types]]
+**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Metamorphism Transformations]]
 </details>
 
 ---
 
-@qgeo.rocks_continents_ocean.q12 difficulty=tricky subject=geography chapter=4
-Which of the following pairs is correctly matched: (Rock-forming mineral) → (Rock)?
+@qgeo.rocks_continents_and_ocean.q12 difficulty=tricky subject=geography chapter=4
+Which of the following pairs is correctly matched: (Mineral) → (Important use)?
 
-- A) Calcite → Marble
-- B) Quartz → Granite
-- C) Mica → Basalt
-- D) Feldspar → Sandstone
+- A) Calcite → Electrical industry
+- B) Feldspar → Glass and ceramics
+- C) Mica → Cement manufacture
+- D) Quartz → Main mineral of coal
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: B**
 
-Granite is a coarse-grained igneous rock composed mainly of quartz, feldspar, and mica. Calcite is the main mineral of marble (and limestone). Mica is a mineral in granite, not the parent of basalt. Feldspar is a mineral, not the parent of sandstone.
+Feldspar constitutes about 50% of the Earth's crust and is used in the glass and ceramics industries. The chapter associates mica with the electrical industry and limestone, rather than mica, with cement.
 
-**Trap:** Calcite is the mineral of marble/limestone, but the trap is whether the rock AND mineral are correctly paired. Here, Quartz → Granite is correct because quartz is a key granite mineral.
+**Trap:** Mica's electrical use and limestone's cement use are swapped among the distractors.
 
-**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Rock types]]
+**See also:** [[../../geography/04 - Rocks, Continents and Ocean#Types of Rock (fact box)]]
 </details>
 
 ---
