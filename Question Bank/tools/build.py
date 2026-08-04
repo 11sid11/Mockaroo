@@ -175,7 +175,7 @@ def get_chapter_title(chapter_md_path: Path) -> str:
 
 
 def parse_chapter_file(md_path: Path) -> list[Question]:
-    text = md_path.read_text(encoding="utf-8")
+    text = md_path.read_text(encoding="utf-8-sig")  # tolerate BOM
     fm = parse_frontmatter(text)
     chapter_title_match = re.search(r"^# .+?$", text, re.MULTILINE)
     chapter_title = chapter_title_match.group(0).lstrip("# ").strip() if chapter_title_match else fm.get("title", md_path.stem)
@@ -567,6 +567,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 

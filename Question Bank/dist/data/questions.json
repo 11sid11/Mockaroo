@@ -1,5 +1,5 @@
 {
-  "version": 1785851288,
+  "version": 1785853400,
   "questions": [
     {
       "id": "bio.cell.q1",
@@ -7440,6 +7440,2796 @@
       "wikilink": "[[../../biology/22 - Joints#JOINTS]]",
       "sourceNote": "chapters/biology/22 - Joints.html",
       "sourceNoteTitle": "Joints"
+    },
+    {
+      "id": "chem.matter.q1",
+      "subject": "chemistry",
+      "chapter": 1,
+      "chapterTitle": "Matter",
+      "difficulty": "recall",
+      "question": "The fifth state of matter, the Bose-Einstein Condensate (BEC), is formed by cooling a gas of bosons to a temperature very close to:",
+      "options": [
+        {
+          "key": "A",
+          "text": "0 \u00b0C"
+        },
+        {
+          "key": "B",
+          "text": "\u2212100 \u00b0C"
+        },
+        {
+          "key": "C",
+          "text": "0 K (absolute zero)"
+        },
+        {
+          "key": "D",
+          "text": "100 K"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A BEC is formed when a gas of bosons is cooled to temperatures very close to absolute zero, i.e. **0 K (\u2212273.15 \u00b0C; \u2212459.67 \u00b0F)**. The term \"boson\" itself is named after Dr. Satyendra Nath Bose, whose 1924 paper was extended by Albert Einstein in 1925; the first experimental BEC was produced by Eric Cornell and Carl Wieman in 1995 using a gas of rubidium atoms.\n\n**Trap:** A is the freezing point of water, not the threshold for BEC; D is still far too warm. The two fixed physical constants associated with BEC are 0 K and \u2212273.15 \u00b0C.",
+      "wikilink": "[[../../chemistry/01 - Matter#Bose-Einstein Condensate (BEC)]]",
+      "sourceNote": "chapters/chemistry/01 - Matter.html",
+      "sourceNoteTitle": "Matter"
+    },
+    {
+      "id": "chem.matter.q2",
+      "subject": "chemistry",
+      "chapter": 1,
+      "chapterTitle": "Matter",
+      "difficulty": "recall",
+      "question": "Who is credited with the **first experimentally produced** Bose-Einstein Condensate (BEC), and in which year was it produced?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Satyendra Nath Bose, 1924"
+        },
+        {
+          "key": "B",
+          "text": "Albert Einstein, 1925"
+        },
+        {
+          "key": "C",
+          "text": "Eric Cornell and Carl Wieman, 1995"
+        },
+        {
+          "key": "D",
+          "text": "Wolfgang Ketterle, 2001"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The **first** BEC was produced experimentally in **1995** by **Eric Cornell and Carl Wieman** using a rarefied gas of rubidium atoms at extremely low temperatures. Wolfgang Ketterle also produced a BEC in 1995 (using sodium atoms), and all three shared the **Nobel Prize in Physics in 2001**.\n\n**Trap:** A and B predicted BEC theoretically (Bose in 1924, Einstein in 1925) \u2014 they did not produce it. D is the prize year, not the BEC year, and Ketterle's BEC was with sodium, not rubidium.",
+      "wikilink": "[[../../chemistry/01 - Matter#First Production of Bose-Einstein Condensate (BEC)]]",
+      "sourceNote": "chapters/chemistry/01 - Matter.html",
+      "sourceNoteTitle": "Matter"
+    },
+    {
+      "id": "chem.matter.q3",
+      "subject": "chemistry",
+      "chapter": 1,
+      "chapterTitle": "Matter",
+      "difficulty": "recall",
+      "question": "According to Boyle's Law (1662), for a fixed mass of gas at constant temperature:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pressure is directly proportional to volume"
+        },
+        {
+          "key": "B",
+          "text": "Pressure is inversely proportional to volume"
+        },
+        {
+          "key": "C",
+          "text": "Pressure is directly proportional to temperature"
+        },
+        {
+          "key": "D",
+          "text": "Volume is inversely proportional to temperature"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Boyle's Law states that **pressure and volume are inversely proportional to each other at constant temperature** (P \u221d 1/V; P\u2081V\u2081 = P\u2082V\u2082). As pressure increases, volume decreases, and vice versa.\n\n**Trap:** A inverts the relationship. C is Gay-Lussac's Law (P \u221d T at constant V). D is the inversion of Charles' Law (V \u221d T at constant P).",
+      "wikilink": "[[../../chemistry/01 - Matter#Boyle's Law (1662)]]",
+      "sourceNote": "chapters/chemistry/01 - Matter.html",
+      "sourceNoteTitle": "Matter"
+    },
+    {
+      "id": "chem.matter.q4",
+      "subject": "chemistry",
+      "chapter": 1,
+      "chapterTitle": "Matter",
+      "difficulty": "recall",
+      "question": "Which of the following is an example of **sublimation** (a solid changing directly into a gas)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Melting of ice into water"
+        },
+        {
+          "key": "B",
+          "text": "Evaporation of nail polish remover"
+        },
+        {
+          "key": "C",
+          "text": "Naphthalene balls disappearing in open air"
+        },
+        {
+          "key": "D",
+          "text": "Formation of dew on a cold surface"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Sublimation is the process of changing a solid **directly into a gas** without passing through a liquid state. The chapter lists **naphthalene** and **dry ice** as classic examples. A is melting (solid \u2192 liquid), B is evaporation (liquid \u2192 vapour), and D is condensation (vapour \u2192 liquid).\n\n**Trap:** D is **deposition** (gas \u2192 solid), the opposite of sublimation, and is explicitly listed as an example of deposition in the source.",
+      "wikilink": "[[../../chemistry/01 - Matter#Change in State of Matter]]",
+      "sourceNote": "chapters/chemistry/01 - Matter.html",
+      "sourceNoteTitle": "Matter"
+    },
+    {
+      "id": "chem.matter.q5",
+      "subject": "chemistry",
+      "chapter": 1,
+      "chapterTitle": "Matter",
+      "difficulty": "apply",
+      "question": "A soda bottle is left open on a hot, windy day. The rate of evaporation of the liquid is **highest** under which set of conditions?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Low temperature, low surface area, low wind speed, high humidity"
+        },
+        {
+          "key": "B",
+          "text": "High temperature, high surface area, high wind speed, low humidity"
+        },
+        {
+          "key": "C",
+          "text": "High temperature, small surface area, no wind, high humidity"
+        },
+        {
+          "key": "D",
+          "text": "High temperature, small surface area, high wind speed, high humidity"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Per the chapter, the rate of evaporation **increases** when **temperature increases**, **surface area increases**, and **wind speed increases**; it **decreases** when **humidity increases**. So the maximum rate requires high temperature, high surface area, high wind speed, and low humidity \u2192 B.\n\n**Trap:** D gets temperature and wind right but picks high humidity, which slows evaporation. C reverses surface area and humidity.",
+      "wikilink": "[[../../chemistry/01 - Matter#Favourable Conditions for Evaporation]]",
+      "sourceNote": "chapters/chemistry/01 - Matter.html",
+      "sourceNoteTitle": "Matter"
+    },
+    {
+      "id": "chem.matter.q6",
+      "subject": "chemistry",
+      "chapter": 1,
+      "chapterTitle": "Matter",
+      "difficulty": "apply",
+      "question": "The \"Tyndall effect\" is the most reliable way to distinguish between which two of the following?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Element and compound"
+        },
+        {
+          "key": "B",
+          "text": "Solution and colloid"
+        },
+        {
+          "key": "C",
+          "text": "Homogeneous and heterogeneous mixtures"
+        },
+        {
+          "key": "D",
+          "text": "Solid and liquid"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The chapter states that a solution **does not scatter light** and its particles are less than 1 nm, while a **colloid does scatter light** (Tyndall effect). This is the standard textbook test to tell a colloid from a true solution.\n\n**Trap:** C is tempting because colloids look \"mixed,\" but a homogeneous mixture can still be a **solution** (no Tyndall effect) and a colloid can be homogeneous in appearance too \u2014 the scattering of light is what distinguishes them.",
+      "wikilink": "[[../../chemistry/01 - Matter#Properties of Solution]]",
+      "sourceNote": "chapters/chemistry/01 - Matter.html",
+      "sourceNoteTitle": "Matter"
+    },
+    {
+      "id": "chem.matter.q7",
+      "subject": "chemistry",
+      "chapter": 1,
+      "chapterTitle": "Matter",
+      "difficulty": "apply",
+      "question": "Robert Brown observed a \"random zig-zag movement of particles suspended in a medium\" in 1827. This motion is known as:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Brownian movement"
+        },
+        {
+          "key": "B",
+          "text": "Tyndall effect"
+        },
+        {
+          "key": "C",
+          "text": "Effervescence"
+        },
+        {
+          "key": "D",
+          "text": "Sedimentation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Brownian movement is the **random zig-zag movement of particles suspended in a medium**, caused by collisions with other fast-moving particles in the fluid. It is named after Robert Brown, who discovered it in **1827**.\n\n**Trap:** B (Tyndall effect) is scattering of light by colloidal particles, not the motion of particles. C and D are unrelated phenomena.",
+      "wikilink": "[[../../chemistry/01 - Matter#Brownian Movement]]",
+      "sourceNote": "chapters/chemistry/01 - Matter.html",
+      "sourceNoteTitle": "Matter"
+    },
+    {
+      "id": "chem.matter.q8",
+      "subject": "chemistry",
+      "chapter": 1,
+      "chapterTitle": "Matter",
+      "difficulty": "apply",
+      "question": "A student dissolves salt in water to recover the salt later. Which separation technique should she use, and which physical property does it exploit?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Filtration \u2014 difference in particle size"
+        },
+        {
+          "key": "B",
+          "text": "Evaporation \u2014 difference in volatility (salt is non-volatile, water is volatile)"
+        },
+        {
+          "key": "C",
+          "text": "Sublimation \u2014 solid turning directly into vapour"
+        },
+        {
+          "key": "D",
+          "text": "Separating funnel \u2014 immiscibility of the two liquids"
+        }
+      ],
+      "answer": "B",
+      "explanation": "**Evaporation** is described as \"a process that is used to separate a mixture of a non-volatile and a volatile substance.\" Salt is non-volatile, water is volatile, so evaporating the water leaves the salt behind. The chapter explicitly lists \"separating salt from water\" as an application.\n\n**Trap:** A would not work because salt fully dissolves (no solid residue to filter). C requires the solid to itself sublime (like naphthalene). D requires two immiscible liquids.",
+      "wikilink": "[[../../chemistry/01 - Matter#Other Methods of Separation of components of Mixture]]",
+      "sourceNote": "chapters/chemistry/01 - Matter.html",
+      "sourceNoteTitle": "Matter"
+    },
+    {
+      "id": "chem.matter.q9",
+      "subject": "chemistry",
+      "chapter": 1,
+      "chapterTitle": "Matter",
+      "difficulty": "apply",
+      "question": "A burning candle is described in the chapter as an example of **both** a physical and a chemical change. Which of the following correctly identifies each part?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Thread \u2014 physical change; Wax \u2014 chemical change"
+        },
+        {
+          "key": "B",
+          "text": "Thread \u2014 chemical change; Wax \u2014 physical change"
+        },
+        {
+          "key": "C",
+          "text": "Both thread and wax \u2014 chemical change only"
+        },
+        {
+          "key": "D",
+          "text": "Both thread and wax \u2014 physical change only"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The chapter explicitly states: \"Thread: The thread undergoes **chemical change**, as it cannot be obtained again once burnt. Wax: The wax undergoes **physical change**, as the wax can be used to make a new candle again.\" So the same flame produces two different categories of change at once.\n\n**Trap:** A merely swaps the two. C and D deny the dual nature of the wax or the thread respectively.",
+      "wikilink": "[[../../chemistry/01 - Matter#Physical Change vs Chemical Change]]",
+      "sourceNote": "chapters/chemistry/01 - Matter.html",
+      "sourceNoteTitle": "Matter"
+    },
+    {
+      "id": "chem.matter.q10",
+      "subject": "chemistry",
+      "chapter": 1,
+      "chapterTitle": "Matter",
+      "difficulty": "tricky",
+      "question": "A student is asked: \"Plasma is the 4th state of matter.\" Which of the following statements about plasma is **incorrect**?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Plasma is an ionised gas"
+        },
+        {
+          "key": "B",
+          "text": "Plasma has roughly equal numbers of positively and negatively charged particles"
+        },
+        {
+          "key": "C",
+          "text": "Plasma can be produced in the laboratory by heating a gas to extremely high temperatures"
+        },
+        {
+          "key": "D",
+          "text": "Plasma is the most common state of matter in the universe because stars are made of it"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The chapter states that plasma is the 4th state of matter, is an ionised gas with roughly equal positive and negative charges, can be produced by heating a gas to extremely high temperature, and that stars are made of it. While D's first claim (\"stars are made of it\") is true, the framing \"**most common state of matter in the universe**\" is **not** something the chapter claims \u2014 the chapter only states stars are made of plasma, not that plasma is the most abundant state. A, B, and C are all directly supported.\n\n**Trap:** D reads as a plausible \"fun fact\" extension, but the source is silent on \"most common in the universe.\" Stick to what the chapter actually says.",
+      "wikilink": "[[../../chemistry/01 - Matter#Plasma]]",
+      "sourceNote": "chapters/chemistry/01 - Matter.html",
+      "sourceNoteTitle": "Matter"
+    },
+    {
+      "id": "chem.matter.q11",
+      "subject": "chemistry",
+      "chapter": 1,
+      "chapterTitle": "Matter",
+      "difficulty": "tricky",
+      "question": "Match the scientist with the year of their experimentally produced BEC and the element used:\n\n| Scientist | Year | Element |\n|---|---|---|\n| (i) Eric Cornell & Carl Wieman | (a) 1995 | (p) Sodium |\n| (ii) Wolfgang Ketterle | (b) 1925 | (q) Rubidium |\n\nWhich of the following is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "i\u2013a\u2013p, ii\u2013b\u2013q"
+        },
+        {
+          "key": "B",
+          "text": "i\u2013a\u2013q, ii\u2013a\u2013p"
+        },
+        {
+          "key": "C",
+          "text": "i\u2013b\u2013q, ii\u2013a\u2013p"
+        },
+        {
+          "key": "D",
+          "text": "i\u2013a\u2013p, ii\u2013b\u2013q"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Both BECs were produced in **1995** (a) \u2014 Cornell & Wieman used **rubidium** (q) and Ketterle used **sodium** (p). The 1925 date (b) is when Einstein predicted BEC, not when it was produced.\n\n**Trap:** A and D both mis-attribute Ketterle's 1995 sodium BEC to 1925. C assigns the 1925 prediction date to the Cornell\u2013Wieman experiment.",
+      "wikilink": "[[../../chemistry/01 - Matter#First Production of Bose-Einstein Condensate (BEC)]]",
+      "sourceNote": "chapters/chemistry/01 - Matter.html",
+      "sourceNoteTitle": "Matter"
+    },
+    {
+      "id": "chem.matter.q12",
+      "subject": "chemistry",
+      "chapter": 1,
+      "chapterTitle": "Matter",
+      "difficulty": "tricky",
+      "question": "Consider the following statements about mixtures and solutions:\n1. Air is a homogeneous mixture of gases containing about 21% oxygen and 78% nitrogen.\n2. Milk of magnesia is classified as a \"sol\" (dispersed phase solid, dispersion medium liquid).\n3. Fog is an example of an aerosol (liquid dispersed in gas).\n\nWhich of the following is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Only statement 1 is true"
+        },
+        {
+          "key": "B",
+          "text": "Statements 1 and 2 are true; statement 3 is false"
+        },
+        {
+          "key": "C",
+          "text": "Statements 1, 2, and 3 are all true"
+        },
+        {
+          "key": "D",
+          "text": "Statement 1 is false; statements 2 and 3 are true"
+        }
+      ],
+      "answer": "C",
+      "explanation": "All three statements are supported by the chapter:\n- Air is a homogeneous gas-in-gas mixture, with O\u2082 (~21%) and N\u2082 (~78%) as the two main constituents.\n- Milk of magnesia is listed as a **sol** (Solid dispersed phase, Liquid dispersion medium).\n- Fog is listed as an **aerosol** (Liquid dispersed phase, Gas dispersion medium).\n\n**Trap:** A single statement being \"false\" is the lure \u2014 students sometimes misremember milk of magnesia as an emulsion or fog as a foam, but the chapter's colloid table is explicit.",
+      "wikilink": "[[../../chemistry/01 - Matter#Properties of Solution]]",
+      "sourceNote": "chapters/chemistry/01 - Matter.html",
+      "sourceNoteTitle": "Matter"
+    },
+    {
+      "id": "chem.atom.q1",
+      "subject": "chemistry",
+      "chapter": 2,
+      "chapterTitle": "Atom and Its Structure",
+      "difficulty": "recall",
+      "question": "The Law of Conservation of Mass was given by:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Joseph Proust"
+        },
+        {
+          "key": "B",
+          "text": "Antoine Lavoisier"
+        },
+        {
+          "key": "C",
+          "text": "John Dalton"
+        },
+        {
+          "key": "D",
+          "text": "J. J. Thomson"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The chapter states that the Law of Conservation of Mass \u2014 \"in a closed system, the total mass of a system remains constant over time, meaning mass is neither created nor destroyed, but can only change form\" \u2014 was given by **Antoine Lavoisier**.\n\n**Trap:** A (Proust) gave the Law of Constant Proportion, not Conservation of Mass. C (Dalton) proposed the atomic theory. D (Thomson) discovered the electron.",
+      "wikilink": "[[../../chemistry/02 - Atom and Its Structure#Law of Conservation of Mass]]",
+      "sourceNote": "chapters/chemistry/02 - Atom and Its Structure.html",
+      "sourceNoteTitle": "Atom and Its Structure"
+    },
+    {
+      "id": "chem.atom.q2",
+      "subject": "chemistry",
+      "chapter": 2,
+      "chapterTitle": "Atom and Its Structure",
+      "difficulty": "recall",
+      "question": "The Law of Constant Proportion \u2014 that a given chemical compound always contains its component elements in a fixed ratio by mass \u2014 was proposed by:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Antoine Lavoisier"
+        },
+        {
+          "key": "B",
+          "text": "Joseph Proust"
+        },
+        {
+          "key": "C",
+          "text": "John Dalton"
+        },
+        {
+          "key": "D",
+          "text": "Robert Brown"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The Law of Constant Proportion was given by **Joseph Proust**. The chapter explicitly distinguishes it from Lavoisier's Law of Conservation of Mass.\n\n**Trap:** A is the Conservation of Mass lawgiver. C is the atomic theory. D is the discoverer of Brownian movement (in chapter 1).",
+      "wikilink": "[[../../chemistry/02 - Atom and Its Structure#Law of Constant Proportion]]",
+      "sourceNote": "chapters/chemistry/02 - Atom and Its Structure.html",
+      "sourceNoteTitle": "Atom and Its Structure"
+    },
+    {
+      "id": "chem.atom.q3",
+      "subject": "chemistry",
+      "chapter": 2,
+      "chapterTitle": "Atom and Its Structure",
+      "difficulty": "recall",
+      "question": "Who discovered the electron, and in which year?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ernest Rutherford, 1911"
+        },
+        {
+          "key": "B",
+          "text": "J. J. Thomson, 1897"
+        },
+        {
+          "key": "C",
+          "text": "Niels Bohr, 1913"
+        },
+        {
+          "key": "D",
+          "text": "James Chadwick, 1932"
+        }
+      ],
+      "answer": "B",
+      "explanation": "**J. J. Thomson** discovered the electron in **1897** by performing the cathode-ray experiment, observing streams of particles emitted by the cathode of a vacuum tube.\n\n**Trap:** A is the Gold Foil / nuclear-atom model (1911). C is Bohr's quantised-shell model (1913). D is the neutron (1932).",
+      "wikilink": "[[../../chemistry/02 - Atom and Its Structure#J. J. Thomson and Discovery of Electron (1897)]]",
+      "sourceNote": "chapters/chemistry/02 - Atom and Its Structure.html",
+      "sourceNoteTitle": "Atom and Its Structure"
+    },
+    {
+      "id": "chem.atom.q4",
+      "subject": "chemistry",
+      "chapter": 2,
+      "chapterTitle": "Atom and Its Structure",
+      "difficulty": "recall",
+      "question": "The neutron was discovered by:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Goldstein"
+        },
+        {
+          "key": "B",
+          "text": "J. J. Thomson"
+        },
+        {
+          "key": "C",
+          "text": "Rutherford"
+        },
+        {
+          "key": "D",
+          "text": "James Chadwick"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The chapter's table of subatomic particle discoveries lists the **neutron** as discovered by **Chadwick in 1932**. Goldstein and Rutherford are credited with the proton (separately in the text).\n\n**Trap:** A (Goldstein) is associated with the proton \u2014 and the chapter offers Rutherford as a co-credit for the proton. C (Rutherford) proposed the nuclear model and named the proton in 1920, but the neutron is Chadwick's.",
+      "wikilink": "[[../../chemistry/02 - Atom and Its Structure#Electron, Proton, and Neutron]]",
+      "sourceNote": "chapters/chemistry/02 - Atom and Its Structure.html",
+      "sourceNoteTitle": "Atom and Its Structure"
+    },
+    {
+      "id": "chem.atom.q5",
+      "subject": "chemistry",
+      "chapter": 2,
+      "chapterTitle": "Atom and Its Structure",
+      "difficulty": "apply",
+      "question": "The maximum number of electrons that can be accommodated in the **M-shell** (n = 3) of an atom is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "6"
+        },
+        {
+          "key": "B",
+          "text": "8"
+        },
+        {
+          "key": "C",
+          "text": "18"
+        },
+        {
+          "key": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The chapter gives the formula **2n\u00b2** for the maximum number of electrons in the nth shell. For the M-shell (n = 3): 2 \u00d7 3\u00b2 = 2 \u00d7 9 = **18**.\n\n**Trap:** B (8) is for the L-shell (n = 2). D (32) is for the N-shell (n = 4). A (6) is not a standard 2n\u00b2 value.",
+      "wikilink": "[[../../chemistry/02 - Atom and Its Structure#Distribution of Electrons (e\u207b)]]",
+      "sourceNote": "chapters/chemistry/02 - Atom and Its Structure.html",
+      "sourceNoteTitle": "Atom and Its Structure"
+    },
+    {
+      "id": "chem.atom.q6",
+      "subject": "chemistry",
+      "chapter": 2,
+      "chapterTitle": "Atom and Its Structure",
+      "difficulty": "apply",
+      "question": "An atom of sodium (Na) has 11 electrons. How many **protons** and **neutrons** does it have, given its mass number is 23?",
+      "options": [
+        {
+          "key": "A",
+          "text": "11 protons, 12 neutrons"
+        },
+        {
+          "key": "B",
+          "text": "12 protons, 11 neutrons"
+        },
+        {
+          "key": "C",
+          "text": "11 protons, 11 neutrons"
+        },
+        {
+          "key": "D",
+          "text": "23 protons, 11 neutrons"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a neutral atom, the number of protons equals the number of electrons, so Na has **11 protons**. The mass number A = p + n, so neutrons = A \u2212 p = 23 \u2212 11 = **12 neutrons**.\n\n**Trap:** B swaps p and n. C uses A = electrons (gives wrong n). D treats mass number as the proton count.",
+      "wikilink": "[[../../chemistry/02 - Atom and Its Structure#Atomic Number (Z)]]",
+      "sourceNote": "chapters/chemistry/02 - Atom and Its Structure.html",
+      "sourceNoteTitle": "Atom and Its Structure"
+    },
+    {
+      "id": "chem.atom.q7",
+      "subject": "chemistry",
+      "chapter": 2,
+      "chapterTitle": "Atom and Its Structure",
+      "difficulty": "apply",
+      "question": "Isotopes of the same element have **identical** chemical properties because:",
+      "options": [
+        {
+          "key": "A",
+          "text": "They have the same number of neutrons"
+        },
+        {
+          "key": "B",
+          "text": "They have the same mass number"
+        },
+        {
+          "key": "C",
+          "text": "They have the same electronic configuration and the same number of valence electrons"
+        },
+        {
+          "key": "D",
+          "text": "They have the same number of neutrons and the same mass number"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The chapter states: \"Isotopes have same electronic configuration, hence same number of valance e\u207b. Since chemical property depends upon the number of valance e\u207b. Therefore, they have same chemical properties.\" Isotopes differ only in the number of neutrons, so A is wrong; their mass numbers differ, so B is wrong; D is factually wrong on the second clause.\n\n**Trap:** A is true about the *difference* between isotopes (they differ only in n), but it is the *same valence e\u207b* that explains identical chemical behaviour.",
+      "wikilink": "[[../../chemistry/02 - Atom and Its Structure#ISOTOPES]]",
+      "sourceNote": "chapters/chemistry/02 - Atom and Its Structure.html",
+      "sourceNoteTitle": "Atom and Its Structure"
+    },
+    {
+      "id": "chem.atom.q8",
+      "subject": "chemistry",
+      "chapter": 2,
+      "chapterTitle": "Atom and Its Structure",
+      "difficulty": "apply",
+      "question": "Isotopes of an element have **different physical properties** because:",
+      "options": [
+        {
+          "key": "A",
+          "text": "They have different atomic numbers"
+        },
+        {
+          "key": "B",
+          "text": "They have different electron counts"
+        },
+        {
+          "key": "C",
+          "text": "They have different masses, leading to different melting points, boiling points, and densities"
+        },
+        {
+          "key": "D",
+          "text": "They have different chemical properties"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The chapter states: \"Since, the isotopes of an element have different masses, hence different physical properties, like melting point, boiling point, density, etc. exist.\" Isotopes have the **same** atomic number (A) and **same** electron count (B), and have **same** chemical properties (D).\n\n**Trap:** A and B are wrong because isotopes have the same Z and the same electron count. D is the opposite of the truth \u2014 isotopes share their chemical properties.",
+      "wikilink": "[[../../chemistry/02 - Atom and Its Structure#ISOTOPES]]",
+      "sourceNote": "chapters/chemistry/02 - Atom and Its Structure.html",
+      "sourceNoteTitle": "Atom and Its Structure"
+    },
+    {
+      "id": "chem.atom.q9",
+      "subject": "chemistry",
+      "chapter": 2,
+      "chapterTitle": "Atom and Its Structure",
+      "difficulty": "apply",
+      "question": "Which of the following sets are **isobars** \u2014 atoms of different elements with the same mass number but different atomic numbers?",
+      "options": [
+        {
+          "key": "A",
+          "text": "\u00b9H, \u00b2H, \u00b3H"
+        },
+        {
+          "key": "B",
+          "text": "\u00b9\u00b2C, \u00b9\u00b3C, \u00b9\u2074C"
+        },
+        {
+          "key": "C",
+          "text": "\u2074\u2070Ar, \u2074\u2070K, \u2074\u2070Ca"
+        },
+        {
+          "key": "D",
+          "text": "\u00b9\u2076O, \u00b9\u2075N"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Per the chapter, isobars \"are atoms of different elements that have same mass number, but different atomic numbers.\" \u2074\u2070\u2081\u2088Ar, \u2074\u2070\u2081\u2089K, and \u2074\u2070\u2082\u2080Ca are explicitly listed as the example, with each having 40 as the mass number but different atomic numbers (18, 19, 20).\n\n**Trap:** A are isotopes of hydrogen (same Z = 1, different A). B are isotopes of carbon. D are **isotones** (same neutron count = 8, different Z = 8 and 7).",
+      "wikilink": "[[../../chemistry/02 - Atom and Its Structure#ISOBARS]]",
+      "sourceNote": "chapters/chemistry/02 - Atom and Its Structure.html",
+      "sourceNoteTitle": "Atom and Its Structure"
+    },
+    {
+      "id": "chem.atom.q10",
+      "subject": "chemistry",
+      "chapter": 2,
+      "chapterTitle": "Atom and Its Structure",
+      "difficulty": "tricky",
+      "question": "The atomic mass of chlorine is reported as 35.5. Based on the chapter's worked example, this is because chlorine consists of two isotopes, Cl-35 and Cl-37, present in the ratio:",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 : 1"
+        },
+        {
+          "key": "B",
+          "text": "1 : 3"
+        },
+        {
+          "key": "C",
+          "text": "3 : 1"
+        },
+        {
+          "key": "D",
+          "text": "2 : 1"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The chapter gives the worked example: \"\u00b3\u2075\u2081\u2087Cl : \u00b3\u2077\u2081\u2087Cl in ratio 3:1, Atomic Mass = (35 \u00d7 3 + 37 \u00d7 1) / (3 + 1) = 35.5\". So chlorine exists as Cl-35 and Cl-37 in the ratio **3 : 1**.\n\n**Trap:** A (1:1) would give an average of 36, not 35.5. B (1:3) would give (35 + 3 \u00d7 37)/4 = 36.5. D (2:1) gives (70 + 37)/3 = 35.67.",
+      "wikilink": "[[../../chemistry/02 - Atom and Its Structure#ISOTOPES]]",
+      "sourceNote": "chapters/chemistry/02 - Atom and Its Structure.html",
+      "sourceNoteTitle": "Atom and Its Structure"
+    },
+    {
+      "id": "chem.atom.q11",
+      "subject": "chemistry",
+      "chapter": 2,
+      "chapterTitle": "Atom and Its Structure",
+      "difficulty": "tricky",
+      "question": "In Bohr's model of the atom (1913), which of the following statements is **correct**?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Electrons continuously lose energy as they revolve around the nucleus"
+        },
+        {
+          "key": "B",
+          "text": "Energy levels are labeled K, L, M, N, with K being the outermost shell"
+        },
+        {
+          "key": "C",
+          "text": "The ground state refers to the electron being in the K-shell (the innermost shell)"
+        },
+        {
+          "key": "D",
+          "text": "When an electron falls from a lower to a higher energy level, it emits energy"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The chapter lists three attributes of Bohr's model: (1) electrons revolve in stable orbits **without losing energy**, (2) the shells are labeled K, L, M, N with **K being the closest to the nucleus**, and (3) the **ground state is the lowest energy level, typically in the K-shell**. A is the opposite of (1) \u2014 that's why Bohr replaced Rutherford's model. B reverses K's position. D reverses the emission rule (falling from higher \u2192 lower emits energy; lower \u2192 higher absorbs energy).\n\n**Trap:** A is the classic Rutherford-model flaw that Bohr fixed. D is the most subtle trap \u2014 it reverses \"absorbs\" and \"emits.\"",
+      "wikilink": "[[../../chemistry/02 - Atom and Its Structure#Bohr's Model of Atom (1913)]]",
+      "sourceNote": "chapters/chemistry/02 - Atom and Its Structure.html",
+      "sourceNoteTitle": "Atom and Its Structure"
+    },
+    {
+      "id": "chem.atom.q12",
+      "subject": "chemistry",
+      "chapter": 2,
+      "chapterTitle": "Atom and Its Structure",
+      "difficulty": "tricky",
+      "question": "J. J. Thomson proposed the first atomic model in 1904 \u2014 the \"Plum Pudding Model.\" Which of the following correctly describes it?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A dense, positively charged nucleus with electrons revolving around it in circular orbits"
+        },
+        {
+          "key": "B",
+          "text": "A positively charged sphere in which the electrons are embedded, with equal positive and negative charges making the atom electrically neutral"
+        },
+        {
+          "key": "C",
+          "text": "A nucleus containing protons and neutrons, with electrons arranged in fixed energy shells K, L, M, N"
+        },
+        {
+          "key": "D",
+          "text": "A central nucleus with discrete energy levels where electrons neither absorb nor emit energy while orbiting"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The chapter states: Thomson proposed that (i) \"an atom consists of a positively charged sphere and the electrons are embedded in it\" and (ii) \"the negative and positive charges are equal in magnitude. So, the atom as a whole is electrically neutral.\" He called this the Plum Pudding / Raisin Pudding / Watermelon model.\n\n**Trap:** A is **Rutherford's** model (dense nucleus + orbiting electrons). C mixes Rutherford's nucleus with **Bohr's** shells. D is a corrupted Bohr statement (Bohr's electrons *don't lose energy* but they *can* absorb/emit when changing levels).",
+      "wikilink": "[[../../chemistry/02 - Atom and Its Structure#J. J. Thomson and Discovery of Electron (1897)]]",
+      "sourceNote": "chapters/chemistry/02 - Atom and Its Structure.html",
+      "sourceNoteTitle": "Atom and Its Structure"
+    },
+    {
+      "id": "chem.periodic_table.q1",
+      "subject": "chemistry",
+      "chapter": 3,
+      "chapterTitle": "Periodic Table",
+      "difficulty": "recall",
+      "question": "Which statement correctly describes D\u00f6bereiner's Law of Triads (1817)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "In a three-element group arranged by increasing atomic mass, the middle element's atomic mass is approximately the average of the first and third"
+        },
+        {
+          "key": "B",
+          "text": "Every first and eighth element have similar properties when elements are arranged by increasing atomic mass"
+        },
+        {
+          "key": "C",
+          "text": "The properties of elements are periodic functions of their atomic numbers"
+        },
+        {
+          "key": "D",
+          "text": "The atomic volume of an element must equal its atomic weight"
+        }
+      ],
+      "answer": "A",
+      "explanation": "D\u00f6bereiner arranged elements with similar properties into groups of three called **triads**. In increasing atomic-mass order, the middle element's mass was approximately the average of the first and third elements' masses.\n\n**Trap:** B describes Newland's Law of Octaves. C substitutes the modern table's atomic-number basis, while D distorts Lothar Meyer's atomic-volume plot.",
+      "wikilink": "[[../../chemistry/03 - Periodic Table#D\u00f6bereiner's Law of Triads (1817)]]",
+      "sourceNote": "chapters/chemistry/03 - Periodic Table.html",
+      "sourceNoteTitle": "Periodic Table"
+    },
+    {
+      "id": "chem.periodic_table.q2",
+      "subject": "chemistry",
+      "chapter": 3,
+      "chapterTitle": "Periodic Table",
+      "difficulty": "recall",
+      "question": "Which set of facts about Newland's arrangement is given in the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Eight elements per row; 63 elements; Uranium last"
+        },
+        {
+          "key": "B",
+          "text": "Seven elements per row; 63 elements; Thorium last"
+        },
+        {
+          "key": "C",
+          "text": "Seven elements per row; 56 elements; Technetium last"
+        },
+        {
+          "key": "D",
+          "text": "Seven elements per row; 56 elements; Thorium last"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Newland arranged elements in horizontal rows containing **seven elements** and compared the recurring pattern to musical octaves. His arrangement contained **56 elements**, with **Thorium** as the last element.\n\n**Trap:** The figure 63 belongs to the number of known elements arranged by Mendeleev, while Technetium is identified elsewhere in the chapter as the first man-made element.",
+      "wikilink": "[[../../chemistry/03 - Periodic Table#Newland's Law of Octaves (1865)]]",
+      "sourceNote": "chapters/chemistry/03 - Periodic Table.html",
+      "sourceNoteTitle": "Periodic Table"
+    },
+    {
+      "id": "chem.periodic_table.q3",
+      "subject": "chemistry",
+      "chapter": 3,
+      "chapterTitle": "Periodic Table",
+      "difficulty": "recall",
+      "question": "Mendeleev's Periodic Table of 1869 arranged the 63 known elements primarily in increasing order of their:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Atomic numbers"
+        },
+        {
+          "key": "B",
+          "text": "Relative atomic masses"
+        },
+        {
+          "key": "C",
+          "text": "Atomic volumes"
+        },
+        {
+          "key": "D",
+          "text": "Numbers of valence electrons"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Dmitri Mendeleev arranged the **63 known elements** in increasing order of their **relative atomic masses**. His table had eight groups and seven periods, and his periodic law treated element properties as periodic functions of atomic mass.\n\n**Trap:** Atomic number is the basis associated with Moseley's modern table. Lothar Meyer plotted atomic volume against atomic weight, but that was not Mendeleev's stated ordering rule.",
+      "wikilink": "[[../../chemistry/03 - Periodic Table#Mendeleev's Periodic Table (1869)]]",
+      "sourceNote": "chapters/chemistry/03 - Periodic Table.html",
+      "sourceNoteTitle": "Periodic Table"
+    },
+    {
+      "id": "chem.periodic_table.q4",
+      "subject": "chemistry",
+      "chapter": 3,
+      "chapterTitle": "Periodic Table",
+      "difficulty": "recall",
+      "question": "Which description of the modern periodic table matches the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Given by Mendeleev in 1869; based on atomic number; 8 groups and 7 periods"
+        },
+        {
+          "key": "B",
+          "text": "Given by Lothar Meyer in 1862; based on atomic volume; 18 groups and 8 periods"
+        },
+        {
+          "key": "C",
+          "text": "Given by Henry Moseley in 1913; based on atomic number; 18 groups and 7 periods"
+        },
+        {
+          "key": "D",
+          "text": "Given by Newland in 1865; based on atomic mass; 7 groups and 18 periods"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The modern periodic table was given by **Henry Moseley in 1913**. Elements are characterized by **atomic number**, and the table has **18 groups** and **7 periods**.\n\n**Trap:** A mixes Mendeleev's year and group count with Moseley's ordering basis. The other choices combine facts from earlier classification attempts in ways not stated by the source.",
+      "wikilink": "[[../../chemistry/03 - Periodic Table#MODERN PERIODIC TABLE]]",
+      "sourceNote": "chapters/chemistry/03 - Periodic Table.html",
+      "sourceNoteTitle": "Periodic Table"
+    },
+    {
+      "id": "chem.periodic_table.q5",
+      "subject": "chemistry",
+      "chapter": 3,
+      "chapterTitle": "Periodic Table",
+      "difficulty": "recall",
+      "question": "Which element-property pairing is explicitly given in the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Chlorine \u2014 highest electronegativity"
+        },
+        {
+          "key": "B",
+          "text": "Fluorine \u2014 highest electron affinity"
+        },
+        {
+          "key": "C",
+          "text": "Fluorine \u2014 highest electronegativity"
+        },
+        {
+          "key": "D",
+          "text": "Chlorine \u2014 lowest electron affinity"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The chapter identifies **fluorine** as the element with the **highest electronegativity**. It separately identifies chlorine as the element with the highest electron affinity.\n\n**Trap:** A and B swap the two named elements and properties. D reverses the source's statement about chlorine.",
+      "wikilink": "[[../../chemistry/03 - Periodic Table#Electronegativity]]",
+      "sourceNote": "chapters/chemistry/03 - Periodic Table.html",
+      "sourceNoteTitle": "Periodic Table"
+    },
+    {
+      "id": "chem.periodic_table.q6",
+      "subject": "chemistry",
+      "chapter": 3,
+      "chapterTitle": "Periodic Table",
+      "difficulty": "apply",
+      "question": "An element has six valence electrons. Using the rule stated in the chapter, what is its valency?",
+      "options": [
+        {
+          "key": "A",
+          "text": "2"
+        },
+        {
+          "key": "B",
+          "text": "4"
+        },
+        {
+          "key": "C",
+          "text": "6"
+        },
+        {
+          "key": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For an element with five, six, seven, or eight valence electrons, the chapter calculates valency as **8 \u2212 number of valence electrons**. Thus, 8 \u2212 6 = **2**.\n\n**Trap:** C simply repeats the valence-electron count instead of applying the 8 \u2212 n rule. B would result from four valence electrons.",
+      "wikilink": "[[../../chemistry/03 - Periodic Table#Valency Based on Valence Electrons]]",
+      "sourceNote": "chapters/chemistry/03 - Periodic Table.html",
+      "sourceNoteTitle": "Periodic Table"
+    },
+    {
+      "id": "chem.periodic_table.q7",
+      "subject": "chemistry",
+      "chapter": 3,
+      "chapterTitle": "Periodic Table",
+      "difficulty": "apply",
+      "question": "An electron is to be removed from each of two neutral gaseous atoms, one lying above the other in the same group. According to the general trend in the chapter, from which atom should removal require less ionisation energy?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The upper atom, because ionisation energy decreases upward"
+        },
+        {
+          "key": "B",
+          "text": "The lower atom, because its outermost electrons are farther from the nucleus"
+        },
+        {
+          "key": "C",
+          "text": "The upper atom, because its atomic radius is necessarily larger"
+        },
+        {
+          "key": "D",
+          "text": "Both atoms, because ionisation energy is constant within a group"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Ionisation energy **decreases down a group**. In the lower atom, the outermost electrons are farther from the nucleus and therefore more easily removed, so less energy is required.\n\n**Trap:** A reverses the trend. D ignores the source's explicit down-group change, while C gives the wrong atom for the stated distance rationale.",
+      "wikilink": "[[../../chemistry/03 - Periodic Table#Ionisation Energy]]",
+      "sourceNote": "chapters/chemistry/03 - Periodic Table.html",
+      "sourceNoteTitle": "Periodic Table"
+    },
+    {
+      "id": "chem.periodic_table.q8",
+      "subject": "chemistry",
+      "chapter": 3,
+      "chapterTitle": "Periodic Table",
+      "difficulty": "apply",
+      "question": "An element's valence electron enters a d subshell. In which part of the modern periodic table should it be placed?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Groups 1\u20132, among s-block elements"
+        },
+        {
+          "key": "B",
+          "text": "Groups 3\u201312, among transition metals"
+        },
+        {
+          "key": "C",
+          "text": "Groups 13\u201318, among p-block elements"
+        },
+        {
+          "key": "D",
+          "text": "The f-block, among inner transition metals"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The chapter assigns elements whose valence electron enters a **d subshell** to the **d-block**, covering **Groups 3\u201312** and called the transition metals.\n\n**Trap:** A, C, and D correctly name other block regions, but none matches a d-subshell valence electron.",
+      "wikilink": "[[../../chemistry/03 - Periodic Table#MODERN PERIODIC TABLE]]",
+      "sourceNote": "chapters/chemistry/03 - Periodic Table.html",
+      "sourceNoteTitle": "Periodic Table"
+    },
+    {
+      "id": "chem.periodic_table.q9",
+      "subject": "chemistry",
+      "chapter": 3,
+      "chapterTitle": "Periodic Table",
+      "difficulty": "apply",
+      "question": "Which set consists entirely of species shown in the chapter as isoelectronic with 10 electrons each?",
+      "options": [
+        {
+          "key": "A",
+          "text": "O\u00b2\u207b, F\u207b, Mg\u00b2\u207a"
+        },
+        {
+          "key": "B",
+          "text": "O, F, Mg"
+        },
+        {
+          "key": "C",
+          "text": "O\u00b2\u207b, F, Mg\u00b2\u207a"
+        },
+        {
+          "key": "D",
+          "text": "O, F\u207b, Mg"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The chapter's isoelectronic example gives **O\u00b2\u207b, F\u207b, and Mg\u00b2\u207a** as having **10 electrons each**. Isoelectronic species share the same electron count and electronic structure even though their nuclear charges differ.\n\n**Trap:** Removing the indicated ionic charge from any member changes the electron count represented in the source's example.",
+      "wikilink": "[[../../chemistry/03 - Periodic Table#Isoelectronic Species]]",
+      "sourceNote": "chapters/chemistry/03 - Periodic Table.html",
+      "sourceNoteTitle": "Periodic Table"
+    },
+    {
+      "id": "chem.periodic_table.q10",
+      "subject": "chemistry",
+      "chapter": 3,
+      "chapterTitle": "Periodic Table",
+      "difficulty": "apply",
+      "question": "A molecule contains one carbon atom and four chlorine atoms. How should it be classified by atomicity, and which formula is given for it?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Diatomic; CCl"
+        },
+        {
+          "key": "B",
+          "text": "Triatomic; CCl\u2082"
+        },
+        {
+          "key": "C",
+          "text": "Polyatomic; CCl\u2084"
+        },
+        {
+          "key": "D",
+          "text": "Monoatomic; Cl\u2084"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The chapter gives **carbon tetrachloride as CCl\u2084**. That molecule contains five atoms in total, and molecules made of four or more atoms are classified as **polyatomic**.\n\n**Trap:** \u201cTetra-\u201d refers to four chlorine atoms, not four total atoms. The carbon atom raises the total atomicity to five.",
+      "wikilink": "[[../../chemistry/03 - Periodic Table#Writing Chemical Formula of a Compound]]",
+      "sourceNote": "chapters/chemistry/03 - Periodic Table.html",
+      "sourceNoteTitle": "Periodic Table"
+    },
+    {
+      "id": "chem.periodic_table.q11",
+      "subject": "chemistry",
+      "chapter": 3,
+      "chapterTitle": "Periodic Table",
+      "difficulty": "apply",
+      "question": "Which pair should display similar properties because of the diagonal relationship described in the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lithium and magnesium"
+        },
+        {
+          "key": "B",
+          "text": "Lithium and sodium"
+        },
+        {
+          "key": "C",
+          "text": "Boron and aluminium"
+        },
+        {
+          "key": "D",
+          "text": "Carbon and silicon"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The chapter lists **Li and Mg** as an example of a diagonal relationship between lighter members of the second and third periods. Other listed diagonal pairs include Be\u2013Al, B\u2013Si, and C\u2013P.\n\n**Trap:** B, C, and D pair vertically related elements rather than the source's diagonally adjacent examples.",
+      "wikilink": "[[../../chemistry/03 - Periodic Table#Diagonal Relationship]]",
+      "sourceNote": "chapters/chemistry/03 - Periodic Table.html",
+      "sourceNoteTitle": "Periodic Table"
+    },
+    {
+      "id": "chem.periodic_table.q12",
+      "subject": "chemistry",
+      "chapter": 3,
+      "chapterTitle": "Periodic Table",
+      "difficulty": "tricky",
+      "question": "Consider the following statements about early periodic classification:\n\n1. Newland's Law of Octaves was not valid beyond calcium.\n2. Newland included noble gases in his table.\n3. Lothar Meyer plotted atomic volume against atomic weight to show periodic trends.\n\nWhich option is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Only statement 1"
+        },
+        {
+          "key": "B",
+          "text": "Only statements 1 and 3"
+        },
+        {
+          "key": "C",
+          "text": "Only statements 2 and 3"
+        },
+        {
+          "key": "D",
+          "text": "Statements 1, 2, and 3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Statements **1 and 3** are supported. Newland's law failed beyond calcium, and Meyer plotted atomic volume against atomic weight. Statement 2 is false because noble gases had not yet been discovered and were therefore absent from Newland's table.\n\n**Trap:** Statement 2 can sound like a completeness claim, but the chapter explicitly lists the absence of noble gases as a limitation.",
+      "wikilink": "[[../../chemistry/03 - Periodic Table#Limitations of Newland's Model]]",
+      "sourceNote": "chapters/chemistry/03 - Periodic Table.html",
+      "sourceNoteTitle": "Periodic Table"
+    },
+    {
+      "id": "chem.periodic_table.q13",
+      "subject": "chemistry",
+      "chapter": 3,
+      "chapterTitle": "Periodic Table",
+      "difficulty": "tricky",
+      "question": "An element lies farther to the right than another element in the same period. Applying the chapter's general trends, which combination is expected for the right-hand element?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lower ionisation energy, lower electron affinity, and lower electronegativity"
+        },
+        {
+          "key": "B",
+          "text": "Higher ionisation energy, generally greater electron affinity, and generally higher electronegativity"
+        },
+        {
+          "key": "C",
+          "text": "Higher ionisation energy, lower electron affinity, and lower electronegativity"
+        },
+        {
+          "key": "D",
+          "text": "Lower ionisation energy, generally greater electron affinity, and higher electronegativity"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Across a period from left to right, the chapter states that **ionisation energy increases**, electron affinity **generally increases (becomes more negative)**, and electronegativity **generally increases**.\n\n**Trap:** Each other option reverses at least one of these three same-direction trends. The qualifiers \u201cgenerally\u201d preserve the wording used for electron affinity and electronegativity.",
+      "wikilink": "[[../../chemistry/03 - Periodic Table#TRENDS IN PERIODIC TABLE]]",
+      "sourceNote": "chapters/chemistry/03 - Periodic Table.html",
+      "sourceNoteTitle": "Periodic Table"
+    },
+    {
+      "id": "chem.periodic_table.q14",
+      "subject": "chemistry",
+      "chapter": 3,
+      "chapterTitle": "Periodic Table",
+      "difficulty": "tricky",
+      "question": "Match each historical label used by Mendeleev with its modern element:\n\n1. Eka-aluminium\n2. Eka-boron\n3. Eka-silicon",
+      "options": [
+        {
+          "key": "A",
+          "text": "1\u2013Gallium, 2\u2013Scandium, 3\u2013Germanium"
+        },
+        {
+          "key": "B",
+          "text": "1\u2013Scandium, 2\u2013Gallium, 3\u2013Technetium"
+        },
+        {
+          "key": "C",
+          "text": "1\u2013Germanium, 2\u2013Scandium, 3\u2013Gallium"
+        },
+        {
+          "key": "D",
+          "text": "1\u2013Gallium, 2\u2013Germanium, 3\u2013Scandium"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The chapter's table maps **Eka-aluminium to Gallium**, **Eka-boron to Scandium**, and **Eka-silicon to Germanium**.\n\n**Trap:** The distractors rotate three genuine names from the source. Technetium is instead matched with Eka-manganese.",
+      "wikilink": "[[../../chemistry/03 - Periodic Table#Mendeleev's Periodic Law]]",
+      "sourceNote": "chapters/chemistry/03 - Periodic Table.html",
+      "sourceNoteTitle": "Periodic Table"
+    },
+    {
+      "id": "chem.chemical_reactions.q1",
+      "subject": "chemistry",
+      "chapter": 4,
+      "chapterTitle": "Chemical Reactions",
+      "difficulty": "recall",
+      "question": "How does the chapter distinguish exothermic and endothermic reactions?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Exothermic reactions absorb heat; endothermic reactions release heat"
+        },
+        {
+          "key": "B",
+          "text": "Exothermic reactions release heat; endothermic reactions absorb heat"
+        },
+        {
+          "key": "C",
+          "text": "Both types only release light, not heat"
+        },
+        {
+          "key": "D",
+          "text": "Both types absorb heat from their surroundings"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An **exothermic** reaction releases energy from the system as heat, whereas an **endothermic** reaction absorbs heat from its surroundings. The chapter reinforces this distinction with \u201cexo\u201d meaning \u201cout\u201d and \u201cendo\u201d meaning \u201cin.\u201d\n\n**Trap:** A reverses the two definitions. C and D erase the release-versus-absorption distinction given in the source.",
+      "wikilink": "[[../../chemistry/04 - Chemical Reactions#Exothermic Reactions and Endothermic Reactions]]",
+      "sourceNote": "chapters/chemistry/04 - Chemical Reactions.html",
+      "sourceNoteTitle": "Chemical Reactions"
+    },
+    {
+      "id": "chem.chemical_reactions.q2",
+      "subject": "chemistry",
+      "chapter": 4,
+      "chapterTitle": "Chemical Reactions",
+      "difficulty": "recall",
+      "question": "A combination reaction is one in which:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Two or more reactants form a single product"
+        },
+        {
+          "key": "B",
+          "text": "One compound breaks into two or more simpler products"
+        },
+        {
+          "key": "C",
+          "text": "Two compounds exchange ions to form two new compounds"
+        },
+        {
+          "key": "D",
+          "text": "A more reactive element displaces a less reactive element"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In a **combination reaction**, a **single product** forms from **two or more reactants**. The chapter notes that most combination reactions are exothermic.\n\n**Trap:** B defines decomposition, C defines double displacement, and D defines displacement.",
+      "wikilink": "[[../../chemistry/04 - Chemical Reactions#Types of Chemical Reaction]]",
+      "sourceNote": "chapters/chemistry/04 - Chemical Reactions.html",
+      "sourceNoteTitle": "Chemical Reactions"
+    },
+    {
+      "id": "chem.chemical_reactions.q3",
+      "subject": "chemistry",
+      "chapter": 4,
+      "chapterTitle": "Chemical Reactions",
+      "difficulty": "recall",
+      "question": "Which statement defines a combustion reaction as presented in the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A compound breaks down only in sunlight"
+        },
+        {
+          "key": "B",
+          "text": "Two compounds exchange their ions without releasing energy"
+        },
+        {
+          "key": "C",
+          "text": "A substance loses oxygen and gains hydrogen"
+        },
+        {
+          "key": "D",
+          "text": "A substance reacts with oxygen gas and releases light and heat"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A **combustion reaction** occurs when a substance reacts with **oxygen gas**, releasing energy as **light and heat**. The chapter states that combustion always takes place in the presence of oxygen.\n\n**Trap:** A is limited to photolysis, B resembles double displacement, and C gives the source's definition of reduction.",
+      "wikilink": "[[../../chemistry/04 - Chemical Reactions#Types of Chemical Reaction]]",
+      "sourceNote": "chapters/chemistry/04 - Chemical Reactions.html",
+      "sourceNoteTitle": "Chemical Reactions"
+    },
+    {
+      "id": "chem.chemical_reactions.q4",
+      "subject": "chemistry",
+      "chapter": 4,
+      "chapterTitle": "Chemical Reactions",
+      "difficulty": "recall",
+      "question": "Which pairing of processes is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Oxidation: removal of oxygen; Reduction: addition of oxygen"
+        },
+        {
+          "key": "B",
+          "text": "Oxidation: addition of hydrogen; Reduction: removal of hydrogen"
+        },
+        {
+          "key": "C",
+          "text": "Oxidation: addition of oxygen or removal of hydrogen; Reduction: removal of oxygen or addition of hydrogen"
+        },
+        {
+          "key": "D",
+          "text": "Oxidation: exchange of ions; Reduction: formation of a precipitate"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The chapter defines **oxidation** as addition of oxygen and removal of hydrogen, and **reduction** as removal of oxygen and addition of hydrogen.\n\n**Trap:** A and B reverse the definitions. D describes ideas associated with double displacement rather than oxidation and reduction.",
+      "wikilink": "[[../../chemistry/04 - Chemical Reactions#6. Oxidation Reaction]]",
+      "sourceNote": "chapters/chemistry/04 - Chemical Reactions.html",
+      "sourceNoteTitle": "Chemical Reactions"
+    },
+    {
+      "id": "chem.chemical_reactions.q5",
+      "subject": "chemistry",
+      "chapter": 4,
+      "chapterTitle": "Chemical Reactions",
+      "difficulty": "recall",
+      "question": "Rust is technically identified in the chapter as:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Anhydrous iron(II) oxide, FeO"
+        },
+        {
+          "key": "B",
+          "text": "Hydrated iron(III) oxide, Fe\u2082O\u2083 \u00b7 xH\u2082O"
+        },
+        {
+          "key": "C",
+          "text": "Iron sulphate, FeSO\u2084"
+        },
+        {
+          "key": "D",
+          "text": "A mixture of CuCO\u2083 and Cu(OH)\u2082"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rust is the reddish-brown, flaky product of iron corrosion. The chapter identifies it technically as **hydrated iron(III) oxide**, with the formula **Fe\u2082O\u2083 \u00b7 xH\u2082O**.\n\n**Trap:** D is the green corrosion mixture formed on copper, not rust. A and C are not the formula assigned to rust in the source.",
+      "wikilink": "[[../../chemistry/04 - Chemical Reactions#Corrosion]]",
+      "sourceNote": "chapters/chemistry/04 - Chemical Reactions.html",
+      "sourceNoteTitle": "Chemical Reactions"
+    },
+    {
+      "id": "chem.chemical_reactions.q6",
+      "subject": "chemistry",
+      "chapter": 4,
+      "chapterTitle": "Chemical Reactions",
+      "difficulty": "apply",
+      "question": "A magnesium ribbon is cleaned before it is burned in air. Why is this done?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To remove an MgO layer that prevents further reaction with atmospheric oxygen"
+        },
+        {
+          "key": "B",
+          "text": "To coat it with MgO so that it burns more slowly"
+        },
+        {
+          "key": "C",
+          "text": "To remove magnesium metal and expose an inert core"
+        },
+        {
+          "key": "D",
+          "text": "To supply the ribbon with carbon dioxide for combustion"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Magnesium reacts with atmospheric oxygen to form an **MgO layer**, which prevents further reaction with oxygen. Cleaning the ribbon removes this layer before burning.\n\n**Trap:** B turns the obstructing coating into the goal. C and D introduce processes not stated in the chapter.",
+      "wikilink": "[[../../chemistry/04 - Chemical Reactions#Types of Chemical Reaction]]",
+      "sourceNote": "chapters/chemistry/04 - Chemical Reactions.html",
+      "sourceNoteTitle": "Chemical Reactions"
+    },
+    {
+      "id": "chem.chemical_reactions.q7",
+      "subject": "chemistry",
+      "chapter": 4,
+      "chapterTitle": "Chemical Reactions",
+      "difficulty": "apply",
+      "question": "During electrolysis of water, 30 mL of oxygen is collected. What amount of hydrogen should be collected according to the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "15 mL"
+        },
+        {
+          "key": "B",
+          "text": "30 mL"
+        },
+        {
+          "key": "C",
+          "text": "60 mL"
+        },
+        {
+          "key": "D",
+          "text": "90 mL"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The electrolysis equation is `2H\u2082O \u2192 2H\u2082 + O\u2082`, and the chapter states that the amount of hydrogen collected is **double** the amount of oxygen. Therefore, 2 \u00d7 30 mL = **60 mL**.\n\n**Trap:** A reverses the ratio, while B ignores it. D incorrectly triples the oxygen amount.",
+      "wikilink": "[[../../chemistry/04 - Chemical Reactions#Types of Chemical Reaction]]",
+      "sourceNote": "chapters/chemistry/04 - Chemical Reactions.html",
+      "sourceNoteTitle": "Chemical Reactions"
+    },
+    {
+      "id": "chem.chemical_reactions.q8",
+      "subject": "chemistry",
+      "chapter": 4,
+      "chapterTitle": "Chemical Reactions",
+      "difficulty": "apply",
+      "question": "An iron nail is dipped into blue CuSO\u2084 solution. Which observation matches the reaction described in the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The nail turns green and the solution becomes brown"
+        },
+        {
+          "key": "B",
+          "text": "The nail becomes brownish and the solution changes from blue to green"
+        },
+        {
+          "key": "C",
+          "text": "A yellow precipitate forms and the solution remains blue"
+        },
+        {
+          "key": "D",
+          "text": "Brown NO\u2082 fumes evolve and the nail becomes white"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Iron displaces copper in `Fe + CuSO\u2084 \u2192 FeSO\u2084 + Cu`. The chapter states that the iron nail becomes **brownish**, while the **blue** CuSO\u2084 solution turns **green**.\n\n**Trap:** C borrows the yellow precipitate associated with PbI\u2082. D borrows the brown fumes from heated lead nitrate.",
+      "wikilink": "[[../../chemistry/04 - Chemical Reactions#Reactivity Series]]",
+      "sourceNote": "chapters/chemistry/04 - Chemical Reactions.html",
+      "sourceNoteTitle": "Chemical Reactions"
+    },
+    {
+      "id": "chem.chemical_reactions.q9",
+      "subject": "chemistry",
+      "chapter": 4,
+      "chapterTitle": "Chemical Reactions",
+      "difficulty": "apply",
+      "question": "Which reaction should produce a yellow precipitate according to the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Na\u2082SO\u2084 + BaCl\u2082 \u2192 BaSO\u2084 + NaCl"
+        },
+        {
+          "key": "B",
+          "text": "Pb(NO\u2083)\u2082 + KI \u2192 PbI\u2082 + KNO\u2083"
+        },
+        {
+          "key": "C",
+          "text": "Ba(OH)\u2082 + NH\u2084Cl \u2192 BaCl\u2082 + NH\u2084OH"
+        },
+        {
+          "key": "D",
+          "text": "Zn + CuSO\u2084 \u2192 ZnSO\u2084 + Cu"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The double displacement of lead nitrate and potassium iodide forms **PbI\u2082**, which the chapter marks as a **yellow precipitate**. By contrast, BaSO\u2084 is listed as a white precipitate.\n\n**Trap:** A is also a precipitation reaction, but its precipitate is white. C is identified as endothermic, and D is a displacement reaction.",
+      "wikilink": "[[../../chemistry/04 - Chemical Reactions#5. Double Displacement Reaction]]",
+      "sourceNote": "chapters/chemistry/04 - Chemical Reactions.html",
+      "sourceNoteTitle": "Chemical Reactions"
+    },
+    {
+      "id": "chem.chemical_reactions.q10",
+      "subject": "chemistry",
+      "chapter": 4,
+      "chapterTitle": "Chemical Reactions",
+      "difficulty": "apply",
+      "question": "In `PbO + C \u2192 2Pb + CO\u2082`, how are PbO and C identified in the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "PbO is the reducing agent; C is the oxidising agent"
+        },
+        {
+          "key": "B",
+          "text": "Both PbO and C are oxidising agents"
+        },
+        {
+          "key": "C",
+          "text": "PbO is the oxidising agent; C is the reducing agent"
+        },
+        {
+          "key": "D",
+          "text": "Both PbO and C are reducing agents"
+        }
+      ],
+      "answer": "C",
+      "explanation": "**PbO** is the oxidising agent because it gives oxygen to carbon. **C** is the reducing agent because it removes oxygen from PbO.\n\n**Trap:** A swaps the agents. The source assigns complementary roles, so B and D cannot be correct.",
+      "wikilink": "[[../../chemistry/04 - Chemical Reactions#7. Reduction Reaction]]",
+      "sourceNote": "chapters/chemistry/04 - Chemical Reactions.html",
+      "sourceNoteTitle": "Chemical Reactions"
+    },
+    {
+      "id": "chem.chemical_reactions.q11",
+      "subject": "chemistry",
+      "chapter": 4,
+      "chapterTitle": "Chemical Reactions",
+      "difficulty": "apply",
+      "question": "Why is nitrogen gas used in chips packets according to the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "To speed up oxidation of fats and oils"
+        },
+        {
+          "key": "B",
+          "text": "To prevent oxidation that can make the chips stale and soggy"
+        },
+        {
+          "key": "C",
+          "text": "To turn the oils into a yellow precipitate"
+        },
+        {
+          "key": "D",
+          "text": "To promote corrosion of the packet"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rancidity is an **oxidation** process in which fats and oils break down, producing unpleasant smell, taste, or texture. Nitrogen is used in chips packets to **prevent oxidation**, which may otherwise make the chips stale and soggy.\n\n**Trap:** A states the opposite purpose. C and D confuse rancidity with unrelated reactions.",
+      "wikilink": "[[../../chemistry/04 - Chemical Reactions#Rancidity]]",
+      "sourceNote": "chapters/chemistry/04 - Chemical Reactions.html",
+      "sourceNoteTitle": "Chemical Reactions"
+    },
+    {
+      "id": "chem.chemical_reactions.q12",
+      "subject": "chemistry",
+      "chapter": 4,
+      "chapterTitle": "Chemical Reactions",
+      "difficulty": "tricky",
+      "question": "Consider these statements about decomposition reactions:\n\n1. Heating lead nitrate gives brown fumes of NO\u2082.\n2. In electrolysis of water, the hydrogen collected is double the oxygen collected.\n3. AgCl and AgBr are kept in dark bottles and used in black-and-white photography.\n\nWhich option is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Only statements 1 and 2"
+        },
+        {
+          "key": "B",
+          "text": "Only statements 2 and 3"
+        },
+        {
+          "key": "C",
+          "text": "Only statements 1 and 3"
+        },
+        {
+          "key": "D",
+          "text": "Statements 1, 2, and 3"
+        }
+      ],
+      "answer": "D",
+      "explanation": "All three statements come directly from the decomposition examples: heated lead nitrate releases **brown NO\u2082 fumes**; water electrolysis produces hydrogen in double the amount of oxygen; and light-sensitive **AgCl and AgBr** are kept in dark bottles and used in black-and-white photography.\n\n**Trap:** The three statements refer to different decomposition modes\u2014thermal decomposition, electrolysis, and photolysis\u2014so overlooking one mode makes the partial combinations tempting.",
+      "wikilink": "[[../../chemistry/04 - Chemical Reactions#Types of Chemical Reaction]]",
+      "sourceNote": "chapters/chemistry/04 - Chemical Reactions.html",
+      "sourceNoteTitle": "Chemical Reactions"
+    },
+    {
+      "id": "chem.chemical_reactions.q13",
+      "subject": "chemistry",
+      "chapter": 4,
+      "chapterTitle": "Chemical Reactions",
+      "difficulty": "tricky",
+      "question": "A metal M displaces zinc from ZnSO\u2084, while zinc displaces copper from CuSO\u2084. Based on the chapter's reactivity principle and series, which order is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cu > Zn > M"
+        },
+        {
+          "key": "B",
+          "text": "Zn > M > Cu"
+        },
+        {
+          "key": "C",
+          "text": "M > Zn > Cu"
+        },
+        {
+          "key": "D",
+          "text": "M > Cu > Zn"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A more reactive element displaces a less reactive one. Since M displaces Zn, **M > Zn**; since Zn displaces Cu, **Zn > Cu**. Combining the two relationships gives **M > Zn > Cu**.\n\n**Trap:** B reverses the first displacement relationship, while D reverses the order of zinc and copper given by the series.",
+      "wikilink": "[[../../chemistry/04 - Chemical Reactions#Reactivity Series]]",
+      "sourceNote": "chapters/chemistry/04 - Chemical Reactions.html",
+      "sourceNoteTitle": "Chemical Reactions"
+    },
+    {
+      "id": "chem.chemical_reactions.q14",
+      "subject": "chemistry",
+      "chapter": 4,
+      "chapterTitle": "Chemical Reactions",
+      "difficulty": "tricky",
+      "question": "Consider the following changes in the redox reaction shown in the chapter:\n\n- Chromium changes from +6 in Cr\u2082O\u2087\u00b2\u207b to +3 in Cr\u00b3\u207a.\n- Sulphur changes from +4 in SO\u2083\u00b2\u207b to +6 in SO\u2084\u00b2\u207b.\n\nWhich interpretation is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Chromium is oxidised and sulphur is reduced"
+        },
+        {
+          "key": "B",
+          "text": "Both chromium and sulphur are oxidised"
+        },
+        {
+          "key": "C",
+          "text": "Chromium is reduced and sulphur is oxidised"
+        },
+        {
+          "key": "D",
+          "text": "Both chromium and sulphur are reduced"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Chromium's oxidation state falls from **+6 to +3**, so chromium is **reduced**. Sulphur's oxidation state rises from **+4 to +6**, so sulphur is **oxidised**.\n\n**Trap:** A swaps the two changes. B and D ignore that one oxidation state rises while the other falls in this redox process.",
+      "wikilink": "[[../../chemistry/04 - Chemical Reactions#Redox Reaction]]",
+      "sourceNote": "chapters/chemistry/04 - Chemical Reactions.html",
+      "sourceNoteTitle": "Chemical Reactions"
+    },
+    {
+      "id": "chem.metals.q1",
+      "subject": "chemistry",
+      "chapter": 5,
+      "chapterTitle": "Metals and Non-Metals",
+      "difficulty": "recall",
+      "question": "Which metal is liquid at room temperature?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Caesium"
+        },
+        {
+          "key": "B",
+          "text": "Gallium"
+        },
+        {
+          "key": "C",
+          "text": "Mercury"
+        },
+        {
+          "key": "D",
+          "text": "Sodium"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Mercury is the stated liquid-metal exception at room temperature. Caesium and gallium instead have melting points just above room temperature.",
+      "wikilink": "[[../../chemistry/05 - Metals and Non-Metals#METALS]]",
+      "sourceNote": "chapters/chemistry/05 - Metals and Non-Metals.html",
+      "sourceNoteTitle": "Metals and Non-Metals"
+    },
+    {
+      "id": "chem.metals.q2",
+      "subject": "chemistry",
+      "chapter": 5,
+      "chapterTitle": "Metals and Non-Metals",
+      "difficulty": "recall",
+      "question": "Which non-metal is a good conductor of electricity?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Bromine"
+        },
+        {
+          "key": "B",
+          "text": "Sulphur"
+        },
+        {
+          "key": "C",
+          "text": "Iodine"
+        },
+        {
+          "key": "D",
+          "text": "Graphite"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Non-metals are generally bad conductors, but graphite is identified as an exception that conducts electricity.",
+      "wikilink": "[[../../chemistry/05 - Metals and Non-Metals#NON-METALS]]",
+      "sourceNote": "chapters/chemistry/05 - Metals and Non-Metals.html",
+      "sourceNoteTitle": "Metals and Non-Metals"
+    },
+    {
+      "id": "chem.metals.q3",
+      "subject": "chemistry",
+      "chapter": 5,
+      "chapterTitle": "Metals and Non-Metals",
+      "difficulty": "recall",
+      "question": "An oxide that reacts with both acids and bases is called:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Neutral"
+        },
+        {
+          "key": "B",
+          "text": "Amphoteric"
+        },
+        {
+          "key": "C",
+          "text": "Only acidic"
+        },
+        {
+          "key": "D",
+          "text": "Only basic"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Amphoteric oxides react with both acids and bases and form salt and water. Zinc oxide and aluminium oxide are examples.",
+      "wikilink": "[[../../chemistry/05 - Metals and Non-Metals#Amphoteric Oxides]]",
+      "sourceNote": "chapters/chemistry/05 - Metals and Non-Metals.html",
+      "sourceNoteTitle": "Metals and Non-Metals"
+    },
+    {
+      "id": "chem.metals.q4",
+      "subject": "chemistry",
+      "chapter": 5,
+      "chapterTitle": "Metals and Non-Metals",
+      "difficulty": "recall",
+      "question": "What is the composition of brass given in the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cu 88% + Sn 12%"
+        },
+        {
+          "key": "B",
+          "text": "Cu 80% + Zn 20%"
+        },
+        {
+          "key": "C",
+          "text": "Sn + Pb"
+        },
+        {
+          "key": "D",
+          "text": "Cu + Ni + Zn"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Brass is listed as copper 80% and zinc 20%. Cu 88% with Sn 12% is bronze, while Cu-Ni-Zn is German silver.",
+      "wikilink": "[[../../chemistry/05 - Metals and Non-Metals#Formation of Alloy]]",
+      "sourceNote": "chapters/chemistry/05 - Metals and Non-Metals.html",
+      "sourceNoteTitle": "Metals and Non-Metals"
+    },
+    {
+      "id": "chem.metals.q5",
+      "subject": "chemistry",
+      "chapter": 5,
+      "chapterTitle": "Metals and Non-Metals",
+      "difficulty": "apply",
+      "question": "A copper object is heated in oxygen and develops a black coating. What is the coating?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cu\u2082O"
+        },
+        {
+          "key": "B",
+          "text": "CuO"
+        },
+        {
+          "key": "C",
+          "text": "CuSO\u2084"
+        },
+        {
+          "key": "D",
+          "text": "CuCl\u2082"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Heated copper reacts as `2Cu + O\u2082 \u2192 2CuO`; the black layer is copper(II) oxide.",
+      "wikilink": "[[../../chemistry/05 - Metals and Non-Metals#Copper]]",
+      "sourceNote": "chapters/chemistry/05 - Metals and Non-Metals.html",
+      "sourceNoteTitle": "Metals and Non-Metals"
+    },
+    {
+      "id": "chem.metals.q6",
+      "subject": "chemistry",
+      "chapter": 5,
+      "chapterTitle": "Metals and Non-Metals",
+      "difficulty": "apply",
+      "question": "A piece of magnesium begins floating while reacting with hot water. Why?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Magnesium becomes less dense permanently"
+        },
+        {
+          "key": "B",
+          "text": "Oxygen bubbles stick to it"
+        },
+        {
+          "key": "C",
+          "text": "Hydrogen bubbles stick to its surface"
+        },
+        {
+          "key": "D",
+          "text": "It changes into sodium"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Magnesium reacts with hot water, and bubbles of evolved hydrogen stick to its surface, making it float.",
+      "wikilink": "[[../../chemistry/05 - Metals and Non-Metals#Reaction of Metal with Water]]",
+      "sourceNote": "chapters/chemistry/05 - Metals and Non-Metals.html",
+      "sourceNoteTitle": "Metals and Non-Metals"
+    },
+    {
+      "id": "chem.metals.q7",
+      "subject": "chemistry",
+      "chapter": 5,
+      "chapterTitle": "Metals and Non-Metals",
+      "difficulty": "apply",
+      "question": "Copper is placed in silver nitrate solution. Which outcome follows the chapter's displacement example?",
+      "options": [
+        {
+          "key": "A",
+          "text": "No reaction occurs"
+        },
+        {
+          "key": "B",
+          "text": "Copper nitrate and silver form"
+        },
+        {
+          "key": "C",
+          "text": "Silver nitrate and copper oxide form"
+        },
+        {
+          "key": "D",
+          "text": "Copper and silver both dissolve without products"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The source gives `Cu + 2AgNO\u2083 \u2192 Cu(NO\u2083)\u2082 + 2Ag`: the more reactive copper replaces silver.",
+      "wikilink": "[[../../chemistry/05 - Metals and Non-Metals#Reaction of Metals with solutions of other Metal Salt]]",
+      "sourceNote": "chapters/chemistry/05 - Metals and Non-Metals.html",
+      "sourceNoteTitle": "Metals and Non-Metals"
+    },
+    {
+      "id": "chem.metals.q8",
+      "subject": "chemistry",
+      "chapter": 5,
+      "chapterTitle": "Metals and Non-Metals",
+      "difficulty": "apply",
+      "question": "Which condition allows an ionic compound to conduct electricity?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Only as a dry solid"
+        },
+        {
+          "key": "B",
+          "text": "Only when mixed with kerosene"
+        },
+        {
+          "key": "C",
+          "text": "In molten form or aqueous solution"
+        },
+        {
+          "key": "D",
+          "text": "Only below its melting point"
+        }
+      ],
+      "answer": "C",
+      "explanation": "In molten form or aqueous solution, ions are free to move and carry charge. The source does not assign this conduction to the solid state.",
+      "wikilink": "[[../../chemistry/05 - Metals and Non-Metals#Properties of Ionic Compounds]]",
+      "sourceNote": "chapters/chemistry/05 - Metals and Non-Metals.html",
+      "sourceNoteTitle": "Metals and Non-Metals"
+    },
+    {
+      "id": "chem.metals.q9",
+      "subject": "chemistry",
+      "chapter": 5,
+      "chapterTitle": "Metals and Non-Metals",
+      "difficulty": "apply",
+      "question": "During electrolytic refining, where are pure metal and insoluble impurities found?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pure metal at anode; impurities at cathode"
+        },
+        {
+          "key": "B",
+          "text": "Pure metal at cathode; impurities as anode mud"
+        },
+        {
+          "key": "C",
+          "text": "Both at the anode"
+        },
+        {
+          "key": "D",
+          "text": "Both dissolved permanently in electrolyte"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The impure metal is the anode and pure metal the cathode. Pure metal deposits at the cathode, while insoluble impurities settle beneath the anode as anode mud.",
+      "wikilink": "[[../../chemistry/05 - Metals and Non-Metals#Electrolytic Refining]]",
+      "sourceNote": "chapters/chemistry/05 - Metals and Non-Metals.html",
+      "sourceNoteTitle": "Metals and Non-Metals"
+    },
+    {
+      "id": "chem.metals.q10",
+      "subject": "chemistry",
+      "chapter": 5,
+      "chapterTitle": "Metals and Non-Metals",
+      "difficulty": "tricky",
+      "question": "Why is aluminium less easily corroded than iron even though aluminium is more reactive?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Aluminium never reacts with oxygen"
+        },
+        {
+          "key": "B",
+          "text": "Aluminium forms a protective Al\u2082O\u2083 layer"
+        },
+        {
+          "key": "C",
+          "text": "Iron is above aluminium in the reactivity series"
+        },
+        {
+          "key": "D",
+          "text": "Aluminium is a non-metal"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Exposure to oxygen forms a protective aluminium oxide layer, Al\u2082O\u2083, which resists further corrosion despite aluminium's greater reactivity.",
+      "wikilink": "[[../../chemistry/05 - Metals and Non-Metals#Fact]]",
+      "sourceNote": "chapters/chemistry/05 - Metals and Non-Metals.html",
+      "sourceNoteTitle": "Metals and Non-Metals"
+    },
+    {
+      "id": "chem.metals.q11",
+      "subject": "chemistry",
+      "chapter": 5,
+      "chapterTitle": "Metals and Non-Metals",
+      "difficulty": "tricky",
+      "question": "A metal reacts with dilute hydrochloric acid to release hydrogen, but does not react with cold water, hot water, or steam. Which metal matches the chapter's tables?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sodium"
+        },
+        {
+          "key": "B",
+          "text": "Calcium"
+        },
+        {
+          "key": "C",
+          "text": "Lead"
+        },
+        {
+          "key": "D",
+          "text": "Copper"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Lead is above hydrogen, so it can release hydrogen from dilute acid, while the water-reaction table places Pb among metals that do not react with water. Copper is below hydrogen and does not react with dilute HCl.",
+      "wikilink": "[[../../chemistry/05 - Metals and Non-Metals#Reaction of Metal with Water]]",
+      "sourceNote": "chapters/chemistry/05 - Metals and Non-Metals.html",
+      "sourceNoteTitle": "Metals and Non-Metals"
+    },
+    {
+      "id": "chem.metals.q12",
+      "subject": "chemistry",
+      "chapter": 5,
+      "chapterTitle": "Metals and Non-Metals",
+      "difficulty": "tricky",
+      "question": "Consider the thermite reaction `Fe\u2082O\u2083 + 2Al \u2192 2Fe + Al\u2082O\u2083`. Which statement is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Aluminium is the reducing agent and the reaction can join railway tracks"
+        },
+        {
+          "key": "B",
+          "text": "Iron is the reducing agent and the reaction is endothermic"
+        },
+        {
+          "key": "C",
+          "text": "Aluminium oxide is reduced to aluminium"
+        },
+        {
+          "key": "D",
+          "text": "The reaction is used only for electrolytic refining"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In a thermite reaction aluminium reduces the metal oxide and acts as reducing agent. The reaction is generally exothermic and is used to join railway tracks.",
+      "wikilink": "[[../../chemistry/05 - Metals and Non-Metals#Thermite Reaction]]",
+      "sourceNote": "chapters/chemistry/05 - Metals and Non-Metals.html",
+      "sourceNoteTitle": "Metals and Non-Metals"
+    },
+    {
+      "id": "chem.acid.q1",
+      "subject": "chemistry",
+      "chapter": 6,
+      "chapterTitle": "Acid, Base and Salt",
+      "difficulty": "recall",
+      "question": "How does an acid affect blue litmus paper?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It turns it red"
+        },
+        {
+          "key": "B",
+          "text": "It turns it blue"
+        },
+        {
+          "key": "C",
+          "text": "It turns it pink"
+        },
+        {
+          "key": "D",
+          "text": "It causes no stated change"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An acid turns blue litmus paper red; a base turns red litmus paper blue.",
+      "wikilink": "[[../../chemistry/06 - Acid, Base and Salt#Acid]]",
+      "sourceNote": "chapters/chemistry/06 - Acid, Base and Salt.html",
+      "sourceNoteTitle": "Acid, Base and Salt"
+    },
+    {
+      "id": "chem.acid.q2",
+      "subject": "chemistry",
+      "chapter": 6,
+      "chapterTitle": "Acid, Base and Salt",
+      "difficulty": "recall",
+      "question": "What colour is phenolphthalein in a basic solution?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Red"
+        },
+        {
+          "key": "B",
+          "text": "Yellow"
+        },
+        {
+          "key": "C",
+          "text": "Pink"
+        },
+        {
+          "key": "D",
+          "text": "Colourless"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Phenolphthalein is colourless in acidic solutions and pink in basic solutions.",
+      "wikilink": "[[../../chemistry/06 - Acid, Base and Salt#Acid-Base Indicators]]",
+      "sourceNote": "chapters/chemistry/06 - Acid, Base and Salt.html",
+      "sourceNoteTitle": "Acid, Base and Salt"
+    },
+    {
+      "id": "chem.acid.q3",
+      "subject": "chemistry",
+      "chapter": 6,
+      "chapterTitle": "Acid, Base and Salt",
+      "difficulty": "recall",
+      "question": "Which acid is associated with vinegar?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Citric acid"
+        },
+        {
+          "key": "B",
+          "text": "Acetic acid"
+        },
+        {
+          "key": "C",
+          "text": "Lactic acid"
+        },
+        {
+          "key": "D",
+          "text": "Oxalic acid"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The organic-acid table identifies vinegar as a source of acetic acid.",
+      "wikilink": "[[../../chemistry/06 - Acid, Base and Salt#Organic Acids]]",
+      "sourceNote": "chapters/chemistry/06 - Acid, Base and Salt.html",
+      "sourceNoteTitle": "Acid, Base and Salt"
+    },
+    {
+      "id": "chem.acid.q4",
+      "subject": "chemistry",
+      "chapter": 6,
+      "chapterTitle": "Acid, Base and Salt",
+      "difficulty": "recall",
+      "question": "What is the chemical formula of washing soda?",
+      "options": [
+        {
+          "key": "A",
+          "text": "NaHCO\u2083"
+        },
+        {
+          "key": "B",
+          "text": "Na\u2082CO\u2083\u00b710H\u2082O"
+        },
+        {
+          "key": "C",
+          "text": "CaOCl\u2082"
+        },
+        {
+          "key": "D",
+          "text": "CaSO\u2084\u00b7\u00bdH\u2082O"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Washing soda is hydrated sodium carbonate, `Na\u2082CO\u2083\u00b710H\u2082O`.",
+      "wikilink": "[[../../chemistry/06 - Acid, Base and Salt#Washing Soda]]",
+      "sourceNote": "chapters/chemistry/06 - Acid, Base and Salt.html",
+      "sourceNoteTitle": "Acid, Base and Salt"
+    },
+    {
+      "id": "chem.acid.q5",
+      "subject": "chemistry",
+      "chapter": 6,
+      "chapterTitle": "Acid, Base and Salt",
+      "difficulty": "apply",
+      "question": "A gas produced by an acid-carbonate reaction turns lime water milky. What causes the milkiness?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Soluble sodium chloride forms"
+        },
+        {
+          "key": "B",
+          "text": "Insoluble calcium carbonate forms"
+        },
+        {
+          "key": "C",
+          "text": "Hydrogen burns with a pop"
+        },
+        {
+          "key": "D",
+          "text": "Calcium hydroxide evaporates"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Carbon dioxide reacts with calcium hydroxide in lime water to form insoluble white calcium carbonate, causing the milky appearance.",
+      "wikilink": "[[../../chemistry/06 - Acid, Base and Salt#Test of Carbon Dioxide]]",
+      "sourceNote": "chapters/chemistry/06 - Acid, Base and Salt.html",
+      "sourceNoteTitle": "Acid, Base and Salt"
+    },
+    {
+      "id": "chem.acid.q6",
+      "subject": "chemistry",
+      "chapter": 6,
+      "chapterTitle": "Acid, Base and Salt",
+      "difficulty": "apply",
+      "question": "Which is the safe method for diluting concentrated acid?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Add water rapidly to acid"
+        },
+        {
+          "key": "B",
+          "text": "Add acid slowly to water with constant stirring"
+        },
+        {
+          "key": "C",
+          "text": "Mix equal volumes without stirring"
+        },
+        {
+          "key": "D",
+          "text": "Heat the acid before adding water"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Acid should be added slowly to water with constant stirring. Adding water to acid can produce intense exothermic heating, splashing, and burns.",
+      "wikilink": "[[../../chemistry/06 - Acid, Base and Salt#Dilution of Acids]]",
+      "sourceNote": "chapters/chemistry/06 - Acid, Base and Salt.html",
+      "sourceNoteTitle": "Acid, Base and Salt"
+    },
+    {
+      "id": "chem.acid.q7",
+      "subject": "chemistry",
+      "chapter": 6,
+      "chapterTitle": "Acid, Base and Salt",
+      "difficulty": "apply",
+      "question": "A soil sample is too basic. Which substance does the chapter recommend adding?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Quicklime"
+        },
+        {
+          "key": "B",
+          "text": "Slaked lime"
+        },
+        {
+          "key": "C",
+          "text": "Gypsum"
+        },
+        {
+          "key": "D",
+          "text": "Calcium carbonate"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The chapter recommends gypsum when soil is too basic. Quicklime, calcium carbonate, or slaked lime is used for acidic soil.",
+      "wikilink": "[[../../chemistry/06 - Acid, Base and Salt#Importance of pH Scale in Everyday Life]]",
+      "sourceNote": "chapters/chemistry/06 - Acid, Base and Salt.html",
+      "sourceNoteTitle": "Acid, Base and Salt"
+    },
+    {
+      "id": "chem.acid.q8",
+      "subject": "chemistry",
+      "chapter": 6,
+      "chapterTitle": "Acid, Base and Salt",
+      "difficulty": "apply",
+      "question": "Which products are formed when aqueous brine undergoes the chlor-alkali process?",
+      "options": [
+        {
+          "key": "A",
+          "text": "NaOH, Cl\u2082, and H\u2082"
+        },
+        {
+          "key": "B",
+          "text": "NaHCO\u2083 and NH\u2084Cl"
+        },
+        {
+          "key": "C",
+          "text": "CaOCl\u2082 and H\u2082O only"
+        },
+        {
+          "key": "D",
+          "text": "Na\u2082CO\u2083 and CO\u2082 only"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Electrolysis of aqueous sodium chloride produces sodium hydroxide, chlorine, and hydrogen: `2NaCl + 2H\u2082O \u2192 2NaOH + Cl\u2082 + H\u2082`.",
+      "wikilink": "[[../../chemistry/06 - Acid, Base and Salt#Chlor-Alkali Process]]",
+      "sourceNote": "chapters/chemistry/06 - Acid, Base and Salt.html",
+      "sourceNoteTitle": "Acid, Base and Salt"
+    },
+    {
+      "id": "chem.acid.q9",
+      "subject": "chemistry",
+      "chapter": 6,
+      "chapterTitle": "Acid, Base and Salt",
+      "difficulty": "apply",
+      "question": "A patient has indigestion caused by excess stomach HCl. Which treatment follows the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Add more hydrochloric acid"
+        },
+        {
+          "key": "B",
+          "text": "Use an antacid such as milk of magnesia"
+        },
+        {
+          "key": "C",
+          "text": "Use acidic rainwater"
+        },
+        {
+          "key": "D",
+          "text": "Use sodium chloride only"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Antacids neutralise excess stomach acidity. The listed examples include Mg(OH)\u2082, or milk of magnesia, baking soda, and aluminium hydroxide.",
+      "wikilink": "[[../../chemistry/06 - Acid, Base and Salt#Importance of pH Scale in Everyday Life]]",
+      "sourceNote": "chapters/chemistry/06 - Acid, Base and Salt.html",
+      "sourceNoteTitle": "Acid, Base and Salt"
+    },
+    {
+      "id": "chem.acid.q10",
+      "subject": "chemistry",
+      "chapter": 6,
+      "chapterTitle": "Acid, Base and Salt",
+      "difficulty": "tricky",
+      "question": "A salt is formed from a weak acid and a strong base. How does the chapter classify that salt?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Acidic"
+        },
+        {
+          "key": "B",
+          "text": "Basic"
+        },
+        {
+          "key": "C",
+          "text": "Neutral"
+        },
+        {
+          "key": "D",
+          "text": "Amphoteric"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The chapter states that a weak acid plus a strong base forms a basic salt and water, exemplified by acetic acid and NaOH forming sodium acetate.",
+      "wikilink": "[[../../chemistry/06 - Acid, Base and Salt#Neutralisation Reaction]]",
+      "sourceNote": "chapters/chemistry/06 - Acid, Base and Salt.html",
+      "sourceNoteTitle": "Acid, Base and Salt"
+    },
+    {
+      "id": "chem.acid.q11",
+      "subject": "chemistry",
+      "chapter": 6,
+      "chapterTitle": "Acid, Base and Salt",
+      "difficulty": "tricky",
+      "question": "Consider these statements:\n\n1. Acid rain has pH below 5.6.\n2. Tooth decay starts below pH 5.5.\n3. Blood at pH 7.4 is slightly alkaline.\n\nWhich option is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Only 1 and 2"
+        },
+        {
+          "key": "B",
+          "text": "Only 2 and 3"
+        },
+        {
+          "key": "C",
+          "text": "Only 1 and 3"
+        },
+        {
+          "key": "D",
+          "text": "1, 2, and 3"
+        }
+      ],
+      "answer": "D",
+      "explanation": "All three values and interpretations are stated: acid rain below 5.6, tooth decay below 5.5, and blood at pH 7.4 as slightly alkaline.",
+      "wikilink": "[[../../chemistry/06 - Acid, Base and Salt#Importance of pH Scale in Everyday Life]]",
+      "sourceNote": "chapters/chemistry/06 - Acid, Base and Salt.html",
+      "sourceNoteTitle": "Acid, Base and Salt"
+    },
+    {
+      "id": "chem.acid.q12",
+      "subject": "chemistry",
+      "chapter": 6,
+      "chapterTitle": "Acid, Base and Salt",
+      "difficulty": "tricky",
+      "question": "Plaster of Paris is left in a humid, open container. What change explains why moisture-proof storage is required?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It loses all calcium and becomes CO\u2082"
+        },
+        {
+          "key": "B",
+          "text": "It absorbs moisture and forms hard gypsum"
+        },
+        {
+          "key": "C",
+          "text": "It changes into washing soda"
+        },
+        {
+          "key": "D",
+          "text": "It releases chlorine and forms bleaching powder"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Plaster of Paris absorbs moisture and changes to hard gypsum. Therefore it is always stored in a moisture-proof container.",
+      "wikilink": "[[../../chemistry/06 - Acid, Base and Salt#Note]]",
+      "sourceNote": "chapters/chemistry/06 - Acid, Base and Salt.html",
+      "sourceNoteTitle": "Acid, Base and Salt"
+    },
+    {
+      "id": "chem.carbon.q1",
+      "subject": "chemistry",
+      "chapter": 7,
+      "chapterTitle": "Carbon and Its Compounds",
+      "difficulty": "recall",
+      "question": "Which property of carbon is described as the \"unique ability to form long chains of C-C bond\"?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tetravalency"
+        },
+        {
+          "key": "B",
+          "text": "Catenation"
+        },
+        {
+          "key": "C",
+          "text": "Hybridisation"
+        },
+        {
+          "key": "D",
+          "text": "Isomerism"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The chapter's \"Basic Features of Carbon\" table defines **Catenation** as the \"unique ability to form long chains of C-C bond\" and **Tetravalency** as the \"capability to form 4 bonds with other atom of carbon or other monovalent elements.\"\n\n**Trap:** A (tetravalency) is the other feature in the table, but it describes bonding number, not chain formation. C and D are related properties but are not what the table labels as catenation.",
+      "wikilink": "[[../../chemistry/07 - Carbon and Its Compounds#Catenation]]",
+      "sourceNote": "chapters/chemistry/07 - Carbon and Its Compounds.html",
+      "sourceNoteTitle": "Carbon and Its Compounds"
+    },
+    {
+      "id": "chem.carbon.q2",
+      "subject": "chemistry",
+      "chapter": 7,
+      "chapterTitle": "Carbon and Its Compounds",
+      "difficulty": "recall",
+      "question": "How many other carbon atoms is each carbon atom bonded to in the structure of diamond?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1"
+        },
+        {
+          "key": "B",
+          "text": "2"
+        },
+        {
+          "key": "C",
+          "text": "3"
+        },
+        {
+          "key": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The chapter states that \"each carbon atom is bonded to 4 other carbon atoms\" in diamond, with a 3D-tetrahedral structure and sp\u00b3 hybridisation. Diamond is the hardest naturally occurring substance.\n\n**Trap:** C (each carbon bonded to 3 others) describes **graphite**, not diamond. B is trap for graphite's layered bonding.",
+      "wikilink": "[[../../chemistry/07 - Carbon and Its Compounds#Diamond]]",
+      "sourceNote": "chapters/chemistry/07 - Carbon and Its Compounds.html",
+      "sourceNoteTitle": "Carbon and Its Compounds"
+    },
+    {
+      "id": "chem.carbon.q3",
+      "subject": "chemistry",
+      "chapter": 7,
+      "chapterTitle": "Carbon and Its Compounds",
+      "difficulty": "recall",
+      "question": "According to the IUPAC prefix table in the chapter, a straight-chain hydrocarbon with 8 carbon atoms is named using the prefix:",
+      "options": [
+        {
+          "key": "A",
+          "text": "hept-"
+        },
+        {
+          "key": "B",
+          "text": "hex-"
+        },
+        {
+          "key": "C",
+          "text": "oct-"
+        },
+        {
+          "key": "D",
+          "text": "non-"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The \"Naming of Hydrocarbons\" table maps 8 carbons to the prefix **oct-**. The same table gives 6 \u2192 hex-, 7 \u2192 hept-, 9 \u2192 non-.\n\n**Trap:** A is for 7 carbons, B is for 6, D is for 9. Each prefix is one carbon off from the next.",
+      "wikilink": "[[../../chemistry/07 - Carbon and Its Compounds#Naming of Hydrocarbons]]",
+      "sourceNote": "chapters/chemistry/07 - Carbon and Its Compounds.html",
+      "sourceNoteTitle": "Carbon and Its Compounds"
+    },
+    {
+      "id": "chem.carbon.q4",
+      "subject": "chemistry",
+      "chapter": 7,
+      "chapterTitle": "Carbon and Its Compounds",
+      "difficulty": "recall",
+      "question": "The functional group **-COOH** belongs to which class of compound, and what is its IUPAC suffix?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Alcohols; -ol"
+        },
+        {
+          "key": "B",
+          "text": "Aldehydes; -al"
+        },
+        {
+          "key": "C",
+          "text": "Carboxylic acid; -oic"
+        },
+        {
+          "key": "D",
+          "text": "Ketones; -one"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The \"Functional Groups\" table lists -COOH (common formula R-COOH, e.g. acetic acid CH\u2083COOH) as **Carboxylic acid** with the IUPAC suffix **-oic** (ethanoic acid).\n\n**Trap:** A is the alcohol -OH group. B is the aldehyde -CHO group. D is the ketone -CO- group.",
+      "wikilink": "[[../../chemistry/07 - Carbon and Its Compounds#Functional Groups]]",
+      "sourceNote": "chapters/chemistry/07 - Carbon and Its Compounds.html",
+      "sourceNoteTitle": "Carbon and Its Compounds"
+    },
+    {
+      "id": "chem.carbon.q5",
+      "subject": "chemistry",
+      "chapter": 7,
+      "chapterTitle": "Carbon and Its Compounds",
+      "difficulty": "recall",
+      "question": "Members of a homologous series differ by what repeating unit, and by how many mass units per step?",
+      "options": [
+        {
+          "key": "A",
+          "text": "-CH\u2083 unit, mass 15"
+        },
+        {
+          "key": "B",
+          "text": "-CH\u2082 unit, mass 14"
+        },
+        {
+          "key": "C",
+          "text": "-CH\u2082 unit, mass 12"
+        },
+        {
+          "key": "D",
+          "text": "-C\u2082H\u2084 unit, mass 28"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The \"Homologous Series\" section states that a homologous series \"differs by -CH\u2082 unit and mass by 14 units.\" The same section notes that chemical properties remain the same across the series while melting and boiling points increase with molecular mass.\n\n**Trap:** A swaps CH\u2083 for CH\u2082 and uses methyl's mass. C uses the right unit but the carbon-only mass. D doubles both \u2014 but the standard increment per step is one CH\u2082.",
+      "wikilink": "[[../../chemistry/07 - Carbon and Its Compounds#Homologous Series]]",
+      "sourceNote": "chapters/chemistry/07 - Carbon and Its Compounds.html",
+      "sourceNoteTitle": "Carbon and Its Compounds"
+    },
+    {
+      "id": "chem.carbon.q6",
+      "subject": "chemistry",
+      "chapter": 7,
+      "chapterTitle": "Carbon and Its Compounds",
+      "difficulty": "apply",
+      "question": "Balance the combustion reaction of methane in oxygen. What are the products according to the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "CO + H\u2082"
+        },
+        {
+          "key": "B",
+          "text": "CO\u2082 + 2 H\u2082O + Heat + Light"
+        },
+        {
+          "key": "C",
+          "text": "C + 2 H\u2082O + Heat"
+        },
+        {
+          "key": "D",
+          "text": "CH\u2083OH + O\u2082 + Light"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The chapter gives: **CH\u2084 + 2O\u2082 \u2192 CO\u2082 + 2H\u2082O + Heat + Light** under \"Chemical Properties of Carbon Compounds \u2192 Combustion.\"\n\n**Trap:** A is incomplete combustion (CO, not CO\u2082). C is charring without oxygen. D is no reaction at all \u2014 methanol is not a combustion product here.",
+      "wikilink": "[[../../chemistry/07 - Carbon and Its Compounds#Chemical Properties of Carbon Compounds]]",
+      "sourceNote": "chapters/chemistry/07 - Carbon and Its Compounds.html",
+      "sourceNoteTitle": "Carbon and Its Compounds"
+    },
+    {
+      "id": "chem.carbon.q7",
+      "subject": "chemistry",
+      "chapter": 7,
+      "chapterTitle": "Carbon and Its Compounds",
+      "difficulty": "apply",
+      "question": "Methane is treated with chlorine in sunlight. What is the immediate product formed in the first substitution step?",
+      "options": [
+        {
+          "key": "A",
+          "text": "CH\u2082Cl\u2082 (dichloromethane)"
+        },
+        {
+          "key": "B",
+          "text": "CHCl\u2083 (chloroform)"
+        },
+        {
+          "key": "C",
+          "text": "CH\u2083Cl (chloromethane) + HCl"
+        },
+        {
+          "key": "D",
+          "text": "CCl\u2084 + HCl"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The \"Substitution Reaction\" chain listed in the chapter is:\n\n- CH\u2084 + Cl\u2082 (sunlight) \u2192 **CH\u2083Cl + HCl** (Methane \u2192 Chloromethane)\n- CH\u2083Cl + Cl\u2082 \u2192 CH\u2082Cl\u2082 + HCl\n- CH\u2082Cl\u2082 + Cl\u2082 \u2192 CHCl\u2083 + HCl (Chloroform)\n- CHCl\u2083 + Cl\u2082 \u2192 CCl\u2084 + HCl\n\nOnly the **first** step yields chloromethane (CH\u2083Cl).\n\n**Trap:** A, B, and D are downstream products \u2014 they form only after the corresponding number of additional chlorinations.",
+      "wikilink": "[[../../chemistry/07 - Carbon and Its Compounds#Chemical Properties of Carbon Compounds]]",
+      "sourceNote": "chapters/chemistry/07 - Carbon and Its Compounds.html",
+      "sourceNoteTitle": "Carbon and Its Compounds"
+    },
+    {
+      "id": "chem.carbon.q8",
+      "subject": "chemistry",
+      "chapter": 7,
+      "chapterTitle": "Carbon and Its Compounds",
+      "difficulty": "apply",
+      "question": "For the structure CH\u2083-C\u2261C-CH\u2082-CH\u2083 (positions 1, 2, 3, 4, 5), what is the IUPAC name given in the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pentyne"
+        },
+        {
+          "key": "B",
+          "text": "Pent-2-yne"
+        },
+        {
+          "key": "C",
+          "text": "2-Methylpentyne"
+        },
+        {
+          "key": "D",
+          "text": "Pent-1-yne"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The chapter's IUPAC examples list **CH\u2083-C\u2261C-CH\u2082-CH\u2083 (positions 1,2,3,4,5) \u2192 Pent-2-yne** with the note \"Nearest position for double/triple/functional group.\"\n\n**Trap:** A \"Pentyne\" is shown only for CH\u2083-CH\u2082-CH\u2082-C\u2261CH (terminal alkyne, position 1). C is a distractor based on the alkyl-substitution example. D misreads the nearest-position rule.",
+      "wikilink": "[[../../chemistry/07 - Carbon and Its Compounds#International Union of Pure and Applied Chemistry (IUPAC)]]",
+      "sourceNote": "chapters/chemistry/07 - Carbon and Its Compounds.html",
+      "sourceNoteTitle": "Carbon and Its Compounds"
+    },
+    {
+      "id": "chem.carbon.q9",
+      "subject": "chemistry",
+      "chapter": 7,
+      "chapterTitle": "Carbon and Its Compounds",
+      "difficulty": "apply",
+      "question": "In saponification, an ester is treated with a base such as NaOH. Which pair of products does the chapter give for CH\u2083COOC\u2082H\u2085 + NaOH?",
+      "options": [
+        {
+          "key": "A",
+          "text": "CH\u2083COONa + C\u2082H\u2085OH"
+        },
+        {
+          "key": "B",
+          "text": "CH\u2083OH + C\u2082H\u2085COONa"
+        },
+        {
+          "key": "C",
+          "text": "CH\u2083COOH + C\u2082H\u2085ONa"
+        },
+        {
+          "key": "D",
+          "text": "CH\u2083ONa + C\u2082H\u2085COOH"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The \"Saponification Reaction\" section gives the equation:\n\n**CH\u2083COOC\u2082H\u2085 (NaOH) \u2192 CH\u2083COONa + C\u2082H\u2085OH**\n\nThe chapter explicitly states that \"an ester is treated with a base (like sodium hydroxide) that breaks it down into an **alcohol and a sodium salt of a carboxylic acid**.\"\n\n**Trap:** B swaps the alkyl fragments by pretending the ester is \"reversed.\" C keeps the ester bonds intact (no reaction). D likewise leaves the molecule intact with Na\u207a swapped in.",
+      "wikilink": "[[../../chemistry/07 - Carbon and Its Compounds#Saponification Reaction]]",
+      "sourceNote": "chapters/chemistry/07 - Carbon and Its Compounds.html",
+      "sourceNoteTitle": "Carbon and Its Compounds"
+    },
+    {
+      "id": "chem.carbon.q10",
+      "subject": "chemistry",
+      "chapter": 7,
+      "chapterTitle": "Carbon and Its Compounds",
+      "difficulty": "apply",
+      "question": "Which of the following correctly matches reagents to the oxidation of ethanol (CH\u2083CH\u2082OH) to ethanoic acid in the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "H\u207a/KMnO\u2084 or H\u207a/K\u2082Cr\u2082O\u2087"
+        },
+        {
+          "key": "B",
+          "text": "Conc. H\u2082SO\u2084 at 443 K (dehydration)"
+        },
+        {
+          "key": "C",
+          "text": "Sodium metal (Na)"
+        },
+        {
+          "key": "D",
+          "text": "Nickel or palladium catalyst with H\u2082"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The chapter shows the oxidation pathway:\n\n**CH\u2083-CH\u2082-OH \u2192 (H\u207a/KMnO\u2084 OR H\u207a/K\u2082Cr\u2082O\u2087) \u2192 CH\u2083-CO-OH (Ethanoic acid)**\n\nBoth oxidising agents are listed together.\n\n**Trap:** B is the **dehydration** step (Conc. H\u2082SO\u2084 at 443 K \u2192 ethene), not oxidation. C is the sodium-reaction step (\u2192 sodium ethoxide + H\u2082). D is the addition reaction used on unsaturated hydrocarbons.",
+      "wikilink": "[[../../chemistry/07 - Carbon and Its Compounds#Oxidation of Alcohol to Ethanoic Acid]]",
+      "sourceNote": "chapters/chemistry/07 - Carbon and Its Compounds.html",
+      "sourceNoteTitle": "Carbon and Its Compounds"
+    },
+    {
+      "id": "chem.carbon.q11",
+      "subject": "chemistry",
+      "chapter": 7,
+      "chapterTitle": "Carbon and Its Compounds",
+      "difficulty": "apply",
+      "question": "According to the chapter, why does soap fail to clean effectively in **hard water**?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hard water neutralises the soap completely into salt and water"
+        },
+        {
+          "key": "B",
+          "text": "Soap reacts to form insoluble calcium and magnesium salts called **scum**"
+        },
+        {
+          "key": "C",
+          "text": "Hard water dissolves the soap's micelles and releases trapped dirt back"
+        },
+        {
+          "key": "D",
+          "text": "The Ca\u00b2\u207a and Mg\u00b2\u207a ions convert soap into detergent molecules"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The \"Soap does not work in\" section states: \"**Hard water:** Because in hard water it reacts to form Calcium & Magnesium salts, which is an insoluble substance called **Scum**.\"\n\n**Trap:** A uses neutralisation language that fits acid\u2013base reactions, not hard-water chemistry. C inverts the mechanism (soap works because micelles trap dirt; releasing dirt would actually make cleaning effective). D is a fabricated transformation \u2014 Ca/Mg don't convert soap into detergent.",
+      "wikilink": "[[../../chemistry/07 - Carbon and Its Compounds#Soap does not work in]]",
+      "sourceNote": "chapters/chemistry/07 - Carbon and Its Compounds.html",
+      "sourceNoteTitle": "Carbon and Its Compounds"
+    },
+    {
+      "id": "chem.carbon.q12",
+      "subject": "chemistry",
+      "chapter": 7,
+      "chapterTitle": "Carbon and Its Compounds",
+      "difficulty": "tricky",
+      "question": "Consider the following statements about diamond and graphite:\n1. Diamond is the hardest naturally occurring substance.\n2. Graphite is a good conductor of heat and electricity.\n3. Graphite is the most stable form of carbon.\n\nWhich of the following is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Only statements 1 and 2"
+        },
+        {
+          "key": "B",
+          "text": "Only statements 1 and 3"
+        },
+        {
+          "key": "C",
+          "text": "Only statements 2 and 3"
+        },
+        {
+          "key": "D",
+          "text": "Statements 1, 2, and 3"
+        }
+      ],
+      "answer": "D",
+      "explanation": "All three statements are stated explicitly:\n- Diamond entry: \"Diamond is the **hardest naturally occurring substance**.\"\n- Graphite entry: \"Graphite is a **good conductor of heat and electricity**.\"\n- Graphite entry: \"It is the **most stable form of carbon**.\"\n\n**Trap:** A common misconception is that diamonds and graphite both conduct electricity \u2014 but the chapter says diamond is a \"bad conductor.\" The \"stability\" claim is also an easy trap (students associate stability with hardness, which the source ties to diamond, not graphite).",
+      "wikilink": "[[../../chemistry/07 - Carbon and Its Compounds#Diamond]]",
+      "sourceNote": "chapters/chemistry/07 - Carbon and Its Compounds.html",
+      "sourceNoteTitle": "Carbon and Its Compounds"
+    },
+    {
+      "id": "chem.carbon.q13",
+      "subject": "chemistry",
+      "chapter": 7,
+      "chapterTitle": "Carbon and Its Compounds",
+      "difficulty": "tricky",
+      "question": "Using the chapter's trick formula `2^(n\u22124) + 1`, how many isomers does the chapter list for **octane** (n = 8)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "9"
+        },
+        {
+          "key": "B",
+          "text": "16"
+        },
+        {
+          "key": "C",
+          "text": "18"
+        },
+        {
+          "key": "D",
+          "text": "35"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The chapter's worked examples list:\n\n- Hexane (n=6): 2^(6\u22124) + 1 = 2\u00b2 + 1 = **5**\n- Heptane (n=7): 2^(7\u22124) + 1 = 2\u00b3 + 1 = **9**\n- Octane (n=8): 2^(8\u22124) + 1 = 2\u2074 + 1 = 16 + 1 + 1 = **18**\n- Nonane (n=9): 2^(9\u22124) + 1 = 2\u2075 + 1 = 32 + 1 + 2 = **35**\n\nSo octane is given as **18** (the chapter's own number, which equals 2\u2074 + 1 + 1 in its format).\n\n**Trap:** B (16) uses 2\u2074 without the + 1 + 1 the chapter adds. A (9) is heptane's value. D (35) is nonane's value.",
+      "wikilink": "[[../../chemistry/07 - Carbon and Its Compounds#Isomers In]]",
+      "sourceNote": "chapters/chemistry/07 - Carbon and Its Compounds.html",
+      "sourceNoteTitle": "Carbon and Its Compounds"
+    },
+    {
+      "id": "chem.carbon.q14",
+      "subject": "chemistry",
+      "chapter": 7,
+      "chapterTitle": "Carbon and Its Compounds",
+      "difficulty": "tricky",
+      "question": "Which combination correctly distinguishes **denatured spirit** from **ethanol** and explains how one recognises it, according to the chapter?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Denatured spirit is pure ethanol with extra water; recognised by its clear colour"
+        },
+        {
+          "key": "B",
+          "text": "Denatured spirit is ethanol made unfit for drinking by adding methanol and a **blue dye** for easy recognition"
+        },
+        {
+          "key": "C",
+          "text": "Denatured spirit is methanol with ethanol; recognised by a foul smell only"
+        },
+        {
+          "key": "D",
+          "text": "Denatured spirit is ethanol with sodium ethoxide; recognised by effervescence"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The \"Important Carbon Compounds \u2192 Ethanol\" section defines denatured spirit as: \"ethanol which is made unfit for drinking by adding poisonous substances like **methanol** that imparts a bad taste, foul smell, or colour. A **blue dye** is also added to it, so that it is easily recognized.\"\n\n**Trap:** A misstates denatured spirit as ethanol + water \u2014 water alone wouldn't make it unfit for drinking. C reverses the proportions and drops the blue dye. D fabricates a \"sodium ethoxide\" ingredient (sodium ethoxide is the product of ethanol + Na, not of denaturation).",
+      "wikilink": "[[../../chemistry/07 - Carbon and Its Compounds#Ethanol]]",
+      "sourceNote": "chapters/chemistry/07 - Carbon and Its Compounds.html",
+      "sourceNoteTitle": "Carbon and Its Compounds"
     },
     {
       "id": "pol.making_of_constitution.q1",
@@ -25168,7 +27958,7 @@
         }
       ],
       "answer": "D",
-      "explanation": "The chapter states: \"Bhabar \u2014 It is a narrow belt (8\u201316 km wide) lying south of the Shiwaliks. Rivers coming down from the mountains deposit stones and pebbles, due to which it disappears.\"\n\n**Trap:** Candidates confuse Bhabar with Terai (the marshy belt immediately south of it) because Terai is where streams \"reappear\" \u2014 but Bhabar is the disappearing belt, Terai is the reappearing belt.",
+      "explanation": "The chapter states: \"Bhabar \u00e2\u20ac\u201d It is a narrow belt (8\u00e2\u20ac\u201c16 km wide) lying south of the Shiwaliks. Rivers coming down from the mountains deposit stones and pebbles, due to which it disappears.\"\n\n**Trap:** Candidates confuse Bhabar with Terai (the marshy belt immediately south of it) because Terai is where streams \"reappear\" \u00e2\u20ac\u201d but Bhabar is the disappearing belt, Terai is the reappearing belt.",
       "wikilink": "[[../../geography/11 - Northern Plain and Islands#Northern Plains]]",
       "sourceNote": "chapters/geography/11 - Northern Plain and Islands.html",
       "sourceNoteTitle": "Northern Plain and Islands"
@@ -25199,7 +27989,7 @@
         }
       ],
       "answer": "B",
-      "explanation": "The chapter states: \"Khadar (New Alluvial Soil) \u2014 newly deposited floodplain, renewed annually by river floods\u2026 more fertile than Bhangar.\" \"Bhangar (Old Alluvial Soil) \u2014 older, elevated floodplain with deposits over thousands of years\u2026 more calcareous (kankar-rich) deposits, making it less fertile.\"\n\n**Trap:** A reverses the two \u2014 the common trap because \"old\" and \"elevated\" sound more important than \"new.\" Candidates must remember: Khadar = new + fertile, Bhangar = old + kankar + less fertile.",
+      "explanation": "The chapter states: \"Khadar (New Alluvial Soil) \u00e2\u20ac\u201d newly deposited floodplain, renewed annually by river floods\u00e2\u20ac\u00a6 more fertile than Bhangar.\" \"Bhangar (Old Alluvial Soil) \u00e2\u20ac\u201d older, elevated floodplain with deposits over thousands of years\u00e2\u20ac\u00a6 more calcareous (kankar-rich) deposits, making it less fertile.\"\n\n**Trap:** A reverses the two \u00e2\u20ac\u201d the common trap because \"old\" and \"elevated\" sound more important than \"new.\" Candidates must remember: Khadar = new + fertile, Bhangar = old + kankar + less fertile.",
       "wikilink": "[[../../geography/11 - Northern Plain and Islands#Northern Plains]]",
       "sourceNote": "chapters/geography/11 - Northern Plain and Islands.html",
       "sourceNoteTitle": "Northern Plain and Islands"
@@ -25261,7 +28051,7 @@
         }
       ],
       "answer": "B",
-      "explanation": "The chapter states: \"Western Coastal Plains \u2014 They are narrow in the middle, wider at the ends (Dumbbell-like shape)\u2026 They are famous for formation of backwaters (Kayals), e.g. Punnamada Kayal in Kerala (famous for the Nehru Trophy Boat Race).\"\n\n**Trap:** The Eastern Coastal Plain is wider and has emerging coastline + deltas, not backwaters. Utkal Coast is a sub-section of the Eastern Coastal Plain along Odisha. Northern Circars is an older name for the Andhra coast.",
+      "explanation": "The chapter states: \"Western Coastal Plains \u00e2\u20ac\u201d They are narrow in the middle, wider at the ends (Dumbbell-like shape)\u00e2\u20ac\u00a6 They are famous for formation of backwaters (Kayals), e.g. Punnamada Kayal in Kerala (famous for the Nehru Trophy Boat Race).\"\n\n**Trap:** The Eastern Coastal Plain is wider and has emerging coastline + deltas, not backwaters. Utkal Coast is a sub-section of the Eastern Coastal Plain along Odisha. Northern Circars is an older name for the Andhra coast.",
       "wikilink": "[[../../geography/11 - Northern Plain and Islands#Coastal Plains of India]]",
       "sourceNote": "chapters/geography/11 - Northern Plain and Islands.html",
       "sourceNoteTitle": "Northern Plain and Islands"
@@ -25323,7 +28113,7 @@
         }
       ],
       "answer": "B",
-      "explanation": "The chapter states: \"Privately managed port: 1 \u2192 Kamarajar port (located in Ennore in Tamil Nadu) is the only corporate-owned port by GOI.\"\n\n**Trap:** Vizhinjam is described in the chapter as India first transshipment port (Kerala), not a privately managed major port \u2014 it is a new greenfield port. JNPT and Mormugao are public major ports under the Major Port Authorities Act.",
+      "explanation": "The chapter states: \"Privately managed port: 1 \u00e2\u2020\u2019 Kamarajar port (located in Ennore in Tamil Nadu) is the only corporate-owned port by GOI.\"\n\n**Trap:** Vizhinjam is described in the chapter as India first transshipment port (Kerala), not a privately managed major port \u00e2\u20ac\u201d it is a new greenfield port. JNPT and Mormugao are public major ports under the Major Port Authorities Act.",
       "wikilink": "[[../../geography/11 - Northern Plain and Islands#Ports]]",
       "sourceNote": "chapters/geography/11 - Northern Plain and Islands.html",
       "sourceNoteTitle": "Northern Plain and Islands"
@@ -25354,7 +28144,7 @@
         }
       ],
       "answer": "C",
-      "explanation": "The chapter lists the Ten Degree Channel as separating Andaman and Nicobar (Andamans in the north, Nicobars in the south). The 8 degree Channel separates Lakshadweep and Maldives, the 9 degree Channel separates Lakshadweep and Minicoy, and the 11 degree Channel separates Aminidivi and Cannanore (mainland India).\n\n**Trap:** All four channels listed are 8, 9, 10 and 11 degrees \u2014 candidates easily mix up which separates what. The 10 degree Channel is the Andaman-Nicobar divide.",
+      "explanation": "The chapter lists the Ten Degree Channel as separating Andaman and Nicobar (Andamans in the north, Nicobars in the south). The 8\u00b0 Channel separates Lakshadweep and Maldives, the 9\u00b0 Channel separates Lakshadweep and Minicoy, and the 11\u00b0 Channel separates Aminidivi and Cannanore (mainland India).\n\n**Trap:** All four channels listed are 8, 9, 10 and 11 degrees \u00e2\u20ac\u201d candidates easily mix up which separates what. The 10\u00b0 Channel is the Andaman-Nicobar divide.",
       "wikilink": "[[../../geography/11 - Northern Plain and Islands#Andaman and Nicobar Islands]]",
       "sourceNote": "chapters/geography/11 - Northern Plain and Islands.html",
       "sourceNoteTitle": "Northern Plain and Islands"
@@ -25369,23 +28159,23 @@
       "options": [
         {
           "key": "A",
-          "text": "Katchatheevu \u2014 Palk Strait (India\u2013Sri Lanka dispute)"
+          "text": "Katchatheevu \u00e2\u20ac\u201d Palk Strait (India\u00e2\u20ac\u201cSri Lanka dispute)"
         },
         {
           "key": "B",
-          "text": "New Moore Island \u2014 India\u2013Pakistan dispute"
+          "text": "New Moore Island \u00e2\u20ac\u201d India\u00e2\u20ac\u201cPakistan dispute"
         },
         {
           "key": "C",
-          "text": "Sir Creek \u2014 India\u2013Bangladesh dispute"
+          "text": "Sir Creek \u00e2\u20ac\u201d India\u00e2\u20ac\u201cBangladesh dispute"
         },
         {
           "key": "D",
-          "text": "Wheeler Island \u2014 missile testing site in West Bengal"
+          "text": "Wheeler Island \u00e2\u20ac\u201d missile testing site in West Bengal"
         }
       ],
       "answer": "A",
-      "explanation": "The chapter states: \"Katchatheevu Island (small uninhabited island in Palk Strait): Between India and Sri Lanka.\" New Moore Island is the India\u2013Bangladesh dispute, Sir Creek is India\u2013Pakistan, and Wheeler Island (now APJ Abdul Kalam Island) is in Odisha (Chandipur) \u2014 not West Bengal.\n\n**Trap:** B and C are swapped \u2014 candidates mix up \"New Moore\" with \"Sir Creek.\" D mislocates Wheeler Island to West Bengal instead of Odisha.",
+      "explanation": "The chapter states: \"Katchatheevu Island (small uninhabited island in Palk Strait): Between India and Sri Lanka.\" New Moore Island is the India\u00e2\u20ac\u201cBangladesh dispute, Sir Creek is India\u00e2\u20ac\u201cPakistan, and Wheeler Island (now APJ Abdul Kalam Island) is in Odisha (Chandipur) \u00e2\u20ac\u201d not West Bengal.\n\n**Trap:** B and C are swapped \u00e2\u20ac\u201d candidates mix up \"New Moore\" with \"Sir Creek.\" D mislocates Wheeler Island to West Bengal instead of Odisha.",
       "wikilink": "[[../../geography/11 - Northern Plain and Islands#Important Disputed Islands]]",
       "sourceNote": "chapters/geography/11 - Northern Plain and Islands.html",
       "sourceNoteTitle": "Northern Plain and Islands"
@@ -25396,7 +28186,7 @@
       "chapter": 11,
       "chapterTitle": "Northern Plain and Islands",
       "difficulty": "tricky",
-      "question": "Which of the following sequences correctly arranges the Southern-Northern latitudes of the Lakshadweep channels: 8 degree Channel, 9 degree Channel, 11 degree Channel, from south to north?",
+      "question": "Which of the following sequences correctly arranges the Southern-Northern latitudes of the Lakshadweep channels: 8\u00b0 Channel, 9\u00b0 Channel, 11\u00b0 Channel, from south to north?",
       "options": [
         {
           "key": "A",
@@ -25416,7 +28206,7 @@
         }
       ],
       "answer": "A",
-      "explanation": "The 8 degree Channel is the southernmost (between Lakshadweep and Maldives/Minicoy). North of it, the 9 degree Channel separates Lakshadweep and Minicoy. The 11 degree Channel is the northernmost, separating Aminidivi (Lakshadweep) from Cannanore (Kerala mainland). So south-to-north: 8 -> 9 -> 11.\n\n**Trap:** The numeric order (8, 9, 11) matches the geographic south-to-north order in this case \u2014 but candidates must still verify the *separations*, not just the latitudes. A looks trivial, but the trap is memorising 8 and 9 without remembering which one separates what.",
+      "explanation": "The 8\u00b0 Channel is the southernmost (between Lakshadweep and Maldives/Minicoy). North of it, the 9\u00b0 Channel separates Lakshadweep and Minicoy. The 11\u00b0 Channel is the northernmost, separating Aminidivi (Lakshadweep) from Cannanore (Kerala mainland). So south-to-north: 8 -> 9 -> 11.\n\n**Trap:** The numeric order (8, 9, 11) matches the geographic south-to-north order in this case \u00e2\u20ac\u201d but candidates must still verify the *separations*, not just the latitudes. A looks trivial, but the trap is memorising 8 and 9 without remembering which one separates what.",
       "wikilink": "[[../../geography/11 - Northern Plain and Islands#Lakshadweep]]",
       "sourceNote": "chapters/geography/11 - Northern Plain and Islands.html",
       "sourceNoteTitle": "Northern Plain and Islands"
@@ -25447,7 +28237,7 @@
         }
       ],
       "answer": "D",
-      "explanation": "Statement 1 is false: Punnamada Kayal (backwater) lies along the Western Coast (Kerala), not the eastern Coromandel coast. Statement 2 is also false: the Western Coastal Plains are submerged coastal plains, but rivers there do *not* form deltas \u2014 they form estuaries. The chapter states: \"Rivers do not form deltas because they flow quickly into the sea.\" Deltas form on the Eastern Coastal Plain.\n\n**Trap:** Both statements sound plausible individually \u2014 backwaters are associated with Kerala, and \"submerged coast\" sounds like submerged sediment (i.e. deltas). Candidates who only half-remember pick B or C.",
+      "explanation": "Statement 1 is false: Punnamada Kayal (backwater) lies along the Western Coast (Kerala), not the eastern Coromandel coast. Statement 2 is also false: the Western Coastal Plains are submerged coastal plains, but rivers there do *not* form deltas \u00e2\u20ac\u201d they form estuaries. The chapter states: \"Rivers do not form deltas because they flow quickly into the sea.\" Deltas form on the Eastern Coastal Plain.\n\n**Trap:** Both statements sound plausible individually \u00e2\u20ac\u201d backwaters are associated with Kerala, and \"submerged coast\" sounds like submerged sediment (i.e. deltas). Candidates who only half-remember pick B or C.",
       "wikilink": "[[../../geography/11 - Northern Plain and Islands#Coastal Plains of India]]",
       "sourceNote": "chapters/geography/11 - Northern Plain and Islands.html",
       "sourceNoteTitle": "Northern Plain and Islands"
@@ -25478,7 +28268,7 @@
         }
       ],
       "answer": "A",
-      "explanation": "The chapter states: \"Pygmalion Point, now known as Indira Point, is the southernmost point of Indian territory that is located in the Great Nicobar Island of Andaman and Nicobar Islands.\" Great Nicobar is the southernmost island of the Nicobar group, so R correctly explains *why* Indira Point is the southernmost point of Indian territory \u2014 both A and R are true and R is the correct explanation.\n\n**Trap:** Some candidates mistakenly place Indira Point on Little Andaman or Car Nicobar. Candidates who think Indira Point is \"just a renamed place\" miss the geography.",
+      "explanation": "The chapter states: \"Pygmalion Point, now known as Indira Point, is the southernmost point of Indian territory that is located in the Great Nicobar Island of Andaman and Nicobar Islands.\" Great Nicobar is the southernmost island of the Nicobar group, so R correctly explains *why* Indira Point is the southernmost point of Indian territory \u00e2\u20ac\u201d both A and R are true and R is the correct explanation.\n\n**Trap:** Some candidates mistakenly place Indira Point on Little Andaman or Car Nicobar. Candidates who think Indira Point is \"just a renamed place\" miss the geography.",
       "wikilink": "[[../../geography/11 - Northern Plain and Islands#Some Facts]]",
       "sourceNote": "chapters/geography/11 - Northern Plain and Islands.html",
       "sourceNoteTitle": "Northern Plain and Islands"
@@ -28953,6 +31743,50 @@
       "tricky": 55
     },
     {
+      "subject": "chemistry",
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Matter",
+          "questions": 12
+        },
+        {
+          "chapter": 2,
+          "title": "Atom and Its Structure",
+          "questions": 12
+        },
+        {
+          "chapter": 3,
+          "title": "Periodic Table",
+          "questions": 14
+        },
+        {
+          "chapter": 4,
+          "title": "Chemical Reactions",
+          "questions": 14
+        },
+        {
+          "chapter": 5,
+          "title": "Metals and Non-Metals",
+          "questions": 12
+        },
+        {
+          "chapter": 6,
+          "title": "Acid, Base and Salt",
+          "questions": 12
+        },
+        {
+          "chapter": 7,
+          "title": "Carbon and Its Compounds",
+          "questions": 14
+        }
+      ],
+      "total": 90,
+      "recall": 31,
+      "apply": 38,
+      "tricky": 21
+    },
+    {
       "subject": "polity",
       "chapters": [
         {
@@ -29270,6 +32104,6 @@
     "wrong": -0.5,
     "unattempted": 0.0
   },
-  "hash": "e30b6c932a64",
-  "count": 930
+  "hash": "249d4c7cb122",
+  "count": 1020
 }

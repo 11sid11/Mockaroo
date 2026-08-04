@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Northern Plain and Islands â€” Questions"
 subject: geography
 chapter: 11
