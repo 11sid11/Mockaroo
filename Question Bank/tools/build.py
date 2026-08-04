@@ -498,7 +498,7 @@ def build():
     }, indent=2), encoding="utf-8")
 
     if PWA_SRC.exists():
-        shutil.copytree(PWA_SRC, DIST / "app")
+        shutil.copytree(PWA_SRC, DIST, dirs_exist_ok=True)
 
     chapters_built = 0
     for sub in SUBJECT_DIRS:
@@ -567,6 +567,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 

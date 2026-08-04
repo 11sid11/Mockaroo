@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1216">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Mockaroo — SSC CGL Mock Tests</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="./icons/icon.svg">
+<link rel="apple-touch-icon" href="./icons/icon.svg">
+<link rel="stylesheet" href="./app/css/app.css">
+</head>
+<body>
+<div class="app">
+  <div class="topbar">
+    <a href="#/home" class="brand" style="color:inherit;text-decoration:none">Mockaroo</a>
+    <a class="btn" href="#/home">Home</a>
+    <a class="btn" href="#/subjects">Subjects</a>
+    <a class="btn" href="#/history">History</a>
+    <a class="btn" href="#/stats">Stats</a>
+    <span class="spacer"></span>
+    <button id="install-btn" class="btn btn-primary hide">Install app</button>
+    <a class="btn" href="#/settings" title="Settings">⚙</a>
+  </div>
+  <main id="view">
+    <div class="card">
+      <h1>Loading…</h1>
+      <p class="muted">Fetching question bank.</p>
+    </div>
+  </main>
+</div>
+<script type="module" src="./app/js/app.js"></script>
+</body>
+</html>

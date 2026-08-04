@@ -20,5 +20,20 @@ _obsidian/
 *.log
 .env
 
+# Source vault chapters (the published artefact is the rendered HTML in dist/)
+/biology/
+/chemistry/
+/economics/
+/Environment/
+/geography/
+/history/
+/physics/
+/polity/
+/static-gk/
+/_MOCs/
+/Mindmap/
+/Index.md
+/README.md
+
 # Don't ignore dist/ — it's the deployable artefact
 !dist/

@@ -1,0 +1,20 @@
+{
+  "name": "Mockaroo — SSC CGL Mock Tests",
+  "short_name": "Mockaroo",
+  "description": "SSC CGL Tier-I mock tests from your Obsidian vault. Local-first, offline-capable.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0f1216",
+  "theme_color": "#0f1216",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"]
+}
