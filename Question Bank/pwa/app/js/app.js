@@ -119,56 +119,123 @@ function renderHome(view) {
   const total = state.data ? state.data.count : 0;
   const subjects = state.subjects.length;
   const last = history[0];
+  const testsTaken = history.length;
 
-  const hero = el('div', { class: 'card' }, [
-    el('h1', {}, ['Mockaroo']),
-    el('p', { class: 'lede' }, [
-      'A local-first, offline-capable SSC CGL Tier-I mock test PWA. Built from your Obsidian vault.',
-    ]),
-    el('div', { class: 'kpis' }, [
-      el('div', { class: 'kpi' }, [el('div', { class: 'v' }, [String(total)]), el('div', { class: 'l' }, ['Questions'])]) ,
-      el('div', { class: 'kpi' }, [el('div', { class: 'v' }, [String(subjects)]), el('div', { class: 'l' }, ['Subjects'])]) ,
-      el('div', { class: 'kpi' }, [el('div', { class: 'v' }, [String(history.length)]), el('div', { class: 'l' }, ['Tests taken'])]) ,
-      el('div', { class: 'kpi' }, [
-        el('div', { class: 'v' }, [last ? last.result.score + '/' + last.result.max : '—']),
-        el('div', { class: 'l' }, ['Last score']),
+  let delta = null;
+  if (history.length >= 2) {
+    const recent = history.slice(0, 7);
+    const older = history.slice(7, 14);
+    if (older.length) {
+      const avg = (xs) => xs.reduce((s, h) => s + h.result.accuracy, 0) / xs.length;
+      const d = (avg(recent) - avg(older)) * 100;
+      delta = { value: Math.round(d), positive: d >= 0 };
+    }
+  }
+
+  const lastScoreText = last ? last.result.score + '/' + last.result.max : '\u2014';
+  const lastAccText = last ? Math.round(last.result.accuracy * 100) + '%' : '\u2014';
+
+  const hero = el('div', { class: 'hero' }, [
+    el('div', { class: 'hero-inner' }, [
+      el('div', { class: 'eyebrow' }, ['// command center']),
+      el('h1', {}, ['Tactical mock tests for SSC CGL.']),
+      el('p', { class: 'hero-meta' }, [
+        'A local-first, offline-capable practice PWA built from your Obsidian vault. Take a timed mock, drill a subject, or revise at your own pace \u2014 every answer you pick is scored against the real exam pattern.',
+      ]),
+      el('div', { class: 'hero-cta' }, [
+        el('button', { class: 'btn btn-primary btn-large', onclick: () => go('#/setup') },
+          ['Start a new test', el('span', { class: 'arrow' }, ['\u2192'])]),
+        el('button', { class: 'btn btn-large', onclick: () => go('#/subjects') }, ['Browse subjects']),
+        el('button', { class: 'btn btn-large btn-ghost', onclick: () => go('#/stats') }, ['View stats']),
+      ]),
+      el('div', { class: 'kpis' }, [
+        el('div', { class: 'kpi accent' }, [
+          el('div', { class: 'v' }, [String(total)]),
+          el('div', { class: 'l' }, ['Questions in bank']),
+        ]),
+        el('div', { class: 'kpi' }, [
+          el('div', { class: 'v' }, [String(subjects)]),
+          el('div', { class: 'l' }, ['Subjects']),
+        ]),
+        el('div', { class: 'kpi' }, [
+          el('div', { class: 'v' }, [String(testsTaken)]),
+          el('div', { class: 'l' }, ['Tests taken']),
+        ]),
+        el('div', { class: 'kpi' }, [
+          el('div', { class: 'v' }, [lastScoreText]),
+          el('div', { class: 'l' }, [last ? 'Last score \u00b7 ' + lastAccText : 'Last score']),
+          delta ? el('div', { class: 'delta ' + (delta.positive ? '' : 'bad') },
+            [(delta.positive ? '\u25b2 +' : '\u25bc ') + Math.abs(delta.value) + '%']) : null,
+        ]),
       ]),
     ]),
   ]);
-
-  const inProgress = getInProgress();
-  const actions = el('div', { class: 'card' }, [
-    el('h2', {}, ['Start a test']),
-    el('div', { class: 'btn-row' }, [
-      el('button', { class: 'btn btn-primary', onclick: () => go('#/setup') }, ['New test →']),
-      el('button', { class: 'btn', onclick: () => go('#/subjects') }, ['Browse subjects']),
-      el('button', { class: 'btn', onclick: () => go('#/history') }, ['History (' + history.length + ')']),
-      el('button', { class: 'btn', onclick: () => go('#/stats') }, ['Stats & charts']),
+  const actionTiles = el('div', { class: 'action-grid' }, [
+    el('button', { class: 'action-tile', onclick: () => go('#/setup') }, [
+      el('span', { class: 'ico', html: '<svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4" /></svg>' }),
+      el('h3', {}, ['Start a new test']),
+      el('p', {}, ['Pick subject, count, mode and difficulty. Score yourself against the SSC CGL pattern.']),
     ]),
-    inProgress
-      ? el('div', { class: 'mt-4 muted' }, [
-          'You have an unfinished test from ',
-          new Date(inProgress.startedAt).toLocaleString(),
-          ' — open it from the setup screen.',
-        ])
-      : null,
+    el('button', { class: 'action-tile', onclick: () => go('#/subjects') }, [
+      el('span', { class: 'ico', html: '<svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2" /><line x1="3" y1="10" x2="21" y2="10" /></svg>' }),
+      el('h3', {}, ['Browse subjects']),
+      el('p', {}, ['Drill one subject chapter by chapter. ' + subjects + ' subjects, ' + total + ' questions ready.']),
+    ]),
+    el('button', { class: 'action-tile', onclick: () => go('#/stats') }, [
+      el('span', { class: 'ico', html: '<svg viewBox="0 0 24 24"><polyline points="3 17 9 11 13 15 21 7" /><circle cx="9" cy="11" r="1.5" /><circle cx="13" cy="15" r="1.5" /></svg>' }),
+      el('h3', {}, ['Stats & trends']),
+      el('p', {}, [testsTaken ? 'Charts across ' + testsTaken + ' test' + (testsTaken === 1 ? '' : 's') + '.' : 'Take a few tests to see your accuracy and speed trends.']),
+    ]),
   ]);
 
-  const weak = weakTopics(history, 3);
-  const weakCard = weak.length
-    ? el('div', { class: 'card' }, [
-        el('h2', {}, ['Weak topics — revise these']),
-        el('ul', { class: 'plain' }, weak.map((w) =>
-          el('li', {}, [
-            el('span', { style: { width: '12px', height: '12px', borderRadius: '3px', background: subjectColor(w.subject), display: 'inline-block' } }),
-            el('span', { class: 'grow' }, [w.subject + ' — ' + Math.round(w.accuracy * 100) + '% accuracy']),
-            el('span', { class: 'muted' }, [w.attempted + ' attempted']),
-          ])
-        )),
-      ])
-    : null;
+  const actionsSection = el('div', {}, [
+    el('div', { class: 'section-title' }, [
+      el('h2', {}, ['Quick actions']),
+      el('span', { class: 'more' }, ['pick one \u2192']),
+    ]),
+    actionTiles,
+  ]);
 
-  view.append(hero, actions, weakCard);
+  let resumeBanner = null;
+  const inProgress = getInProgress();
+  if (inProgress) {
+    const remaining = inProgress.remaining != null ? Math.round(inProgress.remaining / 60) + ' min' : '\u2014';
+    resumeBanner = el('div', { class: 'card featured' }, [
+      el('div', { class: 'eyebrow' }, ['// resume']),
+      el('h3', {}, ['Unfinished test detected']),
+      el('p', { class: 'muted' }, [
+        (inProgress.cfg.label || 'Mock test') + ' \u00b7 ' + inProgress.cfg.mode + ' mode \u00b7 ' + inProgress.questions.length + ' qs \u00b7 ~' + remaining + ' left',
+      ]),
+      el('div', { class: 'btn-row mt-2' }, [
+        el('button', { class: 'btn btn-primary', onclick: () => resumeTest() }, ['Resume \u2192']),
+        el('button', { class: 'btn btn-danger', onclick: () => { if (confirm('Discard unfinished test?')) { clearInProgress(); render(); } } }, ['Discard']),
+      ]),
+    ]);
+  }
+
+  const weak = weakTopics(history, 3);
+  let weakCard = null;
+  if (weak.length) {
+    weakCard = el('div', { class: 'card' }, [
+      el('div', { class: 'section-title', style: { margin: '0 0 14px' } }, [
+        el('h2', {}, ['Weak topics \u2014 prioritise these']),
+        el('span', { class: 'more' }, [weak.length + ' flagged']),
+      ]),
+      el('ul', { class: 'plain' }, weak.map((w) =>
+        el('li', {}, [
+          el('span', { class: 'swatch', style: { background: subjectColor(w.subject) } }),
+          el('span', { class: 'grow' }, [w.subject + ' \u2014 ' + Math.round(w.accuracy * 100) + '% accuracy']),
+          el('span', { class: 'chip' }, [w.attempted + ' attempted']),
+          el('button', { class: 'btn btn-ghost', onclick: () => { sessionStorage.setItem('mockaroo.subject', w.subject); go('#/setup'); } }, ['Drill \u2192']),
+        ])
+      )),
+    ]);
+  }
+
+  view.append(hero);
+  if (resumeBanner) view.appendChild(resumeBanner);
+  view.appendChild(actionsSection);
+  if (weakCard) view.appendChild(weakCard);
 }
 
 function renderSubjects(view) {
@@ -306,40 +373,64 @@ function renderTest(view) {
 
   const wrap = el('div', { class: 'runner' });
 
-  const main = el('div', {});
-  const timerEl = el('div', { class: 'sticky-timer hide', id: 'timer-sticky' }, [
-    el('span', { class: 'muted' }, ['Time left']),
-    el('span', { class: 'timer-num', id: 'timer-num' }, ['00:00']),
-    el('span', { class: 'grow' }),
-    el('button', { class: 'btn btn-primary', onclick: () => confirmSubmit() }, ['Submit']),
+  // ====== THE SIGNATURE: live status strip ======
+  const answeredCount = r.answers.filter((a) => a != null).length;
+  const flaggedCount = r.flags.size;
+
+  const strip = el('div', { class: 'status-strip' }, [
+    el('div', { class: 'seg' }, [
+      el('div', { class: 'seg-label' }, ['// TIMER']),
+      el('div', { class: 'seg-val cyan', id: 'timer-num' }, [r.remaining() != null ? Timer.format(r.remaining()) : '00:00']),
+    ]),
+    el('div', { class: 'seg' }, [
+      el('div', { class: 'seg-label' }, ['// ANSWERED']),
+      el('div', { class: 'seg-val', id: 'answered-num' }, [String(answeredCount).padStart(2, '0') + ' / ' + String(r.total).padStart(2, '0')]),
+    ]),
+    el('div', { class: 'seg' }, [
+      el('div', { class: 'seg-label' }, ['// FLAGGED']),
+      el('div', { class: 'seg-val', id: 'flagged-num' }, [String(flaggedCount).padStart(2, '0')]),
+    ]),
+    el('div', { class: 'seg seg-progress' }, [
+      el('div', { class: 'seg-label' }, ['// PROGRESS']),
+      el('div', { class: 'progress-bar' }, [
+        el('div', { class: 'progress-fill', id: 'progress-fill', style: { width: (answeredCount / r.total * 100) + '%' } }),
+      ]),
+    ]),
+    el('button', { class: 'strip-submit', onclick: () => confirmSubmit() }, ['SUBMIT \u2192']),
   ]);
-  main.appendChild(timerEl);
+
+  const main = el('div', {});
+  main.appendChild(strip);
 
   const qcard = el('div', { class: 'qcard', id: 'qcard' });
   main.appendChild(qcard);
 
   const nav = el('div', { class: 'qnav' }, [
-    el('button', { class: 'btn', onclick: () => { r.prev(); paint(); } }, ['← Prev']),
-    el('button', { class: 'btn', onclick: () => { r.next(); paint(); } }, ['Next →']),
-    el('button', { class: 'btn', onclick: () => { r.flag(r.idx); paint(); } }, ['Flag']),
-    el('button', { class: 'btn btn-primary', onclick: () => confirmSubmit(), style: { marginLeft: 'auto' } }, ['Submit test']),
+    el('button', { class: 'btn', onclick: () => { r.prev(); paint(); } }, ['\u2190 Prev']),
+    el('button', { class: 'btn btn-ghost', onclick: () => { r.flag(r.idx); paint(); } }, ['\u2691 Flag']),
+    el('span', { class: 'grow' }),
+    el('button', { class: 'btn', onclick: () => { r.next(); paint(); } }, ['Next \u2192']),
   ]);
   main.appendChild(nav);
 
   const palette = el('div', { class: 'palette' }, [
-    el('h3', {}, ['Questions']),
+    el('h3', {}, [
+      el('span', {}, ['// Question map']),
+      el('span', { class: 'count' }, [String(r.total) + ' qs']),
+    ]),
     el('div', { class: 'palette-grid', id: 'palette-grid' }),
     el('div', { class: 'legend' }, [
-      el('div', {}, [el('span', { style: { background: 'var(--correct)' } }), 'Answered']),
-      el('div', {}, [el('span', { style: { background: 'var(--accent)' } }), 'Flagged']),
-      el('div', {}, [el('span', { style: { background: 'var(--panel-2)', border: '1px solid var(--border)' } }), 'Not visited']),
+      el('div', {}, [el('span', { class: 'swatch', style: { background: 'var(--good)' } }), ['Answered']]),
+      el('div', {}, [el('span', { class: 'swatch', style: { background: 'var(--warn)' } }), ['Flagged']]),
+      el('div', {}, [el('span', { class: 'swatch', style: { background: 'var(--bg-3)', border: '1px solid var(--line)' } }), ['Not visited']]),
+      el('div', {}, [el('span', { class: 'swatch', style: { background: 'var(--bg-3)', outline: '2px solid var(--cyan)' } }), ['Current']]),
     ]),
   ]);
 
   wrap.append(main, palette);
   view.appendChild(wrap);
 
-  // Tick handler (added once per render; harmless if duplicated)
+  // Tick handler — updates timer + the running counters
   document.addEventListener('timer:tick', (e) => {
     const t = $('#timer-num');
     if (!t) return;
@@ -349,21 +440,20 @@ function renderTest(view) {
     t.classList.toggle('danger', sec <= 60);
   });
 
-  // paint() and submit helpers come next
-
   function paint() {
     const q = r.questions[r.idx];
     const mode = r.cfg.mode;
     clear(qcard);
 
-    qcard.appendChild(el('div', { class: 'qmeta' }, [
+    // Question number + meta chips
+    const meta = el('div', { class: 'qmeta' }, [
       el('span', { class: 'chip', style: { color: subjectColor(q.subject), borderColor: subjectColor(q.subject) } }, [q.subject]),
-      el('span', { class: 'chip' }, ['Ch ' + q.chapter + ' · ' + q.chapterTitle]),
-      el('span', { class: 'chip' }, [q.difficulty]),
-      el('span', { class: 'grow' }),
-      el('span', { class: 'chip', style: { background: 'var(--accent)', color: 'var(--bg)', borderColor: 'var(--accent)' } }, [r.cfg.mode.toUpperCase()]),
-      el('span', { class: 'muted' }, ['Q ' + (r.idx + 1) + ' / ' + r.total]),
-    ]));
+      el('span', { class: 'chip' }, ['Ch ' + q.chapter + ' \u00b7 ' + q.chapterTitle]),
+      el('span', { class: 'chip ' + (q.difficulty === 'recall' ? 'accent' : q.difficulty === 'apply' ? 'purple' : 'warn') }, [q.difficulty]),
+      el('span', { class: 'chip', style: { background: 'var(--cyan)', color: 'var(--bg)', borderColor: 'var(--cyan)' } }, [r.cfg.mode.toUpperCase()]),
+    ]);
+    qcard.appendChild(meta);
+    qcard.appendChild(el('div', { class: 'qnum' }, ['Q ' + String(r.idx + 1).padStart(2, '0') + ' / ' + String(r.total).padStart(2, '0')]));
 
     const stemWrap = el('div', { class: 'qstem' });
     stemWrap.appendChild(renderStem(q.question));
@@ -375,7 +465,7 @@ function renderTest(view) {
       const li = el('li', {
         onclick: () => { r.answer(r.idx, key); paint(); },
       }, [
-        el('span', { class: 'key' }, [key + ')']),
+        el('span', { class: 'key' }, [key]),
         el('span', {}, [o.text]),
       ]);
       const userAnsweredHere = r.answers[r.idx] != null;
@@ -383,30 +473,28 @@ function renderTest(view) {
       if (showCorrectness) {
         if (key === q.answer) li.classList.add('correct');
         else if (key === r.answers[r.idx]) li.classList.add('wrong');
+        else li.classList.add('dim');
       } else if (userAnsweredHere && r.answers[r.idx] === key) {
         li.classList.add('selected');
       }
       opts.appendChild(li);
     });
     qcard.appendChild(opts);
-
     const userAnsweredHere = r.answers[r.idx] != null;
     const showFeedback = mode === 'revision' || (mode !== 'timed' && userAnsweredHere);
     if (showFeedback) {
       const fb = el('div', { class: 'qfeedback' });
-      fb.appendChild(el('div', {}, [
-        el('span', { class: 'label' }, ['Answer:']),
-        el('span', { class: 'ans' }, [' ' + q.answer + ' — ' + (q.options.find((o) => o.key === q.answer) || {}).text]),
+      fb.appendChild(el('div', { class: 'ans-line' }, [
+        'Correct answer: ',
+        el('span', { class: 'ans' }, [q.answer + ' \u2014 ' + (q.options.find((o) => o.key === q.answer) || {}).text]),
       ]));
       if (q.explanation) {
-        fb.appendChild(el('strong', { class: 'mt-2' }, ['Why:']));
-        const expl = el('div', { class: 'mt-2' });
-        expl.appendChild(renderStem(q.explanation));
-        fb.appendChild(expl);
+        fb.appendChild(el('div', { class: 'expl' }));
+        fb.lastChild.appendChild(renderStem(q.explanation));
       }
       if (q.sourceNote) {
         const link = el('a', { class: 'srclink', href: q.sourceNote, target: '_blank', rel: 'noopener' }, [
-          '→ Open source note: ' + (q.sourceNoteTitle || q.sourceNote),
+          '\u2192 Open source note: ' + (q.sourceNoteTitle || q.sourceNote),
         ]);
         fb.appendChild(link);
       }
@@ -427,36 +515,16 @@ function renderTest(view) {
       if (i === r.idx) b.classList.add('current');
       grid.appendChild(b);
     }
-  }
 
-  function confirmSubmit() {
-    const unanswered = r.answers.filter((a) => a == null).length;
-    const body = el('div', {}, [
-      el('p', {}, ['You have ' + unanswered + ' unanswered question(s). Submit anyway?']),
-    ]);
-    const yes = el('button', { class: 'btn btn-primary' }, ['Submit']);
-    yes.addEventListener('click', () => { document.querySelector('.modal-bg')?.remove(); finishAndShowResults(); });
-    const cancel = el('button', { class: 'btn' }, ['Keep going']);
-    cancel.addEventListener('click', (e) => e.target.closest('.modal-bg').remove());
-    modal('Submit test?', body, [cancel, yes]);
-  }
-
-  function finishAndShowResults() {
-    const rec = state.runner.finish();
-    if (!rec) return;
-    sessionStorage.setItem('mockaroo.lastResult', rec.id);
-    go('#/results/' + rec.id);
+    // Status strip live updates
+    const ac = $('#answered-num'); if (ac) ac.textContent = String(r.answers.filter((a) => a != null).length).padStart(2, '0') + ' / ' + String(r.total).padStart(2, '0');
+    const fc = $('#flagged-num'); if (fc) fc.textContent = String(r.flags.size).padStart(2, '0');
+    const pf = $('#progress-fill'); if (pf) pf.style.width = (r.answers.filter((a) => a != null).length / r.total * 100) + '%';
   }
 
   paint();
-
-  if (r.cfg.mode === 'timed') {
-    $('#timer-sticky').classList.remove('hide');
-  } else if (r.cfg.mode === 'chill') {
-    $('#timer-sticky').classList.remove('hide');
-    $('#timer-num').textContent = '∞';
-  }
 }
+
 
 // ---------- Results ----------
 
@@ -473,20 +541,23 @@ function renderResults(view, rest) {
   }
   const r = rec.result;
 
-  const hero = el('div', { class: 'card' }, [
+  const accPct = Math.round(r.accuracy * 100);
+  const verdictClass = accPct >= 75 ? 'good' : accPct >= 50 ? 'neutral' : 'bad';
+  const verdictText = accPct >= 75 ? 'Strong run' : accPct >= 50 ? 'Decent' : 'Needs work';
+  const hero = el('div', { class: 'card', style: { padding: 0, overflow: 'hidden' } }, [
     el('div', { class: 'score-hero' }, [
       el('div', { class: 'num' }, [String(r.score)]),
       el('div', { class: 'max' }, ['out of ' + r.max]),
+      el('div', { class: 'verdict ' + verdictClass }, [verdictText + ' · ' + accPct + '% accuracy']),
       el('div', { class: 'meta' }, [rec.label + ' · ' + rec.mode + ' mode · ' + new Date(rec.finishedAt).toLocaleString()]),
     ]),
     el('div', { class: 'kpis' }, [
-      el('div', { class: 'kpi' }, [el('div', { class: 'v', style: { color: 'var(--correct)' } }, [String(r.correct)]), el('div', { class: 'l' }, ['Correct'])]),
-      el('div', { class: 'kpi' }, [el('div', { class: 'v', style: { color: 'var(--wrong)' } }, [String(r.wrong)]), el('div', { class: 'l' }, ['Wrong'])]),
+      el('div', { class: 'kpi good' }, [el('div', { class: 'v' }, [String(r.correct)]), el('div', { class: 'l' }, ['Correct'])]),
+      el('div', { class: 'kpi bad' }, [el('div', { class: 'v' }, [String(r.wrong)]), el('div', { class: 'l' }, ['Wrong'])]),
       el('div', { class: 'kpi' }, [el('div', { class: 'v' }, [String(r.unattempted)]), el('div', { class: 'l' }, ['Skipped'])]),
-      el('div', { class: 'kpi' }, [el('div', { class: 'v' }, [Math.round(r.accuracy * 100) + '%']), el('div', { class: 'l' }, ['Accuracy'])]),
+      el('div', { class: 'kpi accent' }, [el('div', { class: 'v' }, [accPct + '%']), el('div', { class: 'l' }, ['Accuracy'])]),
     ]),
-  ]);
-  view.appendChild(hero);
+  ]);view.appendChild(hero);
 
   const subjs = Object.entries(r.bySubject);
   if (subjs.length) {

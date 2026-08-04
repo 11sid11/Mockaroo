@@ -1,5 +1,5 @@
 ﻿/* Mockaroo service worker â€” local-first, offline-capable. */
-const VERSION = 'mockaroo-v2';
+const VERSION = 'mockaroo-v3';
 const CORE = [
   './',
   './index.html',
