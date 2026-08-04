@@ -95,7 +95,7 @@ function bindHashRouter() {
 async function render() {
   const view = $('#view');
   clear(view);
-  // ?demo=test or ?demo=results preview helper
+  // ?demo=test or ?demo=results preview helper (sets hash directly)
   if (location.search.includes('demo=test') && !state.runner) {
     const qs = pickQuestions({ count: 10 });
     if (qs.length) {
@@ -104,12 +104,15 @@ async function render() {
         label: 'Demo run', subject: null,
       });
       state.runner.start();
-      location.hash = '#/test';
+      if (location.hash !== '#/test') { location.replace(location.pathname + location.search + '#/test'); return; }
     }
   }
   if (location.search.includes('demo=results')) {
     const rec = getHistory()[0];
-    if (rec) location.hash = '#/results/' + rec.id;
+    if (rec && (!location.hash || !location.hash.startsWith('#/results/'))) {
+      location.replace(location.pathname + location.search + '#/results/' + rec.id);
+      return;
+    }
   }
   const hash = location.hash || '#/home';
   const [_, route, ...rest] = hash.split('/');
