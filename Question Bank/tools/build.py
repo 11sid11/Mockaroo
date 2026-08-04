@@ -559,7 +559,7 @@ def md_to_html(md_text: str, title: str, subject: str = "") -> str:
         f'<title>{html_escape(title)} \u00b7 Mockaroo</title>\n'
         '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
-        '<link rel="stylesheet" href="../../app/css/chapter.css">\n'
+        '<link rel="stylesheet" href="../../app/css/chapter.css?v=2">\n'
         '</head><body>\n'
         '<div class="read-progress"></div>\n'
         '<nav class="chap-nav"><div class="chap-nav-inner">\n'
@@ -737,6 +737,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
