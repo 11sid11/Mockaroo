@@ -341,7 +341,7 @@ def md_to_html(md_text: str, title: str, subject: str = "") -> str:
                 n += 1
                 anchor = base + "-" + str(n)
             headings.append((2, anchor, txt))
-            out.append(f'<h2 id="{anchor}">{format_inline(txt)}</h2>')
+            out.append(f'<h2 id="{anchor}" data-pending="1"><span class="title">{format_inline(txt)}</span></h2>')
             i += 1; continue
         if stripped.startswith("### "):
             close_ul(); close_ol(); close_table()
@@ -422,9 +422,41 @@ def md_to_html(md_text: str, title: str, subject: str = "") -> str:
         i += 1
 
     close_ul(); close_ol(); close_table()
+
+    # Fill in section plate numbers (§N) for h2 headings marked pending.
+    counter = 0
+    final_lines = []
+    for line in out:
+        if 'data-pending="1"' in line:
+            counter += 1
+            line = line.replace(
+                '<span class="title">',
+                '<span class="plate">\u00a7 ' + str(counter) + '</span><span class="title">',
+                1
+            )
+            line = line.replace(' data-pending="1"', '')
+        final_lines.append(line)
+    out = final_lines
+
     body_html = "\n".join(out)
 
     close_ul(); close_ol(); close_table()
+
+    # Fill in section plate numbers (§N) for h2 headings marked pending.
+    counter = 0
+    final_lines = []
+    for line in out:
+        if 'data-pending="1"' in line:
+            counter += 1
+            line = line.replace(
+                '<span class="title">',
+                '<span class="plate">\u00a7 ' + str(counter) + '</span><span class="title">',
+                1
+            )
+            line = line.replace(' data-pending="1"', '')
+        final_lines.append(line)
+    out = final_lines
+
     body_html = "\n".join(out)
 
     # ----- Table of contents (right rail) -----
@@ -438,28 +470,54 @@ def md_to_html(md_text: str, title: str, subject: str = "") -> str:
     )
 
     # ----- Tiny JS: scrollspy, progress bar, back-to-top -----
+    # ----- Plate gutter (§N numbers in the left margin) -----
+    plate_items = []
+    section_num = 0
+    for (lv, anchor, txt) in headings:
+        if lv != 2:
+            continue
+        section_num += 1
+        short = " ".join(txt.split()[:3]).upper()
+        plate_items.append(
+            '<a class="plate" href="#' + anchor + '"><span class="plate-num">\u00a7 ' + str(section_num) + '</span><span class="plate-label">' + html_escape(short) + '</span></a>'
+        )
+    plate_col_html = '<aside class="plate-col">' + "".join(plate_items) + '</aside>' if plate_items else ''
+
+    # ----- Floating right-rail plate map (only on wide viewports) -----
+    rail_items_list = [(lv, a, t) for (lv, a, t) in headings if lv == 2]
+    rail_items = "".join(
+        '<li><a href="#' + a + '"><span class="rail-num">\u00a7' + str(n) + '</span> ' + html_escape(t) + '</a></li>'
+        for n, (lv, a, t) in enumerate(rail_items_list, start=1)
+    )
+    rail_html = (
+        '<aside class="plate-rail-floating" id="plate-rail"><div class="label">On this plate</div><ul>' + rail_items + '</ul></aside>'
+        if rail_items else ''
+    )
+
     page_js = """
 <script>
 (function(){
   var bar = document.querySelector('.read-progress');
   var btn = document.querySelector('.back-to-top');
-  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
-  var headings = tocLinks.map(function(a){
-    var id = a.getAttribute('href').slice(1);
-    return { link: a, el: document.getElementById(id) };
-  }).filter(function(h){ return h.el; });
+  var rail = document.getElementById('plate-rail');
+  var plateLinks = Array.prototype.slice.call(document.querySelectorAll('.plate-col a.plate, .plate-rail-floating a'));
+  var h2s = Array.prototype.slice.call(document.querySelectorAll('h2[id]'));
   function onScroll(){
     var sc = window.scrollY;
     var max = document.documentElement.scrollHeight - window.innerHeight;
     if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
     if (btn) btn.classList.toggle('visible', sc > 400);
+    if (rail) rail.classList.toggle('visible', sc > 200 && window.innerWidth > 1100);
     var active = null;
-    for (var i = 0; i < headings.length; i++) {
-      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+    for (var i = 0; i < h2s.length; i++) {
+      if (h2s[i].getBoundingClientRect().top <= 110) active = h2s[i];
       else break;
     }
-    tocLinks.forEach(function(a){ a.classList.remove('active'); });
-    if (active) active.link.classList.add('active');
+    var activeId = active ? active.id : null;
+    plateLinks.forEach(function(a){
+      var href = a.getAttribute('href') || '';
+      a.classList.toggle('active', href === '#' + activeId);
+    });
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
@@ -470,25 +528,51 @@ def md_to_html(md_text: str, title: str, subject: str = "") -> str:
 </script>
 """
 
+    deck = ''
+    if subject:
+        deck = 'A reference note from the Mockaroo ' + subject.upper() + ' chapter bank \u2014 meant to be read alongside your daily quiz practice.'
+
+    chips = []
+    if subject:
+        chips.append('<span class="chip">' + html_escape(subject.upper()) + '</span>')
+    chips.append('<span class="chip">SSC CGL Tier-I</span>')
+    chips.append('<span class="chip">Study Note</span>')
+    eyebrow_html = '<span class="eyebrow">' + '<span class="slash">/</span>'.join(chips) + '</span>'
+
+    # Replace the parser-inserted H1 + chip row with a real masthead
+    masthead_html = '<header class="masthead">' + eyebrow_html + '<h1>' + html_escape(title) + '</h1>'
+    if deck:
+        masthead_html += '<p class="deck">' + deck + '</p>'
+    masthead_html += '</header>'
+    body_html = re.sub(
+        r'<h1>.*?</h1>\s*<div class="muted-meta">.*?</div>',
+        masthead_html,
+        body_html,
+        count=1,
+        flags=re.DOTALL,
+    )
+
     return (
         '<!doctype html>\n<html lang="en"><head>\n'
         '<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
-        f'<title>{html_escape(title)}</title>\n'
+        f'<title>{html_escape(title)} \u00b7 Mockaroo</title>\n'
+        '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
+        '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
         '<link rel="stylesheet" href="../../app/css/chapter.css">\n'
         '</head><body>\n'
         '<div class="read-progress"></div>\n'
         '<nav class="chap-nav"><div class="chap-nav-inner">\n'
         '<a class="brand" href="../../index.html">Mockaroo</a>\n'
-        '<span class="crumb-sep">/</span>\n'
-        f'<span class="crumb-here">{html_escape(title)}</span>\n'
-        '<span class="spacer"></span>\n'
-        '<a class="nav-action" href="../../index.html">Home</a>\n'
+        '<span class="sep">/</span>\n'
+        f'<span class="here">{html_escape(title)}</span>\n'
+        '<a class="home" href="../../index.html">\u2190 Home</a>\n'
         '</div></nav>\n'
         '<div class="chap-shell">\n'
+        + plate_col_html + '\n'
         '<article class="chap">\n' + body_html + '\n</article>\n'
-        + toc_html + '\n'
         '</div>\n'
+        + rail_html + '\n'
         '<button class="back-to-top" aria-label="Back to top">\u2191</button>\n'
         + page_js +
         '</body></html>'
