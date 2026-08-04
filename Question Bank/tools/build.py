@@ -475,7 +475,7 @@ def md_to_html(md_text: str, title: str, subject: str = "") -> str:
         '<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
         f'<title>{html_escape(title)}</title>\n'
-        '<link rel="stylesheet" href="../app/css/chapter.css">\n'
+        '<link rel="stylesheet" href="../../app/css/chapter.css">\n'
         '</head><body>\n'
         '<div class="read-progress"></div>\n'
         '<nav class="chap-nav"><div class="chap-nav-inner">\n'
@@ -653,6 +653,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
 
 
 
