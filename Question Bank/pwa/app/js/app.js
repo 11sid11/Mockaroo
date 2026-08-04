@@ -97,19 +97,58 @@ async function render() {
   clear(view);
   // ?demo=test or ?demo=results preview helper (sets hash directly)
   if (location.search.includes('demo=test') && !state.runner) {
+    const demoMode = location.search.includes('mode=chill') ? 'chill' : 'timed';
     const qs = pickQuestions({ count: 10 });
     if (qs.length) {
       state.runner = new TestRunner({
-        questions: qs, mode: 'timed', duration: 30, negativeMarking: true,
+        questions: qs, mode: demoMode, duration: 30, negativeMarking: true,
         label: 'Demo run', subject: null,
       });
       state.runner.start();
+      // Pre-answer some questions for the demo so the palette is populated
+      for (let i = 0; i < 4; i++) {
+        state.runner.answer(i, ['A','B','C','D'][i]);
+        state.runner.go(i + 1);
+      }
+      state.runner.go(0);
       if (location.hash !== '#/test') { location.replace(location.pathname + location.search + '#/test'); return; }
     }
   }
-  if (location.search.includes('demo=results')) {
-    const rec = getHistory()[0];
-    if (rec && (!location.hash || !location.hash.startsWith('#/results/'))) {
+  if (location.search.includes('demo=results') && (!location.hash || location.hash === '' || location.hash === '#' || location.hash === '#/home')) {
+    let rec = getHistory()[0];
+    if (!rec) {
+      // Synthesize a demo results record from the current question bank
+      const qs = pickQuestions({ count: 10 });
+      if (qs.length) {
+        const answers = qs.map((_, i) => ['A','B','C','D'][i % 4]);
+        let correct = 0, wrong = 0, unatt = 0;
+        qs.forEach((q, i) => {
+          if (!answers[i]) unatt++;
+          else if (answers[i] === q.answer) correct++;
+          else wrong++;
+        });
+        const score = Math.round(correct * 2 - wrong * 0.5);
+        const max = qs.length * 2;
+        const accuracy = qs.length ? correct / qs.length : 0;
+        const fake = {
+          id: 'demo-' + Date.now(),
+          ts: Date.now(),
+          subject: 'Mixed',
+          label: 'Demo run',
+          mode: 'chill',
+          finishedAt: Date.now(),
+          cfg: { mode: 'chill', duration: 30, negativeMarking: true, count: 10 },
+          answers,
+          questions: qs,
+          result: { correct, wrong, unattempted: unatt, score, max, accuracy, timeUsed: 600 },
+        };
+        const allHistory = getHistory();
+        allHistory.unshift(fake);
+        try { localStorage.setItem('mockaroo.v1.history', JSON.stringify(allHistory)); } catch (e) {}
+        rec = fake;
+      }
+    }
+    if (rec) {
       location.replace(location.pathname + location.search + '#/results/' + rec.id);
       return;
     }
@@ -258,23 +297,23 @@ function renderHome(view) {
 }
 
 function renderSubjects(view) {
+  view.appendChild(el('div', { class: 'eyebrow' }, ['// SELECT SUBJECT']));
   view.appendChild(el('h1', {}, ['Subjects']));
   view.appendChild(el('p', { class: 'lede' }, ['Pick a subject to drill chapter-by-chapter, or start a mixed test.']));
   const grid = el('div', { class: 'grid cols-3' });
   state.subjects.forEach((s) => {
-    const card = el('div', { class: 'card' }, [
-      el('h3', { style: { color: subjectColor(s.subject), marginTop: 0 } }, [s.subject]),
-      el('div', { class: 'muted mb-2' }, [s.total + ' questions across ' + s.chapters.length + ' chapters']),
-      el('div', { class: 'btn-row' }, [
+    const color = subjectColor(s.subject);
+    const card = el('div', { class: 'card subject-card', style: { borderTopColor: color } }, [
+      el('div', { class: 'subject-card-head' }, [
+        el('div', { class: 'subject-card-title', style: { color } }, [s.subject]),
+        el('div', { class: 'subject-card-count' }, [String(s.total) + ' qs']),
+      ]),
+      el('div', { class: 'subject-card-meta' }, [s.chapters.length + ' chapters \u00b7 ' + s.recall + ' recall \u00b7 ' + s.apply + ' apply \u00b7 ' + s.tricky + ' tricky']),
+      el('div', { class: 'subject-card-actions' }, [
         el('button', {
           class: 'btn btn-primary',
           onclick: () => { sessionStorage.setItem('mockaroo.subject', s.subject); go('#/setup'); },
-        }, ['Start']),
-      ]),
-      el('div', { class: 'mt-2' }, [
-        el('span', { class: 'chip' }, [s.recall + ' recall']),
-        el('span', { class: 'chip' }, [s.apply + ' apply']),
-        el('span', { class: 'chip' }, [s.tricky + ' tricky']),
+        }, ['Drill ', el('span', { class: 'arrow' }, ['\u2192'])]),
       ]),
     ]);
     grid.appendChild(card);
@@ -288,6 +327,7 @@ function renderSetup(view, rest) {
   const subjectParam = sessionStorage.getItem('mockaroo.subject') || (rest[0] || '');
   const settings = getSettings();
 
+  view.appendChild(el('div', { class: 'eyebrow' }, ['// NEW TEST']));
   view.appendChild(el('h1', {}, ['Test setup']));
 
   const wrap = el('div', { class: 'card' });
@@ -439,10 +479,10 @@ function renderTest(view) {
     ]),
     el('div', { class: 'palette-grid', id: 'palette-grid' }),
     el('div', { class: 'legend' }, [
-      el('div', {}, [el('span', { class: 'swatch', style: { background: 'var(--good)' } }), ['Answered']]),
-      el('div', {}, [el('span', { class: 'swatch', style: { background: 'var(--warn)' } }), ['Flagged']]),
-      el('div', {}, [el('span', { class: 'swatch', style: { background: 'var(--bg-3)', border: '1px solid var(--line)' } }), ['Not visited']]),
-      el('div', {}, [el('span', { class: 'swatch', style: { background: 'var(--bg-3)', outline: '2px solid var(--cyan)' } }), ['Current']]),
+      el('div', {}, [el('span', { class: 'swatch', style: { background: 'var(--good)' } }), 'Answered']),
+      el('div', {}, [el('span', { class: 'swatch', style: { background: 'var(--warn)' } }), 'Flagged']),
+      el('div', {}, [el('span', { class: 'swatch', style: { background: 'var(--bg-3)', border: '1px solid var(--line)' } }), 'Not visited']),
+      el('div', {}, [el('span', { class: 'swatch', style: { background: 'var(--bg-3)', outline: '2px solid var(--cyan)' } }), 'Current']),
     ]),
   ]);
 
@@ -635,6 +675,7 @@ function renderResults(view, rest) {
 
 function renderHistory(view) {
   const history = getHistory();
+  view.appendChild(el('div', { class: 'eyebrow' }, ['// HISTORY']));
   view.appendChild(el('h1', {}, ['Test history']));
   if (!history.length) {
     view.appendChild(el('div', { class: 'card muted' }, ['No tests taken yet. Start one from the setup screen.']));
@@ -673,6 +714,7 @@ function renderHistory(view) {
 
 function renderStats(view) {
   const history = getHistory();
+  view.appendChild(el('div', { class: 'eyebrow' }, ['// STATS & TRENDS']));
   view.appendChild(el('h1', {}, ['Stats & charts']));
   if (!history.length) {
     view.appendChild(el('div', { class: 'card muted' }, ['No data yet — take a few tests first.']));
@@ -715,6 +757,7 @@ function renderStats(view) {
 
 function renderSettingsView(view) {
   const s = getSettings();
+  view.appendChild(el('div', { class: 'eyebrow' }, ['// SETTINGS']));
   view.appendChild(el('h1', {}, ['Settings']));
 
   const themeSel = el('select', { id: 'set-theme' });
