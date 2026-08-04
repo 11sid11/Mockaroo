@@ -1,12 +1,12 @@
 {
-  "version": 1785837712,
-  "hash": "a3982a3e01c9",
-  "questionCount": 12,
-  "subjectCount": 1,
+  "version": 1785839193,
+  "hash": "14ac5b2e1295",
+  "questionCount": 190,
+  "subjectCount": 2,
   "scoring": {
     "correct": 2.0,
     "wrong": -0.5,
     "unattempted": 0.0
   },
-  "generatedAt": "2026-08-04 15:31:52"
+  "generatedAt": "2026-08-04 15:56:33"
 }
