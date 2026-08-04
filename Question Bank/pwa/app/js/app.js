@@ -96,7 +96,7 @@ async function render() {
   const view = $('#view');
   clear(view);
   // ?demo=test or ?demo=results preview helper (sets hash directly)
-  if (location.search.includes('demo=test') && !state.runner) {
+  if ((location.search.includes('demo=test') || location.search.includes('demo=submit')) && !state.runner) {
     const demoMode = location.search.includes('mode=chill') ? 'chill' : 'timed';
     const qs = pickQuestions({ count: 10 });
     if (qs.length) {
@@ -181,12 +181,17 @@ function renderHome(view) {
 
   let delta = null;
   if (history.length >= 2) {
-    const recent = history.slice(0, 7);
-    const older = history.slice(7, 14);
-    if (older.length) {
-      const avg = (xs) => xs.reduce((s, h) => s + h.result.accuracy, 0) / xs.length;
-      const d = (avg(recent) - avg(older)) * 100;
-      delta = { value: Math.round(d), positive: d >= 0 };
+    // Only compare apples-to-apples: timed tests measure real progress.
+    // Mixing in chill/revision practice tests inflates/oscillates the trend.
+    const timedOnly = history.filter((h) => (h.mode || 'timed') === 'timed');
+    if (timedOnly.length >= 2) {
+      const recent = timedOnly.slice(0, 7);
+      const older = timedOnly.slice(7, 14);
+      if (older.length) {
+        const avg = (xs) => xs.reduce((s, h) => s + h.result.accuracy, 0) / xs.length;
+        const d = (avg(recent) - avg(older)) * 100;
+        delta = { value: Math.round(d), positive: d >= 0, mode: 'timed' };
+      }
     }
   }
 
@@ -223,7 +228,7 @@ function renderHome(view) {
           el('div', { class: 'v' }, [lastScoreText]),
           el('div', { class: 'l' }, [last ? 'Last score \u00b7 ' + lastAccText : 'Last score']),
           delta ? el('div', { class: 'delta ' + (delta.positive ? '' : 'bad') },
-            [(delta.positive ? '\u25b2 +' : '\u25bc ') + Math.abs(delta.value) + '%']) : null,
+            [(delta.positive ? '\u25b2 +' : '\u25bc ') + Math.abs(delta.value) + '%' + (delta.mode === 'timed' ? ' timed' : '')]) : null,
         ]),
       ]),
     ]),
@@ -424,6 +429,24 @@ function resumeTest() {
   go('#/test');
 }
 
+/**
+ * Confirm + finish the current test and route to results.
+ * Mirrors what _onExpire() does for timed mode (auto-submit), but for manual SUBMIT clicks.
+ */
+function confirmSubmit() {
+  if (!state.runner || state.runner.finished) return;
+  const r = state.runner;
+  const answered = r.answers.filter((a) => a != null).length;
+  const total = r.total;
+  const unanswered = total - answered;
+  const verb = r.cfg.mode === 'timed' ? 'submit' : 'finish';
+  let msg = verb.charAt(0).toUpperCase() + verb.slice(1) + ' this test?';
+  if (unanswered > 0) msg += '\n\n' + unanswered + ' question' + (unanswered === 1 ? ' is' : 's are') + ' unanswered.';
+  if (!confirm(msg)) return;
+  const rec = r.finish(false);
+  if (rec) go('#/results/' + rec.id);
+}
+
 // ---------- Test runner view ----------
 
 function renderTest(view) {
@@ -582,6 +605,25 @@ function renderTest(view) {
   }
 
   paint();
+
+  // ?demo=submit: auto-trigger SUBMIT after first paint to verify the wiring.
+  // ?demo=submitstats: auto-submit then jump to /stats so the screenshot
+  // shows both the wiring works AND the mode-aware stats panel.
+  if (location.search.includes('demo=submit')) {
+    setTimeout(() => {
+      // Stub confirm() so the headless dialog doesn't block the screenshot.
+      window.confirm = () => true;
+      confirmSubmit();
+      if (location.search.includes('submitstats')) {
+        // Wait for navigation to results, then bounce to stats.
+        setTimeout(() => { go('#/stats'); }, 400);
+      }
+      if (location.search.includes('submithistory')) {
+        // Wait for navigation to results, then bounce to history.
+        setTimeout(() => { go('#/history'); }, 400);
+      }
+    }, 500);
+  }
 }
 
 
@@ -608,6 +650,10 @@ function renderResults(view, rest) {
       el('div', { class: 'num' }, [String(r.score)]),
       el('div', { class: 'max' }, ['out of ' + r.max]),
       el('div', { class: 'verdict ' + verdictClass }, [verdictText + ' · ' + accPct + '% accuracy']),
+      rec.mode !== 'timed' ? el('div', { class: 'practice-banner' }, [
+        el('span', { class: 'chip' }, [rec.mode.toUpperCase()]),
+        el('span', {}, ['Practice mode — answers were shown as you went, so this score is not a true exam read.']),
+      ]) : null,
       el('div', { class: 'meta' }, [rec.label + ' · ' + rec.mode + ' mode · ' + new Date(rec.finishedAt).toLocaleString()]),
     ]),
     el('div', { class: 'kpis' }, [
@@ -690,10 +736,13 @@ function renderHistory(view) {
   const tbody = el('tbody', {});
   history.forEach((h) => {
     const acc = (h.result.correct + h.result.wrong) ? Math.round(h.result.correct / (h.result.correct + h.result.wrong) * 100) : 0;
+    const modeChip = h.mode === 'timed'
+      ? el('span', { class: 'chip' }, [h.mode.toUpperCase()])
+      : el('span', { class: 'chip muted', title: 'Practice mode — answers were shown as you went' }, [h.mode.toUpperCase()]);
     tbody.appendChild(el('tr', {}, [
       el('td', {}, [new Date(h.finishedAt).toLocaleString()]),
       el('td', {}, [h.label]),
-      el('td', {}, [h.mode]),
+      el('td', {}, [modeChip]),
       el('td', {}, [String(h.questions)]),
       el('td', {}, [h.result.score + ' / ' + h.result.max]),
       el('td', {}, [acc + '%']),
@@ -720,6 +769,55 @@ function renderStats(view) {
     view.appendChild(el('div', { class: 'card muted' }, ['No data yet — take a few tests first.']));
     return;
   }
+
+  // --- Mode-aware breakdown ----------------------------------------------
+  // Chill and revision are practice modes — they pad accuracy high because
+  // the answer key is shown. Splitting them out keeps the headline numbers honest.
+  const modes = ['timed', 'chill', 'revision'];
+  const byMode = Object.fromEntries(modes.map((m) => [m, history.filter((h) => (h.mode || 'timed') === m)]));
+  const modeStats = (xs) => {
+    if (!xs.length) return { count: 0, acc: null, score: null };
+    const totalCorrect = xs.reduce((s, h) => s + h.result.correct, 0);
+    const totalWrong = xs.reduce((s, h) => s + h.result.wrong, 0);
+    const attempted = totalCorrect + totalWrong;
+    const acc = attempted ? totalCorrect / attempted : null;
+    const avgScore = xs.reduce((s, h) => s + h.result.score, 0) / xs.length;
+    return { count: xs.length, acc, score: avgScore };
+  };
+  const ms = Object.fromEntries(modes.map((m) => [m, modeStats(byMode[m])]));
+
+  const modeCard = el('div', { class: 'card' }, [
+    el('div', { class: 'section-title', style: { margin: '0 0 14px' } }, [
+      el('h2', {}, ['By mode']),
+      el('span', { class: 'more' }, ['practice vs exam pressure']),
+    ]),
+    el('table', { class: 't' }, [
+      el('thead', {}, [el('tr', {}, [
+        el('th', {}, ['Mode']),
+        el('th', {}, ['Tests']),
+        el('th', {}, ['Avg score']),
+        el('th', {}, ['Accuracy']),
+        el('th', {}, ['Note']),
+      ])]),
+      el('tbody', {}, modes.map((m) => {
+        const s = ms[m];
+        const note = m === 'timed'
+          ? 'Real exam pressure — answers hidden until submit.'
+          : m === 'chill'
+            ? 'Answers revealed as you go — learning mode.'
+            : 'Answer key shown upfront — pure reading.';
+        const tag = m === 'timed' ? '' : 'muted';
+        return el('tr', {}, [
+          el('td', {}, [el('span', { class: 'chip ' + tag }, [m.toUpperCase()])]),
+          el('td', {}, [String(s.count)]),
+          el('td', {}, [s.count ? s.score.toFixed(1) : '—']),
+          el('td', {}, [s.acc != null ? Math.round(s.acc * 100) + '%' : '—']),
+          el('td', { class: 'muted' }, [note]),
+        ]);
+      })),
+    ]),
+  ]);
+  view.appendChild(modeCard);
 
   const charts = el('div', { class: 'grid cols-2' }, [
     el('div', { class: 'card' }, [el('h2', {}, ['Score trend']), el('div', { class: 'chart-wrap', style: { height: '240px' } }, [el('canvas', { id: 'chart-trend' })])]),

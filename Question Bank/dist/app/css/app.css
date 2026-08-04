@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Mockaroo — Command Center direction
+   Mockaroo ï¿½ Command Center direction
    ==========================================================================
    Direction chosen for this app (see frontend-design skill):
      - near-black obsidian background; single neon-cyan accent
@@ -448,7 +448,7 @@ ul.plain li .swatch {
   .runner .palette { position: static; max-height: none; }
 }
 
-/* Live status strip — the command-center signature element */
+/* Live status strip ï¿½ the command-center signature element */
 .status-strip {
   display: grid;
   grid-template-columns: auto auto auto 1fr auto;
@@ -803,6 +803,19 @@ ul.plain li .swatch {
 .score-hero .verdict.bad { color: var(--bad); background: var(--bad-soft); border: 1px solid color-mix(in srgb, var(--bad) 30%, transparent); }
 .score-hero .verdict.neutral { color: var(--ink-2); background: var(--bg-3); border: 1px solid var(--line-2); }
 .score-hero .meta { margin-top: 14px; color: var(--ink-2); font-size: 13px; }
+.practice-banner {
+  margin: 14px auto 0;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 14px;
+  background: var(--bg-3);
+  border: 1px dashed color-mix(in srgb, var(--cyan) 40%, var(--line));
+  border-radius: var(--r-2);
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+  max-width: 460px;
+}
+.practice-banner .chip { background: var(--cyan-soft); color: var(--cyan); border-color: var(--cyan); }
 
 .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 22px; }
 @media (max-width: 600px) { .kpis { grid-template-columns: repeat(2, 1fr); } }
