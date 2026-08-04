@@ -20,6 +20,16 @@ _obsidian/
 *.log
 .env
 
+# Agent scratch files (sub-agents sometimes dump these at root)
+/build_gen.py
+/ch*.txt
+/chapters_data.txt
+/fix_lines.py
+/gen_*.py
+/generate_*.py
+/gen_data.py
+/gen_geo_questions.py
+
 # Source vault chapters (the published artefact is the rendered HTML in dist/)
 /biology/
 /chemistry/
