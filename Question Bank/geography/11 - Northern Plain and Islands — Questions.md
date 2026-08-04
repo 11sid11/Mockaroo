@@ -1,18 +1,18 @@
----
-title: "Northern Plain and Islands — Questions"
+﻿---
+title: "Northern Plain and Islands â€” Questions"
 subject: geography
 chapter: 11
 tags: [question-bank, ssc, geography]
 topic_id: [geo.northern_plain_and_islands.questions]
 ---
 
-# Northern Plain and Islands — Questions
+# Northern Plain and Islands â€” Questions
 
 > Source: [[../../geography/11 - Northern Plain and Islands|Northern Plain and Islands]] | Subject: [[../../_MOCs/MOC - geography]]
 
 A 12-question MCQ set on the Northern Plains (Bhabar, Terai, Khadar, Bhangar), coastal plains, ports, and the island territories of India (Andaman and Nicobar, Lakshadweep). Calibrated to SSC CGL Tier-I standard.
 
-Scoring: SSC CGL rules — **+2 correct, -0.50 wrong, 0 unattempted**.
+Scoring: SSC CGL rules â€” **+2 correct, -0.50 wrong, 0 unattempted**.
 
 ---
 
@@ -52,9 +52,9 @@ The narrow belt of pebbles and stones lying south of the Shiwaliks where rivers 
 
 **Answer: D**
 
-The chapter states: "Bhabar — It is a narrow belt (8–16 km wide) lying south of the Shiwaliks. Rivers coming down from the mountains deposit stones and pebbles, due to which it disappears."
+The chapter states: "Bhabar â€” It is a narrow belt (8â€“16 km wide) lying south of the Shiwaliks. Rivers coming down from the mountains deposit stones and pebbles, due to which it disappears."
 
-**Trap:** Candidates confuse Bhabar with Terai (the marshy belt immediately south of it) because Terai is where streams "reappear" — but Bhabar is the disappearing belt, Terai is the reappearing belt.
+**Trap:** Candidates confuse Bhabar with Terai (the marshy belt immediately south of it) because Terai is where streams "reappear" â€” but Bhabar is the disappearing belt, Terai is the reappearing belt.
 
 **See also:** [[../../geography/11 - Northern Plain and Islands#Northern Plains]]
 </details>
@@ -74,9 +74,9 @@ Which of the following is the correct distinction between Khadar and Bhangar?
 
 **Answer: B**
 
-The chapter states: "Khadar (New Alluvial Soil) — newly deposited floodplain, renewed annually by river floods… more fertile than Bhangar." "Bhangar (Old Alluvial Soil) — older, elevated floodplain with deposits over thousands of years… more calcareous (kankar-rich) deposits, making it less fertile."
+The chapter states: "Khadar (New Alluvial Soil) â€” newly deposited floodplain, renewed annually by river floodsâ€¦ more fertile than Bhangar." "Bhangar (Old Alluvial Soil) â€” older, elevated floodplain with deposits over thousands of yearsâ€¦ more calcareous (kankar-rich) deposits, making it less fertile."
 
-**Trap:** A reverses the two — the common trap because "old" and "elevated" sound more important than "new." Candidates must remember: Khadar = new + fertile, Bhangar = old + kankar + less fertile.
+**Trap:** A reverses the two â€” the common trap because "old" and "elevated" sound more important than "new." Candidates must remember: Khadar = new + fertile, Bhangar = old + kankar + less fertile.
 
 **See also:** [[../../geography/11 - Northern Plain and Islands#Northern Plains]]
 </details>
@@ -101,7 +101,7 @@ The chapter lists Jim Corbett National Park (Uttarakhand) among the important Na
 
 **Trap:** Kaziranga is famous for one-horned rhinos (Assam, not Terai), Gir is for Asiatic Lions (Gujarat), and Keibul-Lamjao is the floating park (Manipur).
 
-**See also:** [[../../geography/11 - Northern Plain and Islands#Northern Plains]] · [[../../geography/20 - National Parks#Uttarakhand]]
+**See also:** [[../../geography/11 - Northern Plain and Islands#Northern Plains]] Â· [[../../geography/20 - National Parks#Uttarakhand]]
 </details>
 
 ---
@@ -119,7 +119,7 @@ A student is told: "This coastal plain lies along the Arabian Sea, is narrow in 
 
 **Answer: B**
 
-The chapter states: "Western Coastal Plains — They are narrow in the middle, wider at the ends (Dumbbell-like shape)… They are famous for formation of backwaters (Kayals), e.g. Punnamada Kayal in Kerala (famous for the Nehru Trophy Boat Race)."
+The chapter states: "Western Coastal Plains â€” They are narrow in the middle, wider at the ends (Dumbbell-like shape)â€¦ They are famous for formation of backwaters (Kayals), e.g. Punnamada Kayal in Kerala (famous for the Nehru Trophy Boat Race)."
 
 **Trap:** The Eastern Coastal Plain is wider and has emerging coastline + deltas, not backwaters. Utkal Coast is a sub-section of the Eastern Coastal Plain along Odisha. Northern Circars is an older name for the Andhra coast.
 
@@ -171,9 +171,9 @@ The only privately managed major port of India, owned by the Central Government 
 
 **Answer: B**
 
-The chapter states: "Privately managed port: 1 → Kamarajar port (located in Ennore in Tamil Nadu) is the only corporate-owned port by GOI."
+The chapter states: "Privately managed port: 1 â†’ Kamarajar port (located in Ennore in Tamil Nadu) is the only corporate-owned port by GOI."
 
-**Trap:** Vizhinjam is described in the chapter as India first transshipment port (Kerala), not a privately managed major port — it is a new greenfield port. JNPT and Mormugao are public major ports under the Major Port Authorities Act.
+**Trap:** Vizhinjam is described in the chapter as India first transshipment port (Kerala), not a privately managed major port â€” it is a new greenfield port. JNPT and Mormugao are public major ports under the Major Port Authorities Act.
 
 **See also:** [[../../geography/11 - Northern Plain and Islands#Ports]]
 </details>
@@ -194,9 +194,9 @@ The Ten Degree Channel separates which two landmasses?
 
 **Answer: C**
 
-The chapter lists the Ten Degree Channel as separating Andaman and Nicobar (Andamans in the north, Nicobars in the south). The 8 degree Channel separates Lakshadweep and Maldives, the 9 degree Channel separates Lakshadweep and Minicoy, and the 11 degree Channel separates Aminidivi and Cannanore (mainland India).
+The chapter lists the Ten Degree Channel as separating Andaman and Nicobar (Andamans in the north, Nicobars in the south). The 8° Channel separates Lakshadweep and Maldives, the 9° Channel separates Lakshadweep and Minicoy, and the 11° Channel separates Aminidivi and Cannanore (mainland India).
 
-**Trap:** All four channels listed are 8, 9, 10 and 11 degrees — candidates easily mix up which separates what. The 10 degree Channel is the Andaman-Nicobar divide.
+**Trap:** All four channels listed are 8, 9, 10 and 11 degrees â€” candidates easily mix up which separates what. The 10° Channel is the Andaman-Nicobar divide.
 
 **See also:** [[../../geography/11 - Northern Plain and Islands#Andaman and Nicobar Islands]]
 </details>
@@ -206,28 +206,28 @@ The chapter lists the Ten Degree Channel as separating Andaman and Nicobar (Anda
 @qgeo.northern_plain_and_islands.q9 difficulty=apply subject=geography chapter=11
 Which of the following is correctly matched with the island that bears the disputed or renamed status?
 
-- A) Katchatheevu — Palk Strait (India–Sri Lanka dispute)
-- B) New Moore Island — India–Pakistan dispute
-- C) Sir Creek — India–Bangladesh dispute
-- D) Wheeler Island — missile testing site in West Bengal
+- A) Katchatheevu â€” Palk Strait (Indiaâ€“Sri Lanka dispute)
+- B) New Moore Island â€” Indiaâ€“Pakistan dispute
+- C) Sir Creek â€” Indiaâ€“Bangladesh dispute
+- D) Wheeler Island â€” missile testing site in West Bengal
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: A**
 
-The chapter states: "Katchatheevu Island (small uninhabited island in Palk Strait): Between India and Sri Lanka." New Moore Island is the India–Bangladesh dispute, Sir Creek is India–Pakistan, and Wheeler Island (now APJ Abdul Kalam Island) is in Odisha (Chandipur) — not West Bengal.
+The chapter states: "Katchatheevu Island (small uninhabited island in Palk Strait): Between India and Sri Lanka." New Moore Island is the Indiaâ€“Bangladesh dispute, Sir Creek is Indiaâ€“Pakistan, and Wheeler Island (now APJ Abdul Kalam Island) is in Odisha (Chandipur) â€” not West Bengal.
 
-**Trap:** B and C are swapped — candidates mix up "New Moore" with "Sir Creek." D mislocates Wheeler Island to West Bengal instead of Odisha.
+**Trap:** B and C are swapped â€” candidates mix up "New Moore" with "Sir Creek." D mislocates Wheeler Island to West Bengal instead of Odisha.
 
-**See also:** [[../../geography/11 - Northern Plain and Islands#Important Disputed Islands]] · [[../../geography/11 - Northern Plain and Islands#Important Indian Islands]]
+**See also:** [[../../geography/11 - Northern Plain and Islands#Important Disputed Islands]] Â· [[../../geography/11 - Northern Plain and Islands#Important Indian Islands]]
 </details>
 
 
 ---
 
 @qgeo.northern_plain_and_islands.q10 difficulty=tricky subject=geography chapter=11
-Which of the following sequences correctly arranges the Southern-Northern latitudes of the Lakshadweep channels: 8 degree Channel, 9 degree Channel, 11 degree Channel, from south to north?
+Which of the following sequences correctly arranges the Southern-Northern latitudes of the Lakshadweep channels: 8° Channel, 9° Channel, 11° Channel, from south to north?
 
 - A) 8 degree (Lakshadweep-Maldives) then 9 degree (Lakshadweep-Minicoy) then 11 degree (Aminidivi-Cannanore)
 - B) 9 degree then 8 degree then 11 degree
@@ -239,9 +239,9 @@ Which of the following sequences correctly arranges the Southern-Northern latitu
 
 **Answer: A**
 
-The 8 degree Channel is the southernmost (between Lakshadweep and Maldives/Minicoy). North of it, the 9 degree Channel separates Lakshadweep and Minicoy. The 11 degree Channel is the northernmost, separating Aminidivi (Lakshadweep) from Cannanore (Kerala mainland). So south-to-north: 8 -> 9 -> 11.
+The 8° Channel is the southernmost (between Lakshadweep and Maldives/Minicoy). North of it, the 9° Channel separates Lakshadweep and Minicoy. The 11° Channel is the northernmost, separating Aminidivi (Lakshadweep) from Cannanore (Kerala mainland). So south-to-north: 8 -> 9 -> 11.
 
-**Trap:** The numeric order (8, 9, 11) matches the geographic south-to-north order in this case — but candidates must still verify the *separations*, not just the latitudes. A looks trivial, but the trap is memorising 8 and 9 without remembering which one separates what.
+**Trap:** The numeric order (8, 9, 11) matches the geographic south-to-north order in this case â€” but candidates must still verify the *separations*, not just the latitudes. A looks trivial, but the trap is memorising 8 and 9 without remembering which one separates what.
 
 **See also:** [[../../geography/11 - Northern Plain and Islands#Lakshadweep]]
 </details>
@@ -261,9 +261,9 @@ Consider the following: (1) Punnamada Kayal lies along the eastern coast and for
 
 **Answer: D**
 
-Statement 1 is false: Punnamada Kayal (backwater) lies along the Western Coast (Kerala), not the eastern Coromandel coast. Statement 2 is also false: the Western Coastal Plains are submerged coastal plains, but rivers there do *not* form deltas — they form estuaries. The chapter states: "Rivers do not form deltas because they flow quickly into the sea." Deltas form on the Eastern Coastal Plain.
+Statement 1 is false: Punnamada Kayal (backwater) lies along the Western Coast (Kerala), not the eastern Coromandel coast. Statement 2 is also false: the Western Coastal Plains are submerged coastal plains, but rivers there do *not* form deltas â€” they form estuaries. The chapter states: "Rivers do not form deltas because they flow quickly into the sea." Deltas form on the Eastern Coastal Plain.
 
-**Trap:** Both statements sound plausible individually — backwaters are associated with Kerala, and "submerged coast" sounds like submerged sediment (i.e. deltas). Candidates who only half-remember pick B or C.
+**Trap:** Both statements sound plausible individually â€” backwaters are associated with Kerala, and "submerged coast" sounds like submerged sediment (i.e. deltas). Candidates who only half-remember pick B or C.
 
 **See also:** [[../../geography/11 - Northern Plain and Islands#Coastal Plains of India]]
 </details>
@@ -285,7 +285,7 @@ Which of the following is correct?
 
 **Answer: A**
 
-The chapter states: "Pygmalion Point, now known as Indira Point, is the southernmost point of Indian territory that is located in the Great Nicobar Island of Andaman and Nicobar Islands." Great Nicobar is the southernmost island of the Nicobar group, so R correctly explains *why* Indira Point is the southernmost point of Indian territory — both A and R are true and R is the correct explanation.
+The chapter states: "Pygmalion Point, now known as Indira Point, is the southernmost point of Indian territory that is located in the Great Nicobar Island of Andaman and Nicobar Islands." Great Nicobar is the southernmost island of the Nicobar group, so R correctly explains *why* Indira Point is the southernmost point of Indian territory â€” both A and R are true and R is the correct explanation.
 
 **Trap:** Some candidates mistakenly place Indira Point on Little Andaman or Car Nicobar. Candidates who think Indira Point is "just a renamed place" miss the geography.
 
@@ -307,5 +307,6 @@ The chapter states: "Pygmalion Point, now known as Indira Point, is the southern
 - Source: [[../../geography/11 - Northern Plain and Islands]]
 - Subject MOC: [[../../_MOCs/MOC - geography]]
 - Vault index: [[../../Index]]
-- Previous chapter: [[10 - Peninsular Plateaus — Questions.md|Peninsular Plateaus — Questions]]
-- Next chapter: [[12 - Himalayan River System — Questions.md|Himalayan River System — Questions]]
+- Previous chapter: [[10 - Peninsular Plateaus â€” Questions.md|Peninsular Plateaus â€” Questions]]
+- Next chapter: [[12 - Himalayan River System â€” Questions.md|Himalayan River System â€” Questions]]
+
