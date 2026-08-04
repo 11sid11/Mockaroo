@@ -1,0 +1,400 @@
+{
+  "version": 1785835814,
+  "questions": [
+    {
+      "id": "bio.cell.q1",
+      "subject": "biology",
+      "chapter": 1,
+      "chapterTitle": "Cell",
+      "difficulty": "apply",
+      "question": "A student places a human RBC in three beakers labelled X, Y and Z. In X the cell stays the same size, in Y it swells and bursts, in Z it shrinks and crenates. The most likely tonicity of X, Y, Z respectively is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hypertonic, isotonic, hypotonic"
+        },
+        {
+          "key": "B",
+          "text": "Isotonic, hypotonic, hypertonic"
+        },
+        {
+          "key": "C",
+          "text": "Hypotonic, isotonic, hypertonic"
+        },
+        {
+          "key": "D",
+          "text": "Isotonic, hypertonic, hypotonic"
+        }
+      ],
+      "answer": "B",
+      "explanation": "- X (no change) \u2192 **isotonic** (solute = solvent inside and outside).\n- Y (swells/lyses) \u2192 **hypotonic** (more water outside than in, water enters \u2192 turgidity, and RBCs lack a wall so they burst).\n- Z (shrinks/crenates) \u2192 **hypertonic** (water leaves the cell \u2192 plasmolysis).\n\n**Trap:** Many students reverse X and Z because they picture \"shrinking\" as a loss of something the cell \"needs to keep\" and assume that environment is \"low concentration.\" It is the opposite \u2014 a hypertonic medium draws water *out*.",
+      "wikilink": "[[../../biology/01 - Cell#What happens to a cell when placed in a solution]]",
+      "sourceNote": "chapters/biology/01 - Cell.html",
+      "sourceNoteTitle": "Cell"
+    },
+    {
+      "id": "bio.cell.q2",
+      "subject": "biology",
+      "chapter": 1,
+      "chapterTitle": "Cell",
+      "difficulty": "tricky",
+      "question": "Which of the following correctly pairs a scientist with their contribution to cell theory?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Robert Hooke \u2014 observed living cells in pond water for the first time"
+        },
+        {
+          "key": "B",
+          "text": "Antonie van Leeuwenhoek \u2014 coined the term \"cell\" from cork slices"
+        },
+        {
+          "key": "C",
+          "text": "Rudolf Virchow \u2014 *omnis cellula e cellula* (cells arise from pre-existing cells)"
+        },
+        {
+          "key": "D",
+          "text": "Matthias Schleiden \u2014 stated that all cells arise from a \"cell fluid\""
+        }
+      ],
+      "answer": "C",
+      "explanation": "- **Hooke** saw *dead* cells (cork, 1665) and coined the word \"cell.\"\n- **Leeuwenhoek** saw *living* cells (pond water, 1674).\n- **Schleiden & Schwann** (1838) proposed that all organisms are made of cells.\n- **Virchow** (1855) added *omnis cellula e cellula* \u2014 new cells come only from existing cells.\n\n**Trap:** A and B are swapped to lure students who remember the names but not which discovery goes with which.",
+      "wikilink": "[[../../biology/01 - Cell#Discovery of Cell]]",
+      "sourceNote": "chapters/biology/01 - Cell.html",
+      "sourceNoteTitle": "Cell"
+    },
+    {
+      "id": "bio.cell.q3",
+      "subject": "biology",
+      "chapter": 1,
+      "chapterTitle": "Cell",
+      "difficulty": "recall",
+      "question": "Match the cell organelle with its primary function:\n\n| Organelle | Function |\n|---|---|\n| (i) Ribosome | (a) Photosynthesis |\n| (ii) Mitochondrion | (b) Protein synthesis |\n| (iii) Chloroplast | (c) ATP production / powerhouse |\n| (iv) Golgi apparatus | (d) Packaging & dispatch of proteins |",
+      "options": [
+        {
+          "key": "A",
+          "text": "i-b, ii-c, iii-a, iv-d"
+        },
+        {
+          "key": "B",
+          "text": "i-c, ii-b, iii-a, iv-d"
+        },
+        {
+          "key": "C",
+          "text": "i-b, ii-a, iii-c, iv-d"
+        },
+        {
+          "key": "D",
+          "text": "i-d, ii-c, iii-a, iv-b"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\u2014 Ribosomes do protein synthesis, mitochondria produce ATP, chloroplasts (only in plant cells) carry out photosynthesis, Golgi packages and ships proteins.\n\n**Trap:** C swaps mitochondria and chloroplast \u2014 a common slip because both sound \"energy-related.\"",
+      "wikilink": "[[../../biology/01 - Cell#Mitochondria]]",
+      "sourceNote": "chapters/biology/01 - Cell.html",
+      "sourceNoteTitle": "Cell"
+    },
+    {
+      "id": "bio.cell.q4",
+      "subject": "biology",
+      "chapter": 1,
+      "chapterTitle": "Cell",
+      "difficulty": "recall",
+      "question": "The double membrane of the mitochondrion has a heavily-folded inner membrane. These folds are called:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Thylakoids"
+        },
+        {
+          "key": "B",
+          "text": "Cristae"
+        },
+        {
+          "key": "C",
+          "text": "Lamellae"
+        },
+        {
+          "key": "D",
+          "text": "Stroma"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\u2014 The folds of the inner mitochondrial membrane are **cristae**, which increase surface area for the electron transport chain.\n\n**Trap:** *Thylakoids* are the analogous folds in **chloroplasts**; *stroma* is the fluid matrix inside a chloroplast. Students who confuse chloroplast and mitochondria structure pick (a) or (d).",
+      "wikilink": "[[../../biology/01 - Cell#Mitochondria]]",
+      "sourceNote": "chapters/biology/01 - Cell.html",
+      "sourceNoteTitle": "Cell"
+    },
+    {
+      "id": "bio.cell.q5",
+      "subject": "biology",
+      "chapter": 1,
+      "chapterTitle": "Cell",
+      "difficulty": "apply",
+      "question": "A cell is placed in a solution and water begins to enter it. To prevent the cell from bursting, plant cells rely on a feature animal cells lack. This feature is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "A selectively permeable plasma membrane"
+        },
+        {
+          "key": "B",
+          "text": "A cell wall made of cellulose"
+        },
+        {
+          "key": "C",
+          "text": "A large central vacuole that expels excess water"
+        },
+        {
+          "key": "D",
+          "text": "Tight junctions between adjacent cells"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\u2014 The **cell wall** (cellulose in plants; chitin in fungi; peptidoglycan in bacteria) provides a rigid counter-pressure (turgor) that prevents lysis. Animal cells lack a wall, so in a hypotonic medium they swell and burst.\n\n**Trap:** A is true but irrelevant \u2014 the plasma membrane is present in *both* cell types and cannot on its own stop lysis.",
+      "wikilink": "[[../../biology/01 - Cell#Cell Wall]]",
+      "sourceNote": "chapters/biology/01 - Cell.html",
+      "sourceNoteTitle": "Cell"
+    },
+    {
+      "id": "bio.cell.q6",
+      "subject": "biology",
+      "chapter": 1,
+      "chapterTitle": "Cell",
+      "difficulty": "apply",
+      "question": "Which of the following transport processes across the cell membrane requires **cellular energy (ATP)**?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Diffusion of oxygen across the alveolar membrane"
+        },
+        {
+          "key": "B",
+          "text": "Osmosis of water into a parched plant root"
+        },
+        {
+          "key": "C",
+          "text": "Active transport of K\u207a ions into a cell against their concentration gradient"
+        },
+        {
+          "key": "D",
+          "text": "Facilitated diffusion of glucose through GLUT transporters"
+        }
+      ],
+      "answer": "C",
+      "explanation": "\u2014 *Active transport* moves solutes **against** the concentration gradient (low \u2192 high) using ATP. All the other listed processes are *passive* (down the gradient, no ATP).\n\n**Trap:** D uses a *carrier protein*, which tricks students into assuming \"protein = energy needed.\" Facilitated diffusion is still passive \u2014 it just uses a protein to bypass the lipid bilayer; no ATP is consumed.",
+      "wikilink": "[[../../biology/01 - Cell#Active Transport/Reverse Osmosis]]",
+      "sourceNote": "chapters/biology/01 - Cell.html",
+      "sourceNoteTitle": "Cell"
+    },
+    {
+      "id": "bio.cell.q7",
+      "subject": "biology",
+      "chapter": 1,
+      "chapterTitle": "Cell",
+      "difficulty": "apply",
+      "question": "The correct sequence of enzymes acting at a eukaryotic DNA replication fork, in the order they act, is:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Primase \u2192 Helicase \u2192 Polymerase \u2192 Ligase"
+        },
+        {
+          "key": "B",
+          "text": "Helicase \u2192 Primase \u2192 Polymerase \u2192 Ligase"
+        },
+        {
+          "key": "C",
+          "text": "Helicase \u2192 Ligase \u2192 Polymerase \u2192 Primase"
+        },
+        {
+          "key": "D",
+          "text": "Polymerase \u2192 Helicase \u2192 Primase \u2192 Ligase"
+        }
+      ],
+      "answer": "B",
+      "explanation": "1. **Helicase** unwinds the double helix.\n2. **Primase** lays down an RNA primer (replication cannot start de novo).\n3. **DNA polymerase** extends the new strand by adding nucleotides.\n4. **DNA ligase** joins the Okazaki fragments on the lagging strand.\n\n**Trap:** Many students write \"polymerase first\" because polymerase is \"the main enzyme.\" But polymerase cannot start without a primer, and the primer needs an unwound template.",
+      "wikilink": "[[../../biology/01 - Cell#Enzymes Essential for DNA Replication in Animal Cell]]",
+      "sourceNote": "chapters/biology/01 - Cell.html",
+      "sourceNoteTitle": "Cell"
+    },
+    {
+      "id": "bio.cell.q8",
+      "subject": "biology",
+      "chapter": 1,
+      "chapterTitle": "Cell",
+      "difficulty": "apply",
+      "question": "After one round of semi-conservative DNA replication starting from one fully-labelled (heavy, \u00b9\u2075N) double helix in a \u00b9\u2074N medium, the resulting two daughter double helices are best described as:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Both fully heavy"
+        },
+        {
+          "key": "B",
+          "text": "Both fully light"
+        },
+        {
+          "key": "C",
+          "text": "One fully heavy and one fully light"
+        },
+        {
+          "key": "D",
+          "text": "Each molecule has one heavy strand and one light strand"
+        }
+      ],
+      "answer": "D",
+      "explanation": "\u2014 **Semi-conservative** replication: each daughter DNA molecule retains **one parental (heavy) strand** and contains **one newly synthesized (light) strand**. This is the Meselson\u2013Stahl result.\n\n**Trap:** C is the classic wrong answer \u2014 students remember that \"old + new\" strands end up in daughters but forget that *each* daughter gets *one* of each.",
+      "wikilink": "[[../../biology/01 - Cell#Semi Conservative DNA Replication]]",
+      "sourceNote": "chapters/biology/01 - Cell.html",
+      "sourceNoteTitle": "Cell"
+    },
+    {
+      "id": "bio.cell.q9",
+      "subject": "biology",
+      "chapter": 1,
+      "chapterTitle": "Cell",
+      "difficulty": "recall",
+      "question": "A biology textbook lists the following as \"present in plant cells but absent in animal cells\": cell wall, chloroplast, large central vacuole, plastids. Which option lists **only** items that satisfy this rule?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cell wall and chloroplast only"
+        },
+        {
+          "key": "B",
+          "text": "Cell wall, chloroplast and large central vacuole only"
+        },
+        {
+          "key": "C",
+          "text": "Cell wall, chloroplast, large central vacuole and plastids"
+        },
+        {
+          "key": "D",
+          "text": "Plastids only, because vacuoles exist in animal cells too"
+        }
+      ],
+      "answer": "C",
+      "explanation": "\u2014 All four (cell wall, chloroplast, large central vacuole, plastids) are plant-only structures per the chapter table. Animal cells *do* have small vacuoles, but not the **large** central one.\n\n**Trap:** D is a tempting \"gotcha\" answer. The trick is the word \"large\" \u2014 animal cells do have small vesicles/vacuoles (food vacuoles, lysosomes), but the **large central** vacuole that occupies most of the plant cell volume is absent.",
+      "wikilink": "[[../../biology/01 - Cell#PLANT VS ANIMAL CELL]]",
+      "sourceNote": "chapters/biology/01 - Cell.html",
+      "sourceNoteTitle": "Cell"
+    },
+    {
+      "id": "bio.cell.q10",
+      "subject": "biology",
+      "chapter": 1,
+      "chapterTitle": "Cell",
+      "difficulty": "recall",
+      "question": "During mitosis, the stage at which chromosomes line up on the equatorial plate (metaphase plate) of the cell is called:",
+      "options": [
+        {
+          "key": "A",
+          "text": "Prophase"
+        },
+        {
+          "key": "B",
+          "text": "Metaphase"
+        },
+        {
+          "key": "C",
+          "text": "Anaphase"
+        },
+        {
+          "key": "D",
+          "text": "Telophase"
+        }
+      ],
+      "answer": "B",
+      "explanation": "\u2014 **Metaphase** is defined by chromosomes aligned at the equator, attached to spindle fibres from opposite poles.\n\n**Trap:** None here \u2014 this is a straight recall. Included as a Tier-1 anchor so the file has a fair difficulty spread.",
+      "wikilink": "[[../../biology/01 - Cell#Mitosis]]",
+      "sourceNote": "chapters/biology/01 - Cell.html",
+      "sourceNoteTitle": "Cell"
+    },
+    {
+      "id": "bio.cell.q11",
+      "subject": "biology",
+      "chapter": 1,
+      "chapterTitle": "Cell",
+      "difficulty": "tricky",
+      "question": "Consider the following: (Statement) Lysosomes are called \"suicide bags\" of the cell. (Assertion 1) They contain hydrolytic enzymes. (Assertion 2) They can digest the cell's own components when the cell is damaged.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Both assertions are true and together explain the statement"
+        },
+        {
+          "key": "B",
+          "text": "Both assertions are true but Assertion 2 alone explains the statement"
+        },
+        {
+          "key": "C",
+          "text": "Assertion 1 is true, Assertion 2 is false"
+        },
+        {
+          "key": "D",
+          "text": "Assertion 1 is false, Assertion 2 is true"
+        }
+      ],
+      "answer": "A",
+      "explanation": "\u2014 Lysosomes carry hydrolytic enzymes (Assertion 1 \u2713) that can break down cellular debris \u2014 and, in cell injury/apoptosis, the cell's *own* components (Assertion 2 \u2713). Together these justify the \"suicide bag\" label.\n\n**Trap:** B is a partial-credit trap. Assertion 1 alone only tells you *what's inside*; the \"suicide\" connotation specifically requires that the enzymes can act on the cell itself.",
+      "wikilink": "[[../../biology/01 - Cell#Lysosomes]]",
+      "sourceNote": "chapters/biology/01 - Cell.html",
+      "sourceNoteTitle": "Cell"
+    },
+    {
+      "id": "bio.cell.q12",
+      "subject": "biology",
+      "chapter": 1,
+      "chapterTitle": "Cell",
+      "difficulty": "tricky",
+      "question": "Consider the following statements about microtubule arrangements:\n1. Centrioles have a 9+0 arrangement (nine peripheral triplets, no central pair).\n2. The axoneme of cilia and flagella has a 9+2 arrangement (nine outer doublets + two central singlets).\n\nWhich of the following is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Statement 1 is false; centrioles have 9+2 like axonemes."
+        },
+        {
+          "key": "B",
+          "text": "Statement 2 is false; axonemes have 9+0 like centrioles."
+        },
+        {
+          "key": "C",
+          "text": "Both statements are true; they describe different structures."
+        },
+        {
+          "key": "D",
+          "text": "Both statements are true; they describe the same structure."
+        }
+      ],
+      "answer": "C",
+      "explanation": "\u2014 Statement 1 correctly describes **centrioles** (9+0). Statement 2 correctly describes the **ciliary/flagellar axoneme** (9+2). They are different structures with different microtubule arrangements \u2014 that's why SSC questions test whether you can keep them separate.\n\n**Trap:** D is the lure for students who remember \"9-something\" but not which structure has which pattern. A and B invert the facts.",
+      "wikilink": "[[../../biology/01 - Cell#Centrosome]]",
+      "sourceNote": "chapters/biology/01 - Cell.html",
+      "sourceNoteTitle": "Cell"
+    }
+  ],
+  "subjects": [
+    {
+      "subject": "biology",
+      "chapters": [
+        {
+          "chapter": 1,
+          "title": "Cell",
+          "questions": 12
+        }
+      ],
+      "total": 12,
+      "recall": 4,
+      "apply": 5,
+      "tricky": 3
+    }
+  ],
+  "scoring": {
+    "correct": 2.0,
+    "wrong": -0.5,
+    "unattempted": 0.0
+  },
+  "hash": "a3982a3e01c9",
+  "count": 12
+}

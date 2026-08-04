@@ -1,0 +1,24 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Obsidian
+.obsidian/
+_obsidian/
+
+# Local dev
+*.log
+.env
+
+# Don't ignore dist/ — it's the deployable artefact
+!dist/
