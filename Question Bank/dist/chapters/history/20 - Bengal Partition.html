@@ -5,8 +5,16 @@
 <title>Bengal Partition</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Bengal Partition</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>21. Bengal Partition</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - history (Modern)">MOC - history (Modern)</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -248,7 +256,7 @@
 <li>Muslims did not support Anti-Partition Movement.</li>
 <li>All India Muslim League was formed in December 30, 1906 at Dhaka (now in Bangladesh) by <em>Nawab Khwaja Salimullah and Aga Khan</em>.</li>
 </ul>
-<h2 id="leaders">Leaders:</h2>
+<h2 id="leaders-2">Leaders:</h2>
 <ul>
 <li><em>Poona and Bombay:</em> Bal Gangadhar Tilak</li>
 <li><em>Delhi:</em> Sayed Haider Raza</li>
@@ -284,4 +292,37 @@
 <li><a class="wikilink" href="history/20 - Indian National Congress">20 - Indian National Congress</a> — INC response</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#bengal-partition-1905" class="">BENGAL PARTITION: 1905</a></li><li><a href="#revolutionary-policies-of-lord-curzon" class="">Revolutionary Policies of Lord Curzon</a></li><li><a href="#bengal-was-divided-into" class="">Bengal was divided into:</a></li><li><a href="#reasons-given-by-britishers-for-partition-of-bengal" class="">Reasons given by Britishers for Partition of Bengal</a></li><li><a href="#sessions-of-congress" class="">SESSIONS OF CONGRESS</a></li><li><a href="#1905-session-of-congress" class="">1905 Session of Congress</a></li><li><a href="#1906-calcutta-session-of-congress" class="">1906 Calcutta Session of Congress</a></li><li><a href="#1907-surat-session-of-congress" class="">1907 Surat Session of Congress</a></li><li><a href="#reasons-for-their-separation" class="">Reasons for their Separation</a></li><li><a href="#moderates-and-extremists" class="">MODERATES AND EXTREMISTS</a></li><li><a href="#methods-adopted-by-moderates-were-petitions-newspapers-pamphlets" class="">Methods adopted by Moderates were: Petitions, newspapers, pamphlets</a></li><li><a href="#moderates" class="lvl-3 ">Moderates</a></li><li><a href="#extremists" class="lvl-3 ">Extremists</a></li><li><a href="#methods-adopted-by-extremists" class="">Methods Adopted by Extremists</a></li><li><a href="#bal-gangadhar-tilak" class="">Bal Gangadhar Tilak</a></li><li><a href="#newspapers-during-anti-partition-movements" class="">Newspapers during Anti-partition Movements</a></li><li><a href="#revolutionary-activities-continued" class="">Revolutionary Activities (continued)</a></li><li><a href="#komagata-maru-incident-1914" class="">Komagata Maru Incident, 1914</a></li><li><a href="#defence-of-india-act-1915" class="">Defence of India Act 1915</a></li><li><a href="#world-war-i" class="">World War I</a></li><li><a href="#allies-of-world-war-i-they-won-the-war" class="lvl-3 ">Allies of World War I (they won the war)</a></li><li><a href="#the-central-power" class="lvl-3 ">The Central Power</a></li><li><a href="#abanindranath-tagore" class="">Abanindranath Tagore</a></li><li><a href="#actions-to-show-unity" class="">Actions to Show Unity</a></li><li><a href="#leaders" class="">Leaders</a></li><li><a href="#response-of-muslims" class="">Response of Muslims</a></li><li><a href="#india-council-act-1909" class="">INDIA COUNCIL ACT, 1909</a></li><li><a href="#annulment-of-partition" class="">Annulment of Partition</a></li><li><a href="#revolutionary-activities" class="">REVOLUTIONARY ACTIVITIES</a></li><li><a href="#during-the-world-war-i-in-the-context-of-the-indian-nationalist" class="">During the World War I, in the context of the Indian nationalist:</a></li><li><a href="#home-rule-league-hrl-1916" class="">HOME RULE LEAGUE (HRL), 1916</a></li><li><a href="#lucknow-session-1916" class="">LUCKNOW SESSION, 1916</a></li><li><a href="#writings" class="">Writings</a></li><li><a href="#aurobindo-ghosh" class="">Aurobindo Ghosh</a></li><li><a href="#vande-mataram-movement" class="">Vande Mataram Movement</a></li><li><a href="#continued-from-previous-pages" class="">(Continued from previous pages)</a></li><li><a href="#reaction-of-muslims" class="">Reaction of Muslims</a></li><li><a href="#leaders-2" class="">Leaders:</a></li><li><a href="#end-of-bengal-partition" class="">End of Bengal Partition</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

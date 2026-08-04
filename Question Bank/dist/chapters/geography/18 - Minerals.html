@@ -5,8 +5,16 @@
 <title>Minerals</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Minerals</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>18. Minerals</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - geography">MOC - geography</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -143,7 +151,7 @@
 <ul>
 <li>These are energy sources that are replenished naturally and can be used continuously without depletion, often referred to as <em>renewable energy sources</em>. E.g. <em>Solar energy, wind energy, geothermal energy, etc.</em></li>
 </ul>
-<h2 id="conventional-sources-of-energy">CONVENTIONAL SOURCES OF ENERGY</h2>
+<h2 id="conventional-sources-of-energy-2">CONVENTIONAL SOURCES OF ENERGY</h2>
 <h3 id="1-coal">1. Coal</h3>
 <ul>
 <li>Coal is also known as <em>buried sunshine/black diamond/black gold</em>.</li>
@@ -190,7 +198,7 @@
 <ul>
 <li>Thermal energy power plants, also known as thermal power stations are facilities that <em>convert heat energy</em>, often from burning fossil fuels or nuclear fission, into <em>electrical energy,</em> typically by using <em>steam to drive turbines</em>.</li>
 </ul>
-<h2 id="non-conventional-sources-of-energy">NON-CONVENTIONAL SOURCES OF ENERGY</h2>
+<h2 id="non-conventional-sources-of-energy-2">NON-CONVENTIONAL SOURCES OF ENERGY</h2>
 <h3 id="1-nuclear-atomic-energy">1. Nuclear/Atomic Energy</h3>
 <ul>
 <li>Nuclear fission is a reaction in which the nucleus of an atom splits into <em>two or more smaller nuclei</em>. The fission process often produces gamma photons, and releases a very large amount of energy which is used to generate electric power.</li>
@@ -309,4 +317,37 @@
 <li><a class="wikilink" href="geography/17 - Soil and Agriculture">17 - Soil and Agriculture</a> — soil-derived minerals</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#minerals" class="">MINERALS</a></li><li><a href="#distribution-of-minerals-in-india" class="lvl-3 ">Distribution of Minerals in India</a></li><li><a href="#ferrous-minerals" class="lvl-3 ">FERROUS MINERALS</a></li><li><a href="#4-major-iron-ore-belt-in-india" class="lvl-3 ">4 Major Iron Ore Belt in India</a></li><li><a href="#non-ferrous-minerals" class="lvl-3 ">Non-Ferrous Minerals</a></li><li><a href="#precious-metals" class="lvl-3 ">Precious Metals</a></li><li><a href="#non-metallic-minerals" class="lvl-3 ">Non-Metallic Minerals</a></li><li><a href="#energy-resources" class="">ENERGY RESOURCES</a></li><li><a href="#conventional-sources-of-energy" class="lvl-3 ">Conventional Sources of Energy</a></li><li><a href="#non-conventional-sources-of-energy" class="lvl-3 ">Non-Conventional Sources of Energy</a></li><li><a href="#conventional-sources-of-energy-2" class="">CONVENTIONAL SOURCES OF ENERGY</a></li><li><a href="#1-coal" class="lvl-3 ">1. Coal</a></li><li><a href="#types-of-coal" class="lvl-3 ">Types of Coal</a></li><li><a href="#2-petroleum" class="lvl-3 ">2. Petroleum</a></li><li><a href="#3-natural-gas" class="lvl-3 ">3. Natural Gas</a></li><li><a href="#4-electricity" class="lvl-3 ">4. Electricity</a></li><li><a href="#5-thermal-energy-power-plant" class="lvl-3 ">5. Thermal Energy Power Plant</a></li><li><a href="#non-conventional-sources-of-energy-2" class="">NON-CONVENTIONAL SOURCES OF ENERGY</a></li><li><a href="#1-nuclear-atomic-energy" class="lvl-3 ">1. Nuclear/Atomic Energy</a></li><li><a href="#function-of-moderator-control-rods-and-coolant-in-nuclear-reactors" class="lvl-3 ">Function of Moderator, Control Rods, and Coolant in Nuclear Reactors</a></li><li><a href="#nuclear-power-plants-of-india" class="lvl-3 ">Nuclear Power Plants of India</a></li><li><a href="#2-solar-energy" class="lvl-3 ">2. Solar Energy</a></li><li><a href="#3-wind-energy" class="lvl-3 ">3. Wind Energy</a></li><li><a href="#4-tidal-energy" class="lvl-3 ">4. Tidal Energy</a></li><li><a href="#renewable-vs-non-renewable-resources" class="lvl-3 ">Renewable Vs Non-Renewable Resources</a></li><li><a href="#5-geothermal-energy" class="lvl-3 ">5. Geothermal Energy</a></li><li><a href="#6-biomass" class="lvl-3 ">6. Biomass</a></li><li><a href="#anaerobic-digestion" class="lvl-3 ">Anaerobic Digestion</a></li><li><a href="#major-industrial-regions-of-india" class="lvl-3 ">Major Industrial Regions of India</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

@@ -5,8 +5,16 @@
 <title>Money and Banking</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Money and Banking</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>7. Money and Banking</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - economics">MOC - economics</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -376,4 +384,37 @@
 <li><a class="wikilink" href="economics/05 - Budget and Taxation">05 - Budget and Taxation</a> — fiscal policy</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#banking" class="lvl-3 ">Banking</a></li><li><a href="#reserve-bank-of-india-rbi" class="">Reserve Bank of India (RBI)</a></li><li><a href="#functions-of-rbi" class="lvl-3 ">Functions of RBI</a></li><li><a href="#types-of-money" class="lvl-3 ">Types of Money</a></li><li><a href="#clean-money-policy" class="lvl-3 ">Clean Money Policy</a></li><li><a href="#classification-of-banking-system-according-to-rbi-act-1934" class="lvl-3 ">Classification of Banking System (According to RBI Act 1934)</a></li><li><a href="#history-of-banking-system-in-india" class="">History of Banking System in India</a></li><li><a href="#in-regional-rural-banks-rrb" class="lvl-3 ">In Regional Rural Banks (RRB)</a></li><li><a href="#other-financial-institutions" class="">Other Financial Institutions</a></li><li><a href="#national-bank-of-agriculture-and-rural-development-nabard" class="lvl-3 ">National Bank of Agriculture and Rural Development (NABARD)</a></li><li><a href="#national-housing-bank" class="lvl-3 ">National Housing Bank</a></li><li><a href="#small-industries-development-bank-of-india-sidbi" class="lvl-3 ">Small Industries Development Bank of India (SIDBI)</a></li><li><a href="#securities-and-exchange-board-of-india-sebi" class="lvl-3 ">Securities and Exchange Board of India (SEBI)</a></li><li><a href="#insurance-regulatory-and-development-authority-irdai" class="lvl-3 ">Insurance Regulatory and Development Authority (IRDAI)</a></li><li><a href="#national-agricultural-co-operative-marketing-federation-of-india-limited-nafed" class="lvl-3 ">National Agricultural Co-Operative Marketing Federation Of India Limited (NAFED)</a></li><li><a href="#industrial-development-bank-of-india-limited-idbi" class="lvl-3 ">Industrial Development Bank of India Limited (IDBI)</a></li><li><a href="#microfinance-institutions-mfis" class="">Microfinance Institutions (MFIs)</a></li><li><a href="#self-help-groups-shg" class="lvl-3 ">Self Help Groups (SHG)</a></li><li><a href="#joint-liability-groups-jlg" class="lvl-3 ">Joint Liability Groups (JLG)</a></li><li><a href="#pradhan-mantri-mudra-yojana-pmmy-scheme" class="lvl-3 ">Pradhan Mantri Mudra Yojana (PMMY) Scheme</a></li><li><a href="#non-banking-financial-companies-nbfcs" class="lvl-3 ">Non-Banking Financial Companies (NBFCs)</a></li><li><a href="#non-banking-financial-company-micro-finance-institution-nbfc-mfi" class="lvl-3 ">Non-Banking Financial Company-Micro Finance Institution (NBFC-MFI)</a></li><li><a href="#liquidity" class="">Liquidity</a></li><li><a href="#liquidity-order" class="lvl-3 ">Liquidity Order</a></li><li><a href="#functions-of-money" class="lvl-3 ">Functions of Money</a></li><li><a href="#there-are-two-reasons-why-people-hold-money" class="lvl-3 ">There are Two Reasons Why People Hold Money</a></li><li><a href="#liquidity-trap" class="lvl-3 ">Liquidity Trap</a></li><li><a href="#types-of-money-in-our-economy" class="lvl-3 ">Types of Money in our Economy</a></li><li><a href="#money-aggregates" class="">Money Aggregates</a></li><li><a href="#types-of-money-supply" class="lvl-3 ">Types of Money Supply</a></li><li><a href="#points-to-note" class="lvl-3 ">Points to Note</a></li><li><a href="#interbank-offer-rate" class="lvl-3 ">Interbank Offer Rate</a></li><li><a href="#london-interbank-offer-rate-libor" class="lvl-3 ">London Interbank Offer Rate (LIBOR)</a></li><li><a href="#money-market-short-term-loans" class="lvl-3 ">Money Market (Short-term Loans)</a></li><li><a href="#capital-market-long-term-loans" class="lvl-3 ">Capital Market (Long-Term Loans)</a></li><li><a href="#treasury-bills-issued-by-rbi" class="lvl-3 ">Treasury Bills (Issued by RBI)</a></li><li><a href="#assets" class="lvl-3 ">Assets</a></li><li><a href="#bad-banks" class="lvl-3 ">Bad Banks</a></li><li><a href="#banking-regulations-and-security-laws" class="lvl-3 ">Banking Regulations and Security Laws</a></li><li><a href="#international-banking-regulations" class="">International Banking Regulations</a></li><li><a href="#basel-norms" class="lvl-3 ">Basel Norms</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

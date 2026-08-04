@@ -5,8 +5,16 @@
 <title>Important Inventions and Discoveries</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Important Inventions and Discoveries</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>19. Important Inventions and Discoveries</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - static-gk">MOC - static-gk</a></blockquote>
 <blockquote><strong>Source:</strong> Compiled and verified from Nobel Prize archives, Encyclopaedia Britannica, and standard GK compendiums, July 2025</blockquote>
@@ -267,4 +275,37 @@
 <li><a class="wikilink" href="static-gk/20 - Nicknames of Famous Personalities">20 - Nicknames of Famous Personalities</a> — inventor nicknames</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#why-this-matters-for-ssc" class="">Why this matters for SSC</a></li><li><a href="#mathematics" class="">Mathematics</a></li><li><a href="#physics" class="">Physics</a></li><li><a href="#chemistry" class="">Chemistry</a></li><li><a href="#biology-medicine" class="">Biology &amp; Medicine</a></li><li><a href="#engineering-technology" class="">Engineering &amp; Technology</a></li><li><a href="#indian-contributions-selected" class="">Indian Contributions (selected)</a></li><li><a href="#frequently-confused-pairs-must-remember" class="">Frequently-confused pairs (must remember)</a></li><li><a href="#quick-recall-for-exam" class="">Quick recall for exam</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#2024-2025-updates" class="">2024–2025 Updates</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

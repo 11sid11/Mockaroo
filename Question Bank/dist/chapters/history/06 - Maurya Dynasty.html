@@ -5,8 +5,16 @@
 <title>Maurya Dynasty</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Maurya Dynasty</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>6. Maurya Dynasty</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - history (Ancient)">MOC - history (Ancient)</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -254,4 +262,37 @@
 <li><a class="wikilink" href="history/07 - Post-Maurya Dynasties">07 - Post-Maurya Dynasties</a> — successors</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#sources" class="lvl-3 ">Sources</a></li><li><a href="#maurya-dynasty" class="">MAURYA DYNASTY</a></li><li><a href="#chandragupta-maurya-322-bc-298-bc" class="lvl-3 ">Chandragupta Maurya (322 BC-298 BC)</a></li><li><a href="#about-seleucus-nicator" class="lvl-3 ">About Seleucus Nicator</a></li><li><a href="#bindusara-297-bc-273-bc" class="lvl-3 ">Bindusara (297 BC-273 BC)</a></li><li><a href="#ashoka-268-bc-232-bc" class="lvl-3 ">Ashoka (268 BC-232 BC)</a></li><li><a href="#ashokan-edict" class="lvl-3 ">Ashokan Edict</a></li><li><a href="#major-rock-edicts" class="lvl-3 ">Major Rock Edicts</a></li><li><a href="#10-places-where-ashokan-rock-edicts-have-been-found" class="lvl-3 ">10 Places where Ashokan Rock Edicts have been Found</a></li><li><a href="#14th-major-rock-edicts-of-ashoka" class="lvl-3 ">14th Major Rock Edicts of Ashoka</a></li><li><a href="#minor-rock-edicts" class="lvl-3 ">Minor Rock Edicts</a></li><li><a href="#pillar-edicts" class="lvl-3 ">Pillar Edicts</a></li><li><a href="#delhi-topra-pillar-edict" class="lvl-3 ">Delhi Topra Pillar Edict</a></li><li><a href="#inscriptions" class="lvl-3 ">Inscriptions</a></li><li><a href="#mauryan-administration" class="lvl-3 ">Mauryan Administration</a></li><li><a href="#five-provinces-under-mauryan-administration" class="lvl-3 ">Five Provinces under Mauryan Administration</a></li><li><a href="#tax-system" class="lvl-3 ">Tax System</a></li><li><a href="#two-types-of-courts" class="lvl-3 ">Two Types of Courts</a></li><li><a href="#officers" class="lvl-3 ">Officers</a></li><li><a href="#ports" class="lvl-3 ">Ports</a></li><li><a href="#provincial-administration" class="lvl-3 ">Provincial Administration</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

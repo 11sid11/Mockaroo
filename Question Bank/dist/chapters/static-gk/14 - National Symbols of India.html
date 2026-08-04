@@ -5,8 +5,16 @@
 <title>National Symbols of India</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">National Symbols of India</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>14. National Symbols of India</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - static-gk">MOC - static-gk</a></blockquote>
 <blockquote><strong>Source:</strong> Compiled from official Government of India sources (Know India programme, PIB) — verified July 2025</blockquote>
@@ -142,4 +150,37 @@
 <li><a class="wikilink" href="static-gk/15 - First in India and World">15 - First in India and World</a> — first national symbols</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#why-this-matters-for-ssc" class="">Why this matters for SSC</a></li><li><a href="#comprehensive-list-of-national-symbols" class="">Comprehensive list of National Symbols</a></li><li><a href="#state-emblem-what-is-shown-and-what-s-not" class="">State Emblem – what is shown and what's NOT</a></li><li><a href="#jana-gana-mana-quick-facts" class="">Jana Gana Mana — quick facts</a></li><li><a href="#vande-mataram-quick-facts" class="">Vande Mataram — quick facts</a></li><li><a href="#the-tiranga-dimensions-and-code" class="">The Tiranga — dimensions and code</a></li><li><a href="#trivia-often-asked-in-ssc" class="">Trivia (often asked in SSC)</a></li><li><a href="#quick-recall-for-exam" class="">Quick recall for exam</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#2024-2025-updates" class="">2024–2025 Updates</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#verification" class="">Verification</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

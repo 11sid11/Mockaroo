@@ -5,8 +5,16 @@
 <title>Trophic Dynamics and Energy Transfer</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Trophic Dynamics and Energy Transfer</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>3. Trophic Dynamics and Energy Transfer</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - environment">MOC - environment</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -152,4 +160,37 @@
 <li>Full book: <a class="wikilink" href="Index">Index</a></li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#energy-flow-in-ecosystem" class="">ENERGY FLOW IN ECOSYSTEM</a></li><li><a href="#trophic-level-interaction" class="lvl-3 ">TROPHIC LEVEL INTERACTION</a></li><li><a href="#food-chain" class="">FOOD CHAIN</a></li><li><a href="#types-of-food-chains" class="lvl-3 ">Types of Food Chains</a></li><li><a href="#stages-of-decomposition" class="lvl-3 ">STAGES OF DECOMPOSITION</a></li><li><a href="#favourable-conditions-for-decomposition" class="lvl-3 ">Favourable Conditions for Decomposition:</a></li><li><a href="#food-web" class="">FOOD WEB</a></li><li><a href="#ecological-pyramids" class="">ECOLOGICAL PYRAMIDS</a></li><li><a href="#1-pyramid-of-numbers" class="lvl-3 ">1. Pyramid of Numbers</a></li><li><a href="#2-pyramid-of-biomass" class="lvl-3 ">2. Pyramid of Biomass</a></li><li><a href="#3-pyramid-of-energy" class="lvl-3 ">3. Pyramid of Energy</a></li><li><a href="#pollutants-and-trophic-level" class="">POLLUTANTS AND TROPHIC LEVEL</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

@@ -5,8 +5,16 @@
 <title>First in India and World</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">First in India and World</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>15. First in India and World</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - static-gk">MOC - static-gk</a></blockquote>
 <blockquote><strong>Source:</strong> Compiled and verified from official government sources and standard GK compendiums, July 2025</blockquote>
@@ -157,7 +165,7 @@
 <tr><td>1st UN member</td><td><strong>Poland</strong> (because it signed the UN Charter in 1945 after the original 50) — but original 51 were Argentina, Australia, Belgium, etc. (Poland signed later as 51st)</td></tr>
 <tr><td>1st country to impose a national income tax</td><td><strong>UK</strong> (1799) — modern income tax by William Pitt the Younger</td></tr>
 </tbody></table>
-<h3 id="science-and-technology">Science and Technology</h3>
+<h3 id="science-and-technology-2">Science and Technology</h3>
 <table><thead><tr><th>First</th><th>Detail</th></tr></thead><tbody>
 <tr><td>1st vaccine (smallpox)</td><td><strong>Edward Jenner</strong> (1796)</td></tr>
 <tr><td>1st antibiotic (penicillin)</td><td><strong>Alexander Fleming</strong> (1928)</td></tr>
@@ -265,4 +273,37 @@
 <li><a class="wikilink" href="polity/03 - Preamble and Salient Features of the Constitution">03 - Preamble and Salient Features of the Constitution</a> — first republic</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#why-this-matters-for-ssc" class="">Why this matters for SSC</a></li><li><a href="#first-in-india" class="">First in India</a></li><li><a href="#political-and-constitutional" class="lvl-3 ">Political and Constitutional</a></li><li><a href="#science-and-technology" class="lvl-3 ">Science and Technology</a></li><li><a href="#sports-and-games" class="lvl-3 ">Sports and Games</a></li><li><a href="#education-and-literature" class="lvl-3 ">Education and Literature</a></li><li><a href="#cinema-and-media" class="lvl-3 ">Cinema and Media</a></li><li><a href="#transport-and-communication" class="lvl-3 ">Transport and Communication</a></li><li><a href="#other-notable-firsts" class="lvl-3 ">Other Notable Firsts</a></li><li><a href="#first-in-world" class="">First in World</a></li><li><a href="#political" class="lvl-3 ">Political</a></li><li><a href="#science-and-technology-2" class="lvl-3 ">Science and Technology</a></li><li><a href="#cultural" class="lvl-3 ">Cultural</a></li><li><a href="#memorization-tricks" class="">Memorization tricks</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#2024-2025-updates" class="">2024–2025 Updates</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

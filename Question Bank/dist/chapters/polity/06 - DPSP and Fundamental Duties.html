@@ -5,8 +5,16 @@
 <title>DPSP and Fundamental Duties</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">DPSP and Fundamental Duties</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>6. DPSP and Fundamental Duties</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - polity">MOC - polity</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -191,7 +199,7 @@
 <li>(j) to strive towards excellence in all spheres of individual and collective activity so that the nation constantly rises to higher levels of endeavour and achievement;</li>
 <li>(k) duty of a parent or guardian: to provide opportunities for education to his child or ward between the age of six and fourteen years. (Added through 86th CA, 2002)</li>
 </ul>
-<h2 id="dpsp-and-fundamental-duties-continued">DPSP AND FUNDAMENTAL DUTIES (Continued)</h2>
+<h2 id="dpsp-and-fundamental-duties-continued-2">DPSP AND FUNDAMENTAL DUTIES (Continued)</h2>
 <ul>
 <li><em>Justice Verma Committee:</em></li>
 <li>It identified the existence of legal provisions for implementation of Fundamental Duties and teaching school kids about their duties.</li>
@@ -262,4 +270,37 @@
 <li><a class="wikilink" href="polity/07 - President and Vice President of India">07 - President and Vice President of India</a> — enforcement</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#dpsp-and-fundamental-duties" class="">DPSP AND FUNDAMENTAL DUTIES</a></li><li><a href="#part-iv-directive-principles-of-state-policy-article-36-51" class="lvl-3 ">PART IV - DIRECTIVE PRINCIPLES OF STATE POLICY [Article 36-51]</a></li><li><a href="#dpsp-and-fundamental-duties-continued" class="">DPSP AND FUNDAMENTAL DUTIES (Continued)</a></li><li><a href="#part-iva-fundamental-duties-article-51-a" class="lvl-3 ">PART IVA - FUNDAMENTAL DUTIES [Article 51 A]</a></li><li><a href="#dpsp-and-fundamental-duties-continued-2" class="">DPSP AND FUNDAMENTAL DUTIES (Continued)</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

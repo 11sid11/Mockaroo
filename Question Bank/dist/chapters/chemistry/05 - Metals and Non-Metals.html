@@ -5,8 +5,16 @@
 <title>Metals and Non-Metals</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Metals and Non-Metals</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>5. Metals and Non-Metals</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - chemistry">MOC - chemistry</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -343,4 +351,37 @@
 <li><a class="wikilink" href="chemistry/06 - Acid, Base and Salt">06 - Acid, Base and Salt</a> — acids react with metals</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#metals-and-non-metals" class="">Metals and Non-Metals</a></li><li><a href="#metals" class="lvl-3 ">METALS</a></li><li><a href="#non-metals" class="lvl-3 ">NON-METALS</a></li><li><a href="#metalloids" class="lvl-3 ">Metalloids</a></li><li><a href="#chemical-properties-of-metals" class="lvl-3 ">Chemical Properties of Metals</a></li><li><a href="#amphoteric-oxides" class="lvl-3 ">Amphoteric Oxides</a></li><li><a href="#reactivity-of-different-metals-towards-oxygen" class="lvl-3 ">Reactivity of Different Metals towards Oxygen</a></li><li><a href="#silver-ag-and-gold-au" class="lvl-3 ">Silver (Ag) and Gold (Au)</a></li><li><a href="#reactivity-series-of-metals" class="lvl-3 ">Reactivity Series of Metals</a></li><li><a href="#reaction-of-metal-with-water" class="lvl-3 ">Reaction of Metal with Water</a></li><li><a href="#reactivity-of-different-metals-with-water" class="lvl-3 ">Reactivity of Different Metals with Water</a></li><li><a href="#reaction-of-metal-with-acids" class="lvl-3 ">Reaction of Metal with Acids</a></li><li><a href="#reaction-of-metal-with-dilute-nitric-acid-hno" class="lvl-3 ">Reaction of Metal with Dilute Nitric Acid (HNO₃)</a></li><li><a href="#aqua-regia-royal-water" class="lvl-3 ">Aqua Regia (Royal Water)</a></li><li><a href="#reaction-of-metals-with-solutions-of-other-metal-salt" class="lvl-3 ">Reaction of Metals with solutions of other Metal Salt</a></li><li><a href="#chemical-properties-of-non-metals" class="lvl-3 ">Chemical Properties of Non Metals</a></li><li><a href="#reaction-between-metals-and-non-metals-ionic-bond-formation" class="lvl-3 ">Reaction between Metals and Non-metals Ionic Bond formation</a></li><li><a href="#electrovalent-bond" class="lvl-3 ">Electrovalent Bond</a></li><li><a href="#properties-of-ionic-compounds" class="lvl-3 ">Properties of Ionic Compounds</a></li><li><a href="#occurrence-of-metals-in-the-form-of-their-ore" class="lvl-3 ">Occurrence of Metals in the Form of Their Ore</a></li><li><a href="#corrosion" class="lvl-3 ">Corrosion</a></li><li><a href="#prevention-of-corrosion" class="lvl-3 ">Prevention of Corrosion</a></li><li><a href="#fact" class="lvl-3 ">Fact</a></li><li><a href="#formation-of-alloy" class="lvl-3 ">Formation of Alloy</a></li><li><a href="#steps-involved-in-extraction-of-metals-from-ores" class="lvl-3 ">Steps Involved in Extraction of Metals from Ores</a></li><li><a href="#reduction-of-metal" class="lvl-3 ">Reduction of Metal</a></li><li><a href="#thermite-reaction" class="lvl-3 ">Thermite Reaction</a></li><li><a href="#electrolytic-refining" class="lvl-3 ">Electrolytic Refining</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

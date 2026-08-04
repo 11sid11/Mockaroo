@@ -5,8 +5,16 @@
 <title>Monsoon</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Monsoon</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>15. Monsoon</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - geography">MOC - geography</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -74,7 +82,7 @@
 <li>The term &quot;Monsoon&quot; is derived from an Arabic word &quot;Mausim&quot; meaning seasonal reversal of winds.</li>
 <li><strong>Onset of monsoon:</strong> It begins in Kerala (first week of June) in the Western ghats (orographic rainfall).</li>
 </ul>
-<h2 id="monsoon">MONSOON</h2>
+<h2 id="monsoon-2">MONSOON</h2>
 <ul>
 <li><strong>Rain Shadow Zone:</strong> Areas like Leeward side of Western Ghats receive less rain.</li>
 <li>Southwest Monsoon is divided into two branches: Bay of Bengal and Arabian Sea Branch.</li>
@@ -129,7 +137,7 @@
 <tr><td>D: Cold Snow Forest</td><td>The average temperature of the coldest month is -3°C or below</td></tr>
 <tr><td>E: Polar Type (Cold)/Tundra</td><td>Average temperature for all months is below 10°C</td></tr>
 </tbody></table>
-<h2 id="monsoon">MONSOON</h2>
+<h2 id="monsoon-3">MONSOON</h2>
 <h3 id="climate-codes">Climate Codes</h3>
 <ul>
 <li>S: Steppe</li>
@@ -174,4 +182,37 @@
 <li><a class="wikilink" href="geography/07 - Wind, Ocean Current and Cyclone">07 - Wind, Ocean Current and Cyclone</a> — wind systems</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#monsoon" class="">MONSOON</a></li><li><a href="#factors-affecting-climate-of-any-place" class="lvl-3 ">Factors Affecting Climate of Any Place</a></li><li><a href="#climate-vs-weather" class="lvl-3 ">Climate vs Weather</a></li><li><a href="#seasons-in-india" class="lvl-3 ">Seasons in India</a></li><li><a href="#pre-monsoon-showers" class="lvl-3 ">Pre-Monsoon Showers</a></li><li><a href="#monsoon-season-june-september" class="lvl-3 ">Monsoon Season (June–September)</a></li><li><a href="#monsoon-2" class="">MONSOON</a></li><li><a href="#retreating-monsoon-october-november" class="lvl-3 ">Retreating Monsoon (October–November)</a></li><li><a href="#la-ni-a-and-el-ni-o" class="lvl-3 ">La Niña and El Niño</a></li><li><a href="#variation-in-temperature-rainfall" class="lvl-3 ">Variation in Temperature &amp; Rainfall</a></li><li><a href="#continentality-effect" class="lvl-3 ">Continentality Effect</a></li><li><a href="#koeppen-climate-classification-1884" class="lvl-3 ">Koeppen Climate Classification (1884)</a></li><li><a href="#monsoon-3" class="">MONSOON</a></li><li><a href="#climate-codes" class="lvl-3 ">Climate Codes</a></li><li><a href="#seasons-and-months" class="lvl-3 ">Seasons and Months</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

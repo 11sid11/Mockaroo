@@ -5,8 +5,16 @@
 <title>Census</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Census</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>3. Census</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - static-gk">MOC - static-gk</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -348,4 +356,37 @@
 <li><a class="wikilink" href="static-gk/23 - Indian States Snapshot">23 - Indian States Snapshot</a> — state-wise population</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#census" class="lvl-3 ">Census</a></li><li><a href="#history-of-census-in-india" class="lvl-3 ">History of Census in India</a></li><li><a href="#census-2011" class="lvl-3 ">Census 2011</a></li><li><a href="#india-s-population-in-2011-census" class="lvl-3 ">India's Population in 2011 Census</a></li><li><a href="#highest-and-lowest-population" class="lvl-3 ">Highest and Lowest Population</a></li><li><a href="#growth-rate" class="lvl-3 ">Growth Rate</a></li><li><a href="#child-population-0-6-years" class="lvl-3 ">Child Population (0-6 years)</a></li><li><a href="#sex-ratio-females-per-1000-males" class="lvl-3 ">Sex Ratio (Females per 1000 Males)</a></li><li><a href="#child-sex-ratio-0-6-years" class="lvl-3 ">Child Sex Ratio (0-6 years)</a></li><li><a href="#literacy-rate" class="lvl-3 ">Literacy Rate</a></li><li><a href="#overall-literacy-rate" class="lvl-3 ">Overall Literacy Rate</a></li><li><a href="#literacy-rate-gender-wise" class="lvl-3 ">Literacy Rate Gender-wise</a></li><li><a href="#literacy-rate-category-wise-according-to-2011-census" class="lvl-3 ">Literacy Rate Category-wise (According to 2011 Census)</a></li><li><a href="#population-density" class="lvl-3 ">Population Density</a></li><li><a href="#rural-and-urban-divide" class="lvl-3 ">Rural and Urban Divide</a></li><li><a href="#percentage-wise-rural-and-urban-divide" class="lvl-3 ">Percentage-wise Rural and Urban Divide</a></li><li><a href="#caste-based-population" class="lvl-3 ">Caste-Based Population</a></li><li><a href="#religion-based" class="lvl-3 ">Religion Based</a></li><li><a href="#demographic-dividend" class="lvl-3 ">Demographic Dividend</a></li><li><a href="#work-force-in-india" class="lvl-3 ">Work Force in India</a></li><li><a href="#migration-trends" class="lvl-3 ">Migration Trends</a></li><li><a href="#main-reason-for-migration" class="lvl-3 ">Main Reason for Migration</a></li><li><a href="#language" class="lvl-3 ">Language</a></li><li><a href="#census-1951" class="lvl-3 ">Census 1951</a></li><li><a href="#miscellaneous-facts" class="lvl-3 ">Miscellaneous Facts</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#verified-and-edited-2025" class="">Verified and Edited 2025</a></li><li><a href="#ocr-artifacts-fixed" class="lvl-3 ">OCR Artifacts Fixed</a></li><li><a href="#factual-verifications" class="lvl-3 ">Factual Verifications</a></li><li><a href="#notes" class="lvl-3 ">Notes</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

@@ -5,8 +5,16 @@
 <title>Hereditary and Evolution</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Hereditary and Evolution</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>11. Hereditary and Evolution</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - biology">MOC - biology</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -88,7 +96,7 @@
 <li>In the first generation Mendel found that all the offspring shared one feature, which he called dominant trait (they were all tall), and did not display any recessive trait.</li>
 <li>When the first-generation plants were self-fertilized, the second generation showed the reappearance of the recessive trait in about 1 out of every 4 plants. This resulted in a 3:1 ratio, with three plants showing the dominant trait for every one showing the recessive trait.</li>
 </ul>
-<h2 id="hereditary-and-evolution">HEREDITARY AND EVOLUTION</h2>
+<h2 id="hereditary-and-evolution-2">HEREDITARY AND EVOLUTION</h2>
 <p><strong>Dihybrid Cross</strong></p>
 <ul>
 <li>A dihybrid cross is a genetic cross involving <em>two different traits</em>, each with <em>two contrasting alleles</em>, where both parents are <em>heterozygous</em> for both traits. E.g. <em>A cross between a seed shape (round vs. wrinkled) and seed color (yellow vs. green).</em></li>
@@ -152,7 +160,7 @@
 <ul>
 <li>Total: 24 + 1 (sternum) = 25</li>
 </ul>
-<h2 id="hereditary-and-evolution">HEREDITARY AND EVOLUTION</h2>
+<h2 id="hereditary-and-evolution-3">HEREDITARY AND EVOLUTION</h2>
 <p><em>Skull diagrams (lateral, anterior) showing mandible, hyoid bone, larynx</em></p>
 <p><em>Hyoid Bone</em></p>
 <p><em>Inner ear bone diagram (Incus, Stapes)</em></p>
@@ -231,7 +239,7 @@
 <li><em>Premolars</em>: 4 → They are used in grinding of food.</li>
 <li><em>Molars</em>: 6 → They are used for chewing and crushing of food.</li>
 </ul>
-<h2 id="hereditary-and-evolution">HEREDITARY AND EVOLUTION</h2>
+<h2 id="hereditary-and-evolution-4">HEREDITARY AND EVOLUTION</h2>
 <p><strong>Dental Formula</strong></p>
 <p>2, 1, 2, 3 = I, C, P, M → Adults</p>
 <p>2, 1, 2, 3 = I, C, P, M</p>
@@ -288,4 +296,37 @@
 <li><a class="wikilink" href="biology/06 - Reproduction">06 - Reproduction</a> — genes pass via reproduction</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#hereditary-and-evolution" class="">HEREDITARY AND EVOLUTION</a></li><li><a href="#hereditary" class="">HEREDITARY</a></li><li><a href="#gregor-mendel-s-experiment" class="">GREGOR MENDEL'S EXPERIMENT</a></li><li><a href="#hereditary-and-evolution-2" class="">HEREDITARY AND EVOLUTION</a></li><li><a href="#skeletal-system" class="">SKELETAL SYSTEM</a></li><li><a href="#hereditary-and-evolution-3" class="">HEREDITARY AND EVOLUTION</a></li><li><a href="#hereditary-and-evolution-4" class="">HEREDITARY AND EVOLUTION</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

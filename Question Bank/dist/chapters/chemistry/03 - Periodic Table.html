@@ -5,8 +5,16 @@
 <title>Periodic Table</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Periodic Table</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>3. Periodic Table</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - chemistry">MOC - chemistry</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -314,4 +322,37 @@
 <li><a class="wikilink" href="chemistry/05 - Metals and Non-Metals">05 - Metals and Non-Metals</a> — metals' positions on the table</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#periodic-table" class="">Periodic Table</a></li><li><a href="#early-attempts-at-classification-of-elements" class="">EARLY ATTEMPTS AT CLASSIFICATION OF ELEMENTS</a></li><li><a href="#d-bereiner-s-law-of-triads-1817" class="lvl-3 ">Döbereiner's Law of Triads (1817)</a></li><li><a href="#newland-s-law-of-octaves-1865" class="lvl-3 ">Newland's Law of Octaves (1865)</a></li><li><a href="#limitations-of-newland-s-model" class="lvl-3 ">Limitations of Newland's Model</a></li><li><a href="#lothar-meyer" class="lvl-3 ">Lothar Meyer</a></li><li><a href="#mendeleev-s-periodic-table-1869" class="lvl-3 ">Mendeleev's Periodic Table (1869)</a></li><li><a href="#mendeleev-s-periodic-law" class="lvl-3 ">Mendeleev's Periodic Law</a></li><li><a href="#limitations-of-mendeleev-s-periodic-table" class="lvl-3 ">Limitations of Mendeleev's Periodic Table</a></li><li><a href="#modern-periodic-table" class="">MODERN PERIODIC TABLE</a></li><li><a href="#group-names" class="lvl-3 ">Group Names</a></li><li><a href="#some-special-elements" class="lvl-3 ">Some Special Elements</a></li><li><a href="#trick-to-remember-groups" class="lvl-3 ">TRICK TO REMEMBER GROUPS</a></li><li><a href="#lanthanides-and-actinides" class="lvl-3 ">Lanthanides and Actinides</a></li><li><a href="#diagonal-relationship" class="lvl-3 ">Diagonal Relationship</a></li><li><a href="#trends-in-periodic-table" class="">TRENDS IN PERIODIC TABLE</a></li><li><a href="#ionisation-energy" class="lvl-3 ">Ionisation Energy</a></li><li><a href="#electron-affinity" class="lvl-3 ">Electron Affinity</a></li><li><a href="#electronegativity" class="lvl-3 ">Electronegativity</a></li><li><a href="#electronic-configuration" class="lvl-3 ">Electronic Configuration</a></li><li><a href="#octet-rule" class="lvl-3 ">Octet Rule</a></li><li><a href="#isoelectronic-species" class="lvl-3 ">Isoelectronic Species</a></li><li><a href="#calculation-of-atomic-mass-a" class="lvl-3 ">Calculation of Atomic Mass (A)</a></li><li><a href="#valency" class="lvl-3 ">Valency</a></li><li><a href="#variable-valency" class="lvl-3 ">Variable Valency</a></li><li><a href="#valence-electrons" class="lvl-3 ">Valence Electrons</a></li><li><a href="#valency-based-on-valence-electrons" class="lvl-3 ">Valency Based on Valence Electrons</a></li><li><a href="#writing-chemical-formula-of-a-compound" class="lvl-3 ">Writing Chemical Formula of a Compound</a></li><li><a href="#duet-rule" class="lvl-3 ">Duet Rule</a></li><li><a href="#concept-of-atomicity" class="">CONCEPT OF ATOMICITY</a></li><li><a href="#atomicity" class="lvl-3 ">Atomicity</a></li><li><a href="#diatomic-molecules" class="lvl-3 ">Diatomic Molecules</a></li><li><a href="#monoatomic-molecules" class="lvl-3 ">Monoatomic Molecules</a></li><li><a href="#triatomic-molecules" class="lvl-3 ">Triatomic Molecules</a></li><li><a href="#polyatomic-molecules" class="lvl-3 ">Polyatomic Molecules</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

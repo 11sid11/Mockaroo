@@ -5,8 +5,16 @@
 <title>Gravitation and Work Done</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Gravitation and Work Done</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>3. Gravitation and Work Done</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - physics">MOC - physics</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -178,7 +186,7 @@
 <li>Negative Work: Force and displacement in opposite directions</li>
 <li>Zero Work: Force perpendicular to displacement</li>
 </ul>
-<h2 id="gravitation-and-work-done-continued">Gravitation and Work Done (continued)</h2>
+<h2 id="gravitation-and-work-done-continued-2">Gravitation and Work Done (continued)</h2>
 <h3 id="energy">Energy</h3>
 <ul>
 <li>Energy is defined as the <em>capacity to do work</em>, or the ability to cause change. It may exist in potential, kinetic, thermal, electrical, chemical, nuclear, or other various forms.</li>
@@ -269,7 +277,7 @@
 <ul>
 <li>Power is the <em>rate at which work is done</em> or the rate at which energy is transferred from one place to another or transformed from one type to another. The S.I. unit of power is <em>Watt (W)</em>.</li>
 </ul>
-<h2 id="gravitation-and-work-done-continued">Gravitation and Work Done (continued)</h2>
+<h2 id="gravitation-and-work-done-continued-3">Gravitation and Work Done (continued)</h2>
 <h3 id="power-continued">Power (continued)</h3>
 <p>Power = Work / Time</p>
 <p>Power = Force × Velocity</p>
@@ -307,4 +315,37 @@
 <li><a class="wikilink" href="physics/04 - Sound">04 - Sound</a> — waves (energy transfer)</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#gravitation-and-work-done" class="">Gravitation and Work Done</a></li><li><a href="#universal-law-of-gravitation" class="lvl-3 ">Universal Law of Gravitation</a></li><li><a href="#kepler-s-planetary-laws-1609" class="lvl-3 ">Kepler's Planetary Laws (1609)</a></li><li><a href="#mass-vs-weight" class="lvl-3 ">Mass Vs Weight</a></li><li><a href="#variation-in-the-gravity" class="lvl-3 ">Variation in the gravity</a></li><li><a href="#thrust" class="lvl-3 ">Thrust</a></li><li><a href="#pressure" class="lvl-3 ">Pressure</a></li><li><a href="#pascal-s-law" class="lvl-3 ">Pascal's Law</a></li><li><a href="#gravitation-and-work-done-continued" class="">Gravitation and Work Done (continued)</a></li><li><a href="#pascal-s-principle-continued" class="lvl-3 ">Pascal's Principle (continued)</a></li><li><a href="#archimedes-principle" class="lvl-3 ">Archimedes' Principle</a></li><li><a href="#bernoulli-s-principle" class="lvl-3 ">Bernoulli's Principle</a></li><li><a href="#relative-density" class="lvl-3 ">Relative Density</a></li><li><a href="#work-and-energy" class="lvl-3 ">Work and Energy</a></li><li><a href="#gravitation-and-work-done-continued-2" class="">Gravitation and Work Done (continued)</a></li><li><a href="#energy" class="lvl-3 ">Energy</a></li><li><a href="#forms-of-energy" class="lvl-3 ">Forms of Energy</a></li><li><a href="#laws-of-thermodynamics" class="lvl-3 ">Laws of Thermodynamics</a></li><li><a href="#power" class="lvl-3 ">Power</a></li><li><a href="#gravitation-and-work-done-continued-3" class="">Gravitation and Work Done (continued)</a></li><li><a href="#power-continued" class="lvl-3 ">Power (continued)</a></li><li><a href="#horse-power" class="lvl-3 ">Horse Power</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

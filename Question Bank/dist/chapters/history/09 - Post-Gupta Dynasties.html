@@ -5,8 +5,16 @@
 <title>Post-Gupta Dynasties</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Post-Gupta Dynasties</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>9. Post-Gupta Dynasties</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - history (Ancient)">MOC - history (Ancient)</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -151,7 +159,7 @@
 <li><strong>Capital</strong>: <em>Dwarasamudra (Halebidu)</em></li>
 <li><strong>Founder</strong>: <em>Nripa Kama II</em></li>
 </ul>
-<h3 id="architecture">Architecture</h3>
+<h3 id="architecture-2">Architecture</h3>
 <ul>
 <li>Star-shaped temple.</li>
 <li>Built by: King <em>Vishnuvardhana</em>.</li>
@@ -190,4 +198,37 @@
 <li><a class="wikilink" href="history/10 - Sangam Age">10 - Sangam Age</a> — South India in same era</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#pushyabhuti-vardhana-dynasty" class="">PUSHYABHUTI/VARDHANA DYNASTY</a></li><li><a href="#harshavardhana-606-ad-647-ad" class="lvl-3 ">Harshavardhana (606 AD-647 AD)</a></li><li><a href="#chalukya-dynasty" class="">CHALUKYA DYNASTY</a></li><li><a href="#badami-chalukya" class="">BADAMI CHALUKYA</a></li><li><a href="#jayasimha" class="lvl-3 ">Jayasimha</a></li><li><a href="#pulakeshin-i-543-ad-566-ad" class="lvl-3 ">Pulakeshin I (543 AD-566 AD)</a></li><li><a href="#pulakeshin-ii-610-ad-642-ad" class="lvl-3 ">Pulakeshin II (610 AD-642 AD)</a></li><li><a href="#vikramaditya-i" class="lvl-3 ">Vikramaditya I</a></li><li><a href="#chalukyan-architecture" class="lvl-3 ">Chalukyan Architecture</a></li><li><a href="#aihole" class="lvl-3 ">Aihole</a></li><li><a href="#pattadakal" class="lvl-3 ">Pattadakal</a></li><li><a href="#pallava-dynasty-575-ad-897-ad" class="">PALLAVA DYNASTY (575 AD-897 AD)</a></li><li><a href="#pallava-architecture" class="lvl-3 ">Pallava Architecture</a></li><li><a href="#rashtrakuta-dynasty-755-ad-878-ad" class="">RASHTRAKUTA DYNASTY (755 AD-878 AD)</a></li><li><a href="#krishna-i-756-ad-774-ad" class="lvl-3 ">Krishna I (756 AD-774 AD)</a></li><li><a href="#govinda-iii-793-ad-814-ad" class="lvl-3 ">Govinda III (793 AD-814 AD)</a></li><li><a href="#amoghavarsha-814-ad-878-ad" class="lvl-3 ">Amoghavarsha (814 AD-878 AD)</a></li><li><a href="#krishna-iii-939-ad-967-ad" class="lvl-3 ">Krishna III (939 AD-967 AD)</a></li><li><a href="#architecture" class="lvl-3 ">Architecture</a></li><li><a href="#hoysala-dynasty" class="">HOYSALA DYNASTY</a></li><li><a href="#architecture-2" class="lvl-3 ">Architecture</a></li><li><a href="#important-battles" class="lvl-3 ">Important Battles</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

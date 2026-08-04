@@ -5,8 +5,16 @@
 <title>National Income</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">National Income</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>3. National Income</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - economics">MOC - economics</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -48,7 +56,7 @@
 <ul>
 <li>Leakages are funds that exit the circular flow, reducing total spending and slowing economic growth.</li>
 </ul>
-<h3 id="types">Types</h3>
+<h3 id="types-2">Types</h3>
 <ul>
 <li><strong>Savings:</strong> When households save instead of spending their income.</li>
 <li><strong>Taxes:</strong> When people pay taxes to the government.</li>
@@ -235,4 +243,37 @@
 <li><a class="wikilink" href="economics/04 - Inflation and Unemployment">04 - Inflation and Unemployment</a> — macroeconomic indicators</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#national-income" class="">NATIONAL INCOME</a></li><li><a href="#circular-flow-of-income" class="lvl-3 ">Circular Flow of Income</a></li><li><a href="#injection-money-entering-the-economy" class="lvl-3 ">Injection (Money Entering the Economy)</a></li><li><a href="#types" class="lvl-3 ">Types</a></li><li><a href="#leakage-money-leaving-the-economy" class="lvl-3 ">Leakage (Money Leaving the Economy)</a></li><li><a href="#types-2" class="lvl-3 ">Types</a></li><li><a href="#three-methods-to-calculate-national-income" class="lvl-3 ">Three Methods to Calculate National Income</a></li><li><a href="#1-value-added-method-production-method-output-method" class="lvl-3 ">1. Value Added Method/Production Method/Output Method</a></li><li><a href="#2-income-method" class="lvl-3 ">2. Income Method</a></li><li><a href="#components-of-income-method" class="lvl-3 ">Components of Income Method</a></li><li><a href="#3-expenditure-method" class="lvl-3 ">3. Expenditure Method</a></li><li><a href="#final-goods-vs-intermediate-goods" class="lvl-3 ">Final Goods vs Intermediate Goods</a></li><li><a href="#types-of-final-goods" class="lvl-3 ">Types of Final Goods</a></li><li><a href="#inventory" class="lvl-3 ">Inventory</a></li><li><a href="#stock-vs-flow" class="lvl-3 ">Stock vs Flow</a></li><li><a href="#aggregates-of-national-income" class="">AGGREGATES OF NATIONAL INCOME</a></li><li><a href="#gross-domestic-product-gdp" class="lvl-3 ">Gross Domestic Product (GDP)</a></li><li><a href="#gross-national-product-gnp" class="lvl-3 ">Gross National Product (GNP)</a></li><li><a href="#net-domestic-product-ndp" class="lvl-3 ">Net Domestic Product (NDP)</a></li><li><a href="#net-national-product-nnp" class="lvl-3 ">Net National Product (NNP)</a></li><li><a href="#market-price-vs-factor-cost" class="lvl-3 ">Market Price vs Factor Cost</a></li><li><a href="#to-summarise" class="lvl-3 ">To Summarise</a></li><li><a href="#real-gdp-vs-nominal-gdp" class="lvl-3 ">Real GDP vs Nominal GDP</a></li><li><a href="#per-capita-income" class="lvl-3 ">Per Capita Income</a></li><li><a href="#purchasing-power-parity" class="lvl-3 ">Purchasing Power Parity</a></li><li><a href="#personal-income" class="lvl-3 ">Personal Income</a></li><li><a href="#personal-disposable-income" class="lvl-3 ">Personal Disposable Income</a></li><li><a href="#potential-gdp" class="lvl-3 ">Potential GDP</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

@@ -5,8 +5,16 @@
 <title>Diseases</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Diseases</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>9. Diseases</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - biology">MOC - biology</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -79,7 +87,7 @@
 <tr><td>M</td><td>Mumps</td></tr>
 <tr><td>P</td><td>Polio</td></tr>
 </tbody></table>
-<h2 id="diseases">DISEASES</h2>
+<h2 id="diseases-2">DISEASES</h2>
 <p><strong>Hepatitis (Type A, B, and C)</strong></p>
 <ul>
 <li>Affects: Liver.</li>
@@ -191,7 +199,7 @@
 <ul>
 <li>Caused by: <em>Streptococcus pneumoniae</em>.</li>
 </ul>
-<h2 id="diseases">DISEASES</h2>
+<h2 id="diseases-3">DISEASES</h2>
 <p><strong>Diphtheria</strong></p>
 <ul>
 <li>Caused by: <em>Corynebacterium diphtheriae</em>.</li>
@@ -295,7 +303,7 @@
 <li>Delay in puberty or go a partial amount.</li>
 <li>Less facial and body hair following puberty.</li>
 </ul>
-<h2 id="diseases">DISEASES</h2>
+<h2 id="diseases-4">DISEASES</h2>
 <ol>
 <li>2. <em>Mendelian Disorders</em>: Disorders that may occur mainly by the alteration or mutation in a single gene. E.g. <em>Sickle cell anaemia, Thalassemia, Colour blindness, Haemophilia, etc.</em></li>
 </ol>
@@ -355,4 +363,37 @@
 <li><a class="wikilink" href="MOC - static-gk">MOC - static-gk</a> — diseases and nutrients reference lists</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#diseases" class="">DISEASES</a></li><li><a href="#diseases-2" class="">DISEASES</a></li><li><a href="#diseases-3" class="">DISEASES</a></li><li><a href="#genetic-disorders" class="">GENETIC DISORDERS</a></li><li><a href="#diseases-4" class="">DISEASES</a></li><li><a href="#diseases-in-plants" class="">DISEASES IN PLANTS</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

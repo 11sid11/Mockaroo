@@ -5,8 +5,16 @@
 <title>Human Eye and Vision</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Human Eye and Vision</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>6. Human Eye and Vision</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - physics">MOC - physics</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -246,4 +254,37 @@
 <li><a class="wikilink" href="physics/05 - Reflection and Refraction">05 - Reflection and Refraction</a> — refraction of light</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#human-eye" class="">HUMAN EYE</a></li><li><a href="#cornea" class="lvl-3 ">Cornea</a></li><li><a href="#aqueous-humor" class="lvl-3 ">Aqueous Humor</a></li><li><a href="#iris-dark-muscular-diaphragm" class="lvl-3 ">Iris (dark muscular diaphragm)</a></li><li><a href="#pupil" class="lvl-3 ">Pupil</a></li><li><a href="#lens" class="lvl-3 ">Lens</a></li><li><a href="#vitreous-humour" class="lvl-3 ">Vitreous Humour</a></li><li><a href="#retina" class="lvl-3 ">Retina</a></li><li><a href="#blind-spot" class="lvl-3 ">Blind Spot</a></li><li><a href="#optic-nerve" class="lvl-3 ">Optic Nerve</a></li><li><a href="#power-of-accommodation" class="lvl-3 ">Power of Accommodation</a></li><li><a href="#defects-of-eye" class="lvl-3 ">Defects of Eye</a></li><li><a href="#presbyopia" class="lvl-3 ">Presbyopia</a></li><li><a href="#glaucoma" class="lvl-3 ">Glaucoma</a></li><li><a href="#trachoma" class="lvl-3 ">Trachoma</a></li><li><a href="#colour-blindness" class="lvl-3 ">Colour Blindness</a></li><li><a href="#cataract" class="lvl-3 ">Cataract</a></li><li><a href="#light" class="">LIGHT</a></li><li><a href="#refraction-of-light-through-a-prism" class="lvl-3 ">Refraction of Light through a Prism</a></li><li><a href="#dispersion-of-white-light-through-prism" class="lvl-3 ">Dispersion of White Light through Prism</a></li><li><a href="#electromagnetic-spectrum" class="lvl-3 ">Electromagnetic Spectrum</a></li><li><a href="#trick-to-remember" class="lvl-3 ">TRICK TO REMEMBER</a></li><li><a href="#planck-s-constant" class="lvl-3 ">Planck's Constant</a></li><li><a href="#rainbow-formation" class="lvl-3 ">Rainbow Formation</a></li><li><a href="#refraction-in-atmosphere" class="lvl-3 ">Refraction in Atmosphere</a></li><li><a href="#total-internal-reflection-tir" class="lvl-3 ">Total Internal Reflection (TIR)</a></li><li><a href="#conditions-of-total-internal-reflection" class="lvl-3 ">Conditions of Total Internal Reflection</a></li><li><a href="#uses-of-optical-fibres" class="lvl-3 ">Uses of Optical Fibres</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

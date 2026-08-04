@@ -5,8 +5,16 @@
 <title>Marathas</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Marathas</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>15. Marathas</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - history (Medieval)">MOC - history (Medieval)</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -144,4 +152,37 @@
 <li><a class="wikilink" href="history/12 - Delhi Sultanate">12 - Delhi Sultanate</a> — earlier medieval power</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#maratha-state-1674-1720-and-maratha-confidercy-1720-1818" class="">MARATHA STATE (1674-1720) AND MARATHA CONFIDERCY (1720-1818)</a></li><li><a href="#shivaji-1674-1680" class="lvl-3 ">Shivaji (1674-1680)</a></li><li><a href="#expeditions-of-shivaji" class="lvl-3 ">Expeditions of Shivaji</a></li><li><a href="#revenue-sources" class="lvl-3 ">Revenue Sources</a></li><li><a href="#sambhaji-1681-1689" class="lvl-3 ">Sambhaji (1681-1689)</a></li><li><a href="#rajaram-1689-1700" class="lvl-3 ">Rajaram (1689-1700)</a></li><li><a href="#tarabai" class="lvl-3 ">Tarabai</a></li><li><a href="#shahuji-1708-1749" class="lvl-3 ">Shahuji (1708-1749)</a></li><li><a href="#balaji-viswanath-1713-1720" class="lvl-3 ">Balaji Viswanath (1713-1720)</a></li><li><a href="#baji-rao-i-1720-1740" class="lvl-3 ">Baji Rao I (1720-1740)</a></li><li><a href="#balaji-baji-rao-1740-1761" class="lvl-3 ">Balaji Baji Rao (1740-1761)</a></li><li><a href="#maratha-confederacy" class="lvl-3 ">Maratha Confederacy</a></li><li><a href="#anglo-maratha-wars" class="lvl-3 ">Anglo-Maratha Wars</a></li><li><a href="#1st-anglo-maratha-war-1775-1782" class="lvl-3 ">1st Anglo-Maratha War: 1775-1782</a></li><li><a href="#2nd-anglo-maratha-war-1803-1805" class="lvl-3 ">2nd Anglo Maratha War: 1803-1805</a></li><li><a href="#3rd-anglo-maratha-war-1817-1818" class="lvl-3 ">3rd Anglo-Maratha War (1817-1818)</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

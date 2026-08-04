@@ -5,8 +5,16 @@
 <title>Delhi Sultanate</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Delhi Sultanate</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>12. Delhi Sultanate</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - history (Medieval)">MOC - history (Medieval)</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -331,4 +339,37 @@
 <li><a class="wikilink" href="history/13 - Vijayanagara and Bahmani Kingdom">13 - Vijayanagara and Bahmani Kingdom</a> — contemporary South</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#delhi-sultanate-period-1206-ad-1526-ad" class="">Delhi Sultanate Period (1206 AD–1526 AD)</a></li><li><a href="#foreign-invasions" class="lvl-3 ">Foreign Invasions</a></li><li><a href="#delhi-sultanate-dynasties-trick-to-remember" class="lvl-3 ">Delhi Sultanate Dynasties — TRICK TO REMEMBER</a></li><li><a href="#slave-dynasty-1206-ad-1290-ad" class="lvl-3 ">Slave Dynasty (1206 AD–1290 AD)</a></li><li><a href="#slave-dynasty-continued" class="lvl-3 ">Slave Dynasty (continued)</a></li><li><a href="#important-officers" class="lvl-3 ">Important Officers</a></li><li><a href="#khilji-dynasty-1290-ad-1320-ad" class="lvl-3 ">Khilji Dynasty (1290 AD–1320 AD)</a></li><li><a href="#alauddin-khilji-continued" class="lvl-3 ">Alauddin Khilji (continued)</a></li><li><a href="#tughlaq-dynasty-1320-ad-1414-ad" class="lvl-3 ">Tughlaq Dynasty (1320 AD–1414 AD)</a></li><li><a href="#sayyid-dynasty-1414-ad-1451-ad" class="lvl-3 ">Sayyid Dynasty (1414 AD–1451 AD)</a></li><li><a href="#lodi-dynasty-1451-ad-1526-ad" class="lvl-3 ">Lodi Dynasty (1451 AD–1526 AD)</a></li><li><a href="#some-key-departments-under-delhi-sultanate" class="lvl-3 ">Some Key Departments under Delhi Sultanate</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

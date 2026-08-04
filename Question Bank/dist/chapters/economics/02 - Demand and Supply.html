@@ -5,8 +5,16 @@
 <title>Demand and Supply</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Demand and Supply</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>2. Demand and Supply</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - economics">MOC - economics</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -256,4 +264,37 @@
 <li><a class="wikilink" href="economics/03 - National Income">03 - National Income</a> — macro view of demand</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#production-possibility-curve" class="lvl-3 ">Production Possibility Curve</a></li><li><a href="#at-any-point" class="lvl-3 ">At any point</a></li><li><a href="#opportunity-cost" class="lvl-3 ">Opportunity Cost</a></li><li><a href="#free-goods" class="lvl-3 ">Free Goods</a></li><li><a href="#utility" class="lvl-3 ">Utility</a></li><li><a href="#types-of-utility" class="lvl-3 ">Types of Utility</a></li><li><a href="#consumer-s-indifference-curve" class="lvl-3 ">Consumer's Indifference Curve</a></li><li><a href="#marginal-utility" class="lvl-3 ">Marginal Utility</a></li><li><a href="#utility-law-of-diminishing-marginal-utility" class="lvl-3 ">Utility Law of Diminishing Marginal Utility</a></li><li><a href="#demand" class="">DEMAND</a></li><li><a href="#movement-and-shift-in-demand-curve" class="lvl-3 ">Movement and Shift in Demand Curve</a></li><li><a href="#complimentary-goods-vs-substitute-goods" class="lvl-3 ">Complimentary Goods vs Substitute Goods</a></li><li><a href="#law-of-demand" class="lvl-3 ">Law of Demand</a></li><li><a href="#exceptions-to-law-of-demand" class="lvl-3 ">Exceptions to Law of Demand</a></li><li><a href="#effect-of-income-on-inferior-products" class="lvl-3 ">Effect of Income on Inferior Products</a></li><li><a href="#supply" class="">SUPPLY</a></li><li><a href="#supply-curve" class="lvl-3 ">Supply Curve</a></li><li><a href="#when-things-exists-in-equilibrium" class="lvl-3 ">When things exists in Equilibrium</a></li><li><a href="#price-elasticity" class="lvl-3 ">Price Elasticity</a></li><li><a href="#perfectly-elastic-demand" class="lvl-3 ">Perfectly Elastic Demand</a></li><li><a href="#relatively-elastic-demand" class="lvl-3 ">Relatively Elastic Demand</a></li><li><a href="#perfectly-inelastic-demand" class="lvl-3 ">Perfectly Inelastic Demand</a></li><li><a href="#relatively-inelastic-demand" class="lvl-3 ">Relatively Inelastic Demand</a></li><li><a href="#income-elasticity" class="lvl-3 ">Income Elasticity</a></li><li><a href="#cross-price-elasticity" class="lvl-3 ">Cross-Price Elasticity</a></li><li><a href="#types-of-market" class="">TYPES OF MARKET</a></li><li><a href="#monopoly" class="lvl-3 ">Monopoly</a></li><li><a href="#oligopoly" class="lvl-3 ">Oligopoly</a></li><li><a href="#monopolistic-competition" class="lvl-3 ">Monopolistic Competition</a></li><li><a href="#perfect-competition" class="lvl-3 ">Perfect Competition</a></li><li><a href="#macroeconomic-concepts" class="">MACROECONOMIC CONCEPTS</a></li><li><a href="#marginal-propensity-to-consume" class="lvl-3 ">Marginal Propensity to Consume</a></li><li><a href="#autonomous-expenditure" class="lvl-3 ">Autonomous Expenditure</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

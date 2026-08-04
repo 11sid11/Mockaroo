@@ -5,8 +5,16 @@
 <title>Solar System</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Solar System</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>1. Solar System</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - geography">MOC - geography</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -344,4 +352,37 @@
 <li><a class="wikilink" href="geography/02 - Longitude and Latitude">02 - Longitude and Latitude</a> — Earth coordinates</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#origin-of-universe" class="">ORIGIN OF UNIVERSE</a></li><li><a href="#big-bang-theory" class="lvl-3 ">Big Bang Theory</a></li><li><a href="#steady-state-theory" class="lvl-3 ">Steady State Theory</a></li><li><a href="#galaxy" class="lvl-3 ">Galaxy</a></li><li><a href="#origin-of-solar-system" class="lvl-3 ">Origin of Solar System</a></li><li><a href="#nebular-hypothesis" class="lvl-3 ">Nebular Hypothesis</a></li><li><a href="#copernicus-theory-1543" class="lvl-3 ">Copernicus Theory (1543)</a></li><li><a href="#solar-system" class="lvl-3 ">Solar System</a></li><li><a href="#celestial-bodies" class="">CELESTIAL BODIES</a></li><li><a href="#comets" class="lvl-3 ">Comets</a></li><li><a href="#asteroid" class="lvl-3 ">Asteroid</a></li><li><a href="#meteoroid" class="lvl-3 ">Meteoroid</a></li><li><a href="#meteor" class="lvl-3 ">Meteor</a></li><li><a href="#meteorite" class="lvl-3 ">Meteorite</a></li><li><a href="#constellation" class="">CONSTELLATION</a></li><li><a href="#ursa-major-constellation" class="lvl-3 ">Ursa Major Constellation</a></li><li><a href="#cassiopeia" class="lvl-3 ">Cassiopeia</a></li><li><a href="#cygnus" class="lvl-3 ">Cygnus</a></li><li><a href="#orion" class="lvl-3 ">Orion</a></li><li><a href="#the-sun" class="">THE SUN</a></li><li><a href="#light-year" class="lvl-3 ">Light Year</a></li><li><a href="#layers-of-sun" class="lvl-3 ">Layers of Sun</a></li><li><a href="#planets" class="">PLANETS</a></li><li><a href="#classification-of-planets" class="lvl-3 ">Classification of Planets</a></li><li><a href="#mercury" class="lvl-3 ">Mercury</a></li><li><a href="#venus" class="lvl-3 ">Venus</a></li><li><a href="#earth" class="lvl-3 ">Earth</a></li><li><a href="#mars" class="lvl-3 ">Mars</a></li><li><a href="#jupiter" class="lvl-3 ">Jupiter</a></li><li><a href="#saturn" class="lvl-3 ">Saturn</a></li><li><a href="#uranus" class="lvl-3 ">Uranus</a></li><li><a href="#neptune" class="lvl-3 ">Neptune</a></li><li><a href="#planets-from-increasing-to-decreasing-order" class="lvl-3 ">Planets from Increasing to Decreasing Order</a></li><li><a href="#moon" class="">Moon</a></li><li><a href="#solar-and-lunar-mission" class="">SOLAR AND LUNAR MISSION</a></li><li><a href="#sun" class="lvl-3 ">Sun</a></li><li><a href="#moon-chandrayan-3" class="lvl-3 ">Moon — Chandrayan 3</a></li><li><a href="#dwarf-planets" class="">DWARF PLANETS</a></li><li><a href="#kuiper-belt" class="lvl-3 ">Kuiper Belt</a></li><li><a href="#pluto" class="lvl-3 ">Pluto</a></li><li><a href="#three-characteristics-of-dwarf-planets" class="lvl-3 ">Three Characteristics of Dwarf Planets</a></li><li><a href="#largest-dwarf-planet" class="lvl-3 ">Largest Dwarf Planet</a></li><li><a href="#terms-to-understands" class="">Terms to Understands</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

@@ -5,8 +5,16 @@
 <title>Himalayan River System</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Himalayan River System</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>12. Himalayan River System</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - geography">MOC - geography</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -311,4 +319,37 @@
 <li><a class="wikilink" href="geography/14 - Dams, Lakes and Waterfall">14 - Dams, Lakes and Waterfall</a> — dams on these rivers</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#drainage-pattern" class="">Drainage Pattern</a></li><li><a href="#indian-drainage-system" class="">Indian Drainage System</a></li><li><a href="#indus-river-system" class="">Indus River System</a></li><li><a href="#indus-water-treaty-1960" class="lvl-3 ">Indus Water Treaty (1960)</a></li><li><a href="#indus-tributaries" class="">Indus Tributaries</a></li><li><a href="#ganga-river-system" class="">Ganga River System</a></li><li><a href="#farakka-agreement-1996" class="lvl-3 ">Farakka Agreement (1996)</a></li><li><a href="#tributaries-of-ganga" class="">Tributaries of Ganga</a></li><li><a href="#brahmaputra-river-system" class="">Brahmaputra River System</a></li><li><a href="#cities-on-river" class="">Cities on River</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#same-subject" class="lvl-3 ">Same subject</a></li><li><a href="#cross-subject" class="lvl-3 ">Cross-subject</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

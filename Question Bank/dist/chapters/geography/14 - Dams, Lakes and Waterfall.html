@@ -5,8 +5,16 @@
 <title>Dams, Lakes and Waterfall</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Dams, Lakes and Waterfall</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>14. Dams, Lakes and Waterfall</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - geography">MOC - geography</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -232,7 +240,7 @@
 <ul>
 <li>Dodital lake, Bhimtal lake, Roop Kund lake, Nainital lake, Suryadhar lake.</li>
 </ul>
-<h2 id="dams-lakes-and-waterfalls">DAMS, LAKES AND WATERFALLS</h2>
+<h2 id="dams-lakes-and-waterfalls-2">DAMS, LAKES AND WATERFALLS</h2>
 <h3 id="state-wise-lakes-continued">State-wise Lakes (continued)</h3>
 <p>#### Bihar</p>
 <ul>
@@ -340,4 +348,37 @@
 <li><a class="wikilink" href="geography/13 - Peninsular Rivers">13 - Peninsular Rivers</a> — peninsular river dams</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#dams-lakes-and-waterfall" class="">DAMS, LAKES AND WATERFALL</a></li><li><a href="#hydroelectric-power-projects-multipurpose-projects" class="lvl-3 ">Hydroelectric Power Projects &amp; Multipurpose Projects</a></li><li><a href="#drawbacks" class="lvl-3 ">Drawbacks</a></li><li><a href="#hydroelectric-power-generation" class="lvl-3 ">Hydroelectric Power Generation</a></li><li><a href="#major-dams-projects" class="">MAJOR DAMS/PROJECTS</a></li><li><a href="#state-wise-dams" class="">STATE-WISE DAMS</a></li><li><a href="#jammu-and-kashmir" class="lvl-3 ">Jammu and Kashmir</a></li><li><a href="#himachal-pradesh" class="lvl-3 ">Himachal Pradesh</a></li><li><a href="#punjab" class="lvl-3 ">Punjab</a></li><li><a href="#uttar-pradesh" class="lvl-3 ">Uttar Pradesh</a></li><li><a href="#gujarat" class="lvl-3 ">Gujarat</a></li><li><a href="#madhya-pradesh" class="lvl-3 ">Madhya Pradesh</a></li><li><a href="#rajasthan" class="lvl-3 ">Rajasthan</a></li><li><a href="#dams-lakes-and-waterfalls" class="">DAMS, LAKES AND WATERFALLS</a></li><li><a href="#state-wise-dams-continued" class="lvl-3 ">State-wise Dams (continued)</a></li><li><a href="#maharashtra-state-with-most-no-of-dams" class="lvl-3 ">Maharashtra (state with most no. of dams)</a></li><li><a href="#jharkhand" class="lvl-3 ">Jharkhand</a></li><li><a href="#chhattisgarh" class="lvl-3 ">Chhattisgarh</a></li><li><a href="#telangana" class="lvl-3 ">Telangana</a></li><li><a href="#karnataka" class="lvl-3 ">Karnataka</a></li><li><a href="#kerala" class="lvl-3 ">Kerala</a></li><li><a href="#tamil-nadu" class="lvl-3 ">Tamil Nadu</a></li><li><a href="#andhra-pradesh" class="lvl-3 ">Andhra Pradesh</a></li><li><a href="#waterfalls" class="">WATERFALLS</a></li><li><a href="#types-of-waterfalls" class="lvl-3 ">Types of Waterfalls</a></li><li><a href="#some-important-waterfalls-of-india" class="lvl-3 ">Some Important Waterfalls of India</a></li><li><a href="#some-more-waterfalls" class="lvl-3 ">Some more Waterfalls</a></li><li><a href="#state-wise-lakes" class="">STATE-WISE LAKES</a></li><li><a href="#jammu-kashmir" class="lvl-3 ">Jammu &amp; Kashmir</a></li><li><a href="#ladakh" class="lvl-3 ">Ladakh</a></li><li><a href="#uttarakhand" class="lvl-3 ">Uttarakhand</a></li><li><a href="#dams-lakes-and-waterfalls-2" class="">DAMS, LAKES AND WATERFALLS</a></li><li><a href="#state-wise-lakes-continued" class="lvl-3 ">State-wise Lakes (continued)</a></li><li><a href="#some-facts" class="lvl-3 ">Some Facts</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

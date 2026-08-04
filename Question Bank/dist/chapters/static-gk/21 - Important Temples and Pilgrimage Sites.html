@@ -5,8 +5,16 @@
 <title>Important Temples and Pilgrimage Sites</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Important Temples and Pilgrimage Sites</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>21. Important Temples and Pilgrimage Sites</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - static-gk">MOC - static-gk</a></blockquote>
 <blockquote><strong>Source:</strong> Compiled and verified from standard compendiums (Lucent, NCERT) and Wikipedia, 2025</blockquote>
@@ -326,4 +334,37 @@
 <li><a class="wikilink" href="static-gk/11 - Festivals of India">11 - Festivals of India</a> — festival locations</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#why-this-matters-for-ssc" class="">Why this matters for SSC</a></li><li><a href="#12-jyotirlingas-lord-shiva" class="">12 Jyotirlingas (Lord Shiva)</a></li><li><a href="#18-maha-shakti-peethas-goddess-shakti" class="">18 Maha Shakti Peethas (Goddess Shakti)</a></li><li><a href="#4-dhams-char-dham-vishnu-pilgrimage" class="">4 Dhams (Char Dham — Vishnu pilgrimage)</a></li><li><a href="#4-mathas-vishnu-s-4-monasteries" class="">4 Mathas (Vishnu's 4 monasteries)</a></li><li><a href="#char-dham-himalayan-char-dham-different-from-vishnu-char-dham" class="">Char Dham (Himalayan Char Dham, different from Vishnu Char Dham)</a></li><li><a href="#other-major-temples" class="">Other Major Temples</a></li><li><a href="#5-sacred-riverside-cities-sapta-puri" class="">5 Sacred Riverside Cities (Sapta Puri)</a></li><li><a href="#sikh-gurdwaras-holy-sites" class="">Sikh Gurdwaras (Holy Sites)</a></li><li><a href="#buddhist-sites" class="">Buddhist Sites</a></li><li><a href="#jain-sites" class="">Jain Sites</a></li><li><a href="#christian-and-islamic-sites" class="">Christian and Islamic Sites</a></li><li><a href="#quick-recall-top-12-most-asked" class="">Quick recall — top 12 most-asked</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#2024-2025-updates" class="">2024–2025 Updates</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

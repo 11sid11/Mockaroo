@@ -277,6 +277,10 @@ def md_to_html(md_text: str, title: str) -> str:
     in_ol = False
     in_table = False
     in_code = False
+    headings = []  # list of (level, anchor, text)
+
+    def slugify(t):
+        return re.sub(r'[^a-z0-9]+', '-', t.lower()).strip('-')
 
     def close_ul():
         nonlocal in_ul
@@ -323,13 +327,25 @@ def md_to_html(md_text: str, title: str) -> str:
         if stripped.startswith("## "):
             close_ul(); close_ol(); close_table()
             txt = stripped[3:]
-            anchor = re.sub(r"[^a-z0-9]+", "-", txt.lower()).strip("-")
+            anchor = slugify(txt)
+            n = 1
+            base = anchor
+            while any(a == anchor for _, a, _ in headings):
+                n += 1
+                anchor = base + "-" + str(n)
+            headings.append((2, anchor, txt))
             out.append(f'<h2 id="{anchor}">{format_inline(txt)}</h2>')
             i += 1; continue
         if stripped.startswith("### "):
             close_ul(); close_ol(); close_table()
             txt = stripped[4:]
-            anchor = re.sub(r"[^a-z0-9]+", "-", txt.lower()).strip("-")
+            anchor = slugify(txt)
+            n = 1
+            base = anchor
+            while any(a == anchor for _, a, _ in headings):
+                n += 1
+                anchor = base + "-" + str(n)
+            headings.append((3, anchor, txt))
             out.append(f'<h3 id="{anchor}">{format_inline(txt)}</h3>')
             i += 1; continue
 
@@ -397,6 +413,52 @@ def md_to_html(md_text: str, title: str) -> str:
     close_ul(); close_ol(); close_table()
     body_html = "\n".join(out)
 
+    close_ul(); close_ol(); close_table()
+    body_html = "\n".join(out)
+
+    # ----- Table of contents (right rail) -----
+    toc_items = "".join(
+        f'<li><a href="#{a}" class="{"lvl-3 " if lv == 3 else ""}">{html_escape(t)}</a></li>'
+        for (lv, a, t) in headings
+    )
+    toc_html = (
+        '<aside class="toc"><h4>On this page</h4><ul>' + toc_items + '</ul></aside>'
+        if toc_items else ''
+    )
+
+    # ----- Tiny JS: scrollspy, progress bar, back-to-top -----
+    page_js = """
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+"""
+
     return (
         '<!doctype html>\n<html lang="en"><head>\n'
         '<meta charset="utf-8">\n'
@@ -404,8 +466,21 @@ def md_to_html(md_text: str, title: str) -> str:
         f'<title>{html_escape(title)}</title>\n'
         '<link rel="stylesheet" href="../app/css/chapter.css">\n'
         '</head><body>\n'
-        '<nav class="chap-nav"><a href="../../index.html">\u2190 Question Bank home</a></nav>\n'
-        '<article>\n' + body_html + '\n</article>\n</body></html>'
+        '<div class="read-progress"></div>\n'
+        '<nav class="chap-nav"><div class="chap-nav-inner">\n'
+        '<a class="brand" href="../../index.html">Mockaroo</a>\n'
+        '<span class="crumb-sep">/</span>\n'
+        f'<span class="crumb-here">{html_escape(title)}</span>\n'
+        '<span class="spacer"></span>\n'
+        '<a class="nav-action" href="../../index.html">\u2302 Home</a>\n'
+        '</div></nav>\n'
+        '<div class="chap-shell">\n'
+        '<article class="chap">\n' + body_html + '\n</article>\n'
+        + toc_html + '\n'
+        '</div>\n'
+        '<button class="back-to-top" aria-label="Back to top">\u2191</button>\n'
+        + page_js +
+        '</body></html>'
     )
 
 
@@ -567,6 +642,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 

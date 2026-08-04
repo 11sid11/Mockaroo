@@ -5,8 +5,16 @@
 <title>Force and Laws of Motion</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Force and Laws of Motion</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>2. Force and Laws of Motion</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - physics">MOC - physics</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -136,13 +144,13 @@
 <ul>
 <li>The conservation of momentum principle states that <em>&quot;In a closed system, the total momentum remains constant&quot;</em>, meaning momentum is neither created nor destroyed, but only transferred.</li>
 </ul>
-<h2 id="force-and-laws-of-motion-continued">Force and Laws of Motion (continued)</h2>
+<h2 id="force-and-laws-of-motion-continued-2">Force and Laws of Motion (continued)</h2>
 <h3 id="conservation-of-momentum-continued">Conservation of Momentum (continued)</h3>
 <ul>
 <li>In the equation, m₁ and m₂ are <em>masses</em> of the bodies, u₁ and u₂ are the <em>initial velocities</em> of the body and v₁ and v₂ are the <em>final velocities</em> of the bodies (change in velocity not mass).</li>
 </ul>
 <p>Conservation of momentum equation: m₁u₁ + m₂u₂ = m₁v₁ + m₂v₂</p>
-<h3 id="questionnaire">Questionnaire</h3>
+<h3 id="questionnaire-2">Questionnaire</h3>
 <p>A girl of mass 40 kg jumps with a horizontal velocity of 5 m/s onto a stationary cart with frictionless wheels. The mass of the cart is 3 kg. What is her velocity as the cart starts moving?</p>
 <p><strong>Sol:</strong></p>
 <ul>
@@ -179,4 +187,37 @@
 <li><a class="wikilink" href="physics/03 - Gravitation and Work Done">03 - Gravitation and Work Done</a> — gravitational force, work-energy</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#force-and-laws-of-motion" class="">Force and Laws of Motion</a></li><li><a href="#force" class="lvl-3 ">Force</a></li><li><a href="#balanced-and-unbalanced-force" class="lvl-3 ">Balanced and Unbalanced Force</a></li><li><a href="#types-of-force" class="lvl-3 ">Types of Force</a></li><li><a href="#laws-of-motion" class="lvl-3 ">Laws of Motion</a></li><li><a href="#force-and-laws-of-motion-continued" class="">Force and Laws of Motion (continued)</a></li><li><a href="#1st-law-of-motion-law-of-inertia" class="lvl-3 ">1st Law of Motion → Law of Inertia</a></li><li><a href="#2nd-law-of-motion" class="lvl-3 ">2nd Law of Motion</a></li><li><a href="#3rd-law-of-motion" class="lvl-3 ">3rd Law of Motion</a></li><li><a href="#questionnaire" class="lvl-3 ">Questionnaire</a></li><li><a href="#impulse-and-momentum" class="lvl-3 ">Impulse and Momentum</a></li><li><a href="#conservation-of-momentum" class="lvl-3 ">Conservation of Momentum</a></li><li><a href="#force-and-laws-of-motion-continued-2" class="">Force and Laws of Motion (continued)</a></li><li><a href="#conservation-of-momentum-continued" class="lvl-3 ">Conservation of Momentum (continued)</a></li><li><a href="#questionnaire-2" class="lvl-3 ">Questionnaire</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

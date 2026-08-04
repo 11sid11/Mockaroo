@@ -5,8 +5,16 @@
 <title>Advent of Europeans</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Advent of Europeans</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>17. Advent of Europeans</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - history (Modern)">MOC - history (Modern)</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -239,4 +247,37 @@
 <li><a class="wikilink" href="history/14 - Mughal Empire">14 - Mughal Empire</a> — end of Mughal era / European entry</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#order-of-advent-of-europeans-in-india" class="lvl-3 ">Order of Advent of Europeans in India</a></li><li><a href="#portuguese" class="">PORTUGUESE</a></li><li><a href="#arrival-of-portuguese" class="lvl-3 ">Arrival of Portuguese</a></li><li><a href="#vasco-da-gama-1498" class="lvl-3 ">Vasco da Gama (1498)</a></li><li><a href="#francisco-de-almeida-1505" class="lvl-3 ">Francisco de Almeida (1505)</a></li><li><a href="#afonso-de-albuquerque-1509" class="lvl-3 ">Afonso de Albuquerque (1509)</a></li><li><a href="#nuno-da-cunha" class="lvl-3 ">Nuno da Cunha</a></li><li><a href="#dutch" class="">DUTCH</a></li><li><a href="#arrival-of-dutch" class="lvl-3 ">Arrival of Dutch</a></li><li><a href="#english" class="">ENGLISH</a></li><li><a href="#arrival-of-english" class="lvl-3 ">Arrival of English</a></li><li><a href="#expansion-of-britishers" class="">EXPANSION OF BRITISHERS</a></li><li><a href="#carnatic-wars" class="">CARNATIC WARS</a></li><li><a href="#1st-carnatic-war-1744-1748" class="lvl-3 ">1st Carnatic War (1744-1748)</a></li><li><a href="#2nd-carnatic-war-1749-1754" class="lvl-3 ">2nd Carnatic War (1749-1754)</a></li><li><a href="#3rd-carnatic-war-1756-1763" class="lvl-3 ">3rd Carnatic War (1756-1763)</a></li><li><a href="#in-bengal" class="">IN BENGAL</a></li><li><a href="#nawabs-of-bengal" class="lvl-3 ">Nawabs of Bengal</a></li><li><a href="#siraj-ud-daulah" class="lvl-3 ">Siraj-ud-Daulah</a></li><li><a href="#battle-of-plassey-1757" class="lvl-3 ">Battle of Plassey (1757)</a></li><li><a href="#outcomes-of-battle-of-plassey" class="lvl-3 ">Outcomes of Battle of Plassey</a></li><li><a href="#battle-of-buxar-1764" class="lvl-3 ">Battle of Buxar (1764)</a></li><li><a href="#first-treaty-with-nawab-of-awadh" class="lvl-3 ">First Treaty with Nawab of Awadh:</a></li><li><a href="#second-treaty-with-shah-alam-ii" class="lvl-3 ">Second Treaty with Shah Alam II:</a></li><li><a href="#in-mysore" class="">IN MYSORE</a></li><li><a href="#anglo-mysore-wars" class="lvl-3 ">Anglo-Mysore Wars</a></li><li><a href="#subsidiary-alliance" class="lvl-3 ">Subsidiary Alliance</a></li><li><a href="#in-punjab" class="">IN PUNJAB</a></li><li><a href="#anglo-sikh-wars" class="lvl-3 ">Anglo-Sikh Wars</a></li><li><a href="#afghans" class="">AFGHANS</a></li><li><a href="#burma-myanmar" class="">BURMA (Myanmar)</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

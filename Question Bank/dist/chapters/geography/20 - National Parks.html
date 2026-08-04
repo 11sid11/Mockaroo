@@ -5,8 +5,16 @@
 <title>National Parks</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">National Parks</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>20. National Parks</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - geography">MOC - geography</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -79,7 +87,7 @@
 <li><strong>BS:</strong> Bird Sanctuary (represented in yellow ♦)</li>
 <li><strong>Lakes/Jheel:</strong> Represented in sky blue ♦</li>
 </ul>
-<h2 id="national-parks">NATIONAL PARKS</h2>
+<h2 id="national-parks-2">NATIONAL PARKS</h2>
 <p>#### Ladakh</p>
 <ul>
 <li>Hemis NP</li>
@@ -163,7 +171,7 @@
 <ul>
 <li><em>Nagi</em> and <em>Nakti</em> were declared <strong>81st</strong> and <strong>82nd Ramsar Sites</strong> on <strong>World Environment Day, 5th June 2024</strong>.</li>
 </ul>
-<h2 id="national-parks">NATIONAL PARKS</h2>
+<h2 id="national-parks-3">NATIONAL PARKS</h2>
 <p>#### Madhya Pradesh</p>
 <ul>
 <li>Kuno NP-WLS</li>
@@ -272,7 +280,7 @@
 <ul>
 <li><em>Seshachalam</em> is home to certain endemic species such as <em>Red Sanders</em> and <em>Slender Loris</em>.</li>
 </ul>
-<h2 id="national-parks">NATIONAL PARKS</h2>
+<h2 id="national-parks-4">NATIONAL PARKS</h2>
 <p>#### Telangana</p>
 <ul>
 <li>Kawal TR</li>
@@ -359,7 +367,7 @@
 <li>बड़ी <strong>Sundar</strong> → Sunderban NP</li>
 <li>(continued on next page)</li>
 </ul>
-<h2 id="national-parks">NATIONAL PARKS</h2>
+<h2 id="national-parks-5">NATIONAL PARKS</h2>
 <p>(continuation of West Bengal trick)</p>
 <ul>
 <li><strong>Gori</strong> → Gorumara NP</li>
@@ -449,7 +457,7 @@
 <li>2. <em>Gulf of Mannar</em></li>
 </ol>
 <blockquote><em>MAB: Man and Biosphere Reserve</em></blockquote>
-<h2 id="national-parks">NATIONAL PARKS</h2>
+<h2 id="national-parks-6">NATIONAL PARKS</h2>
 <p><strong>Under UNESCO's, MAB Programme (1971) → 12 Biosphere Reserve in India (contd.)</strong></p>
 <ol>
 <li>3. <em>Sundarban</em></li>
@@ -488,4 +496,37 @@
 <li><a class="wikilink" href="static-gk/23 - Indian States Snapshot">23 - Indian States Snapshot</a> — state-wise parks</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#national-parks" class="">NATIONAL PARKS</a></li><li><a href="#conservation-sites" class="lvl-3 ">Conservation Sites</a></li><li><a href="#different-conservation-sites" class="lvl-3 ">Different Conservation Sites</a></li><li><a href="#national-park-wildlife-sanctuary-and-biosphere-reserve" class="lvl-3 ">National Park, Wildlife Sanctuary, and Biosphere Reserve</a></li><li><a href="#international-union-for-conservation-of-nature-iucn" class="lvl-3 ">International Union for Conservation of Nature (IUCN)</a></li><li><a href="#wildlife-protection-act-1972" class="lvl-3 ">Wildlife Protection Act 1972</a></li><li><a href="#conservation-sites-representation-in-maps" class="lvl-3 ">CONSERVATION SITES — Representation in Maps</a></li><li><a href="#national-parks-2" class="">NATIONAL PARKS</a></li><li><a href="#national-parks-3" class="">NATIONAL PARKS</a></li><li><a href="#national-parks-4" class="">NATIONAL PARKS</a></li><li><a href="#national-parks-5" class="">NATIONAL PARKS</a></li><li><a href="#biosphere-reserves" class="lvl-3 ">BIOSPHERE RESERVES</a></li><li><a href="#national-parks-6" class="">NATIONAL PARKS</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

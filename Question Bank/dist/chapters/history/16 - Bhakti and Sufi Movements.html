@@ -5,8 +5,16 @@
 <title>Bhakti and Sufi Movements</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Bhakti and Sufi Movements</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>16. Bhakti and Sufi Movements</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - history (Medieval)">MOC - history (Medieval)</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -283,4 +291,37 @@
 <li><a class="wikilink" href="history/12 - Delhi Sultanate">12 - Delhi Sultanate</a> — Bhakti saints in Sultanate period</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#bhakti-movements" class="">BHAKTI MOVEMENTS</a></li><li><a href="#main-features-of-bhakti-movement" class="lvl-3 ">Main Features of Bhakti Movement</a></li><li><a href="#philosophy-and-founder" class="lvl-3 ">Philosophy and Founder</a></li><li><a href="#bhakti-movement-saints" class="lvl-3 ">Bhakti Movement Saints</a></li><li><a href="#bhakti-saints-of-maharashtra" class="lvl-3 ">Bhakti Saints of Maharashtra</a></li><li><a href="#bhakti-saints-of-karnataka" class="lvl-3 ">Bhakti Saints of Karnataka</a></li><li><a href="#sikh-gurus" class="">SIKH GURUS</a></li><li><a href="#era-of-sikhism" class="lvl-3 ">Era of Sikhism</a></li><li><a href="#guru-nanak-dev-1469-1539" class="lvl-3 ">Guru Nanak Dev (1469-1539)</a></li><li><a href="#guru-angad-dev-1539-1552" class="lvl-3 ">Guru Angad Dev (1539-1552)</a></li><li><a href="#guru-amardas-sahib-1552-1574" class="lvl-3 ">Guru Amardas Sahib (1552-1574)</a></li><li><a href="#guru-ram-das-1574-1581" class="lvl-3 ">Guru Ram Das (1574-1581)</a></li><li><a href="#guru-arjan-dev-1581-1606" class="lvl-3 ">Guru Arjan Dev (1581-1606)</a></li><li><a href="#guru-har-gobind-sahib-1606-1644" class="lvl-3 ">Guru Har Gobind Sahib (1606-1644)</a></li><li><a href="#guru-har-rai-sahib-1644-1661" class="lvl-3 ">Guru Har Rai Sahib (1644-1661)</a></li><li><a href="#guru-har-krishan-sahib-1661-1664" class="lvl-3 ">Guru Har Krishan Sahib (1661-1664)</a></li><li><a href="#guru-tegh-bahadur-sahib-1665-1675" class="lvl-3 ">Guru Tegh Bahadur Sahib (1665-1675)</a></li><li><a href="#guru-gobind-singh-sahib-1675-1708" class="lvl-3 ">Guru Gobind Singh Sahib (1675-1708)</a></li><li><a href="#guru-granth-sahib" class="lvl-3 ">Guru Granth Sahib</a></li><li><a href="#sufi-movements" class="">SUFI MOVEMENTS</a></li><li><a href="#origin-of-sufi-movements" class="lvl-3 ">Origin of Sufi Movements</a></li><li><a href="#khwaja-ali-hujwiri-11th-century" class="lvl-3 ">Khwaja Ali Hujwiri (11th Century)</a></li><li><a href="#shaikh-bahauddin-zakaria-1182-1262" class="lvl-3 ">Shaikh Bahauddin Zakaria (1182-1262)</a></li><li><a href="#khwaja-moinuddin-chisti-1141-1236" class="lvl-3 ">Khwaja Moinuddin Chisti (1141-1236)</a></li><li><a href="#other-saints-of-chisti-order" class="lvl-3 ">Other Saints of Chisti Order</a></li><li><a href="#sufi-words-and-their-meanings" class="lvl-3 ">Sufi Words and their Meanings</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

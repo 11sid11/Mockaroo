@@ -5,8 +5,16 @@
 <title>Five Year Plan and Industrial Policy Resolution</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Five Year Plan and Industrial Policy Resolution</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>9. Five Year Plan and Industrial Policy Resolution</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - economics">MOC - economics</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -341,4 +349,37 @@
 <li><a class="wikilink" href="economics/05 - Budget and Taxation">05 - Budget and Taxation</a> — plan funding</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#five-year-plans" class="">Five-Year Plans</a></li><li><a href="#pre-independence" class="lvl-3 ">Pre-Independence</a></li><li><a href="#post-independence-1947" class="lvl-3 ">Post-Independence (1947)</a></li><li><a href="#introduction-in-india" class="lvl-3 ">Introduction in India</a></li><li><a href="#first-five-year-plan-1st-april-1951" class="lvl-3 ">First Five-Year Plan (1st April 1951)</a></li><li><a href="#major-irrigation-projects" class="lvl-3 ">Major Irrigation Projects</a></li><li><a href="#reforms-introduced-in-agriculture" class="lvl-3 ">Reforms Introduced in Agriculture</a></li><li><a href="#second-five-year-plan-then-pm-j-l-nehru" class="lvl-3 ">Second Five-Year Plan (Then PM: J L Nehru)</a></li><li><a href="#third-five-year-plan" class="lvl-3 ">Third Five-Year Plan</a></li><li><a href="#establishment-of-various-institutes" class="lvl-3 ">Establishment of Various Institutes</a></li><li><a href="#plan-holiday" class="lvl-3 ">Plan Holiday</a></li><li><a href="#fourth-five-year-plan-then-pm-indira-gandhi" class="lvl-3 ">Fourth Five-Year Plan (Then PM: Indira Gandhi)</a></li><li><a href="#fifth-five-year-plan-then-pm-indira-gandhi" class="lvl-3 ">Fifth Five-Year Plan (Then PM: Indira Gandhi)</a></li><li><a href="#rolling-plan" class="lvl-3 ">Rolling Plan</a></li><li><a href="#sixth-five-year-plan-then-pm-indira-gandhi" class="lvl-3 ">Sixth Five-Year Plan (Then PM: Indira Gandhi)</a></li><li><a href="#hindu-rate-of-growth-1978-signifying-low-economic-growth" class="lvl-3 ">Hindu Rate of Growth (1978) → signifying low economic growth</a></li><li><a href="#seventh-five-year-plan-then-pm-rajiv-gandhi" class="lvl-3 ">Seventh Five-Year Plan (Then PM: Rajiv Gandhi)</a></li><li><a href="#annual-plans-1990-1992" class="lvl-3 ">Annual Plans (1990-1992)</a></li><li><a href="#eight-five-year-plan-then-pm-p-v-narasimha-rao" class="lvl-3 ">Eight Five-Year Plan (Then PM: P V Narasimha Rao)</a></li><li><a href="#ninth-five-year-plan-then-pm-atal-bihari-vajpayee" class="lvl-3 ">Ninth Five-Year Plan (Then PM: Atal Bihari Vajpayee)</a></li><li><a href="#tenth-five-year-plan-by-atal-bihari-vajpayee-and-manmohan-singh" class="lvl-3 ">Tenth Five-Year Plan (by Atal Bihari Vajpayee and Manmohan Singh)</a></li><li><a href="#eleventh-five-year-plan" class="lvl-3 ">Eleventh Five-Year Plan</a></li><li><a href="#twelfth-five-year-plan-then-pm-manmohan-singh" class="lvl-3 ">Twelfth Five-Year Plan (Then PM: Manmohan Singh)</a></li><li><a href="#niti-aayog" class="lvl-3 ">NITI AAYOG</a></li><li><a href="#industrial-policy-resolution-ipr" class="">Industrial Policy Resolution (IPR)</a></li><li><a href="#1st-ipr-1948" class="lvl-3 ">1st IPR, 1948</a></li><li><a href="#2nd-ipr-1956" class="lvl-3 ">2nd IPR, 1956</a></li><li><a href="#3rd-ipr-1977-extension-of-1956-policy" class="lvl-3 ">3rd IPR, 1977 (extension of 1956 Policy)</a></li><li><a href="#4th-ipr-1980" class="lvl-3 ">4th IPR, 1980</a></li><li><a href="#5th-ipr-new-industrial-policy-1991-economic-liberalisation" class="lvl-3 ">5th IPR (New Industrial Policy, 1991 → Economic Liberalisation)</a></li><li><a href="#joint-sector" class="lvl-3 ">Joint Sector</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

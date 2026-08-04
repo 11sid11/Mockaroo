@@ -5,8 +5,16 @@
 <title>Tripartite Struggle and Cholas</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Tripartite Struggle and Cholas</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>11. Tripartite Struggle and Cholas</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - history (Ancient)">MOC - history (Ancient)</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -95,7 +103,7 @@
 <ul>
 <li>Cholas are known for local (decentralised)/village government.</li>
 </ul>
-<h2 id="tripartite-struggle-and-cholas">TRIPARTITE STRUGGLE AND CHOLAS</h2>
+<h2 id="tripartite-struggle-and-cholas-2">TRIPARTITE STRUGGLE AND CHOLAS</h2>
 <ul>
 <li>There were two assemblies:</li>
 <li><strong>Ur</strong>: Assembly of common people.</li>
@@ -153,7 +161,7 @@
 <ul>
 <li>In early 11th century, the Chola king Rajendra I built a Shiva temple and filled it with Sun-pedestal seized from the Chalukyas, a Ganesha statue and several statues of Durga; a Nandi statue from the Eastern Chalukyas; an image of Bhairava (a form of Shiva) and Bhairavi from the Kalinga of Orissa; and a Kali statue from the Palas of Bengal (Brihadeeshwara temple).</li>
 </ul>
-<h2 id="tripartite-struggle-and-cholas">TRIPARTITE STRUGGLE AND CHOLAS</h2>
+<h2 id="tripartite-struggle-and-cholas-3">TRIPARTITE STRUGGLE AND CHOLAS</h2>
 <h3 id="some-other-temples">Some Other Temples</h3>
 <ul>
 <li>This temple is a part of Khajuraho temples).</li>
@@ -202,4 +210,37 @@
 <li><a class="wikilink" href="history/12 - Delhi Sultanate">12 - Delhi Sultanate</a> — early-medieval transition</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#tripartite-struggle-and-cholas" class="">TRIPARTITE STRUGGLE AND CHOLAS</a></li><li><a href="#tripartite-struggle" class="lvl-3 ">Tripartite Struggle</a></li><li><a href="#pala-dynasty" class="">PALA DYNASTY</a></li><li><a href="#gurjara-pratihara" class="">GURJARA PRATIHARA</a></li><li><a href="#nagabhatta-ii" class="lvl-3 ">Nagabhatta II</a></li><li><a href="#mihir-bhoja-836-ce-885-ce" class="lvl-3 ">Mihir Bhoja (836 CE-885 CE)</a></li><li><a href="#mahendrapala" class="lvl-3 ">Mahendrapala</a></li><li><a href="#chola-dynasty-850-ad-1280-ad" class="">CHOLA DYNASTY (850 AD-1280 AD)</a></li><li><a href="#prantaka-i-907-ad-955-ad" class="lvl-3 ">Prantaka I (907 AD-955 AD)</a></li><li><a href="#raja-raja-i-985-ad-1014-ad" class="lvl-3 ">Raja Raja I (985 AD-1014 AD)</a></li><li><a href="#rajendra-i-1012-ad-1044-ad" class="lvl-3 ">Rajendra I (1012 AD-1044 AD)</a></li><li><a href="#administration" class="lvl-3 ">Administration</a></li><li><a href="#chola-government" class="lvl-3 ">Chola Government</a></li><li><a href="#tripartite-struggle-and-cholas-2" class="">TRIPARTITE STRUGGLE AND CHOLAS</a></li><li><a href="#land-donations" class="lvl-3 ">Land Donations</a></li><li><a href="#tax" class="lvl-3 ">Tax</a></li><li><a href="#great-living-chola-temples" class="lvl-3 ">Great Living Chola Temples</a></li><li><a href="#temple-architecture" class="lvl-3 ">Temple Architecture</a></li><li><a href="#tripartite-struggle-and-cholas-3" class="">TRIPARTITE STRUGGLE AND CHOLAS</a></li><li><a href="#some-other-temples" class="lvl-3 ">Some Other Temples</a></li><li><a href="#other-architecture-of-various-dynasties" class="lvl-3 ">Other Architecture of Various Dynasties</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

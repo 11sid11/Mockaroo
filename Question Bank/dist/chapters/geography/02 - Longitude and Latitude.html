@@ -5,8 +5,16 @@
 <title>Longitude and Latitude</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Longitude and Latitude</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>2. Longitude and Latitude</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - geography">MOC - geography</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -230,4 +238,37 @@
 <li><a class="wikilink" href="geography/19 - World Map">19 - World Map</a> — world map application</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#the-earth" class="">THE EARTH</a></li><li><a href="#shape-of-earth" class="lvl-3 ">Shape of Earth</a></li><li><a href="#rotation-of-earth" class="lvl-3 ">Rotation of Earth</a></li><li><a href="#revolution-of-earth" class="lvl-3 ">Revolution of Earth</a></li><li><a href="#distance-of-earth-from-sun-and-moon" class="lvl-3 ">Distance of Earth from Sun and Moon</a></li><li><a href="#inclination-of-earth-s-axis" class="lvl-3 ">Inclination of Earth's Axis</a></li><li><a href="#latitude-and-longitude" class="">LATITUDE AND LONGITUDE</a></li><li><a href="#latitude" class="lvl-3 ">Latitude</a></li><li><a href="#longitude" class="lvl-3 ">Longitude</a></li><li><a href="#concept-of-great-circle" class="lvl-3 ">Concept of Great Circle</a></li><li><a href="#hemisphere" class="lvl-3 ">Hemisphere</a></li><li><a href="#solstice-and-equinox" class="">SOLSTICE AND EQUINOX</a></li><li><a href="#eclipses" class="">ECLIPSES</a></li><li><a href="#solar-eclipse" class="lvl-3 ">Solar Eclipse</a></li><li><a href="#lunar-eclipse" class="lvl-3 ">Lunar Eclipse</a></li><li><a href="#supermoon" class="lvl-3 ">Supermoon</a></li><li><a href="#tides" class="">TIDES</a></li><li><a href="#neap-tides" class="lvl-3 ">Neap Tides</a></li><li><a href="#spring-tides" class="lvl-3 ">Spring Tides</a></li><li><a href="#flood-tide-and-ebb-tide" class="lvl-3 ">Flood Tide and Ebb Tide</a></li><li><a href="#torrid-temperate-and-frigid-zone" class="">Torrid, Temperate, and Frigid Zone</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

@@ -5,8 +5,16 @@
 <title>Atom and Its Structure</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Atom and Its Structure</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>2. Atom and Its Structure</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - chemistry">MOC - chemistry</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -294,4 +302,37 @@
 <li><a class="wikilink" href="chemistry/03 - Periodic Table">03 - Periodic Table</a> — atoms organized into periodic table</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#atom-and-its-structure" class="">Atom and Its Structure</a></li><li><a href="#atoms" class="lvl-3 ">Atoms</a></li><li><a href="#laws-of-chemical-combination" class="">LAWS OF CHEMICAL COMBINATION</a></li><li><a href="#law-of-conservation-of-mass" class="lvl-3 ">Law of Conservation of Mass</a></li><li><a href="#law-of-constant-proportion" class="lvl-3 ">Law of Constant Proportion</a></li><li><a href="#dalton-s-atomic-theory-1808" class="lvl-3 ">Dalton's Atomic Theory (1808)</a></li><li><a href="#the-atomic-models" class="">THE ATOMIC MODELS</a></li><li><a href="#j-j-thomson-and-discovery-of-electron-1897" class="lvl-3 ">J. J. Thomson and Discovery of Electron (1897)</a></li><li><a href="#ernest-rutherford-s-atomic-model-1911" class="lvl-3 ">Ernest Rutherford's Atomic Model (1911)</a></li><li><a href="#gold-foil-experiment-findings" class="lvl-3 ">Gold Foil Experiment Findings</a></li><li><a href="#drawbacks-of-rutherford-s-model" class="lvl-3 ">Drawbacks of Rutherford's Model</a></li><li><a href="#artificial-nuclear-reaction-1917" class="lvl-3 ">Artificial Nuclear Reaction (1917)</a></li><li><a href="#bohr-s-model-of-atom-1913" class="lvl-3 ">Bohr's Model of Atom (1913)</a></li><li><a href="#distribution-of-electrons-e" class="lvl-3 ">Distribution of Electrons (e⁻)</a></li><li><a href="#electron-proton-and-neutron" class="">ELECTRON, PROTON, AND NEUTRON</a></li><li><a href="#discovery-of-electron-proton-and-neutron" class="lvl-3 ">Discovery of Electron, Proton and Neutron</a></li><li><a href="#comparison-of-characteristics-of-electron-proton-and-neutron" class="lvl-3 ">Comparison of Characteristics of Electron, Proton and Neutron</a></li><li><a href="#neutrons" class="lvl-3 ">Neutrons</a></li><li><a href="#ions" class="lvl-3 ">Ions</a></li><li><a href="#symbols-of-elements" class="lvl-3 ">Symbols of Elements</a></li><li><a href="#atomic-number-z" class="lvl-3 ">Atomic Number (Z)</a></li><li><a href="#mass-number-a" class="lvl-3 ">Mass Number (A)</a></li><li><a href="#electronic-configuration-of-first-20-elements" class="lvl-3 ">Electronic Configuration of First 20 Elements</a></li><li><a href="#isotopes" class="">ISOTOPES</a></li><li><a href="#isotopes-of-hydrogen" class="lvl-3 ">Isotopes of Hydrogen</a></li><li><a href="#isotopes-of-carbon" class="lvl-3 ">Isotopes of Carbon</a></li><li><a href="#characteristics-of-isotopes" class="lvl-3 ">Characteristics of Isotopes</a></li><li><a href="#uses-of-isotopes" class="lvl-3 ">Uses of Isotopes</a></li><li><a href="#isobars" class="">ISOBARS</a></li><li><a href="#isobars-and-their-properties" class="lvl-3 ">Isobars and Their Properties</a></li><li><a href="#isotones" class="">ISOTONES</a></li><li><a href="#atomicity" class="">ATOMICITY</a></li><li><a href="#mole-concept" class="">MOLE CONCEPT</a></li><li><a href="#mole" class="lvl-3 ">Mole</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

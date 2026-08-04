@@ -5,8 +5,16 @@
 <title>UNESCO World Heritage Sites in India</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">UNESCO World Heritage Sites in India</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>18. UNESCO World Heritage Sites in India</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - static-gk">MOC - static-gk</a></blockquote>
 <blockquote><strong>Source:</strong> Compiled and verified from UNESCO World Heritage List (as of July 2025)</blockquote>
@@ -199,4 +207,37 @@
 <li><a class="wikilink" href="static-gk/16 - Countries - Capitals Currencies and Languages">16 - Countries - Capitals Currencies and Languages</a> — sites by country</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#why-this-matters-for-ssc" class="">Why this matters for SSC</a></li><li><a href="#summary-at-a-glance" class="">Summary at a glance</a></li><li><a href="#cultural-sites-35" class="">Cultural Sites (35)</a></li><li><a href="#north-india" class="lvl-3 ">North India</a></li><li><a href="#south-india" class="lvl-3 ">South India</a></li><li><a href="#north-east" class="lvl-3 ">North-East</a></li><li><a href="#natural-sites-7" class="">Natural Sites (7)</a></li><li><a href="#mixed-sites-1" class="">Mixed Sites (1)</a></li><li><a href="#on-india-s-tentative-list-not-yet-inscribed" class="">On India's Tentative List (not yet inscribed)</a></li><li><a href="#quick-recall-table-top-10-most-asked" class="">Quick recall table — top 10 most-asked</a></li><li><a href="#trivia-for-ssc" class="">Trivia for SSC</a></li><li><a href="#important-india-s-unesco-intangible-cultural-heritage-12-as-of-2024" class="">Important: **India's UNESCO Intangible Cultural Heritage (12 as of 2024)**</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#2024-2025-updates" class="">2024–2025 Updates</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

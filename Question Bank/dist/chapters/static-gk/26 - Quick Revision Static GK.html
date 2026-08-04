@@ -5,8 +5,16 @@
 <title>Quick Revision — Static GK</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Quick Revision — Static GK</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>26. Quick Revision — Static GK</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - static-gk">MOC - static-gk</a></blockquote>
 <blockquote><strong>Source:</strong> Compiled from all Static GK chapters, July 2025 — for last-day revision</blockquote>
@@ -464,4 +472,37 @@
 <li><a class="wikilink" href="MOC - static-gk (Reference Lists)">MOC - static-gk (Reference Lists)</a> — primary reference list sub-MOC</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#how-to-use-this" class="">How to use this</a></li><li><a href="#a-national-symbols-from-14-national-symbols-of-india" class="">A. National Symbols (from [[14 - National Symbols of India]])</a></li><li><a href="#b-first-in-india-from-15-first-in-india-and-world" class="">B. First in India (from [[15 - First in India and World]])</a></li><li><a href="#c-first-in-world" class="">C. First in World</a></li><li><a href="#d-countries-high-yield-capitals-currencies-from-16-countries-capitals-currencies-and-languages" class="">D. Countries — High-yield capitals &amp; currencies (from [[16 - Countries - Capitals Currencies and Languages]])</a></li><li><a href="#e-boundary-lines-from-17-boundary-lines-of-india" class="">E. Boundary Lines (from [[17 - Boundary Lines of India]])</a></li><li><a href="#f-unesco-whs-from-18-unesco-world-heritage-sites-in-india" class="">F. UNESCO WHS (from [[18 - UNESCO World Heritage Sites in India]])</a></li><li><a href="#g-inventions-discoveries-from-19-important-inventions-and-discoveries" class="">G. Inventions &amp; Discoveries (from [[19 - Important Inventions and Discoveries]])</a></li><li><a href="#h-nicknames-from-20-nicknames-of-famous-personalities" class="">H. Nicknames (from [[20 - Nicknames of Famous Personalities]])</a></li><li><a href="#i-temples-pilgrimage-from-21-important-temples-and-pilgrimage-sites" class="">I. Temples &amp; Pilgrimage (from [[21 - Important Temples and Pilgrimage Sites]])</a></li><li><a href="#j-committees-reports-from-22-important-committees-and-reports" class="">J. Committees &amp; Reports (from [[22 - Important Committees and Reports]])</a></li><li><a href="#k-indian-states-from-23-indian-states-snapshot" class="">K. Indian States (from [[23 - Indian States Snapshot]])</a></li><li><a href="#l-world-dances-from-25-world-dances" class="">L. World Dances (from [[25 - World Dances]])</a></li><li><a href="#m-battles-from-24-important-battles-in-indian-history" class="">M. Battles (from [[24 - Important Battles in Indian History]])</a></li><li><a href="#n-frequently-confused-pairs-memorize-these" class="">N. Frequently-confused pairs (memorize these)</a></li><li><a href="#o-miscellaneous-quick-facts" class="">O. Miscellaneous quick-facts</a></li><li><a href="#p-high-yield-mnemonics-ssc-proven" class="">P. High-yield Mnemonics (SSC-proven)</a></li><li><a href="#q-top-30-one-liners-1-line-answers-for-1-mark-questions" class="">Q. Top 30 One-Liners (1-line answers for 1-mark questions)</a></li><li><a href="#r-mega-recap-what-to-revise-the-night-before-the-exam" class="">R. Mega-recap — what to revise the night before the exam</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#2024-2025-updates-one-liner-recap" class="">2024–2025 Updates (one-liner recap)</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

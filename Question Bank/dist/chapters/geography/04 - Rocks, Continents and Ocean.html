@@ -5,8 +5,16 @@
 <title>Rocks, Continents and Ocean</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Rocks, Continents and Ocean</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>4. Rocks, Continents and Ocean</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - geography">MOC - geography</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -231,7 +239,7 @@
 <ul>
 <li>When water is <em>too warm, corals will expel the algae (Zooxanthella) living in their tissues</em>, causing the coral to turn completely white. <em>Climate change is a major key factor in this change.</em></li>
 </ul>
-<h3 id="facts">FACTS</h3>
+<h3 id="facts-2">FACTS</h3>
 <ul>
 <li><em>Petroleum</em> is extracted from <em>Continental Shelf</em> (start of ocean basin and is very narrow).</li>
 <li><em>Siberian Shelf</em> in the <em>Arctic Ocean</em> is the <em>widest Continental Shelf (1500 km wide)</em>.</li>
@@ -278,4 +286,37 @@
 <li><a class="wikilink" href="geography/05 - Geomorphology and Landforms">05 - Geomorphology and Landforms</a> — landforms</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#formation-of-rocks" class="">FORMATION OF ROCKS</a></li><li><a href="#igneous-rocks" class="lvl-3 ">Igneous Rocks</a></li><li><a href="#plutonic-bodies" class="lvl-3 ">Plutonic Bodies</a></li><li><a href="#sedimentary-rocks" class="">SEDIMENTARY ROCKS</a></li><li><a href="#types-of-sedimentary-rocks" class="lvl-3 ">Types of Sedimentary Rocks</a></li><li><a href="#metamorphic-rock" class="">METAMORPHIC ROCK</a></li><li><a href="#types-of-metamorphic-rocks" class="lvl-3 ">Types of Metamorphic Rocks</a></li><li><a href="#types-of-thermal-metamorphism" class="lvl-3 ">Types of Thermal Metamorphism</a></li><li><a href="#metamorphism-transformations" class="lvl-3 ">Metamorphism Transformations</a></li><li><a href="#types-of-rock-fact-box" class="lvl-3 ">Types of Rock (fact box)</a></li><li><a href="#rock-cycle" class="lvl-3 ">Rock Cycle</a></li><li><a href="#acidic-vs-basic-rocks" class="lvl-3 ">Acidic vs Basic Rocks</a></li><li><a href="#volcano" class="">VOLCANO</a></li><li><a href="#types-of-volcano" class="lvl-3 ">Types of Volcano</a></li><li><a href="#geyser" class="lvl-3 ">Geyser</a></li><li><a href="#continents-and-ocean" class="">CONTINENTS AND OCEAN</a></li><li><a href="#evidences" class="lvl-3 ">Evidences</a></li><li><a href="#reason-for-continental-drift" class="lvl-3 ">Reason for Continental Drift</a></li><li><a href="#facts" class="">FACTS</a></li><li><a href="#milankovitch-theory" class="lvl-3 ">Milankovitch Theory</a></li><li><a href="#seafloor-spreading" class="">SEAFLOOR SPREADING</a></li><li><a href="#relief-features" class="lvl-3 ">Relief Features</a></li><li><a href="#corals" class="">Corals</a></li><li><a href="#favourable-conditions-required-for-corals-to-survive" class="lvl-3 ">Favourable Conditions Required for Corals to Survive</a></li><li><a href="#coral-bleaching" class="lvl-3 ">Coral Bleaching</a></li><li><a href="#facts-2" class="lvl-3 ">FACTS</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

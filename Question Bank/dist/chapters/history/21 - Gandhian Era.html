@@ -5,8 +5,16 @@
 <title>Gandhian Era</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Gandhian Era</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>22. Gandhian Era</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - history (Modern)">MOC - history (Modern)</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -193,4 +201,37 @@
 <li><a class="wikilink" href="history/22 - CDM and Simon Commission">22 - CDM and Simon Commission</a> — CDM follows Gandhian era</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#gandhian-era" class="">GANDHIAN ERA</a></li><li><a href="#mahatma-gandhi" class="">MAHATMA GANDHI</a></li><li><a href="#gandhi-s-work-in-south-africa" class="">Gandhi's Work in South Africa</a></li><li><a href="#gandhi-in-india" class="">Gandhi in India</a></li><li><a href="#movements-led-by-gandhiji" class="">Movements Led by Gandhiji</a></li><li><a href="#champaran-agrarian-act-1918" class="">Champaran Agrarian Act (1918)</a></li><li><a href="#government-of-india-act-1919" class="">GOVERNMENT OF INDIA ACT (1919)</a></li><li><a href="#rowlatt-satyagraha-1919" class="">ROWLATT SATYAGRAHA (1919)</a></li><li><a href="#background-of-rowlatt-act" class="">Background of Rowlatt Act</a></li><li><a href="#jallianwala-bagh-massacre-1919" class="">Jallianwala Bagh Massacre 1919</a></li><li><a href="#aftermath-of-jallianwala-bagh-massacre" class="">Aftermath of Jallianwala Bagh Massacre</a></li><li><a href="#khilafat-movement-1919" class="">KHILAFAT MOVEMENT (1919)</a></li><li><a href="#non-cooperation-movement-1920" class="">NON-COOPERATION MOVEMENT (1920)</a></li><li><a href="#steps-taken-to-support-the-merger-of-khilafat-movement-and-non-cooperation-movement" class="">Steps Taken to Support the Merger of Khilafat Movement and Non-Cooperation Movement</a></li><li><a href="#chauri-chaura-incident-1922" class="">Chauri Chaura Incident (1922)</a></li><li><a href="#suspension-of-the-movement-and-political-vacuum" class="">Suspension of the Movement and Political Vacuum</a></li><li><a href="#the-division-created-two-groups" class="lvl-3 ">The division created two groups:</a></li><li><a href="#formation-of-swaraj-party-1923" class="">FORMATION OF SWARAJ PARTY, 1923</a></li><li><a href="#belgaum-session-of-congress-1924" class="">Belgaum Session of Congress, 1924</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

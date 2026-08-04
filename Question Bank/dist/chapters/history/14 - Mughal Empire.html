@@ -5,8 +5,16 @@
 <title>Mughal Empire</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Mughal Empire</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>14. Mughal Empire</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - history (Medieval)">MOC - history (Medieval)</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -290,7 +298,7 @@
 <ul>
 <li>The last Mughal ruler.</li>
 </ul>
-<h3 id="administration">Administration</h3>
+<h3 id="administration-2">Administration</h3>
 <ul>
 <li><em>Suba</em> (lead by Subedar/Nizam) was divided into <em>Sarkars</em> (District) which was further divided into: <em>Pargana</em> (Taluka) and <em>Gram</em> (Village).</li>
 <li>Siqdar (Revenue Officers) / Muqaddam (Village Headman)</li>
@@ -405,4 +413,37 @@
 <li><a class="wikilink" href="static-gk/24 - Important Battles in Indian History">24 - Important Battles in Indian History</a> — Mughal battles reference list</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#the-mughal-empire" class="">The Mughal Empire</a></li><li><a href="#mughal-empire-continued" class="lvl-3 ">Mughal Empire (continued)</a></li><li><a href="#architecture-built-by-akbar" class="lvl-3 ">Architecture Built by Akbar</a></li><li><a href="#navratnas-of-akbar-nine-jewels" class="lvl-3 ">Navratnas of Akbar (Nine Jewels)</a></li><li><a href="#land-revenue-system" class="lvl-3 ">Land Revenue System</a></li><li><a href="#administration" class="lvl-3 ">Administration</a></li><li><a href="#last-expedition-of-akbar" class="lvl-3 ">Last Expedition of Akbar</a></li><li><a href="#architecture-during-his-reign" class="lvl-3 ">Architecture during his Reign</a></li><li><a href="#memoirs-written" class="lvl-3 ">Memoirs Written</a></li><li><a href="#biography" class="lvl-3 ">Biography</a></li><li><a href="#architecture-built-by-shah-jahan" class="lvl-3 ">Architecture Built by Shah Jahan</a></li><li><a href="#diwan-i-aam-hall-of-public-audience" class="lvl-3 ">Diwan-i-Aam (hall of public audience)</a></li><li><a href="#diwan-i-khas-hall-of-private-audience" class="lvl-3 ">Diwan-i-Khas (hall of private audience)</a></li><li><a href="#book" class="lvl-3 ">Book</a></li><li><a href="#later-mughals" class="lvl-3 ">Later Mughals</a></li><li><a href="#later-mughals-continued" class="lvl-3 ">Later Mughals (continued)</a></li><li><a href="#administration-2" class="lvl-3 ">Administration</a></li><li><a href="#important-officers" class="lvl-3 ">Important Officers</a></li><li><a href="#rajputs" class="lvl-3 ">Rajputs</a></li><li><a href="#governors-general-pre-1857" class="">GOVERNORS-GENERAL (pre-1857)</a></li><li><a href="#lord-warren-hastings-1773-1785" class="lvl-3 ">Lord Warren Hastings (1773-1785)</a></li><li><a href="#lord-cornwallis-1786-1793" class="lvl-3 ">Lord Cornwallis (1786-1793)</a></li><li><a href="#lord-wellesley-1798-1805" class="lvl-3 ">Lord Wellesley (1798-1805)</a></li><li><a href="#lord-minto-1807-1813" class="lvl-3 ">Lord Minto (1807-1813)</a></li><li><a href="#lord-hastings-1813-1823" class="lvl-3 ">Lord Hastings (1813-1823)</a></li><li><a href="#lord-william-bentinck-1828-1835" class="lvl-3 ">Lord William Bentinck (1828-1835)</a></li><li><a href="#lord-metcalfe-1835-1836" class="lvl-3 ">Lord Metcalfe (1835-1836)</a></li><li><a href="#lord-auckland-1836-1842" class="lvl-3 ">Lord Auckland (1836-1842)</a></li><li><a href="#lord-hardinge-i-1844-1848" class="lvl-3 ">Lord Hardinge I (1844-1848)</a></li><li><a href="#lord-dalhousie-1848-1856" class="lvl-3 ">Lord Dalhousie (1848-1856)</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

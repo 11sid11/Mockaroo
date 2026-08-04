@@ -5,8 +5,16 @@
 <title>Countries — Capitals, Currencies and Languages</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Countries — Capitals, Currencies and Languages</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>16. Countries — Capitals, Currencies and Languages</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - static-gk">MOC - static-gk</a></blockquote>
 <blockquote><strong>Source:</strong> Compiled and verified from UN member states data, central bank sources, 2025</blockquote>
@@ -410,4 +418,37 @@
 <li><a class="wikilink" href="static-gk/09 - International Organisations">09 - International Organisations</a> — HQ cities</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#why-this-matters-for-ssc" class="">Why this matters for SSC</a></li><li><a href="#a-all-193-un-member-states-focus-high-frequency-ssc-questions" class="">A — All 193 UN Member States (focus: high-frequency SSC questions)</a></li><li><a href="#asia" class="lvl-3 ">Asia</a></li><li><a href="#europe" class="lvl-3 ">Europe</a></li><li><a href="#africa" class="lvl-3 ">Africa</a></li><li><a href="#north-america" class="lvl-3 ">North America</a></li><li><a href="#south-america" class="lvl-3 ">South America</a></li><li><a href="#oceania" class="lvl-3 ">Oceania</a></li><li><a href="#b-currency-highlights-highest-yield-for-ssc" class="">B — Currency highlights (highest-yield for SSC)</a></li><li><a href="#currencies-with-highest-value-per-unit-1-unit-in-inr-x-by-2025" class="lvl-3 ">Currencies with **highest value per unit** (1 unit in INR ≈ X — by 2025)</a></li><li><a href="#notable-currencies-named-after-their-countries-or-close" class="lvl-3 ">Notable: **Currencies named after their countries (or close)**</a></li><li><a href="#currencies-with-same-name-as-the-country" class="lvl-3 ">Currencies with **same name as the country**</a></li><li><a href="#c-country-name-capital-name-pairs-easy-confusions" class="">C — Country-name capital-name pairs (easy confusions)</a></li><li><a href="#d-currency-one-liners-with-country-region-mnemonic" class="">D — Currency one-liners (with country/region mnemonic)</a></li><li><a href="#e-indian-states-uts-in-the-question-pool" class="">E — Indian states / UTs in the question pool</a></li><li><a href="#f-currency-superlatives-trivia-ssc-classics" class="">F — Currency superlatives &amp; trivia (SSC classics)</a></li><li><a href="#quick-recall-for-the-day-before-the-exam" class="">Quick recall — for the day-before-the-exam</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#2024-2025-updates" class="">2024–2025 Updates</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

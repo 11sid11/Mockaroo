@@ -5,8 +5,16 @@
 <title>Wind, Ocean Current and Cyclone</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Wind, Ocean Current and Cyclone</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>7. Wind, Ocean Current and Cyclone</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - geography">MOC - geography</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -84,7 +92,7 @@
 <li><em>Cyclone: India</em></li>
 </ul>
 <blockquote>During cyclone, Cumulonimbus clouds are formed with extensive vertical development.</blockquote>
-<h2 id="wind-ocean-current-and-cyclone">WIND, OCEAN CURRENT AND CYCLONE</h2>
+<h2 id="wind-ocean-current-and-cyclone-2">WIND, OCEAN CURRENT AND CYCLONE</h2>
 <h3 id="tropical-and-temperate-cyclone-extra-tropical-cyclone">Tropical and Temperate Cyclone (Extra-Tropical Cyclone)</h3>
 <table><thead><tr><th>Tropical Cyclone</th><th>Temperate Cyclone</th></tr></thead><tbody>
 <tr><td>They originate over sea</td><td>They originate over sea and land</td></tr>
@@ -154,4 +162,37 @@
 <li><a class="wikilink" href="geography/15 - Monsoon">15 - Monsoon</a> — monsoon winds</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#wind-ocean-current-and-cyclone" class="">WIND, OCEAN CURRENT AND CYCLONE</a></li><li><a href="#horse-latitude" class="lvl-3 ">Horse Latitude</a></li><li><a href="#local-winds" class="">LOCAL WINDS</a></li><li><a href="#types-of-local-winds" class="lvl-3 ">Types of Local Winds</a></li><li><a href="#land-breeze-and-sea-breeze" class="lvl-3 ">Land Breeze and Sea Breeze</a></li><li><a href="#land-breeze" class="lvl-3 ">Land Breeze</a></li><li><a href="#sea-breeze" class="lvl-3 ">Sea Breeze</a></li><li><a href="#cyclone" class="">CYCLONE</a></li><li><a href="#formation-of-cyclones" class="lvl-3 ">Formation of Cyclones</a></li><li><a href="#favorable-conditions-for-formation-of-cyclone" class="lvl-3 ">Favorable Conditions for Formation of Cyclone</a></li><li><a href="#different-names-of-cyclones-around-the-world" class="lvl-3 ">Different Names of Cyclones around the World</a></li><li><a href="#wind-ocean-current-and-cyclone-2" class="">WIND, OCEAN CURRENT AND CYCLONE</a></li><li><a href="#tropical-and-temperate-cyclone-extra-tropical-cyclone" class="lvl-3 ">Tropical and Temperate Cyclone (Extra-Tropical Cyclone)</a></li><li><a href="#anticyclone" class="lvl-3 ">Anticyclone</a></li><li><a href="#ocean-currents" class="">OCEAN CURRENTS</a></li><li><a href="#reasons-for-movement-of-ocean-currents" class="lvl-3 ">Reasons for Movement of Ocean Currents</a></li><li><a href="#trick-to-remember-cold-ocean-currents-bp-golf-world-cup-california" class="lvl-3 ">TRICK TO REMEMBER — Cold Ocean Currents (BP GOLF World Cup California)</a></li><li><a href="#warm-ocean-currents" class="lvl-3 ">Warm Ocean Currents</a></li><li><a href="#effects-of-ocean-currents" class="lvl-3 ">Effects of Ocean Currents</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

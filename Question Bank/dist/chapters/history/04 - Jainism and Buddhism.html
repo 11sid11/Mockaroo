@@ -5,8 +5,16 @@
 <title>Jainism and Buddhism</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Jainism and Buddhism</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>4. Jainism and Buddhism</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - history (Ancient)">MOC - history (Ancient)</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -299,4 +307,37 @@
 <li><a class="wikilink" href="history/06 - Maurya Dynasty">06 - Maurya Dynasty</a> — Ashoka's Buddhism patronage</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#cause-of-origin" class="lvl-3 ">Cause of Origin</a></li><li><a href="#jainism" class="">JAINISM</a></li><li><a href="#important-tirthankaras" class="lvl-3 ">Important Tirthankaras</a></li><li><a href="#vardhaman-mahavir" class="lvl-3 ">Vardhaman Mahavir</a></li><li><a href="#meaning-of-terms-related-to-jainism" class="lvl-3 ">Meaning of Terms related to Jainism</a></li><li><a href="#ajivika-sect" class="lvl-3 ">Ajivika Sect</a></li><li><a href="#jain-philosophy-triratnas" class="lvl-3 ">Jain Philosophy (Triratnas)</a></li><li><a href="#five-principles-of-living-vows-panch-vrata" class="lvl-3 ">Five Principles of Living (Vows) → Panch Vrata</a></li><li><a href="#division-among-jains" class="lvl-3 ">Division among Jains</a></li><li><a href="#jain-councils" class="lvl-3 ">Jain Councils</a></li><li><a href="#important-books-of-jains" class="lvl-3 ">Important Books of Jains</a></li><li><a href="#architecture" class="lvl-3 ">Architecture</a></li><li><a href="#buddhism" class="">BUDDHISM</a></li><li><a href="#gautam-buddha" class="lvl-3 ">Gautam Buddha</a></li><li><a href="#important-symbols-of-buddha-s-life" class="lvl-3 ">Important Symbols of Buddha's Life</a></li><li><a href="#philosophy-of-buddhism" class="lvl-3 ">Philosophy of Buddhism</a></li><li><a href="#eight-fold-path-or-ashtangika-marga" class="lvl-3 ">Eight Fold Path or Ashtangika Marga</a></li><li><a href="#triratnas-of-buddhism" class="lvl-3 ">Triratnas of Buddhism</a></li><li><a href="#buddhist-councils" class="lvl-3 ">Buddhist Councils</a></li><li><a href="#sects-of-buddhism" class="lvl-3 ">Sects of Buddhism</a></li><li><a href="#buddhist-texts" class="lvl-3 ">Buddhist Texts</a></li><li><a href="#in-pali-language" class="lvl-3 ">In Pali Language</a></li><li><a href="#bodhisattvas" class="lvl-3 ">Bodhisattvas</a></li><li><a href="#in-sanskrit-language" class="lvl-3 ">In Sanskrit Language</a></li><li><a href="#buddhist-terms" class="lvl-3 ">Buddhist Terms</a></li><li><a href="#buddhist-stupas" class="lvl-3 ">Buddhist Stupas</a></li><li><a href="#kesariya-stupa" class="lvl-3 ">Kesariya Stupa</a></li><li><a href="#important-monasteries" class="lvl-3 ">Important Monasteries</a></li><li><a href="#eight-holy-places-of-buddhism" class="lvl-3 ">Eight Holy Places of Buddhism</a></li><li><a href="#sanchi-stupa" class="lvl-3 ">Sanchi Stupa</a></li><li><a href="#parts-of-a-stupa" class="lvl-3 ">Parts of a Stupa</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

@@ -5,8 +5,16 @@
 <title>Constitutional and Non-Constitutional Bodies</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Constitutional and Non-Constitutional Bodies</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>14. Constitutional and Non-Constitutional Bodies</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - polity">MOC - polity</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -243,4 +251,37 @@
 <li><a class="wikilink" href="polity/14 - Important Acts">14 - Important Acts</a> — establishing acts</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#classification-of-bodies" class="lvl-3 ">Classification of Bodies</a></li><li><a href="#constitutional-bodies" class="">CONSTITUTIONAL BODIES</a></li><li><a href="#election-commission-of-india-eci" class="lvl-3 ">Election Commission of India (ECI)</a></li><li><a href="#important-articles" class="lvl-3 ">Important Articles:</a></li><li><a href="#union-public-service-commission-upsc" class="lvl-3 ">Union Public Service Commission (UPSC)</a></li><li><a href="#related-articles" class="lvl-3 ">Related Articles</a></li><li><a href="#state-public-service-commission-spsc" class="lvl-3 ">State Public Service Commission (SPSC)</a></li><li><a href="#finance-commission-fc" class="lvl-3 ">Finance Commission (FC)</a></li><li><a href="#gst-council" class="lvl-3 ">GST Council</a></li><li><a href="#national-commission-for-scs-sts" class="lvl-3 ">National Commission for SCs &amp; STs</a></li><li><a href="#national-commission-for-backward-classes-ncbc" class="lvl-3 ">National Commission for Backward Classes (NCBC)</a></li><li><a href="#special-officer-for-linguistic-minorities" class="lvl-3 ">Special Officer for Linguistic Minorities</a></li><li><a href="#comptroller-and-auditor-general-of-india-cag" class="lvl-3 ">Comptroller and Auditor General of India (CAG)</a></li><li><a href="#attorney-general-of-india" class="lvl-3 ">Attorney General of India</a></li><li><a href="#advocate-general-of-india" class="lvl-3 ">Advocate General of India</a></li><li><a href="#statutory-executive-bodies" class="">STATUTORY/EXECUTIVE BODIES</a></li><li><a href="#national-human-rights-commission-nhrc" class="lvl-3 ">National Human Rights Commission (NHRC)</a></li><li><a href="#state-human-rights-commission" class="lvl-3 ">State Human Rights Commission</a></li><li><a href="#chief-information-commission-cic" class="lvl-3 ">Chief Information Commission (CIC)</a></li><li><a href="#central-vigilance-commission-cvc" class="lvl-3 ">Central Vigilance Commission (CVC)</a></li><li><a href="#central-bureau-of-investigation-cbi" class="lvl-3 ">Central Bureau of Investigation (CBI)</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

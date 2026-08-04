@@ -5,8 +5,16 @@
 <title>Festivals of India</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Festivals of India</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>11. Festivals of India</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - static-gk">MOC - static-gk</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -407,4 +415,37 @@
 <li><a class="wikilink" href="static-gk/21 - Important Temples and Pilgrimage Sites">21 - Important Temples and Pilgrimage Sites</a> — festival locations</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#andhra-pradesh" class="">ANDHRA PRADESH</a></li><li><a href="#arunachal-pradesh" class="">ARUNACHAL PRADESH</a></li><li><a href="#assam" class="">ASSAM</a></li><li><a href="#bihar" class="">BIHAR</a></li><li><a href="#chhattisgarh" class="">CHHATTISGARH</a></li><li><a href="#goa" class="">GOA</a></li><li><a href="#gujarat" class="">GUJARAT</a></li><li><a href="#himachal-pradesh" class="">HIMACHAL PRADESH</a></li><li><a href="#haryana" class="">HARYANA</a></li><li><a href="#jharkhand" class="">JHARKHAND</a></li><li><a href="#karnataka" class="">KARNATAKA</a></li><li><a href="#kerala" class="">KERALA</a></li><li><a href="#madhya-pradesh" class="">MADHYA PRADESH</a></li><li><a href="#manipur" class="">MANIPUR</a></li><li><a href="#nagaland" class="">NAGALAND</a></li><li><a href="#meghalaya" class="">MEGHALAYA</a></li><li><a href="#odisha" class="">ODISHA</a></li><li><a href="#mizoram" class="">MIZORAM</a></li><li><a href="#punjab" class="">PUNJAB</a></li><li><a href="#maharashtra" class="">MAHARASHTRA</a></li><li><a href="#rajasthan" class="">RAJASTHAN</a></li><li><a href="#sikkim" class="">SIKKIM</a></li><li><a href="#tamil-nadu" class="">TAMIL NADU</a></li><li><a href="#telangana" class="">TELANGANA</a></li><li><a href="#tripura" class="">TRIPURA</a></li><li><a href="#uttarakhand" class="">UTTARAKHAND</a></li><li><a href="#west-bengal" class="">WEST BENGAL</a></li><li><a href="#new-year-festivals" class="">NEW YEAR FESTIVALS</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#verified-and-edited-2025" class="">Verified and Edited 2025</a></li><li><a href="#ocr-artifacts-fixed" class="lvl-3 ">OCR Artifacts Fixed</a></li><li><a href="#factual-verifications" class="lvl-3 ">Factual Verifications</a></li><li><a href="#notes" class="lvl-3 ">Notes</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

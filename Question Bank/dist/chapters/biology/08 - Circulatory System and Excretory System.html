@@ -5,8 +5,16 @@
 <title>Circulatory System and Excretory System</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Circulatory System and Excretory System</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>8. Circulatory System and Excretory System</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - biology">MOC - biology</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -107,7 +115,7 @@
 <li>Double circulation is the type of blood circulation in humans (and all mammals) where the <em>blood passes through the heart twice</em> during one complete cycle around the body.</li>
 </ul>
 <p><em>Blood circulation was discovered by William Harvey.</em></p>
-<h2 id="circulatory-system-and-excretory-system">CIRCULATORY SYSTEM AND EXCRETORY SYSTEM</h2>
+<h2 id="circulatory-system-and-excretory-system-2">CIRCULATORY SYSTEM AND EXCRETORY SYSTEM</h2>
 <p>(iii) The blood pumped by the right ventricle (deoxygenated blood) is transported through pulmonary artery to lungs where CO₂ is exchanged with O₂ through diffusion and returns back to the heart through <em>pulmonary vein</em>.</p>
 <p>(ii) The oxygenated blood from left ventricle is transported through <em>aorta</em> to different body parts (cells and tissues) where O₂ is exchanged with CO₂ through diffusion and then returned back to the heart through <em>vena-cava</em>.</p>
 <p><em>Coronary Artery: The main blood vessel that supply oxygen rich blood to heart muscles.</em></p>
@@ -167,7 +175,7 @@
 <tr><td>B-</td><td>B+, B-, AB+, AB-</td><td>B-, O-</td></tr>
 <tr><td>AB-</td><td>AB+, AB-</td><td>AB-, A-, B-, O-</td></tr>
 </tbody></table>
-<h2 id="circulatory-system-and-excretory-system">CIRCULATORY SYSTEM AND EXCRETORY SYSTEM</h2>
+<h2 id="circulatory-system-and-excretory-system-3">CIRCULATORY SYSTEM AND EXCRETORY SYSTEM</h2>
 <p><strong>Rh Factor</strong></p>
 <ul>
 <li>The Rh factor (<em>Rhesus factor</em>) is an inherited protein found on the surface of red blood cells. The name &quot;Rh&quot; comes from the <em>rhesus monkey</em>, whose red blood cells were first used in research to detect this antigen in humans.</li>
@@ -205,7 +213,7 @@
 <li><em>Secretion</em>: Some extra wastes are actively secreted into the tubule.</li>
 <li><em>Excretion</em>: Final urine is sent to the collecting duct.</li>
 </ul>
-<h2 id="circulatory-system-and-excretory-system">CIRCULATORY SYSTEM AND EXCRETORY SYSTEM</h2>
+<h2 id="circulatory-system-and-excretory-system-4">CIRCULATORY SYSTEM AND EXCRETORY SYSTEM</h2>
 <p><strong>Ureters</strong></p>
 <ul>
 <li>Two narrow tubes that carry urine from the kidneys to the urinary bladder.</li>
@@ -276,4 +284,37 @@
 <li><a class="wikilink" href="biology/01 - Cell">01 - Cell</a> — cells require circulation for nutrients/waste</li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#circulatory-system-and-excretory-system" class="">CIRCULATORY SYSTEM AND EXCRETORY SYSTEM</a></li><li><a href="#circulatory-system" class="">CIRCULATORY SYSTEM</a></li><li><a href="#circulatory-system-and-excretory-system-2" class="">CIRCULATORY SYSTEM AND EXCRETORY SYSTEM</a></li><li><a href="#circulatory-system-and-excretory-system-3" class="">CIRCULATORY SYSTEM AND EXCRETORY SYSTEM</a></li><li><a href="#excretory-system" class="">EXCRETORY SYSTEM</a></li><li><a href="#circulatory-system-and-excretory-system-4" class="">CIRCULATORY SYSTEM AND EXCRETORY SYSTEM</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li><li><a href="#see-also" class="">See also</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>

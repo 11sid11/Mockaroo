@@ -5,8 +5,16 @@
 <title>Environmental Conventions</title>
 <link rel="stylesheet" href="../app/css/chapter.css">
 </head><body>
-<nav class="chap-nav"><a href="../../index.html">← Question Bank home</a></nav>
-<article>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="crumb-sep">/</span>
+<span class="crumb-here">Environmental Conventions</span>
+<span class="spacer"></span>
+<a class="nav-action" href="../../index.html">⌂ Home</a>
+</div></nav>
+<div class="chap-shell">
+<article class="chap">
 <h1>5. Environmental Conventions</h1>
 <blockquote><strong>Subject:</strong> <a class="wikilink" href="MOC - environment">MOC - environment</a></blockquote>
 <h2 id="navigation">Navigation</h2>
@@ -123,4 +131,37 @@
 <li>Full book: <a class="wikilink" href="Index">Index</a></li>
 </ul>
 </article>
+<aside class="toc"><h4>On this page</h4><ul><li><a href="#navigation" class="">Navigation</a></li><li><a href="#content" class="">Content</a></li><li><a href="#important-international-environmental-conventions-and-protocols" class="">Important International Environmental Conventions and Protocols</a></li><li><a href="#1-minamata-convention" class="lvl-3 ">1. Minamata Convention</a></li><li><a href="#2-stockholm-conference" class="lvl-3 ">2. Stockholm Conference</a></li><li><a href="#3-nairobi-declaration" class="lvl-3 ">3. Nairobi Declaration</a></li><li><a href="#4-vienna-convention" class="lvl-3 ">4. Vienna Convention</a></li><li><a href="#5-montreal-protocol" class="lvl-3 ">5. Montreal Protocol</a></li><li><a href="#6-helsinki-declaration-on-the-protection-of-the-ozone-layer" class="lvl-3 ">6. Helsinki Declaration (on the Protection of the Ozone Layer)</a></li><li><a href="#7-basel-convention" class="lvl-3 ">7. Basel Convention</a></li><li><a href="#8-earth-summit-rio-summit" class="lvl-3 ">8. Earth Summit (Rio Summit)</a></li><li><a href="#9-un-convention-to-combat-desertification-unccd" class="lvl-3 ">9. UN Convention to Combat Desertification (UNCCD)</a></li><li><a href="#10-kyoto-protocol" class="lvl-3 ">10. Kyoto Protocol</a></li><li><a href="#11-stockholm-convention" class="lvl-3 ">11. Stockholm Convention</a></li><li><a href="#12-johannesburg-declaration-world-summit-on-sustainable-development" class="lvl-3 ">12. Johannesburg Declaration (World Summit on Sustainable Development)</a></li><li><a href="#13-rotterdam-convention" class="lvl-3 ">13. Rotterdam Convention</a></li><li><a href="#14-cartagena-protocol-on-biosafety" class="lvl-3 ">14. Cartagena Protocol on Biosafety</a></li><li><a href="#15-bonn-convention-convention-on-migratory-species-cms" class="lvl-3 ">15. Bonn Convention (Convention on Migratory Species - CMS)</a></li><li><a href="#16-nagoya-protocol" class="lvl-3 ">16. Nagoya Protocol</a></li><li><a href="#17-paris-agreement" class="lvl-3 ">17. Paris Agreement</a></li><li><a href="#key-concepts" class="">Key concepts</a></li><li><a href="#cross-references" class="">Cross-references</a></li></ul></aside>
+</div>
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var tocLinks = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  var headings = tocLinks.map(function(a){
+    var id = a.getAttribute('href').slice(1);
+    return { link: a, el: document.getElementById(id) };
+  }).filter(function(h){ return h.el; });
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    var active = null;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].el.getBoundingClientRect().top <= 100) active = headings[i];
+      else break;
+    }
+    tocLinks.forEach(function(a){ a.classList.remove('active'); });
+    if (active) active.link.classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
 </body></html>
