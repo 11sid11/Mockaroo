@@ -268,7 +268,7 @@ def format_inline(text: str) -> str:
     return s
 
 
-def md_to_html(md_text: str, title: str) -> str:
+def md_to_html(md_text: str, title: str, subject: str = "") -> str:
     body = FRONTMATTER_RE.sub("", md_text, count=1)
     lines = body.splitlines()
     out: list[str] = []
@@ -323,6 +323,13 @@ def md_to_html(md_text: str, title: str) -> str:
         if stripped.startswith("# "):
             close_ul(); close_ol(); close_table()
             out.append(f"<h1>{format_inline(stripped[2:])}</h1>")
+            # Inject a meta-chip row right under the H1 (subject + a "Source chapter" hint)
+            chips = []
+            if subject:
+                chips.append(f'<span class="meta-chip subject">{html_escape(subject.upper())}</span>')
+            chips.append('<span class="meta-chip">SSC CGL Tier-I study note</span>')
+            chips.append('<span class="meta-chip">Revision-friendly</span>')
+            out.append('<div class="muted-meta">' + "".join(chips) + '</div>')
             i += 1; continue
         if stripped.startswith("## "):
             close_ul(); close_ol(); close_table()
@@ -391,7 +398,11 @@ def md_to_html(md_text: str, title: str) -> str:
 
         if stripped.startswith(">"):
             close_ul(); close_ol()
-            out.append(f"<blockquote>{format_inline(stripped[1:].strip())}</blockquote>")
+            inner = stripped[1:].strip()
+            # Skip the redundant "<strong>Subject:</strong> ..." blockquote — we render our own meta chip row below H1.
+            if inner.lower().startswith("<strong>subject:</strong>") or inner.lower().startswith("**subject:**"):
+                i += 1; continue
+            out.append(f"<blockquote>{format_inline(inner)}</blockquote>")
             i += 1; continue
 
         if stripped.startswith("<details>"):
@@ -472,7 +483,7 @@ def md_to_html(md_text: str, title: str) -> str:
         '<span class="crumb-sep">/</span>\n'
         f'<span class="crumb-here">{html_escape(title)}</span>\n'
         '<span class="spacer"></span>\n'
-        '<a class="nav-action" href="../../index.html">\u2302 Home</a>\n'
+        '<a class="nav-action" href="../../index.html">Home</a>\n'
         '</div></nav>\n'
         '<div class="chap-shell">\n'
         '<article class="chap">\n' + body_html + '\n</article>\n'
@@ -590,7 +601,7 @@ def build():
                 title = p.stem
                 if t_match:
                     title = re.sub(r"^#\s*\d+\.?\s*", "", t_match.group(0)).strip()
-                html = md_to_html(p.read_text(encoding="utf-8"), title)
+                html = md_to_html(p.read_text(encoding="utf-8"), title, subject=sub)
                 (out_sub / (p.stem + ".html")).write_text(html, encoding="utf-8")
                 chapters_built += 1
             except Exception as e:
@@ -642,6 +653,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
