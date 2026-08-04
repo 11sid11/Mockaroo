@@ -33,6 +33,11 @@ _obsidian/
 /tools/fix_*.ps1
 /tools/fix_*.py
 
+# Local screenshots and dev artefacts
+/*.png
+/test-leak.html
+/dump*.html
+
 # Source vault chapters (the published artefact is the rendered HTML in dist/)
 /biology/
 /chemistry/
