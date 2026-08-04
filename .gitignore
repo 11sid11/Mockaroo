@@ -29,6 +29,9 @@ _obsidian/
 /generate_*.py
 /gen_data.py
 /gen_geo_questions.py
+/fix_*.ps1
+/tools/fix_*.ps1
+/tools/fix_*.py
 
 # Source vault chapters (the published artefact is the rendered HTML in dist/)
 /biology/
