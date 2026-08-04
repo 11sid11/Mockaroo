@@ -377,17 +377,21 @@ function renderTest(view) {
         el('span', { class: 'key' }, [key + ')']),
         el('span', {}, [o.text]),
       ]);
-      if (mode !== 'timed' && (r.answers[r.idx] || mode === 'revision')) {
+      const userAnsweredHere = r.answers[r.idx] != null;
+      const showCorrectness = mode === 'revision' || (mode !== 'timed' && userAnsweredHere);
+      if (showCorrectness) {
         if (key === q.answer) li.classList.add('correct');
         else if (key === r.answers[r.idx]) li.classList.add('wrong');
-      } else if (r.answers[r.idx] === key) {
+      } else if (userAnsweredHere && r.answers[r.idx] === key) {
         li.classList.add('selected');
       }
       opts.appendChild(li);
     });
     qcard.appendChild(opts);
 
-    if (mode !== 'timed' && (r.answers[r.idx] || mode === 'revision')) {
+    const userAnsweredHere = r.answers[r.idx] != null;
+    const showFeedback = mode === 'revision' || (mode !== 'timed' && userAnsweredHere);
+    if (showFeedback) {
       const fb = el('div', { class: 'qfeedback' });
       fb.appendChild(el('div', {}, [
         el('span', { class: 'label' }, ['Answer:']),
