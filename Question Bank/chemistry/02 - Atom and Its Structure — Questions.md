@@ -1,4 +1,4 @@
----
+﻿---
 title: "Atom and Its Structure — Questions"
 subject: chemistry
 chapter: 2
@@ -39,7 +39,7 @@ The chapter states that the Law of Conservation of Mass — "in a closed system,
 ---
 
 @qchem.atom.q2 difficulty=recall subject=chemistry chapter=2
-The Law of Constant Proportion — that a given chemical compound always contains its component elements in a fixed ratio by mass — was proposed by:
+A water sample is taken from a glacier in the Himalayas and another from the Dead Sea. Both are analysed and found to contain hydrogen and oxygen combined in exactly the same mass ratio (1 : 8). This observation is the basis of the **Law of Constant Proportion**, which was proposed by:
 
 - A) Antoine Lavoisier
 - B) Joseph Proust
@@ -51,9 +51,9 @@ The Law of Constant Proportion — that a given chemical compound always contain
 
 **Answer: B**
 
-The Law of Constant Proportion was given by **Joseph Proust**. The chapter explicitly distinguishes it from Lavoisier's Law of Conservation of Mass.
+The Law of Constant Proportion was given by **Joseph Proust**. It states that a given chemical compound always contains its component elements in a fixed ratio by mass, regardless of where the sample comes from. The chapter explicitly distinguishes it from Lavoisier's Law of Conservation of Mass.
 
-**Trap:** A is the Conservation of Mass lawgiver. C is the atomic theory. D is the discoverer of Brownian movement (in chapter 1).
+**Trap:** A is the Conservation of Mass lawgiver ("total mass is conserved"). C is the atomic theory. D is the discoverer of Brownian movement (in chapter 1). Setting the two samples from opposite ends of the Earth is the chapter's own example of constant proportion at work.
 
 **See also:** [[../../chemistry/02 - Atom and Its Structure#Law of Constant Proportion]]
 </details>
@@ -83,21 +83,27 @@ Who discovered the electron, and in which year?
 ---
 
 @qchem.atom.q4 difficulty=recall subject=chemistry chapter=2
-The neutron was discovered by:
+Match the following particles with their discoverers as recorded in the chapter:
 
-- A) Goldstein
-- B) J. J. Thomson
-- C) Rutherford
-- D) James Chadwick
+- **Discovery of the electron** (1897)
+- **Discovery of the proton**
+- **Discovery of the neutron** (1932)
+
+Which row of the table is correct?
+
+- A) Electron — J. J. Thomson; Proton — Goldstein; Neutron — James Chadwick
+- B) Electron — Rutherford; Proton — Thomson; Neutron — Goldstein
+- C) Electron — Thomson; Proton — Chadwick; Neutron — Rutherford
+- D) Electron — Goldstein; Proton — Thomson; Neutron — Chadwick
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: D**
+**Answer: A**
 
-The chapter's table of subatomic particle discoveries lists the **neutron** as discovered by **Chadwick in 1932**. Goldstein and Rutherford are credited with the proton (separately in the text).
+The chapter's table of subatomic particle discoveries lists the **electron** as discovered by **J. J. Thomson in 1897**, the **proton** as discovered by **Goldstein** (with Rutherford named as co-credit), and the **neutron** as discovered by **James Chadwick in 1932**.
 
-**Trap:** A (Goldstein) is associated with the proton — and the chapter offers Rutherford as a co-credit for the proton. C (Rutherford) proposed the nuclear model and named the proton in 1920, but the neutron is Chadwick's.
+**Trap:** B puts the wrong name on every single discovery. C swaps the proton and neutron discoverers. D pairs the electron with Goldstein and the proton with Thomson — a classic confusion, because Thomson's 1897 experiment is for the electron, not the proton.
 
 **See also:** [[../../chemistry/02 - Atom and Its Structure#Electron, Proton, and Neutron]]
 </details>

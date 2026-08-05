@@ -83,29 +83,21 @@ Part II of the Constitution (Articles 5–11) deals with citizenship. Article 5 
 ---
 
 @qpol.part_1_and_part_2.q4 difficulty=apply subject=polity chapter=4
-Match the mode of acquiring Indian citizenship with its key requirement under the Citizenship Act, 1955:
+The Citizenship Act, 1955 provides for acquisition of Indian citizenship in five modes — by birth, by descent, by registration, by naturalisation, and by incorporation of territory. Which of the following correctly distinguishes "by descent" from "by naturalisation"?
 
-| Mode | Key requirement |
-|---|---|
-| (i) By Birth | (a) 12 years of residence (or 11 of preceding 14 + 1 immediate) |
-| (ii) By Naturalisation | (b) Must be of Indian origin currently living abroad |
-| (iii) By Descent | (c) Born in India |
-
-- A) i-a, ii-b, iii-c
-- B) i-c, ii-a, iii-b
-- C) i-b, ii-c, iii-a
-- D) i-c, ii-b, iii-a
+- A) By descent requires the parent to be an Indian citizen; by naturalisation requires 12 years of residence (relaxed to 6 years for certain communities by CAA 2019)
+- B) Both require the same qualifying period of residence
+- C) By descent requires 12 years of residence; by naturalisation requires the parent to be an Indian citizen
+- D) By naturalisation is only for foreign nationals; by descent applies only to NRIs returning permanently
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: B**
+**Answer: A**
 
-- By Birth — born in India.
-- By Naturalisation — 12 years residence rule (relaxed to 6 years for certain communities by CAA 2019) plus knowledge of an Indian language in the 8th Schedule.
-- By Descent — a person of Indian origin currently living abroad.
+By **descent**, a person born outside India acquires Indian citizenship if either parent is an Indian citizen at the time of birth (Section 4 of the Citizenship Act). By **naturalisation**, a foreign national can apply for citizenship after 12 years of residence in India (or 11 of the preceding 14 years plus 1 year immediately before application) — this was relaxed to 6 years for Hindu, Sikh, Parsi, Jain, Christian and Buddhist communities from Pakistan, Bangladesh and Afghanistan by the CAA 2019.
 
-**Trap:** A is a tempting mis-pair — students confuse "By Descent" (for NRIs of Indian origin) with "By Naturalisation" (long residence rule). Remember: Descent = blood/lineage, Naturalisation = years lived in India.
+**Trap:** C reverses the requirements — students who remember "12 years" but forget which mode it applies to. D is partly right (naturalisation is for foreign nationals) but wrongly restricts "by descent" to NRIs returning permanently.
 
 **See also:** [[../../polity/04 - Part 1 and Part 2 of the Constitution#Citizenship Act 1955|Citizenship Act 1955]]
 </details>
@@ -306,9 +298,9 @@ Operation Polo (September 1948) was the Indian Army's action to integrate the pr
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 4 | q1, q3, q5, q8, q10 |
+| Recall | 5 | q1, q3, q5, q8, q10 |
 | Apply | 5 | q2, q4, q7, q9, q12 |
-| Tricky / two-step | 3 | q6, q11 |
+| Tricky / two-step | 2 | q6, q11 |
 
 ## Cross-references
 

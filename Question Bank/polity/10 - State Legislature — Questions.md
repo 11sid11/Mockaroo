@@ -39,31 +39,30 @@ Article 155 — the Governor is appointed by the President by warrant under his 
 ---
 
 @qpol.state_legislature.q2 difficulty=apply subject=polity chapter=10
-Match the Central executive counterpart to its State equivalent:
+At the Centre, India follows a parliamentary system: the President is the nominal head while the PM is the real executive head. The state level mirrors this arrangement. Consider the following statements about the role of the Governor and the Chief Minister:
+1. The Governor is the head of state; the Chief Minister is the head of government.
+2. The Governor exercises executive power in practice; the Chief Minister only advises.
+3. The Chief Minister is appointed by the Governor; the other ministers are appointed by the Governor on the CM's advice.
 
-| Central | State |
-|---|---|
-| (i) President | (a) Chief Minister |
-| (ii) Prime Minister | (b) Governor |
-| (iii) Attorney General of India | (c) Advocate General |
+Which of the above statements is/are correct?
 
-- A) i-a, ii-b, iii-c
-- B) i-b, ii-a, iii-c
-- C) i-b, ii-c, iii-a
-- D) i-c, ii-a, iii-b
+- A) 1 and 2 only
+- B) 1 and 3 only
+- C) 2 and 3 only
+- D) 1, 2 and 3
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: B**
 
-- President → Governor (head of state, ceremonial).
-- Prime Minister → Chief Minister (head of government, executive).
-- Attorney General of India → Advocate General (highest law officer at state level).
+Statement 1 ✓ — the Governor is the head of state (ceremonial, like the President at the Centre); the Chief Minister is the head of government (executive, like the PM at the Centre).
+Statement 3 ✓ — Article 164 says the Governor appoints the Chief Minister and, on the CM's advice, the other Ministers.
+Statement 2 ✗ — the reverse is true. The Governor exercises executive power only on the aid and advice of the Council of Ministers headed by the CM. The CM is the *de facto* executive head.
 
-**Trap:** A is the inversion — students swap (i) and (ii). Remember: the President is a *head of state*, the PM is a *head of government*; the same distinction holds at state level.
+**Trap:** A includes statement 2, which is wrong. Many students think the Governor "governs" because of the name — but the CM is the actual governing leader.
 
-**See also:** [[../../polity/10 - State Legislature#Key Replacements|Replacements]]
+**See also:** [[../../polity/10 - State Legislature#Article 164|Article 164]]
 </details>
 
 ---
@@ -300,9 +299,9 @@ Article 197 — the Legislative Council can hold an Ordinary Bill for a maximum 
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 4 | q1, q3, q5, q8, q10 |
+| Recall | 5 | q1, q3, q5, q8, q10 |
 | Apply | 5 | q2, q4, q7, q9, q12 |
-| Tricky / two-step | 3 | q6, q11 |
+| Tricky / two-step | 2 | q6, q11 |
 
 ## Cross-references
 

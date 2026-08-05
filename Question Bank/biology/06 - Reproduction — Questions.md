@@ -83,29 +83,30 @@ Transfer of pollen from the anther of one flower to the stigma of **another flow
 ---
 
 @qbio.reproduction.q4 difficulty=apply subject=biology chapter=6
-Match the pollination agent to the example plant:
+Consider the following statements about pollination:
 
-| Agent | Pollination type | Example plant |
-|---|---|---|
-| (i) Insects | (a) Anemophily | (1) Vallisneria |
-| (ii) Wind | (b) Entomophily | (2) Maize |
-| (iii) Water | (c) Hydrophily | (3) Rose / Lotus |
+1. **Entomophily** (insect pollination) is typical of brightly coloured, scented flowers with sticky pollen.
+2. **Anemophily** (wind pollination) is typical of small, dull-coloured flowers that produce large amounts of light, dry pollen.
+3. **Hydrophily** (water pollination) is seen in plants like *Vallisneria*, where pollen often floats on or below the water surface.
+4. Pollen of insect-pollinated flowers is typically **non-sticky and powdery** to ride air currents.
 
-- A) i-b-3, ii-a-2, iii-c-1
-- B) i-b-2, ii-a-3, iii-c-1
-- C) i-a-2, ii-b-3, iii-c-1
-- D) i-b-3, ii-a-1, iii-c-2
+Which of the following is INCORRECT?
+
+- A) Statement 1
+- B) Statement 2
+- C) Statement 3
+- D) Statement 4
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A**
+**Answer: D** — Insect-pollinated flowers produce **sticky** (or spiky/hook-shaped) pollen that adheres to the bodies of visiting insects — not non-sticky powdery pollen. Non-sticky, powdery pollen is the hallmark of **wind-pollinated** plants (anemophily), where it must be light enough to be carried by air currents.
 
-- (i) **Insects** → **Entomophily** (b), e.g. Rose, Lotus (3)
-- (ii) **Wind** → **Anemophily** (a), e.g. Maize, grass (2)
-- (iii) **Water** → **Hydrophily** (c), e.g. Vallisneria (1)
+- Statement 1 ✓ — entomophilous flowers use colour, scent, and nectar to attract insects, and their pollen is sticky enough to attach to insect bodies.
+- Statement 2 ✓ — anemophilous flowers (e.g. grasses, maize) produce abundant light, dry pollen.
+- Statement 3 ✓ — *Vallisneria* shows true hydrophily; pollen is released underwater and floats to female flowers.
 
-**Trap:** C swaps insect and wind pollination — both are common, but insect-pollinated flowers are usually colourful/scented, while wind-pollinated ones are small/dry (no need to attract pollinators).
+**Trap:** Statement 4 swaps the *insect* and *wind* pollen characteristics. Students often generalise "pollen is light and powdery" without remembering that insect-pollinated pollen is the *opposite*.
 
 **See also:** [[../../biology/06 - Reproduction#Pollination]]
 </details>
@@ -248,23 +249,25 @@ X + X = girl; X + Y = boy. So the father's sperm is the deciding factor.
 ---
 
 @qbio.reproduction.q10 difficulty=apply subject=biology chapter=6
-Which male reproductive structure produces the **sperm** and the hormone **testosterone**?
+A 45-year-old man has a low sperm count, small testes, and is found to have an extra X chromosome (XXY karyotype). The most likely diagnosis is:
 
-- A) Vas deferens
-- B) Testes (in the scrotum)
-- C) Prostate gland
-- D) Seminal vesicles
+- A) Turner's syndrome
+- B) Klinefelter's syndrome
+- C) Down's syndrome
+- D) Androgen insensitivity syndrome
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: B**
+**Answer: B** — **Klinefelter's syndrome** (47, XXY) is a chromosomal aneuploidy in which a male has an *extra* X chromosome. Features include small testes, low sperm count (often infertility), reduced body hair, tall stature, and gynaecomastia. It is caused by non-disjunction during meiosis in either parent.
 
-The **testes** (located in the scrotum — a sac outside the body to keep sperm cool) produce **sperm** and secrete **testosterone** (the male sex hormone). Sperm production typically begins around age 10–12. The vas deferens *transports* mature sperm; the prostate and seminal vesicles *add fluid* to sperm to form semen — they do not produce sperm or testosterone.
+- A ✗ — Turner's syndrome is **45, X0** — it affects *females* (one missing X), leading to underdeveloped ovaries and short stature.
+- C ✗ — Down's syndrome is **trisomy 21** (extra chromosome 21) — features intellectual disability, flat face, single palmar crease; not sex-chromosome related.
+- D ✗ — androgen insensitivity is genetic (X-linked, 46, XY) but the karyotype is *not* XXY.
 
-**Trap:** C (prostate) and D (seminal vesicles) are accessory glands — they contribute fluid but not sperm or testosterone.
+**Trap:** A and D both involve abnormal sex-chromosome situations, but only XXY is Klinefelter's. Students mix up Turner's (XO, female) and Klinefelter's (XXY, male).
 
-**See also:** [[../../biology/06 - Reproduction#Parts of Male Reproductive System]]
+**See also:** [[../../biology/06 - Reproduction#Sex Determination]]
 </details>
 
 ---

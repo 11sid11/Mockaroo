@@ -105,33 +105,30 @@ The **mesoderm** forms muscles, bones, circulatory system, and gonads. The **lin
 ---
 
 @qbio.germinal.q5 difficulty=apply subject=biology chapter=15
-Match the germ layer to its derivatives:
+A surgeon examining the early embryo notes that the **nervous system and skin epidermis** are forming from one specific germ layer, while **muscles and bones** are forming from a different layer. Which pair of germ layers is responsible?
 
-| Germ layer | Derivative |
-|---|---|
-| (i) Ectoderm | (a) Lining of digestive tract, liver, pancreas |
-| (ii) Mesoderm | (b) Skin, nervous system, sense organs |
-| (iii) Endoderm | (c) Muscles, bones, circulatory system |
-
-- A) i-b, ii-c, iii-a
-- B) i-a, ii-b, iii-c
-- C) i-b, ii-a, iii-c
-- D) i-c, ii-b, iii-a
+- A) Ectoderm (nervous system/skin) and Mesoderm (muscles/bones)
+- B) Ectoderm (muscles/bones) and Endoderm (nervous system/skin)
+- C) Mesoderm (nervous system/skin) and Endoderm (muscles/bones)
+- D) Endoderm (nervous system/skin) and Ectoderm (muscles/bones)
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A**
+**Answer: A** — **Ectoderm** gives rise to the **nervous system** (brain, spinal cord, nerves) and the **epidermis** of skin. **Mesoderm** gives rise to **muscles, bones**, the circulatory system, and gonads. The third layer, **endoderm**, forms the gut lining and its outgrowths (liver, pancreas, lungs).
 
-- (i) **Ectoderm** → skin, nervous system, sense organs = (b)
-- (ii) **Mesoderm** → muscles, bones, circulatory system = (c)
-- (iii) **Endoderm** → lining of digestive tract, liver, pancreas = (a)
+- B ✗ — reverses ectoderm and mesoderm roles.
+- C ✗ — places the nervous system in mesoderm (incorrect) and muscles in endoderm (also incorrect).
+- D ✗ — reverses two layers.
 
-**Trap:** C swaps mesoderm and endoderm derivatives.
+**Trap:** B, C, and D each assign the *nervous-system/skin* derivative to a layer other than ectoderm. The "nervous system = ectoderm" fact is well-known, but pairing it with the *muscles/bones* clue tests whether the student can also correctly identify mesoderm simultaneously.
 
 **See also:** [[../../biology/15 - Germinal Layers#What Each Germ Layer Gives Rise To]]
 </details>
 
+- A) i-b, ii-c, iii-a
+- B) i-a, ii-b, iii-c
+- C) i-b, ii-a, iii-c
 ---
 
 @qbio.germinal.q6 difficulty=apply subject=biology chapter=15

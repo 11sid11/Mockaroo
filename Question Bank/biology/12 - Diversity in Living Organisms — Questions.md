@@ -153,31 +153,29 @@ The chapter identifies four classification axes:
 ---
 
 @qbio.diversity.q7 difficulty=tricky subject=biology chapter=12
-Match each scientist with their classification system:
+Which of the following correctly orders the **timeline** of major classification systems from earliest to most recent?
 
-| Scientist | System |
-|---|---|
-| (i) Linnaeus | (a) Three Domain |
-| (ii) Haeckel | (b) Five Kingdom |
-| (iii) Whittaker | (c) Two Kingdom |
-| (iv) Woese | (d) Three Kingdom |
-
-- A) i-c, ii-d, iii-b, iv-a
-- B) i-d, ii-c, iii-b, iv-a
-- C) i-c, ii-b, iii-d, iv-a
-- D) i-a, ii-b, iii-c, iv-d
+- A) Linnaeus (2 kingdoms) → Haeckel (3 kingdoms) → Whittaker (5 kingdoms) → Woese (3 domains)
+- B) Haeckel (3 kingdoms) → Linnaeus (2 kingdoms) → Woese (3 domains) → Whittaker (5 kingdoms)
+- C) Woese (3 domains) → Whittaker (5 kingdoms) → Haeckel (3 kingdoms) → Linnaeus (2 kingdoms)
+- D) Whittaker (5 kingdoms) → Woese (3 domains) → Linnaeus (2 kingdoms) → Haeckel (3 kingdoms)
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A**
+**Answer: A** — The classification systems evolved chronologically as:
+1. **Linnaeus (1758)** — Two Kingdom (Plantae + Animalia).
+2. **Haeckel (1866)** — Three Kingdom (added **Protista**).
+3. **Whittaker (1969)** — Five Kingdom (Monera, Protista, Fungi, Plantae, Animalia).
+4. **Woese (1990)** — Three Domain (Bacteria, Archaea, Eukarya — based on ribosomal RNA analysis).
 
-- (i) **Linnaeus** → Two Kingdom (1758) = (c)
-- (ii) **Haeckel** → Three Kingdom (1866, added Protista) = (d)
-- (iii) **Whittaker** → Five Kingdom (1969) = (b)
-- (iv) **Woese** → Three Domain (1990) = (a)
+The systems get more refined as microscopy and molecular biology advance.
 
-**Trap:** C swaps Whittaker and Woese; D is fully scrambled.
+- B ✗ — reverses Linnaeus and Haeckel.
+- C ✗ — reverses everything.
+- D ✗ — puts Linnaeus after Woese and Whittaker.
+
+**Trap:** B and D each put Linnaeus (the *earliest*) in a later position. Students often remember the systems but not the years.
 
 **See also:** [[../../biology/12 - Diversity in Living Organisms#Types of Classification Systems]]
 </details>

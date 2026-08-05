@@ -127,33 +127,25 @@ A patient has been producing excessive dilute urine and cannot retain water. The
 ---
 
 @qbio.hormones.q6 difficulty=apply subject=biology chapter=5
-Match each hormone to its source gland:
+A laboratory technician measures hormone levels in a patient's blood. The results show **low thyroxine (T3/T4)**, **elevated TSH**, and a visibly **swollen neck (goitre)**. The most likely site of the primary problem is:
 
-| Hormone | Source |
-|---|---|
-| (i) Thyroxine | (a) Adrenal gland |
-| (ii) Adrenaline | (b) Pineal gland |
-| (iii) Melatonin | (c) Thyroid gland |
-| (iv) Insulin | (d) Pancreas (β-cells) |
-
-- A) i-c, ii-a, iii-b, iv-d
-- B) i-c, ii-b, iii-a, iv-d
-- C) i-a, ii-c, iii-b, iv-d
-- D) i-c, ii-a, iii-d, iv-b
+- A) Anterior pituitary (failing to stimulate the thyroid)
+- B) Hypothalamus (failing to release TRH)
+- C) Thyroid gland itself (failing to produce T3/T4 despite TSH stimulation)
+- D) Adrenal cortex
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A**
+**Answer: C** — Low T3/T4 + elevated TSH + goitre points to **primary hypothyroidism** localised to the **thyroid gland**. The anterior pituitary responds to low T3/T4 by secreting *more* TSH (loss of negative feedback), which overstimulates the thyroid and causes it to enlarge (goitre). The most common cause worldwide is **iodine deficiency** (because iodine is required to synthesise T3/T4).
 
-- (i) **Thyroxine** → thyroid gland (c)
-- (ii) **Adrenaline** → adrenal gland (a)
-- (iii) **Melatonin** → pineal gland (b) — the "hormone of darkness" regulating the sleep-wake cycle.
-- (iv) **Insulin** → β-cells of pancreas (d)
+- A ✗ — pituitary failure would give *low* TSH *and* low T3/T4.
+- B ✗ — hypothalamic failure would also give low TSH.
+- D ✗ — the adrenal cortex produces cortisol/aldosterone, not thyroid hormones.
 
-**Trap:** B swaps adrenaline and melatonin (both "small molecule" hormones, but from different glands). C reverses i and ii.
+**Trap:** A and B are tempting because any link in the HPT (hypothalamus–pituitary–thyroid) axis can fail — but only the *low T3/T4 with high TSH* signature unambiguously locates the fault at the thyroid itself.
 
-**See also:** [[../../biology/05 - Hormones and Plant Movements#Major Endocrine Glands]]
+**See also:** [[../../biology/05 - Hormones and Plant Movements#Thyroid Gland]]
 </details>
 
 ---

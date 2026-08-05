@@ -200,29 +200,30 @@ PAC has 22 members (15 from Lok Sabha + 7 from Rajya Sabha). It examines the CAG
 ---
 
 @qpol.parliament.q9 difficulty=apply subject=polity chapter=9
-Match the Parliamentary Committee with its correct number of members:
+The three financial committees of Parliament — Estimates Committee, Committee on Public Undertakings (COPU), and Public Accounts Committee (PAC) — perform distinct scrutiny roles. Consider the following statements about what each committee examines:
+1. The Public Accounts Committee examines the CAG's audit reports on government expenditure.
+2. The Estimates Committee examines whether public sector undertakings are run efficiently.
+3. The Committee on Public Undertakings examines the estimates of various ministries to suggest economies.
 
-| Committee | Members |
-|---|---|
-| (i) Estimates Committee | (a) 22 members (15 LS + 7 RS) |
-| (ii) Committee on Public Undertakings | (b) 30 members (all from LS) |
-| (iii) Public Accounts Committee | (c) 22 members (15 LS + 7 RS) |
+Which of the above statements is/are correct?
 
-- A) i-a, ii-b, iii-c
-- B) i-b, ii-a, iii-c
-- C) i-b, ii-c, iii-a
-- D) i-c, ii-b, iii-a
+- A) 1 only
+- B) 2 and 3 only
+- C) 1, 2 and 3
+- D) 3 only
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: C**
+**Answer: A**
 
-- Estimates Committee (i) → 30 members, all from Lok Sabha (b).
-- Committee on Public Undertakings (ii) → 22 members, 15 LS + 7 RS (c).
-- Public Accounts Committee (iii) → 22 members, 15 LS + 7 RS (a).
+Only **statement 1** is correct. The **Public Accounts Committee (PAC)** examines the CAG's audit reports on government expenditure — it ensures that money granted by Parliament has been spent within the authorised limits.
 
-**Trap:** (ii) and (iii) both have 22 members with the same LS:RS split — the distinguishing element is the function, not the number. Students who remember only numbers get confused.
+The correct roles of the other two are *swapped* in the statements:
+- The **Estimates Committee** examines the estimates (budget proposals) of ministries and suggests economies — NOT the role of COPU.
+- The **Committee on Public Undertakings (COPU)** examines whether public sector undertakings (PSUs) are run efficiently — NOT the role of the Estimates Committee.
+
+**Trap:** B and C are the trap — students who remember the names but not the roles get them swapped. The Estimates Committee deals with ministries' budget estimates; COPU deals with PSUs.
 
 **See also:** [[../../polity/09 - Parliament#Financial Committees|Financial Committees]]
 </details>
@@ -371,9 +372,9 @@ The **61st Constitutional Amendment Act, 1989** reduced the voting age from 21 t
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 5 | q1, q3, q5, q8, q10, q13 |
+| Recall | 6 | q1, q3, q5, q8, q10, q13 |
 | Apply | 6 | q2, q4, q7, q9, q12, q14 |
-| Tricky / two-step | 4 | q6, q11, q15 |
+| Tricky / two-step | 3 | q6, q11, q15 |
 
 ## Cross-references
 

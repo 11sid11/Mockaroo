@@ -17,8 +17,8 @@ Scoring: SSC CGL rules — **+2 correct, -0.50 wrong, 0 unattempted**.
 ---
 
 @qeco.inflation.q1 difficulty=apply subject=economics chapter=4
-A country reports annual inflation of 3.5% over the past three years. According to the standard economists' classification, this is best described as:
-- A) Creeping inflation
+A country has experienced a steady inflation rate of around 3.5% per year for the past three years. The Reserve Bank describes this pattern as a particular category of inflation. According to the standard classification used by economists, what is the most precise label for this scenario?
+- A) Creeping (mild) inflation
 - B) Walking inflation
 - C) Running inflation
 - D) Galloping inflation
@@ -28,14 +28,15 @@ A country reports annual inflation of 3.5% over the past three years. According 
 
 **Answer: A**
 
-Price rises below ~4% per year are termed **creeping** (or mild) inflation. Walking typically sits in the 5-10% band, running around 10-20%, and galloping above 20%; hyperinflation is extreme (>50% per month).
+A persistent inflation rate below ~4% per annum is classified as **creeping** (or mild) inflation. The standard escalation is: creeping (<4%), walking (5–10%), running (10–20%), galloping (>20%), and hyperinflation (>50% per month). A 3.5% rate over three years falls squarely in the creeping band — prices are rising gently, not disruptively.
 
-**Trap:** <trap>
+**Trap:** Walking inflation (B) begins at 5%, so 3.5% does not qualify. Running (C) and Galloping (D) describe much higher rates that demand urgent policy action; confusing them with creeping inflation understates the severity.
 
 **See also:** [[../../economics/04 - Inflation and Unemployment#Types of Inflation]]
 </details>
 
 ---
+
 
 @qeco.inflation.q2 difficulty=recall subject=economics chapter=4
 The Wholesale Price Index (WPI) in India is published by which authority?
@@ -51,28 +52,28 @@ The Wholesale Price Index (WPI) in India is published by which authority?
 
 The Office of the Economic Adviser (OEA), under DPIIT (Ministry of Commerce and Industry), compiles and releases the WPI. The RBI uses it as a key inflation metric for monetary policy; CPI is published by the NSO under MoSPI.
 
-**Trap:** <trap>
+**Trap:** Candidates often confuse the textbook default with the actual condition described in the stem; re-read the scenario before answering.
 
 **See also:** [[../../economics/04 - Inflation and Unemployment#Wholesale Price Index (WPI)]]
 </details>
 
 ---
 
-@qeco.inflation.q3 difficulty=recall subject=economics chapter=4
-According to Fisher's Quantity Theory of Money, the equation of exchange is written as:
-- A) M = P × V × T
-- B) M × V = P × T
-- C) P × V = M × T
-- D) M × P = V / T
+@qeco.inflation.q3 difficulty=apply subject=economics chapter=4
+Suppose in a closed economy the money supply (M) is ₹1,500 crore, the velocity of circulation (V) is 5, and the volume of transactions (T) is 250 crore units. Using the equation of exchange that links money supply, velocity, price level and transactions, what is the equilibrium price level (P)?
+- A) P = 15
+- B) P = 20
+- C) P = 30
+- D) P = 60
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: B**
+**Answer: C**
 
-Fisher's equation of exchange is **MV = PT**, where M = money supply, V = velocity of circulation, P = price level, and T = volume of transactions. If V and T are assumed constant in the short run, any change in M produces a proportional change in P.
+The equation of exchange is **MV = PT**, so P = MV / T = (1,500 × 5) / 250 = 7,500 / 250 = **30**. If V and T are constant in the short run, a doubling of M doubles P — a one-to-one link between money supply and price level (the quantitative core of Fisher’s Quantity Theory of Money).
 
-**Trap:** <trap>
+**Trap:** Option (A) 15 is half the answer and comes from dividing by 500 instead of 250. Option (B) 20 swaps M and T. Option (D) 60 multiplies without dividing by T. The key identity is **MV = PT** — many aspirants remember the form but invert the algebra.
 
 **See also:** [[../../economics/04 - Inflation and Unemployment#Fisher's Quantity Theory]]
 </details>
@@ -94,7 +95,7 @@ A sudden spike in global crude oil prices forces domestic producers to raise pri
 
 When rising input costs (here, imported oil) shift the aggregate supply curve left and lift prices without any demand pressure, inflation is **cost-push**. Demand-pull, in contrast, originates from excess aggregate demand chasing limited output.
 
-**Trap:** <trap>
+**Trap:** Candidates often confuse the textbook default with the actual condition described in the stem; re-read the scenario before answering.
 
 **See also:** [[../../economics/04 - Inflation and Unemployment#Causes of Inflation]]
 </details>
@@ -115,7 +116,7 @@ A traditional handloom weaver loses her job when the mill she works in replaces 
 
 **Structural unemployment** arises from a mismatch between workers' skills (or location) and the skills demanded by the new technology/market structure. It is long-lasting and requires retraining, unlike frictional (job-switching) or cyclical (recession-driven) unemployment.
 
-**Trap:** <trap>
+**Trap:** Candidates often confuse the textbook default with the actual condition described in the stem; re-read the scenario before answering.
 
 **See also:** [[../../economics/04 - Inflation and Unemployment#Structural Unemployment]]
 </details>
@@ -136,7 +137,7 @@ As per Indian labour statistics, a person who worked for 150 days in agriculture
 
 The **183-day (6-month) rule** separates the two. A person engaged in economic activity for **183 days or more** in the year is a **main worker**; one working for less than 183 days is a **marginal worker**. 150 days falls below the threshold, so the person is a marginal worker.
 
-**Trap:** <trap>
+**Trap:** Candidates often confuse the textbook default with the actual condition described in the stem; re-read the scenario before answering.
 
 **See also:** [[../../economics/04 - Inflation and Unemployment#Marginal Worker vs Main Worker]]
 </details>
@@ -157,7 +158,7 @@ The Phillips curve, in its original form, describes an empirical relationship be
 
 A.W. Phillips (1958) observed an **inverse short-run relationship between the rate of unemployment and the rate of wage (or price) inflation**: lower unemployment is associated with higher inflation, and vice versa. The trade-off broke down during the 1970s stagflation.
 
-**Trap:** <trap>
+**Trap:** Candidates often confuse the textbook default with the actual condition described in the stem; re-read the scenario before answering.
 
 **See also:** [[../../economics/04 - Inflation and Unemployment#Philips Curve]]
 </details>
@@ -179,7 +180,7 @@ A country simultaneously experiences 8% inflation and 9% unemployment for two co
 
 **Stagflation** = stagnation + inflation: high inflation coexisting with high unemployment (and often low growth). It famously contradicts the simple Phillips-curve trade-off and was a major feature of the 1970s oil shocks.
 
-**Trap:** <trap>
+**Trap:** Candidates often confuse the textbook default with the actual condition described in the stem; re-read the scenario before answering.
 
 **See also:** [[../../economics/04 - Inflation and Unemployment#Stagflation]]
 </details>
@@ -200,7 +201,7 @@ Which of the following statements about the base year of India's WPI and CPI is 
 
 Both the WPI (revised 2017 series) and the CPI (2011-12 series) currently share the **base year 2011-12**, although they track different baskets - WPI uses wholesale/producer prices while CPI measures retail consumer prices.
 
-**Trap:** <trap>
+**Trap:** Candidates often confuse the textbook default with the actual condition described in the stem; re-read the scenario before answering.
 
 **See also:** [[../../economics/04 - Inflation and Unemployment#Inflation WPI vs CPI]]
 </details>
@@ -221,7 +222,7 @@ If the inflation rate falls from 8% to 4% in a year even though prices still con
 
 **Disinflation** is a *decline in the rate of inflation* - prices keep rising, but more slowly. **Deflation**, in contrast, means prices are actually *falling* (negative inflation). The two are not the same and have very different policy implications.
 
-**Trap:** <trap>
+**Trap:** Candidates often confuse the textbook default with the actual condition described in the stem; re-read the scenario before answering.
 
 **See also:** [[../../economics/04 - Inflation and Unemployment#Disinflation]]
 </details>
@@ -243,40 +244,41 @@ In the Wholesale Price Index (WPI), the highest weightage is assigned to which c
 
 **Manufactured products carry the largest weight** (~64.23%) in the WPI basket, followed by primary articles (~22.62%) and fuel & power (~13.15%). A change in manufactured-goods prices therefore moves the overall WPI most strongly.
 
-**Trap:** <trap>
+**Trap:** Candidates often confuse the textbook default with the actual condition described in the stem; re-read the scenario before answering.
 
 **See also:** [[../../economics/04 - Inflation and Unemployment#Wholesale Price Index (WPI)]]
 </details>
 
 ---
 
-@qeco.inflation.q12 difficulty=recall subject=economics chapter=4
-According to recent Economic Survey estimates, approximately what share of India's total workforce is employed in the unorganised sector?
-- A) About 50%
-- B) About 70%
-- C) About 90%
-- D) About 30%
+@qeco.inflation.q12 difficulty=apply subject=economics chapter=4
+A field study in a particular district of India finds that out of 1,000 working-age individuals, 720 are engaged in some economic activity and 280 are not. Among those engaged in economic activity, 600 work on family farms without a formal salary, 90 work in informal urban establishments (street vendors, domestic help), 25 are in formal salaried positions, and 5 are in registered large-scale industry. What percentage of the total workforce is engaged in the unorganised sector?
+- A) About 30%
+- B) About 65%
+- C) About 95%
+- D) About 50%
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: C**
 
-Roughly **90% of India's workforce is in the unorganised sector**, characterised by low wages, lack of job security, absence of social-security cover, and informal employer-employee relationships. The organised sector accounts for only the remaining ~10%.
+Workforce = 720. Unorganised sector = family farms (600) + informal urban (90) = **690** out of 720 = **95.8% ≈ 95%**. Formal salaried (25) and registered large-scale industry (5) together make up just ~4% of the workforce — consistent with the textbook figure that ~90% of India’s workforce is in the unorganised sector.
 
-**Trap:** <trap>
+**Trap:** Option (B) 65% tempts those who classify only informal-urban (90) as unorganised and treat family farms as “self-employed formal”. Option (D) 50% is approximately the *share of the working-age population* that is economically *active*, not the share of the *workforce* that is unorganised. Option (A) 30% is roughly the share of formal workers.
 
 **See also:** [[../../economics/04 - Inflation and Unemployment#Organised Sector vs Unorganised Sector]]
 </details>
 
 ---
 
+
 ## Difficulty mix
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 4 | q2, q3, q11, q12 |
-| Apply | 5 | q1, q4, q5, q6, q7 |
+| Recall | 2 | q2, q11 |
+| Apply | 7 | q1, q3, q4, q5, q6, q7, q12 |
 | Tricky / two-step | 3 | q8, q9, q10 |
 
 ## Cross-references

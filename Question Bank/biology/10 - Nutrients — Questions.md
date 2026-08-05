@@ -105,33 +105,25 @@ A child has soft, weak, deformed bones and bowed legs. The doctor diagnoses rick
 ---
 
 @qbio.nutrients.q5 difficulty=apply subject=biology chapter=10
-Match each vitamin to its deficiency disease:
+A patient presents with **dermatitis, diarrhoea, and dementia** — the classic "3 D's". The doctor suspects a deficiency of:
 
-| Vitamin | Deficiency disease |
-|---|---|
-| (i) Vitamin A | (a) Beriberi |
-| (ii) Vitamin B1 (Thiamine) | (b) Pellagra |
-| (iii) Vitamin B3 (Niacin) | (c) Night blindness |
-| (iv) Vitamin K | (d) Excessive bleeding / poor clotting |
-
-- A) i-c, ii-a, iii-b, iv-d
-- B) i-a, ii-c, iii-d, iv-b
-- C) i-c, ii-b, iii-a, iv-d
-- D) i-d, ii-a, iii-b, iv-c
+- A) Vitamin B1 (thiamine)
+- B) Vitamin B3 (niacin)
+- C) Vitamin B12 (cyanocobalamin)
+- D) Vitamin C (ascorbic acid)
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A**
+**Answer: B** — The "**3 D's**" — *D*ermatitis, *D*iarrhoea, *D*ementia — are the textbook triad of **pellagra**, caused by deficiency of **niacin (vitamin B3)**. If untreated, the fourth D (*D*eath) can follow. Pellagra was historically common in populations whose diet was based on maize (which contains bound, unabsorbable niacin unless treated with alkali).
 
-- (i) **Vitamin A** → **night blindness** (c)
-- (ii) **Vitamin B1 (Thiamine)** → **beriberi** (a)
-- (iii) **Vitamin B3 (Niacin)** → **pellagra** (b) — also called the "3D disease" (dermatitis, diarrhoea, dementia)
-- (iv) **Vitamin K** → **excessive bleeding / poor clotting** (d) — vitamin K is essential for synthesis of clotting factors
+- A ✗ — vitamin **B1 (thiamine)** deficiency causes **beriberi** (wet: cardiac oedema; dry: peripheral neuropathy) and Wernicke–Korsakoff syndrome.
+- C ✗ — vitamin **B12** deficiency causes **pernicious anaemia** with neurological symptoms (tingling, memory issues).
+- D ✗ — vitamin **C** deficiency causes **scurvy** (bleeding gums, poor wound healing).
 
-**Trap:** B and D scramble the pairs; C swaps B1 and B3.
+**Trap:** A and C both involve B-vitamin deficiencies that produce overlapping neurological features — but only niacin produces the full *3-D* dermatological-and-GI signature of pellagra.
 
-**See also:** [[../../biology/10 - Nutrients#Vitamin]]
+**See also:** [[../../biology/10 - Nutrients#Vitamin B Complex]]
 </details>
 
 ---

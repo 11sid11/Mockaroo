@@ -39,29 +39,29 @@ The 73rd Constitutional Amendment Act, 1992 gave constitutional status to Pancha
 ---
 
 @qpol.local_government.q2 difficulty=apply subject=polity chapter=12
-Match the committee with its recommendation:
+Three major committees shaped the evolution of Panchayati Raj in India — Balwant Rai Mehta (1957), Ashok Mehta (1977), and L. M. Singhvi (1986). Consider the following statements about their recommendations:
+1. Balwant Rai Mehta recommended the 3-tier Panchayati Raj system (Village, Block, District).
+2. Ashok Mehta recommended a 2-tier system with Zila Parishad as the main unit.
+3. L. M. Singhvi recommended giving constitutional status to Panchayats — which was eventually adopted in the 73rd CAA, 1992.
 
-| Committee | Recommendation |
-|---|---|
-| (i) Balwant Rai Mehta Committee (1957) | (a) Constitutional status for Panchayats |
-| (ii) Ashok Mehta Committee (1977) | (b) 3-tier Panchayati Raj (Village, Block, District) |
-| (iii) L. M. Singhvi Committee (1986) | (c) 2-tier system with Zila Parishad as main unit |
+Which of the above statements is/are correct?
 
-- A) i-a, ii-b, iii-c
-- B) i-b, ii-c, iii-a
-- C) i-c, ii-a, iii-b
-- D) i-b, ii-a, iii-c
+- A) 1 and 2 only
+- B) 1 and 3 only
+- C) 2 and 3 only
+- D) 1, 2 and 3
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: B**
+**Answer: D**
 
-- Balwant Rai Mehta (1957) → recommended the 3-tier Panchayati Raj system.
-- Ashok Mehta (1977) → recommended a 2-tier system with Zila Parishad at the top and Mandal Panchayats below.
-- L. M. Singhvi (1986) → first to recommend *constitutional status* for Panchayats — adopted in the 73rd CAA.
+All three statements are correct:
+- Statement 1 ✓ — Balwant Rai Mehta (1957) recommended the 3-tier Panchayati Raj: Gram Panchayat (village), Panchayat Samiti (block), and Zila Parishad (district). Implemented first in Nagaur, Rajasthan (1959).
+- Statement 2 ✓ — Ashok Mehta (1977) recommended a 2-tier structure with Zila Parishad at the top and Mandal Panchayats below. Not fully implemented nationwide but influenced the 73rd CAA.
+- Statement 3 ✓ — L. M. Singhvi (1986) was the first to recommend constitutional status for Panchayats. This was the basis for the 73rd CAA, 1992 (which added Part IX and the 11th Schedule).
 
-**Trap:** A swaps Balwant Rai Mehta and L. M. Singhvi — students who half-remember "Mehta = Panchayati Raj" sometimes assign the wrong "first" claim.
+**Trap:** A is the dominant trap — students remember Balwant Rai Mehta as "the first" committee and assume Ashok Mehta was an extension. Both were landmark committees with distinct recommendations.
 
 **See also:** [[../../polity/12 - Local Government#Evolution of Panchayat|Evolution of Panchayat]]
 </details>
@@ -306,9 +306,9 @@ Article 243B — Panchayats at the intermediate level need not be constituted in
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 4 | q1, q3, q5, q8, q10 |
+| Recall | 5 | q1, q3, q5, q8, q10 |
 | Apply | 5 | q2, q4, q7, q9, q12 |
-| Tricky / two-step | 3 | q6, q11 |
+| Tricky / two-step | 2 | q6, q11 |
 
 ## Cross-references
 

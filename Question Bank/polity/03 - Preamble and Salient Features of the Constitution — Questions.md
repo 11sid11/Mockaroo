@@ -87,31 +87,27 @@ The phrase "We, the People of India" in the Preamble signifies that the Constitu
 ---
 
 @qpol.preamble.q4 difficulty=tricky subject=polity chapter=3
-Match the following commentaries on the Preamble with their authors:
+Consider the following two statements about the words "Socialist" and "Secular" in the Preamble:
+1. "Socialist" was added by the 42nd Amendment, 1976; "Secular" was added by the same Amendment.
+2. Both words together with "Integrity" were inserted in one go by the 42nd Amendment.
 
-| Comment | Author |
-|---|---|
-| (i) "ID Card of the Constitution" | (a) K. M. Munshi |
-| (ii) "Political Horoscope of the Constitution" | (b) N. A. Palkhivala |
-| (iii) "Jewel set" | (c) Pt. Thakur Das |
+Now consider: which of the words in the original 1949 Preamble was REMOVED and later restored?
 
-- A) i-a, ii-b, iii-c
-- B) i-b, ii-a, iii-c
-- C) i-c, ii-b, iii-a
-- D) i-b, ii-c, iii-a
+- A) "Sovereign"
+- B) "Democratic"
+- C) "Republic"
+- D) None — no word of the original 1949 Preamble was removed
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: B**
+**Answer: D**
 
-- "ID Card of the Constitution" → N. A. Palkhivala
-- "Political Horoscope of the Constitution" → K. M. Munshi
-- "Jewel set" → Pt. Thakur Das
+The original 1949 Preamble described India as "Sovereign Democratic Republic." All four original words remain — and the 42nd Amendment *added* "Socialist," "Secular" and "Integrity" without removing anything. So "Sovereign," "Democratic," and "Republic" are all still in the Preamble today.
 
-**Trap:** A swaps (i) and (ii) — students who half-remember Munshi's name confuse which label belongs to whom. The "Horoscope" is the predictive / political reading — that fits Munshi; the "ID Card" is the descriptive / identity reading — that fits Palkhivala.
+**Trap:** B (Democratic) is the trap — students sometimes think "Democratic" was removed during the Emergency and replaced by "Socialist." That is a common rumour but factually wrong. The 42nd Amendment *added*, it did not *replace*.
 
-**See also:** [[../../polity/03 - Preamble and Salient Features of the Constitution#Comments on Preamble|Comments on Preamble]]
+**See also:** [[../../polity/03 - Preamble and Salient Features of the Constitution#PREAMBLE|Preamble Words]]
 </details>
 
 ---
@@ -303,8 +299,8 @@ K. C. Wheare described the Indian Constitution as **"Quasi-Federal"** — a fede
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 4 | q1, q3, q6, q11 |
-| Apply | 5 | q2, q5, q7, q8, q10 |
+| Recall | 5 | q1, q3, q6, q8, q11 |
+| Apply | 4 | q2, q5, q7, q10 |
 | Tricky / two-step | 3 | q4, q9, q12 |
 
 ## Cross-references

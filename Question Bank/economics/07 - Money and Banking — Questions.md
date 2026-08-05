@@ -219,32 +219,38 @@ Under **Basel III**, the total Capital Adequacy Ratio including the capital cons
 
 ---
 
-@qeco.banking.q10 difficulty=tricky subject=economics chapter=7
-Arrange the following money supply measures in **ascending order of breadth** (narrowest to broadest): M1, M3, M0, M4.
-- A) M0, M1, M3, M4
-- B) M1, M0, M3, M4
-- C) M0, M1, M4, M3
-- D) M3, M1, M0, M4
+@qeco.banking.q10 difficulty=apply subject=economics chapter=7
+The RBI’s quarterly data shows the following composition in a particular year (all figures in ₹ lakh crore):
+- **Currency with the public** = 30
+- **Demand deposits of the public with banks** = 20
+- **Other deposits with the RBI** = 5
+- **Time deposits (FDs/RDs) of the public with banks** = 80
+- **Total post office deposits** = 10
+
+If narrow money (M1) is the sum of currency with public + demand deposits + other deposits with RBI, broad money (M3) = M1 + time deposits, and M0 = currency with public + other deposits with RBI, what is the value of **M3 − M0**?
+- A) ₹125 lakh crore
+- B) ₹105 lakh crore
+- C) ₹1 lakh crore
+- D) ₹100 lakh crore
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A**
+**Answer: D**
 
-The correct ascending order is: **M0 (Reserve Money)** → **M1 (Narrow Money)** → **M3 (Broad Money)** → **M4 (Broadest Money)**.
+Step by step:
+- M0 = currency with public + other deposits with RBI = 30 + 5 = **35**
+- M1 = M0 + demand deposits = 35 + 20 = **55**
+- M3 = M1 + time deposits = 55 + 80 = **135**
+- M3 − M0 = 135 − 35 = **₹100 lakh crore**
 
-- **M0 (Reserve Money)** = currency with public + bankers’ deposits with RBI. Narrowest.
-- **M1 (Narrow Money)** = M0 + demand deposits with banks (current/savings).
-- **M3 (Broad Money)** = M1 + time deposits (FD/RD).
-- **M4 (Broadest Money)** = M3 + total post office deposits.
-
-**Trap:** A common slip is to put M1 first as “narrowest” because the word “narrow” sounds smallest — but **M0 (Reserve Money)** is the narrowest measure. Option B swaps M0 and M1.
+**Trap:** Option (A) 125 arises from incorrectly adding currency + demand deposits + time deposits (30 + 20 + 80 − 5 = 125). Option (B) 105 slips by ignoring “other deposits with RBI” in M0. Option (C) 1 catches near-zero arithmetic slips. The exercise forces computation of each aggregate — candidates who simply recall “M0 < M1 < M3 < M4” without doing the math fall into distractors.
 
 **See also:** [[../../economics/07 - Money and Banking#Types of Money Supply]]
-
 </details>
 
 ---
+
 
 @qeco.banking.q11 difficulty=recall subject=economics chapter=7
 The Basel Committee on Banking Supervision (BCBS) was established in 1974 by the Central Bank Governors of which group of countries?
@@ -295,8 +301,8 @@ The **Securitisation and Reconstruction of Financial Assets and Enforcement of S
 | Tier | Count | Question IDs |
 | --- | --- | --- |
 | Recall | 4 | q2, q3, q11, q12 |
-| Apply | 5 | q1, q4, q5, q6, q7 |
-| Tricky / two-step | 3 | q8, q9, q10 |
+| Apply | 6 | q1, q4, q5, q6, q7, q10 |
+| Tricky / two-step | 2 | q8, q9 |
 
 ## Cross-references
 
@@ -310,36 +316,4 @@ The **Securitisation and Reconstruction of Financial Assets and Enforcement of S
 
 - [[../../economics/07 - Money and Banking]] — the source chapter
 - [[../06 - Monetary Policy — Questions]] — monetary policy tools
-
-
-- **M0** = Currency + Bankers' deposits with RBI (narrowest, RBI's base money).
-- **M1** = M0 + Demand deposits with public.
-- **M3** = M1 + Time deposits with public.
-- **M4** = M3 + Total deposits with post office banks (broadest).
-
-**Trap:** Candidates often place M0 *after* M1 thinking "M1 is narrowest" — but M0 is conceptually narrower (base money held at RBI/banks, not with public).
-
-**See also:** [[../../economics/07 - Money and Banking#Types of Money Supply]]
-
-</details>
-
----
-
-
-@@
-
-<details><summary>Answer & explanation</summary>
-
-**Answer: B**
-
-The **SBI** is a scheduled commercial bank whose name is included in the Second Schedule of the RBI Act, 1934. RRBs (A) and Cooperative banks (D) are scheduled but **not** commercial banks in the strict sense — RRBs are government-sponsored rural banks, and cooperative banks operate under state cooperative acts. Local Area Banks (C) are a separate category with restricted area of operation.
-
-**Trap:** RRBs and cooperatives are "scheduled" but not classified as **scheduled commercial banks** for all regulatory purposes; the distinction matters for CRR/SLR applicability.
-
-**See also:** [[../../economics/07 - Money and Banking#Classification of Banking System (According to RBI Act 1934)]]
-
-</details>
-
----
-
 

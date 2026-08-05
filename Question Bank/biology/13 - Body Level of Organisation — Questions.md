@@ -155,31 +155,28 @@ Which of the following phyla shows the **organ-system level** of organisation?
 ---
 
 @qbio.body_level.q7 difficulty=tricky subject=biology chapter=13
-Match each phylum to its body-organisation level:
+A new phylum is discovered whose members have:
+- Cells that aggregate but do *not* form true tissues,
+- A *single opening* that serves as both mouth and anus,
+- No separate organs or organ systems.
 
-| Phylum | Body level |
-|---|---|
-| (i) Porifera | (a) Organ-system |
-| (ii) Cnidaria | (b) Organ |
-| (iii) Platyhelminthes | (c) Cellular (no true tissues) |
-| (iv) Annelida | (d) Tissue |
+Which level of body organisation does this phylum exhibit?
 
-- A) i-c, ii-d, iii-b, iv-a
-- B) i-c, ii-b, iii-d, iv-a
-- C) i-d, ii-c, iii-b, iv-a
-- D) i-c, ii-a, iii-d, iv-b
+- A) Cellular
+- B) Tissue
+- C) Organ
+- D) Organ-system
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A**
+**Answer: A** — **Cellular** level: cells grouped but no true tissues, no organs, no systems. This matches the textbook description of **Porifera** (sponges), whose body is essentially a loose aggregation of cells. The single-opening gastrovascular cavity is also a Porifera-like primitive feature.
 
-- (i) **Porifera** → cellular = (c)
-- (ii) **Cnidaria** → tissue = (d)
-- (iii) **Platyhelminthes** → organ = (b)
-- (iv) **Annelida** → organ-system = (a)
+- B ✗ — tissue level requires *true* tissues (e.g. Cnidaria).
+- C ✗ — organ level requires multiple tissues forming a discrete structure (e.g. Platyhelminthes).
+- D ✗ — organ-system level requires multiple organs cooperating (e.g. Annelida onwards).
 
-**Trap:** B swaps Cnidaria and Platyhelminthes. D scrambles multiple entries.
+**Trap:** B (tissue) is the lure because students associate "aggregation of cells" with "tissue". True tissues, however, require cells to be *integrated* by junctions into a functional layer — not merely clustered.
 
 **See also:** [[../../biology/13 - Body Level of Organisation#Per-Phylum Examples (Animalia)]]
 </details>

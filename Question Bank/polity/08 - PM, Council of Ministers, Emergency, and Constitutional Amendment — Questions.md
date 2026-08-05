@@ -154,29 +154,29 @@ Which of the above statements is/are correct?
 ---
 
 @qpol.pm_and_emergency.q7 difficulty=apply subject=polity chapter=8
-Match the type of majority needed for a constitutional amendment under Article 368 with the kind of amendment:
+Constitutional amendments under Article 368 require different types of majorities depending on the subject matter. Consider the following statements:
+1. An amendment to Article 368 itself (which governs the amendment procedure) requires a special majority + ratification by half the state legislatures.
+2. An amendment creating a new state (Article 2/3) requires a special majority.
+3. An amendment to the 7th Schedule (legislative lists) requires a simple majority.
 
-| Type of majority | Used for |
-|---|---|
-| (i) Simple majority | (a) Federal structure / 7th Schedule |
-| (ii) Special majority | (b) Admission of new states, quorum, etc. |
-| (iii) Special majority + half-state ratification | (c) Fundamental Rights, DPSP, FD |
+Which of the above statements is/are INCORRECT?
 
-- A) i-a, ii-b, iii-c
-- B) i-b, ii-c, iii-a
-- C) i-c, ii-a, iii-b
-- D) i-b, ii-a, iii-c
+- A) 1 only
+- B) 2 and 3 only
+- C) 1 and 2 only
+- D) 1, 2 and 3
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: B**
 
-- Simple majority → admission / formation of new states, 2nd Schedule, 5th/6th Schedule, quorum, delimitation, abolition of Legislative Councils, etc.
-- Special majority → Fundamental Rights, DPSP, Fundamental Duties.
-- Special majority + half-state ratification → Election of President, SC/HC, Article 368 itself, 7th Schedule lists, distribution of legislative powers, representation of states in Parliament.
+Statements 2 and 3 are INCORRECT.
+- Statement 2 ✗ — Creating new states under Article 2/3 requires only a **simple majority** (not a special majority). These amendments do NOT follow the Article 368 procedure at all (Article 4 says so explicitly).
+- Statement 3 ✗ — Amendments to the 7th Schedule (lists) require **special majority + half-state ratification** (not simple majority), because they affect the federal distribution of power.
+- Statement 1 ✓ — Amending Article 368 itself requires the most stringent procedure: special majority in each House + ratification by at least half the state legislatures.
 
-**Trap:** A swaps simple-majority and special-majority — students mix up which category is "looser" (simple) vs "tighter" (special).
+**Trap:** Statement 2 is the dominant trap — students assume "anything to do with the Constitution" needs the heavy Article 368 procedure. But state formation is a notable exception that uses simple majority under Article 4.
 
 **See also:** [[../../polity/08 - PM, Council of Ministers, Emergency, and Constitutional Amendment#Methods of Constitutional Amendment|Methods of Amendment]]
 </details>
@@ -300,9 +300,9 @@ The 103rd CAA, 2019 (also called the EWS Reservation Act) amended Article 15(6) 
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 4 | q1, q3, q5, q8, q10 |
+| Recall | 5 | q1, q3, q5, q8, q10 |
 | Apply | 5 | q2, q4, q7, q9, q12 |
-| Tricky / two-step | 3 | q6, q11 |
+| Tricky / two-step | 2 | q6, q11 |
 
 ## Cross-references
 

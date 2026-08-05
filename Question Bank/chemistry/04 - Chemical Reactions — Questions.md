@@ -1,4 +1,4 @@
----
+﻿---
 title: "Chemical Reactions — Questions"
 subject: chemistry
 chapter: 4
@@ -17,21 +17,21 @@ Scoring: SSC CGL rules — **+2 correct, -0.50 wrong, 0 unattempted**.
 ---
 
 @qchem.chemical_reactions.q1 difficulty=recall subject=chemistry chapter=4
-How does the chapter distinguish exothermic and endothermic reactions?
+A thermometer dipped into a beaker during a reaction records a temperature drop of 5 °C. Which classification given in the chapter applies to this reaction?
 
-- A) Exothermic reactions absorb heat; endothermic reactions release heat
-- B) Exothermic reactions release heat; endothermic reactions absorb heat
-- C) Both types only release light, not heat
-- D) Both types absorb heat from their surroundings
+- A) Exothermic — it releases heat to the surroundings
+- B) Endothermic — it absorbs heat from the surroundings
+- C) Combustion — it requires oxygen gas
+- D) Decomposition — it must break one compound into simpler products
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: B**
 
-An **exothermic** reaction releases energy from the system as heat, whereas an **endothermic** reaction absorbs heat from its surroundings. The chapter reinforces this distinction with “exo” meaning “out” and “endo” meaning “in.”
+An **endothermic** reaction absorbs heat from its surroundings, so the reaction mixture — and a thermometer in it — gets colder. An **exothermic** reaction releases heat; the surroundings would warm up. The chapter reinforces this distinction with “exo” meaning “out” and “endo” meaning “in.”
 
-**Trap:** A reverses the two definitions. C and D erase the release-versus-absorption distinction given in the source.
+**Trap:** A inverts the temperature clue. C and D are unrelated reaction classes and do not address the temperature change in the stem.
 
 **See also:** [[../../chemistry/04 - Chemical Reactions#Exothermic Reactions and Endothermic Reactions]]
 </details>
@@ -61,12 +61,12 @@ In a **combination reaction**, a **single product** forms from **two or more rea
 ---
 
 @qchem.chemical_reactions.q3 difficulty=recall subject=chemistry chapter=4
-Which statement defines a combustion reaction as presented in the chapter?
+A matchstick is struck. The head of the match bursts into flame, giving off both light and heat while combining with a gas drawn from the surrounding air. Which chapter's reaction type best describes this process?
 
-- A) A compound breaks down only in sunlight
-- B) Two compounds exchange their ions without releasing energy
-- C) A substance loses oxygen and gains hydrogen
-- D) A substance reacts with oxygen gas and releases light and heat
+- A) Photolysis — the compound breaks down in sunlight
+- B) Double displacement — two compounds exchange their ions
+- C) Reduction — the substance loses oxygen and gains hydrogen
+- D) Combustion — the substance reacts with oxygen and releases light and heat
 @@
 
 <details><summary>Answer & explanation</summary>
@@ -75,7 +75,7 @@ Which statement defines a combustion reaction as presented in the chapter?
 
 A **combustion reaction** occurs when a substance reacts with **oxygen gas**, releasing energy as **light and heat**. The chapter states that combustion always takes place in the presence of oxygen.
 
-**Trap:** A is limited to photolysis, B resembles double displacement, and C gives the source's definition of reduction.
+**Trap:** A is limited to photolysis, B describes double displacement, and C is the chapter's definition of **reduction** (gain of H / loss of O). The matchstick flame is the chapter's everyday example of combustion.
 
 **See also:** [[../../chemistry/04 - Chemical Reactions#Types of Chemical Reaction]]
 </details>
@@ -105,7 +105,7 @@ The chapter defines **oxidation** as addition of oxygen and removal of hydrogen,
 ---
 
 @qchem.chemical_reactions.q5 difficulty=recall subject=chemistry chapter=4
-Rust is technically identified in the chapter as:
+A bicycle left out in the rain for weeks develops a reddish-brown, flaky coating on its iron chain. What is the chemical formula the chapter assigns to this product?
 
 - A) Anhydrous iron(II) oxide, FeO
 - B) Hydrated iron(III) oxide, Fe₂O₃ · xH₂O
@@ -117,9 +117,9 @@ Rust is technically identified in the chapter as:
 
 **Answer: B**
 
-Rust is the reddish-brown, flaky product of iron corrosion. The chapter identifies it technically as **hydrated iron(III) oxide**, with the formula **Fe₂O₃ · xH₂O**.
+Rust is the reddish-brown, flaky product of iron corrosion. The chapter identifies it technically as **hydrated iron(III) oxide**, with the formula **Fe₂O₃ · xH₂O** — the key word is "hydrated."
 
-**Trap:** D is the green corrosion mixture formed on copper, not rust. A and C are not the formula assigned to rust in the source.
+**Trap:** A is anhydrous iron(II) oxide, which is the wrong oxidation state and lacks water. C (iron sulphate) is a salt, not the corrosion product. D is the green corrosion mixture formed on copper, not rust. The "reddish-brown" colour in the stem is the second clue pointing to Fe₂O₃ rather than FeO.
 
 **See also:** [[../../chemistry/04 - Chemical Reactions#Corrosion]]
 </details>

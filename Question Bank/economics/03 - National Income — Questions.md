@@ -58,26 +58,27 @@ FC = MP − Net Indirect Tax, where Net Indirect Tax = Indirect taxes − Subsid
 
 ---
 
-@qeco.national.q3 difficulty=recall subject=economics chapter=3
-Who is credited with first applying the concept of National Income to India, and which body did Professor P.C. Mahalanobis head to estimate it?
-- A) M. Visvesvaraya; Planning Commission (1951)
-- B) Dadabhai Naoroji; National Income Committee (1949)
-- C) P.C. Mahalanobis; Central Statistical Office (CSO)
-- D) V.K.R.V. Rao; Reserve Bank of India
+@qeco.national.q3 difficulty=apply subject=economics chapter=3
+In a particular year, India’s Gross National Product (GNP at Market Price) is ₹265 lakh crore and its Net Factor Income from Abroad (NFIA) is —₹5 lakh crore. What is the corresponding GDP at Market Price for that year?
+- A) ₹260 lakh crore
+- B) ₹270 lakh crore
+- C) ₹280 lakh crore
+- D) ₹255 lakh crore
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: B**
 
-Dadabhai Naoroji was the first to apply the concept of National Income to India (in *Poverty and Un-British Rule in India*). Professor P.C. Mahalanobis later headed the official **National Income Committee (1949)** to estimate India's national income on a scientific basis.
+GNP = GDP + NFIA, so GDP = GNP − NFIA. Here, GNP = ₹265 lakh crore; NFIA = —₹5 lakh crore (negative NFIA means more factor income flowed *out* than in — e.g., profits of foreign-owned firms in India sent abroad exceeded factor income earned by Indians abroad). So GDP = 265 − (—5) = 265 + 5 = **₹270 lakh crore**.
 
-**Trap:** Option (D) confuses V.K.R.V. Rao (who used a scientific approach and the two-sector classification) with the National Income Committee leadership; that committee was chaired by Mahalanobis, not Rao.
+**Trap:** Option (A) 260 wrongly *adds* the NFIA. Option (D) 255 wrongly treats negative NFIA as positive 5. Option (C) 280 ignores that NFIA can be negative. The sign of NFIA is what most aspirants slip on.
 
-**See also:** [[../../economics/03 - National Income#NATIONAL INCOME]]
+**See also:** [[../../economics/03 - National Income#Gross National Product (GNP)]] and [[../../economics/03 - National Income#Net Factor Income from Abroad (NFIA)]]
 </details>
 
 ---
+
 
 @qeco.national.q4 difficulty=apply subject=economics chapter=3
 Match each transaction with whether it represents an **Injection** (money entering the circular flow) or a **Leakage** (money leaving the circular flow):  (i) Households park part of their income in fixed deposits, (ii) A foreign buyer purchases garments from an Indian exporter, (iii) The government collects excise duty from a firm, (iv) A firm imports raw materials from China.
@@ -233,26 +234,32 @@ Net Indirect Tax = ₹80 − ₹50 = +₹30 lakh crore. Since NIT is positive (i
 ---
 
 
-@qeco.national.q11 difficulty=recall subject=economics chapter=3
-Under the current Indian national accounts, the formula for the **GDP Deflator** is:
-- A) (Real GDP ÷ Nominal GDP) × 100; base year = 1999-2000
-- B) (Nominal GDP ÷ Real GDP) × 100; base year = 2011-12
-- C) (Nominal GDP + Real GDP) ÷ 2; base year = 2004-05
-- D) (Nominal GDP − Real GDP); base year = 2022-23
+@qeco.national.q11 difficulty=apply subject=economics chapter=3
+In 2023–24, suppose India’s Nominal GDP is ₹265 lakh crore and Real GDP (at 2011–12 base-year prices) is ₹210 lakh crore. If the same indices held for the previous year (2022–23) at Nominal = ₹235 lakh crore and Real = ₹200 lakh crore, the GDP Deflator change between the two years (often used to indicate inflation) would be closest to:
+- A) Inflation of about 4% between 2022–23 and 2023–24
+- B) Inflation of about 7% between 2022–23 and 2023–24
+- C) Deflation of about 2% between 2022–23 and 2023–24
+- D) Inflation of about 12% between 2022–23 and 2023–24
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: B**
 
-GDP Deflator = (Nominal GDP / Real GDP) × 100. It is also called the "Implicit Price Deflator" or "Price Index." The current base year in India is **2011-12** (though a committee has been set up to revise it to 2022-23). A deflator > 100 = inflation since the base year; < 100 = deflation.
+The **GDP Deflator** = (Nominal GDP / Real GDP) × 100.
 
-**Trap:** Option (A) inverts the ratio (giving 100/deflator instead of deflator). Option (D) substitutes a *difference* for a *ratio* — that gives growth-rate-ish numbers, not a price index.
+For 2022–23: Deflator = 235 / 200 × 100 = 117.5.
+For 2023–24: Deflator = 265 / 210 × 100 ≈ 126.2.
+
+% change in deflator = (126.2 − 117.5) / 117.5 × 100 ≈ **7.4%** — i.e., the price level rose by ~7%, indicating inflation of roughly 7% between the two years. Note the base year in India for the official deflator is 2011–12.
+
+**Trap:** Option (A) ~4% comes from conflating Real GDP growth (210/200 − 1 = 5%) with inflation. Option (C) reads the wrong sign (the deflator rose, not fell). Option (D) ~12% is the *nominal* GDP growth rate (265/235 − 1 ≈ 12.8%), which mixes both real growth and inflation.
 
 **See also:** [[../../economics/03 - National Income#Real GDP vs Nominal GDP]]
 </details>
 
 ---
+
 
 @qeco.national.q12 difficulty=recall subject=economics chapter=3
 Which formula correctly expresses the relationship between **Personal Income (PI)** and **Personal Disposable Income (PDI)**?
@@ -279,8 +286,8 @@ Which formula correctly expresses the relationship between **Personal Income (PI
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 4 | q2, q3, q11, q12 |
-| Apply | 5 | q1, q4, q5, q6, q7 |
+| Recall | 2 | q2, q12 |
+| Apply | 7 | q1, q3, q4, q5, q6, q7, q11 |
 | Tricky / two-step | 3 | q8, q9, q10 |
 
 ## Cross-references

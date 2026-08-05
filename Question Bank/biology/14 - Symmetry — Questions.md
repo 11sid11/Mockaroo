@@ -105,29 +105,28 @@ Jellyfish (Phylum Cnidaria) show **radial symmetry** — any plane through the c
 ---
 
 @qbio.symmetry.q5 difficulty=apply subject=biology chapter=14
-Match the phylum to its symmetry:
+A textbook lists these three phyla:
+- **Porifera** — no plane of symmetry
+- **Cnidaria** — any plane through the central axis divides the body into equal halves
+- **Platyhelminthes** — only one specific plane (sagittal) divides the body into equal halves
 
-| Phylum | Symmetry |
-|---|---|
-| (i) Porifera | (a) Radial |
-| (ii) Cnidaria | (b) Bilateral |
-| (iii) Platyhelminthes | (c) Asymmetrical |
+Which sequence correctly identifies the symmetry type for each phylum?
 
-- A) i-c, ii-a, iii-b
-- B) i-a, ii-c, iii-b
-- C) i-c, ii-b, iii-a
-- D) i-b, ii-a, iii-c
+- A) Porifera → Asymmetrical; Cnidaria → Radial; Platyhelminthes → Bilateral
+- B) Porifera → Bilateral; Cnidaria → Radial; Platyhelminthes → Asymmetrical
+- C) Porifera → Asymmetrical; Cnidaria → Bilateral; Platyhelminthes → Radial
+- D) Porifera → Radial; Cnidaria → Bilateral; Platyhelminthes → Asymmetrical
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A**
+**Answer: A** — **Porifera** has no plane of symmetry (asymmetrical). **Cnidaria** shows radial symmetry (any plane through the central oral-aboral axis works). **Platyhelminthes** (and all phyla from here onward) are bilaterally symmetrical — only the *single* sagittal plane gives mirror-image halves.
 
-- (i) **Porifera** → asymmetrical = (c)
-- (ii) **Cnidaria** → radial = (a)
-- (iii) **Platyhelminthes** → bilateral = (b) — and so are all phyla from Platyhelminthes onward (Annelida, Arthropoda, Mollusca, Chordata).
+- B ✗ — swaps Porifera and Platyhelminthes symmetry types.
+- C ✗ — swaps Cnidaria and Platyhelminthes symmetry types.
+- D ✗ — all three wrong.
 
-**Trap:** C swaps Cnidaria and Platyhelminthes.
+**Trap:** B and C each swap exactly two of the three answers — students who haven't memorised which phylum has which type can guess wrong by relying on "higher phyla = bilateral" intuition (which is right for Platyhelminthes but not for assigning Porifera/Cnidaria).
 
 **See also:** [[../../biology/14 - Symmetry#Quick Reference]]
 </details>

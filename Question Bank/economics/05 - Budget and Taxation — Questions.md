@@ -209,33 +209,29 @@ A **capital receipt** is one that either *creates a liability* or *reduces an as
 ---
 
 @qeco.budget.q10 difficulty=tricky subject=economics chapter=5
-Match the following correctly:
-
-1. The Union Budget is **prepared** by — (a) Finance Minister
-2. The Union Budget is **presented** to Parliament by — (b) Department of Economic Affairs, Ministry of Finance
-3. The Annual Financial Statement is laid before Parliament by — (c) The President, on behalf of the Council of Ministers
-- A) 1-a, 2-b, 3-c
-- B) 1-b, 2-a, 3-c
-- C) 1-b, 2-c, 3-a
-- D) 1-a, 2-c, 3-b
+In the standard preparation and presentation chain of the Union Budget, which of the following correctly sequences the authorities involved?
+- A) Department of Economic Affairs prepares; Finance Minister presents; President lays the Annual Financial Statement before Parliament
+- B) Finance Minister prepares; Department of Economic Affairs presents; Prime Minister lays the statement before Parliament
+- C) President prepares; Finance Minister presents; Department of Economic Affairs lays the statement before Parliament
+- D) Reserve Bank prepares; Finance Minister presents; Prime Minister lays the statement before Parliament
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: B**
+**Answer: A**
 
-The Union Budget is **prepared** by the **Department of Economic Affairs** (Ministry of Finance) and is **presented** by the **Finance Minister** to the Lok Sabha. As required by Article 112, the **President** causes the Annual Financial Statement to be laid before Parliament — so statement 3 maps to (c).
+The **Department of Economic Affairs** (under the Ministry of Finance) **prepares** the Union Budget. The **Finance Minister** then **presents** it to the Lok Sabha. Finally, as required by **Article 112**, the **President** causes the Annual Financial Statement to be **laid before Parliament**. This three-stage chain is the constitutional and administrative sequence every year.
 
-**Trap:** Many candidates mix up preparation and presentation — believing the FM *prepares* the budget personally. In reality, the FM is the *presenter*; the bureaucracy under the Department of Economic Affairs does the preparation.
+**Trap:** Option (B) swaps prepare/present (the FM is the *presenter*, not the *preparer*). Option (C) wrongly puts the President at the start of preparation. Option (D) wrongly attributes preparation to the RBI, which is the monetary — not fiscal — authority.
 
 **See also:** [[../../economics/05 - Budget and Taxation#Budget]]
 </details>
 
 ---
 
-@qeco.budget.q11 difficulty=recall subject=economics chapter=5
-Which of the following is the largest component of India's **non-plan revenue expenditure**?
 
+@qeco.budget.q11 difficulty=apply subject=economics chapter=5
+A Union Budget shows the following committed outflows for the upcoming year: ₹4,80,000 crore in salaries and pensions of central-government employees, ₹6,30,000 crore in interest payments on past government borrowings, ₹2,20,000 crore in subsidies on food and fertiliser, and ₹1,10,000 crore in defence pensions. According to standard categorisation, which of these items is the largest component of the non-plan revenue expenditure?
 - A) Defence pensions
 - B) Interest payments on government debt
 - C) Salaries of central government employees
@@ -246,43 +242,44 @@ Which of the following is the largest component of India's **non-plan revenue ex
 
 **Answer: B**
 
-**Interest payments on internal and external government debt** have historically been the largest single component of non-plan revenue expenditure. Salaries and subsidies are large too, but interest obligations on accumulated borrowing consistently exceed them as a share of the non-plan revenue budget.
+Of the four items, **interest payments (₹6,30,000 crore)** are the largest. Historically, interest obligations on accumulated central-government borrowing have been the single biggest component of India’s non-plan revenue expenditure. Salaries + pensions (₹4,80,000 cr + ₹1,10,000 cr in defence pensions = ₹5,90,000 cr) are large but trail interest payments, as do subsidies (₹2,20,000 cr).
 
-**Trap:** A) Defence pensions and C) Central-government salaries are both large, but neither matches the textbook "largest component" claim that the source chapter attributes to interest payments.
+**Trap:** Option (C) is the second-largest line, but the question asks for the *largest*; many candidates pick salaries because they are visible and salient. Option (D) subsidies are large but a distant third. Option (A) defence pensions look big but are only ₹1,10,000 cr.
 
 **See also:** [[../../economics/05 - Budget and Taxation#Revenue Expenditure]]
 </details>
 
 ---
 
-@qeco.budget.q12 difficulty=recall subject=economics chapter=5
-The Indian Union Budget introduced a separate **Gender Sensitive Budget** (a charter that disaggregates the budget's gender impact) for the first time in which financial year?
 
-- A) 2001-02
-- B) 2004-05
-- C) 2005-06
-- D) 2007-08
+@qeco.budget.q12 difficulty=apply subject=economics chapter=5
+A Group of Ministers is reviewing the fiscal marks of recent Union Budgets to understand the trajectory of social-sector accountability reporting. They find that in FY 2004–05 the government first published a *Statement on Gender Budgeting* alongside the regular budget documents, but it was not until the next FY that a fully separate **Gender Budget** charter disaggregating budget allocations by gender impact was introduced as a stand-alone section. In which financial year was this fully separate Gender Sensitive Budget first introduced?
+- A) 2001–02
+- B) 2004–05
+- C) 2005–06
+- D) 2007–08
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: C**
 
-The **Gender Sensitive Budget** was first introduced in the Union Budget for **2005-06**, following which the Ministry of Finance began publishing the annual Gender Budget Statement alongside the regular budget documents.
+The **Gender Sensitive Budget** was introduced in the Union Budget for **2005–06**. The earlier FY 2004–05 saw the first *Statement* on gender budgeting, but the fully separate Gender Budget charter (which disaggregates allocations by their gender impact and was published as a stand-alone section) was introduced the next year. After 2005–06, the Ministry of Finance published the annual Gender Budget Statement alongside the regular budget documents.
 
-**Trap:** 2004-05 is a common off-by-one distractor, but the official first year of the Gender Budget Statement is 2005-06.
+**Trap:** Option (B) 2004–05 is the off-by-one distractor — many aspirants pick it because it was the year of the first gender-budgeting *statement*, not the year of the fully separate *Gender Budget* charter. Options (A) and (D) are clearly earlier and later distractors.
 
 **See also:** [[../../economics/05 - Budget and Taxation#Most Number of Budget]]
 </details>
 
 ---
 
+
 ## Difficulty mix
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 4 | q2, q3, q11, q12 |
-| Apply | 5 | q1, q4, q5, q6, q7 |
+| Recall | 2 | q2, q3 |
+| Apply | 7 | q1, q4, q5, q6, q7, q11, q12 |
 | Tricky / two-step | 3 | q8, q9, q10 |
 
 ## Cross-references

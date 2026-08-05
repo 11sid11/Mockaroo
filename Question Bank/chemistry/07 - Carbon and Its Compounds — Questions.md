@@ -1,4 +1,4 @@
----
+﻿---
 title: "Carbon and Its Compounds — Questions"
 subject: chemistry
 chapter: 7
@@ -17,7 +17,7 @@ Scoring: SSC CGL rules — **+2 correct, -0.50 wrong, 0 unattempted**.
 ---
 
 @qchem.carbon.q1 difficulty=recall subject=chemistry chapter=7
-Which property of carbon is described as the "unique ability to form long chains of C-C bond"?
+A chemistry textbook explains why carbon forms millions of compounds — far more than any other element. The key property is carbon's ability to bond to itself in long chains (and rings and branches). The chapter's name for this property is:
 
 - A) Tetravalency
 - B) Catenation
@@ -31,7 +31,7 @@ Which property of carbon is described as the "unique ability to form long chains
 
 The chapter's "Basic Features of Carbon" table defines **Catenation** as the "unique ability to form long chains of C-C bond" and **Tetravalency** as the "capability to form 4 bonds with other atom of carbon or other monovalent elements."
 
-**Trap:** A (tetravalency) is the other feature in the table, but it describes bonding number, not chain formation. C and D are related properties but are not what the table labels as catenation.
+**Trap:** A (tetravalency) is the other feature in the table, but it describes bonding number, not chain formation. C and D are related properties but are not what the table labels as catenation. The "long chains" cue in the stem is the chapter's exact wording for catenation.
 
 **See also:** [[../../chemistry/07 - Carbon and Its Compounds#Catenation]]
 </details>
@@ -105,21 +105,21 @@ The "Functional Groups" table lists -COOH (common formula R-COOH, e.g. acetic ac
 ---
 
 @qchem.carbon.q5 difficulty=recall subject=chemistry chapter=7
-Members of a homologous series differ by what repeating unit, and by how many mass units per step?
+A student writes the four lightest alkanes in order: methane (CH₄, M = 16), ethane (C₂H₆, M = 30), propane (C₃H₈, M = 44), butane (C₄H₁₀, M = 58). The chapter's general rule for stepping from one member of a homologous series to the next is to add:
 
-- A) -CH₃ unit, mass 15
-- B) -CH₂ unit, mass 14
-- C) -CH₂ unit, mass 12
-- D) -C₂H₄ unit, mass 28
+- A) A CH₃ unit, mass 15
+- B) A CH₂ unit, mass 14
+- C) A CH₂ unit, mass 12
+- D) A C₂H₄ unit, mass 28
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: B**
 
-The "Homologous Series" section states that a homologous series "differs by -CH₂ unit and mass by 14 units." The same section notes that chemical properties remain the same across the series while melting and boiling points increase with molecular mass.
+The "Homologous Series" section states that a homologous series "differs by -CH₂ unit and mass by 14 units." Indeed, going from CH₄ (16) to C₂H₆ (30) is +14, from C₂H₆ to C₃H₈ is +14, and from C₃H₈ to C₄H₁₀ is +14.
 
-**Trap:** A swaps CH₃ for CH₂ and uses methyl's mass. C uses the right unit but the carbon-only mass. D doubles both — but the standard increment per step is one CH₂.
+**Trap:** A swaps CH₃ for CH₂ with the methyl-mass number. C uses the right unit but the carbon-only mass (12). D doubles both — but the standard increment per step is one CH₂.
 
 **See also:** [[../../chemistry/07 - Carbon and Its Compounds#Homologous Series]]
 </details>

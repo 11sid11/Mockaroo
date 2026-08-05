@@ -239,29 +239,24 @@ A nerve signal travels from one neuron to the next across a synapse. Which part 
 
 ---
 
-@qbio.plant_tissue.q10 difficulty=tricky subject=biology chapter=2
-Arrange the following animal-tissue categories in their textbook sequence from **simplest covering tissue to most specialised coordinating tissue**:
+@qbio.plant_tissue.q10 difficulty=apply subject=biology chapter=2
+A histological slide shows a tissue whose cells are tightly packed in a continuous sheet with **no intercellular spaces**, sitting on a basement membrane. One surface is exposed to a lumen (cavity) or the external environment. This tissue most likely functions in:
 
-1. Epithelial tissue (covers surfaces)
-2. Connective tissue (binds/supports other tissues)
-3. Muscular tissue (contracts for movement)
-4. Nervous tissue (transmits impulses)
-
-Which order is correct?
-
-- A) 1 → 2 → 3 → 4
-- B) 4 → 3 → 2 → 1
-- C) 2 → 4 → 3 → 1
-- D) 1 → 4 → 2 → 3
+- A) Transmission of nerve impulses
+- B) Absorption, secretion, or protection of underlying tissue
+- C) Voluntary movement
+- D) Binding organs together and supporting the body
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A**
+**Answer: B** — The description (continuous sheet, no intercellular spaces, basement membrane, free surface) defines **epithelial tissue**. Its functions are protection, absorption, secretion, and sensation (e.g. lining of the gut, skin surface, kidney tubules).
 
-A useful organising trick: **E**pithelial → **C**onnective → **M**uscular → **N**ervous (E C M N — "Every Cell Makes Nerves"). In SSC textbook ordering the four major animal tissues are listed in this E-C-M-N sequence, ending with nervous tissue as the most specialised.
+- A ✗ — nervous tissue transmits impulses via neurons with long axons, not sheets.
+- C ✗ — voluntary movement = skeletal (striated) muscle, which has long multinucleate fibres, not a sheet.
+- D ✗ — binding/support is connective tissue (loose/dense/fluid), which characteristically has lots of *intercellular matrix* — the opposite of epithelial cells.
 
-**Trap:** C and D shuffle nervous tissue to a non-terminal position — the SSC convention puts nervous tissue last as the most specialised of the four.
+**Trap:** D is the lure because students confuse "binding tissue" (connective) with the matrix-less, sheet-like epithelial tissue. The histology cues ("tightly packed", "no intercellular spaces", "basement membrane") all point to epithelium.
 
 **See also:** [[../../biology/02 - Plant Tissue and Animal Tissue#Animal Tissues]]
 </details>
@@ -269,23 +264,25 @@ A useful organising trick: **E**pithelial → **C**onnective → **M**uscular �
 ---
 
 @qbio.plant_tissue.q11 difficulty=recall subject=biology chapter=2
-The longest cell in the human body is:
+A patient has **anaemia** — low haemoglobin, low RBC count. The doctor notes that the **RBCs are unusually small and pale** (microcytic, hypochromic) and the bone marrow shows a deficit of one key nutrient needed to make haemoglobin. Which nutrient is most likely deficient?
 
-- A) Red blood cell
-- B) Neuron (nerve cell)
-- C) Skeletal muscle fibre
-- D) Columnar epithelial cell
+- A) Vitamin B12
+- B) Folic acid
+- C) Iron
+- D) Calcium
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: B**
+**Answer: C** — **Iron** is the central atom in the haem group of haemoglobin. Iron deficiency produces **microcytic, hypochromic** anaemia — small RBCs that look pale because each cell contains less haemoglobin than normal. This is the most common nutritional anaemia worldwide (especially in women of reproductive age).
 
-A **neuron** is the longest cell in the human body — its axon can extend over a metre (e.g. from spinal cord to toes). It is specialised to transmit nerve impulses.
+- A ✗ — B12 deficiency causes **macrocytic** (large-cell) megaloblastic anaemia with neurological symptoms.
+- B ✗ — folic acid deficiency also causes megaloblastic anaemia, but *not* iron-deficiency pattern.
+- D ✗ — calcium is unrelated to haemoglobin synthesis.
 
-**Trap:** Skeletal muscle fibres can also be very long, but neurons (especially motor neurons) win as the longest cell overall.
+**Trap:** A and B are real anaemia nutrients but produce the *opposite* cell morphology (large RBCs). The "small and pale" clue uniquely pins down iron deficiency.
 
-**See also:** [[../../biology/02 - Plant Tissue and Animal Tissue#Anatomy of a Neuron]]
+**See also:** [[../../biology/02 - Plant Tissue and Animal Tissue#Red Blood Cells/Erythrocytes]]
 </details>
 
 ---
@@ -317,8 +314,8 @@ A doctor notes that a patient's blood smear shows **low platelet count** and the
 | Tier | Count | Question IDs |
 | --- | --- | --- |
 | Recall | 4 | q1, q2, q5, q11 |
-| Apply | 5 | q3, q4, q6, q9, q12 |
-| Tricky / two-step | 3 | q7, q8, q10 |
+| Apply | 6 | q3, q4, q6, q9, q10, q12 |
+| Tricky / two-step | 2 | q7, q8 |
 
 ## Cross-references
 

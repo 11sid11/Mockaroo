@@ -127,33 +127,25 @@ During **inhalation**: the diaphragm **contracts and moves downward**, and the r
 ---
 
 @qbio.digestion.q6 difficulty=apply subject=biology chapter=7
-Match the respiratory structure to its function:
+A patient has inhaled a peanut that lodges in the airway. The peanut is most likely to get stuck at which of the following points, where the airway is **narrowest** and most prone to obstruction?
 
-| Structure | Function |
-|---|---|
-| (i) Trachea | (a) Site of gas exchange (O₂ in, CO₂ out) |
-| (ii) Alveoli | (b) Voice box; contains vocal cords |
-| (iii) Larynx | (c) Windpipe; C-shaped cartilage rings keep it open |
-| (iv) Bronchi | (d) Two branches from trachea, one to each lung |
-
-- A) i-c, ii-a, iii-b, iv-d
-- B) i-b, ii-a, iii-c, iv-d
-- C) i-c, ii-b, iii-a, iv-d
-- D) i-a, ii-c, iii-b, iv-d
+- A) Pharynx
+- B) Larynx (at the vocal cords)
+- C) Trachea
+- D) Bronchi
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A**
+**Answer: B** — The **larynx** (voice box) is the narrowest part of the adult airway. The vocal cords form a slit-like opening, and any foreign body that passes the larynx will usually go on into the trachea or bronchi. Choking first-aid (the Heimlich manoeuvre) works by forcing air *up* from the lungs to dislodge the obstruction at this level.
 
-- (i) **Trachea** = windpipe with C-shaped cartilage rings = (c)
-- (ii) **Alveoli** = balloon-like air sacs where gas exchange happens = (a)
-- (iii) **Larynx** = voice box (Adam's apple) with vocal cords = (b)
-- (iv) **Bronchi** = two branches from trachea, one per lung = (d)
+- A ✗ — the pharynx is wider and shared with the digestive tract.
+- C ✗ — the trachea has C-shaped cartilage rings keeping it open, so it does not collapse easily around an obstruction.
+- D ✗ — the bronchi are wider and the peanut usually enters *one* of them (often the right, because it is more vertical).
 
-**Trap:** C swaps alveoli and larynx functions. D swaps trachea and alveoli.
+**Trap:** C and D are tempting because the student thinks of "where foreign bodies go" — but the *narrowest* choke point is the larynx.
 
-**See also:** [[../../biology/07 - Digestion and Respiration#Mechanism of Respiration]]
+**See also:** [[../../biology/07 - Digestion and Respiration#Respiratory System - Trachea]]
 </details>
 
 ---

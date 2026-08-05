@@ -1,4 +1,4 @@
----
+﻿---
 title: "Matter — Questions"
 subject: chemistry
 chapter: 1
@@ -17,21 +17,21 @@ Scoring: SSC CGL rules — **+2 correct, -0.50 wrong, 0 unattempted**.
 ---
 
 @qchem.matter.q1 difficulty=recall subject=chemistry chapter=1
-The fifth state of matter, the Bose-Einstein Condensate (BEC), is formed by cooling a gas of bosons to a temperature very close to:
+A research lab cools a dilute gas of rubidium atoms almost to **0 K**. According to the chapter, the exotic state of matter that forms at this temperature is called:
 
-- A) 0 °C
-- B) −100 °C
-- C) 0 K (absolute zero)
-- D) 100 K
+- A) Plasma
+- B) Bose-Einstein Condensate (BEC)
+- C) Supercritical fluid
+- D) Fermionic condensate
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: C**
+**Answer: B**
 
-A BEC is formed when a gas of bosons is cooled to temperatures very close to absolute zero, i.e. **0 K (−273.15 °C; −459.67 °F)**. The term "boson" itself is named after Dr. Satyendra Nath Bose, whose 1924 paper was extended by Albert Einstein in 1925; the first experimental BEC was produced by Eric Cornell and Carl Wieman in 1995 using a gas of rubidium atoms.
+A **Bose-Einstein Condensate (BEC)** is formed when a gas of bosons is cooled to temperatures very close to absolute zero (0 K, −273.15 °C). The term "boson" is named after Dr. Satyendra Nath Bose, whose 1924 paper was extended by Albert Einstein in 1925; the first experimental BEC was produced in 1995.
 
-**Trap:** A is the freezing point of water, not the threshold for BEC; D is still far too warm. The two fixed physical constants associated with BEC are 0 K and −273.15 °C.
+**Trap:** A (plasma) is the *fourth* state, formed by heating a gas to extremely high temperatures, not by cooling. C (supercritical fluid) is a high-temperature/high-pressure state. D (fermionic condensate) is a different phenomenon outside the chapter's listing.
 
 **See also:** [[../../chemistry/01 - Matter#Bose-Einstein Condensate (BEC)]]
 </details>
@@ -60,22 +60,22 @@ The **first** BEC was produced experimentally in **1995** by **Eric Cornell and 
 
 ---
 
-@qchem.matter.q3 difficulty=recall subject=chemistry chapter=1
-According to Boyle's Law (1662), for a fixed mass of gas at constant temperature:
+@qchem.matter.q3 difficulty=apply subject=chemistry chapter=1
+A sealed syringe holds 20 mL of air at 1 atm pressure. The plunger is pushed in so that the gas is compressed to 10 mL while the temperature stays the same. According to the chapter, the new pressure reading should be closest to:
 
-- A) Pressure is directly proportional to volume
-- B) Pressure is inversely proportional to volume
-- C) Pressure is directly proportional to temperature
-- D) Volume is inversely proportional to temperature
+- A) 0.5 atm
+- B) 1 atm
+- C) 2 atm
+- D) 4 atm
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: B**
+**Answer: C**
 
-Boyle's Law states that **pressure and volume are inversely proportional to each other at constant temperature** (P ∝ 1/V; P₁V₁ = P₂V₂). As pressure increases, volume decreases, and vice versa.
+Boyle's Law states that pressure and volume are **inversely proportional** at constant temperature (P ∝ 1/V; P₁V₁ = P₂V₂). Halving the volume (20 mL → 10 mL) must double the pressure (1 atm → 2 atm).
 
-**Trap:** A inverts the relationship. C is Gay-Lussac's Law (P ∝ T at constant V). D is the inversion of Charles' Law (V ∝ T at constant P).
+**Trap:** A is the half that would come from pressure being directly proportional to volume. B ignores the change. D uses a 4× change instead of 2×.
 
 **See also:** [[../../chemistry/01 - Matter#Boyle's Law (1662)]]
 </details>
@@ -237,28 +237,27 @@ The chapter states that plasma is the 4th state of matter, is an ionised gas wit
 ---
 
 @qchem.matter.q11 difficulty=tricky subject=chemistry chapter=1
-Match the scientist with the year of their experimentally produced BEC and the element used:
+Consider the following statements about the first experimental Bose-Einstein Condensate (BEC):
 
-| Scientist | Year | Element |
-|---|---|---|
-| (i) Eric Cornell & Carl Wieman | (a) 1995 | (p) Sodium |
-| (ii) Wolfgang Ketterle | (b) 1925 | (q) Rubidium |
+1. The first BEC was produced in 1995 by Eric Cornell and Carl Wieman using a gas of rubidium atoms.
+2. Wolfgang Ketterle also produced a BEC in 1995, but used a gas of sodium atoms.
+3. The trio of Cornell, Wieman, and Ketterle shared the 2001 Nobel Prize in Physics for this work.
 
 Which of the following is correct?
 
-- A) i–a–p, ii–b–q
-- B) i–a–q, ii–a–p
-- C) i–b–q, ii–a–p
-- D) i–a–p, ii–b–q
+- A) Only statements 1 and 2 are true
+- B) Only statements 2 and 3 are true
+- C) Statements 1, 2, and 3 are all true
+- D) Only statement 1 is true
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: B**
+**Answer: C**
 
-Both BECs were produced in **1995** (a) — Cornell & Wieman used **rubidium** (q) and Ketterle used **sodium** (p). The 1925 date (b) is when Einstein predicted BEC, not when it was produced.
+All three statements are supported by the chapter. The first BEC was produced by **Eric Cornell and Carl Wieman** in **1995** using **rubidium**. **Wolfgang Ketterle** also produced a BEC in 1995, but his used **sodium**. All three shared the **2001 Nobel Prize in Physics**.
 
-**Trap:** A and D both mis-attribute Ketterle's 1995 sodium BEC to 1925. C assigns the 1925 prediction date to the Cornell–Wieman experiment.
+**Trap:** A common trap is to deny statement 3 (the prize year is often confused with the BEC year). Another trap is to swap the two elements — but the chapter explicitly attributes rubidium to Cornell–Wieman and sodium to Ketterle.
 
 **See also:** [[../../chemistry/01 - Matter#First Production of Bose-Einstein Condensate (BEC)]]
 </details>
@@ -299,8 +298,8 @@ All three statements are supported by the chapter:
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 4 | q1, q2, q3, q4 |
-| Apply | 5 | q5, q6, q7, q8, q9 |
+| Recall | 3 | q1, q2, q4 |
+| Apply | 6 | q3, q5, q6, q7, q8, q9 |
 | Tricky / two-step | 3 | q10, q11, q12 |
 
 ## Cross-references

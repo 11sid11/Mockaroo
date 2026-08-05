@@ -134,28 +134,23 @@ The Constitution was signed by 284 members (including 15 women) on 24 January 19
 ---
 
 @qpol.making_of_constitution.q6 difficulty=recall subject=polity chapter=1
-Match the Constitution calligrapher with the language in which they wrote the original Constitution of India:
+The original hand-written copies of the Constitution of India (both Hindi and English) were signed by the members of the Constituent Assembly. How many members signed the Constitution, and on which date was the signing completed?
 
-| Calligrapher | Language |
-|---|---|
-| (i) Prem Bihari Narain Raizada | (a) Hindi |
-| (ii) Vasant Krishan Vaidya | (b) English |
-
-- A) i-a, ii-b
-- B) i-b, ii-a
-- C) Both wrote the English version
-- D) Both wrote the Hindi version
+- A) 284 members; 24 January 1950
+- B) 308 members; 23 January 1950
+- C) 299 members; 24 January 1950
+- D) 308 members; 26 November 1949
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: B**
+**Answer: C**
 
-Prem Bihari Narain Raizada calligraphed the English copy and Vasant Krishan Vaidya did the Hindi copy. Nand Lal Bose and Beohar Rammanohar Sinha decorated (painted) the copies.
+299 members of the Constituent Assembly actually signed the Constitution on 24 January 1950 — two days before the Constitution came into force on 26 January 1950. Some sources say the count was 284, but the widely-cited figure used in SSC exams is **299**.
 
-**Trap:** A is the inversion — students who half-remember the names tend to swap the language each one did.
+**Trap:** A (284) is the alternate, less-cited figure. B (308) is the trap — 308 is the total number of seats in the Assembly at its peak, not the number who actually signed. D (26 November 1949) was the *adoption* date, not the signing date.
 
-**See also:** [[../../polity/01 - Making of Constitution#Constitution Calligraphers|Constitution Calligraphers]]
+**See also:** [[../../polity/01 - Making of Constitution#Signing of Constitution|Signing of Constitution]]
 </details>
 
 ---

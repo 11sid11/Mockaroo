@@ -1,63 +1,65 @@
 ---
-title: "Acid, Base and Salt — Questions"
+title: "Acid, Base and Salt â€” Questions"
 subject: chemistry
 chapter: 6
 tags: [question-bank, ssc, chemistry, acid-base-and-salt]
 topic_id: [chem.acid.questions]
 ---
 
-# Acid, Base and Salt — Questions
+# Acid, Base and Salt â€” Questions
 
 > Source: [[../../chemistry/06 - Acid, Base and Salt|Acid, Base and Salt]] | Subject: [[../../_MOCs/MOC - chemistry]]
 
 A 12-question MCQ set on acids, bases, indicators, pH, neutralisation, and important salts. Calibrated to SSC CGL Tier-I standard.
 
-Scoring: SSC CGL rules — **+2 correct, -0.50 wrong, 0 unattempted**.
+Scoring: SSC CGL rules â€” **+2 correct, -0.50 wrong, 0 unattempted**.
 
 ---
 
 @qchem.acid.q1 difficulty=recall subject=chemistry chapter=6
-How does an acid affect blue litmus paper?
+A student dips a strip of blue litmus paper into a clear, sour-tasting liquid. The strip immediately turns red. The chapter's named property of the liquid is:
 
-- A) It turns it red
-- B) It turns it blue
-- C) It turns it pink
-- D) It causes no stated change
+- A) Acidic
+- B) Basic
+- C) Neutral
+- D) Amphoteric
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: A**
 
-An acid turns blue litmus paper red; a base turns red litmus paper blue.
+An acid turns blue litmus paper **red**; a base turns red litmus paper blue. The sour taste and the litmus change together identify the liquid as an acid.
+
+**Trap:** B (basic) is what red litmus turns blue in â€” easy to invert when distracted. The "sour taste" cue is the chapter's signature for an acid, but a base would never make a blue strip turn red.
 
 **See also:** [[../../chemistry/06 - Acid, Base and Salt#Acid]]
 </details>
-
 ---
 
 @qchem.acid.q2 difficulty=recall subject=chemistry chapter=6
-What colour is phenolphthalein in a basic solution?
+A few drops of phenolphthalein indicator are added to a clear solution in a titration flask. The solution immediately turns pink. Which property of the solution does this confirm?
 
-- A) Red
-- B) Yellow
-- C) Pink
-- D) Colourless
+- A) The solution is strongly acidic
+- B) The solution is a base
+- C) The solution is neutral
+- D) The solution contains a sulphate
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: C**
+**Answer: B**
 
-Phenolphthalein is colourless in acidic solutions and pink in basic solutions.
+Phenolphthalein is **colourless** in acidic and neutral solutions and **pink** in basic solutions. A pink colour therefore directly confirms a base.
+
+**Trap:** A is the colour of litmus in acid, not phenolphthalein. C is impossible â€” a neutral solution gives no pink at all. D is unrelated to indicator chemistry.
 
 **See also:** [[../../chemistry/06 - Acid, Base and Salt#Acid-Base Indicators]]
 </details>
-
 ---
 
 @qchem.acid.q3 difficulty=recall subject=chemistry chapter=6
-Which acid is associated with vinegar?
+A kitchen bottle is labelled "5% solution of the acid that gives vinegar its characteristic smell." The chemical name of that acid is:
 
 - A) Citric acid
 - B) Acetic acid
@@ -69,31 +71,33 @@ Which acid is associated with vinegar?
 
 **Answer: B**
 
-The organic-acid table identifies vinegar as a source of acetic acid.
+The organic-acid table identifies vinegar as a source of **acetic acid** (ethanoic acid, CHâ‚ƒCOOH). The chapter pairs it with sour taste and a pungent smell.
+
+**Trap:** A (citric) is in lemons, C (lactic) is in sour milk, and D (oxalic) is in spinach/rhubarb. All four are real organic acids from the chapter's table, which is why the everyday object (vinegar) must be the disambiguator.
 
 **See also:** [[../../chemistry/06 - Acid, Base and Salt#Organic Acids]]
 </details>
-
 ---
 
 @qchem.acid.q4 difficulty=recall subject=chemistry chapter=6
-What is the chemical formula of washing soda?
+A detergent industry uses a hydrated sodium carbonate that is the "washing soda" of commerce, containing ten molecules of water of crystallisation per formula unit. The chemical formula of this compound is:
 
-- A) NaHCO₃
-- B) Na₂CO₃·10H₂O
-- C) CaOCl₂
-- D) CaSO₄·½H₂O
+- A) NaHCOâ‚ƒ
+- B) Naâ‚‚COâ‚ƒÂ·10Hâ‚‚O
+- C) CaOClâ‚‚
+- D) CaSOâ‚„Â·Â½Hâ‚‚O
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: B**
 
-Washing soda is hydrated sodium carbonate, `Na₂CO₃·10H₂O`.
+Washing soda is hydrated sodium carbonate, **Naâ‚‚COâ‚ƒÂ·10Hâ‚‚O**. The "10" in the water of crystallisation is the chapter's signature for washing soda.
+
+**Trap:** A (NaHCOâ‚ƒ) is **baking soda**, not washing soda â€” the classic SSC trap. C is bleaching powder, D is plaster of Paris. Three of the four options are named sodium-calcium compounds from the same chapter, so the only safe clue is the **10 Hâ‚‚O** in the stem.
 
 **See also:** [[../../chemistry/06 - Acid, Base and Salt#Washing Soda]]
 </details>
-
 ---
 
 @qchem.acid.q5 difficulty=apply subject=chemistry chapter=6
@@ -159,17 +163,17 @@ The chapter recommends gypsum when soil is too basic. Quicklime, calcium carbona
 @qchem.acid.q8 difficulty=apply subject=chemistry chapter=6
 Which products are formed when aqueous brine undergoes the chlor-alkali process?
 
-- A) NaOH, Cl₂, and H₂
-- B) NaHCO₃ and NH₄Cl
-- C) CaOCl₂ and H₂O only
-- D) Na₂CO₃ and CO₂ only
+- A) NaOH, Clâ‚‚, and Hâ‚‚
+- B) NaHCOâ‚ƒ and NHâ‚„Cl
+- C) CaOClâ‚‚ and Hâ‚‚O only
+- D) Naâ‚‚COâ‚ƒ and COâ‚‚ only
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: A**
 
-Electrolysis of aqueous sodium chloride produces sodium hydroxide, chlorine, and hydrogen: `2NaCl + 2H₂O → 2NaOH + Cl₂ + H₂`.
+Electrolysis of aqueous sodium chloride produces sodium hydroxide, chlorine, and hydrogen: `2NaCl + 2Hâ‚‚O â†’ 2NaOH + Clâ‚‚ + Hâ‚‚`.
 
 **See also:** [[../../chemistry/06 - Acid, Base and Salt#Chlor-Alkali Process]]
 </details>
@@ -188,7 +192,7 @@ A patient has indigestion caused by excess stomach HCl. Which treatment follows 
 
 **Answer: B**
 
-Antacids neutralise excess stomach acidity. The listed examples include Mg(OH)₂, or milk of magnesia, baking soda, and aluminium hydroxide.
+Antacids neutralise excess stomach acidity. The listed examples include Mg(OH)â‚‚, or milk of magnesia, baking soda, and aluminium hydroxide.
 
 **See also:** [[../../chemistry/06 - Acid, Base and Salt#Importance of pH Scale in Everyday Life]]
 </details>
@@ -244,7 +248,7 @@ All three values and interpretations are stated: acid rain below 5.6, tooth deca
 @qchem.acid.q12 difficulty=tricky subject=chemistry chapter=6
 Plaster of Paris is left in a humid, open container. What change explains why moisture-proof storage is required?
 
-- A) It loses all calcium and becomes CO₂
+- A) It loses all calcium and becomes COâ‚‚
 - B) It absorbs moisture and forms hard gypsum
 - C) It changes into washing soda
 - D) It releases chlorine and forms bleaching powder
@@ -274,12 +278,12 @@ Plaster of Paris absorbs moisture and changes to hard gypsum. Therefore it is al
 - Source: [[../../chemistry/06 - Acid, Base and Salt]]
 - Subject MOC: [[../../_MOCs/MOC - chemistry]]
 - Vault index: [[../../Index]]
-- Previous chapter: [[05 - Metals and Non-Metals — Questions.md|Metals and Non-Metals — Questions]]
-- Next chapter: [[07 - Carbon and Its Compounds — Questions.md|Carbon and Its Compounds — Questions]]
+- Previous chapter: [[05 - Metals and Non-Metals â€” Questions.md|Metals and Non-Metals â€” Questions]]
+- Next chapter: [[07 - Carbon and Its Compounds â€” Questions.md|Carbon and Its Compounds â€” Questions]]
 
 ## See also
 
-- [[../../chemistry/06 - Acid, Base and Salt]] — the source chapter
-- [[../../chemistry/05 - Metals and Non-Metals]] — reactions of acids with metals
-- [[../../chemistry/07 - Carbon and Its Compounds]] — carbonic acid and carbonates
+- [[../../chemistry/06 - Acid, Base and Salt]] â€” the source chapter
+- [[../../chemistry/05 - Metals and Non-Metals]] â€” reactions of acids with metals
+- [[../../chemistry/07 - Carbon and Its Compounds]] â€” carbonic acid and carbonates
 

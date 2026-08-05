@@ -17,7 +17,7 @@ Scoring: SSC CGL rules — **+2 correct, -0.50 wrong, 0 unattempted**.
 ---
 
 @qchem.metals.q1 difficulty=recall subject=chemistry chapter=5
-Which metal is liquid at room temperature?
+A thermometer in a school laboratory is broken and the silvery liquid spills out. The cleanup crew notes that the liquid must be collected with a special kit because it is the only metal that is liquid at room temperature. The metal is:
 
 - A) Caesium
 - B) Gallium
@@ -29,15 +29,16 @@ Which metal is liquid at room temperature?
 
 **Answer: C**
 
-Mercury is the stated liquid-metal exception at room temperature. Caesium and gallium instead have melting points just above room temperature.
+Mercury is the stated liquid-metal exception at room temperature (melting point ˜ -39 °C). Caesium and gallium instead have melting points just above room temperature (Cs ˜ 28 °C, Ga ˜ 30 °C), so they are mostly solid on a typical day.
+
+**Trap:** Caesium and gallium are both *near* the liquid–solid boundary at room temperature, which makes them common distractors. The classic "only metal liquid at room temperature" property is uniquely mercury.
 
 **See also:** [[../../chemistry/05 - Metals and Non-Metals#METALS]]
 </details>
-
 ---
 
 @qchem.metals.q2 difficulty=recall subject=chemistry chapter=5
-Which non-metal is a good conductor of electricity?
+The "lead" inside a pencil is in fact a non-metal — yet it leaves a mark on paper because the layers slide off easily, and the same substance is used as electrodes in dry-cell batteries because it conducts electricity. The non-metal is:
 
 - A) Bromine
 - B) Sulphur
@@ -49,15 +50,16 @@ Which non-metal is a good conductor of electricity?
 
 **Answer: D**
 
-Non-metals are generally bad conductors, but graphite is identified as an exception that conducts electricity.
+Non-metals are generally bad conductors, but graphite is identified as an exception that conducts electricity — it is the allotrope of carbon used in pencil "leads" and dry-cell electrodes.
+
+**Trap:** Bromine, sulphur, and iodine are all true non-metals listed in the chapter. The chapter flags only **graphite** as the exception that conducts electricity. The everyday setup of the pencil "lead" is the real trap — students often assume it is lead (a metal).
 
 **See also:** [[../../chemistry/05 - Metals and Non-Metals#NON-METALS]]
 </details>
-
 ---
 
 @qchem.metals.q3 difficulty=recall subject=chemistry chapter=5
-An oxide that reacts with both acids and bases is called:
+A white oxide dissolves completely in dilute HCl to give a clear salt solution, and the same oxide also dissolves in NaOH to give another clear salt solution. The oxide's nature is best described as:
 
 - A) Neutral
 - B) Amphoteric
@@ -69,47 +71,49 @@ An oxide that reacts with both acids and bases is called:
 
 **Answer: B**
 
-Amphoteric oxides react with both acids and bases and form salt and water. Zinc oxide and aluminium oxide are examples.
+Amphoteric oxides react with **both** acids and bases to form salt and water. Zinc oxide (ZnO) and aluminium oxide (Al2O3) are the chapter's examples.
+
+**Trap:** A "neutral" oxide (e.g. water, CO) reacts with neither. B is the only option that captures the dual behaviour described in the stem — and the dual-acid/base solubility is the chapter's signature test for an amphoteric oxide.
 
 **See also:** [[../../chemistry/05 - Metals and Non-Metals#Amphoteric Oxides]]
 </details>
-
 ---
 
 @qchem.metals.q4 difficulty=recall subject=chemistry chapter=5
-What is the composition of brass given in the chapter?
+A musical instrument is made of an alloy that is 80% copper and 20% zinc by mass. The chapter's name for this alloy (and the alloy's composition) is:
 
-- A) Cu 88% + Sn 12%
-- B) Cu 80% + Zn 20%
-- C) Sn + Pb
-- D) Cu + Ni + Zn
+- A) Brass — Cu 80% + Zn 20%
+- B) Bronze — Cu 88% + Sn 12%
+- C) Solder — Sn + Pb
+- D) German silver — Cu + Ni + Zn
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: B**
+**Answer: A**
 
-Brass is listed as copper 80% and zinc 20%. Cu 88% with Sn 12% is bronze, while Cu-Ni-Zn is German silver.
+Brass is listed as copper 80% and zinc 20%. Cu 88% with Sn 12% is bronze, Sn + Pb is solder, and Cu + Ni + Zn is German silver. The stem names the percentage, so the distractors must avoid the wrong alloy name being paired with the right composition.
+
+**Trap:** B is the most tempting — the percentages sound similar. The classic SSC trap is to confuse **brass** (Cu+Zn) with **bronze** (Cu+Sn); ditto for German silver, which contains **no silver at all**.
 
 **See also:** [[../../chemistry/05 - Metals and Non-Metals#Formation of Alloy]]
 </details>
-
 ---
 
 @qchem.metals.q5 difficulty=apply subject=chemistry chapter=5
 A copper object is heated in oxygen and develops a black coating. What is the coating?
 
-- A) Cu₂O
+- A) Cu2O
 - B) CuO
-- C) CuSO₄
-- D) CuCl₂
+- C) CuSO4
+- D) CuCl2
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: B**
 
-Heated copper reacts as `2Cu + O₂ → 2CuO`; the black layer is copper(II) oxide.
+Heated copper reacts as `2Cu + O2 ? 2CuO`; the black layer is copper(II) oxide.
 
 **See also:** [[../../chemistry/05 - Metals and Non-Metals#Copper]]
 </details>
@@ -149,7 +153,7 @@ Copper is placed in silver nitrate solution. Which outcome follows the chapter's
 
 **Answer: B**
 
-The source gives `Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag`: the more reactive copper replaces silver.
+The source gives `Cu + 2AgNO3 ? Cu(NO3)2 + 2Ag`: the more reactive copper replaces silver.
 
 **See also:** [[../../chemistry/05 - Metals and Non-Metals#Reaction of Metals with solutions of other Metal Salt]]
 </details>
@@ -196,19 +200,21 @@ The impure metal is the anode and pure metal the cathode. Pure metal deposits at
 ---
 
 @qchem.metals.q10 difficulty=tricky subject=chemistry chapter=5
-Why is aluminium less easily corroded than iron even though aluminium is more reactive?
+A workshop has two metal sheets side by side in a humid coastal yard. After a month, the iron sheet is brown and flaky, but the neighbouring aluminium sheet looks almost untouched. Which of the following correctly explains the chapter's reason for this difference?
 
 - A) Aluminium never reacts with oxygen
-- B) Aluminium forms a protective Al₂O₃ layer
-- C) Iron is above aluminium in the reactivity series
-- D) Aluminium is a non-metal
+- B) Aluminium forms a protective Al2O3 layer that resists further corrosion
+- C) Iron is above aluminium in the reactivity series, so it corrodes less
+- D) Aluminium is a non-metal and therefore does not corrode
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: B**
 
-Exposure to oxygen forms a protective aluminium oxide layer, Al₂O₃, which resists further corrosion despite aluminium's greater reactivity.
+Exposure to oxygen forms a protective **aluminium oxide layer (Al2O3)** on the surface of aluminium, which resists further corrosion — even though aluminium is *more* reactive than iron. The iron sheet has no such self-healing layer, so rust keeps flaking off and exposing fresh metal.
+
+**Trap:** A is wrong — aluminium does react with oxygen, that's how the layer forms. C reverses the reactivity ranking. D is false — aluminium is firmly a metal.
 
 **See also:** [[../../chemistry/05 - Metals and Non-Metals#Fact]]
 </details>
@@ -216,7 +222,14 @@ Exposure to oxygen forms a protective aluminium oxide layer, Al₂O₃, which re
 ---
 
 @qchem.metals.q11 difficulty=tricky subject=chemistry chapter=5
-A metal reacts with dilute hydrochloric acid to release hydrogen, but does not react with cold water, hot water, or steam. Which metal matches the chapter's tables?
+A student tests four metals, M1, M2, M3, M4, with three reagents:
+
+- **M1** pops with cold water, releasing hydrogen.
+- **M2** does not react with cold water but reacts with hot water, giving a floating metal with bubbles.
+- **M3** does not react with cold or hot water but releases hydrogen gas from dilute HCl.
+- **M4** does not react with cold water, hot water, steam, or dilute HCl.
+
+Which metal is **M3** in the chapter's reactivity framework?
 
 - A) Sodium
 - B) Calcium
@@ -228,7 +241,9 @@ A metal reacts with dilute hydrochloric acid to release hydrogen, but does not r
 
 **Answer: C**
 
-Lead is above hydrogen, so it can release hydrogen from dilute acid, while the water-reaction table places Pb among metals that do not react with water. Copper is below hydrogen and does not react with dilute HCl.
+The chapter's reactivity table places **lead** above hydrogen (so it can liberate hydrogen from dilute HCl) but below the metals that react with hot water. So M3 matches lead. M1 is sodium, M2 is calcium, and M4 is copper.
+
+**Trap:** A (sodium) is M1 in the stem. B (calcium) is M2. D (copper) is below hydrogen and would not react with dilute HCl at all. The "just above hydrogen, just below hot-water metals" position is the precise slot for lead.
 
 **See also:** [[../../chemistry/05 - Metals and Non-Metals#Reaction of Metal with Water]]
 </details>
@@ -236,7 +251,7 @@ Lead is above hydrogen, so it can release hydrogen from dilute acid, while the w
 ---
 
 @qchem.metals.q12 difficulty=tricky subject=chemistry chapter=5
-Consider the thermite reaction `Fe₂O₃ + 2Al → 2Fe + Al₂O₃`. Which statement is correct?
+Consider the thermite reaction `Fe2O3 + 2Al ? 2Fe + Al2O3`. Which statement is correct?
 
 - A) Aluminium is the reducing agent and the reaction can join railway tracks
 - B) Iron is the reducing agent and the reaction is endothermic

@@ -65,29 +65,32 @@ Which of the following correctly pairs a scientist with their contribution to ce
 
 ---
 
-@qbio.cell.q3 difficulty=recall subject=biology chapter=1
-Match the cell organelle with its primary function:
+@qbio.cell.q3 difficulty=apply subject=biology chapter=1
+Consider the following statements about cell organelles:
 
-| Organelle | Function |
-|---|---|
-| (i) Ribosome | (a) Photosynthesis |
-| (ii) Mitochondrion | (b) Protein synthesis |
-| (iii) Chloroplast | (c) ATP production / powerhouse |
-| (iv) Golgi apparatus | (d) Packaging & dispatch of proteins |
+1. Ribosomes are membrane-bound and carry out protein synthesis.
+2. Mitochondria are the site of ATP generation through cellular respiration.
+3. Lysosomes contain hydrolytic enzymes that work optimally at acidic pH.
+4. The Golgi apparatus modifies, sorts, and packages proteins received from the rough ER.
 
-- A) i-b, ii-c, iii-a, iv-d
-- B) i-c, ii-b, iii-a, iv-d
-- C) i-b, ii-a, iii-c, iv-d
-- D) i-d, ii-c, iii-a, iv-b
+Which of the following is INCORRECT?
+
+- A) Statement 1
+- B) Statement 2
+- C) Statement 3
+- D) Statement 4
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A** — Ribosomes do protein synthesis, mitochondria produce ATP, chloroplasts (only in plant cells) carry out photosynthesis, Golgi packages and ships proteins.
+**Answer: A** — Ribosomes are **not membrane-bound**. They are ribonucleoprotein particles — they sit freely in the cytoplasm or attach to the rough ER, but they themselves are *not* enclosed in a membrane. The other three statements are true:
+- Statement 2 ✓ — mitochondria run the Krebs cycle and oxidative phosphorylation.
+- Statement 3 ✓ — lysosomal enzymes (proteases, lipases, nucleases) work at pH ~4.5–5.0.
+- Statement 4 ✓ — the Golgi receives vesicles from the rER, glycosylates/folds proteins, and dispatches them via secretory vesicles.
 
-**Trap:** C swaps mitochondria and chloroplast — a common slip because both sound "energy-related."
+**Trap:** Statement 1 sounds plausible because ribosomes "associate with" the rough ER — but *binding to* a membrane is not the same as *being bounded by* a membrane. This is a frequent SSC trap.
 
-**See also:** [[../../biology/01 - Cell#Mitochondria]] · [[../../biology/01 - Cell#Ribosomes]] · [[../../biology/01 - Cell#Golgi Apparatus]] · [[../../biology/01 - Cell#Plastids]]
+**See also:** [[../../biology/01 - Cell#Cell Organelles]]
 </details>
 
 ---
@@ -218,7 +221,7 @@ A biology textbook lists the following as "present in plant cells but absent in 
 ---
 
 @qbio.cell.q10 difficulty=recall subject=biology chapter=1
-During mitosis, the stage at which chromosomes line up on the equatorial plate (metaphase plate) of the cell is called:
+A student is told that during a particular stage of mitosis, the **chromosomes split at the centromere** and **sister chromatids are pulled toward opposite poles** of the cell. Which mitotic stage is this?
 
 - A) Prophase
 - B) Metaphase
@@ -228,9 +231,9 @@ During mitosis, the stage at which chromosomes line up on the equatorial plate (
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: B** — **Metaphase** is defined by chromosomes aligned at the equator, attached to spindle fibres from opposite poles.
+**Answer: C** — **Anaphase** is the stage where sister chromatids separate at the centromere and move toward opposite poles of the spindle. (Prophase = chromosomes condense; Metaphase = chromosomes line up at equator; Telophase = nuclear envelope reforms.)
 
-**Trap:** None here — this is a straight recall. Included as a Tier-1 anchor so the file has a fair difficulty spread.
+**Trap:** B (metaphase) and D (telophase) are adjacent stages — easy to mis-pick if the student is not paying attention to the *separation* clue.
 
 **See also:** [[../../biology/01 - Cell#Mitosis]]
 </details>
@@ -285,8 +288,8 @@ Which of the following is correct?
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 4 | q3, q4, q9, q10 |
-| Apply | 5 | q1, q5, q6, q7, q8 |
+| Recall | 3 | q4, q9, q10 |
+| Apply | 6 | q1, q3, q5, q6, q7, q8 |
 | Tricky / two-step | 3 | q2, q11, q12 |
 
 ## Cross-references

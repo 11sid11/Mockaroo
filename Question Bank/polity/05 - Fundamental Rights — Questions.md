@@ -127,29 +127,21 @@ Article 15(1) prohibits the State from discriminating against any citizen on gro
 ---
 
 @qpol.fundamental_rights.q6 difficulty=tricky subject=polity chapter=5
-Match the writ with its meaning and typical use:
+The writ jurisdiction of the Supreme Court under Article 32 can issue five writs — habeas corpus, mandamus, prohibition, certiorari and quo warranto. Two of these writs are "preventive" in nature (issued before an action takes effect) and three are "curative" (issued after). Which of the following correctly identifies one preventive and one curative writ?
 
-| Writ | Meaning | Use |
-|---|---|---|
-| (i) Habeas Corpus | (a) "We command" | (b) against unlawful detention |
-| (ii) Mandamus | (c) "By what authority" | (d) compelling a public official to perform duty |
-| (iii) Quo Warranto | (e) "To have the body" | (f) challenging the right to hold a public office |
-
-- A) i-e-b, ii-a-d, iii-c-f
-- B) i-a-b, ii-e-d, iii-c-f
-- C) i-e-d, ii-a-f, iii-c-b
-- D) i-c-f, ii-a-d, iii-e-b
+- A) Preventive — Habeas Corpus; Curative — Mandamus
+- B) Preventive — Prohibition; Curative — Certiorari
+- C) Preventive — Mandamus; Curative — Quo Warranto
+- D) Preventive — Certiorari; Curative — Habeas Corpus
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A**
+**Answer: B**
 
-- Habeas Corpus = "to have the body" (e) — against unlawful detention (b).
-- Mandamus = "we command" (a) — compelling a public official to perform a duty (d).
-- Quo Warranto = "by what authority" (c) — challenging the right to hold a public office (f).
+**Prohibition** is a preventive writ — it is issued by a superior court to an inferior court or tribunal, directing it to *stop* proceedings in a case that is outside its jurisdiction. **Certiorari** is a curative writ — issued to quash an order already passed by an inferior court or tribunal. Together, prohibition and certiorari are often called the "writs of surveillance." Habeas corpus is curative (releasing an already-detained person), mandamus is curative (compelling performance of duty), and quo warranto is preventive-curative (challenging the very right to hold office).
 
-**Trap:** C is the trap — it swaps the uses of Habeas Corpus and Mandamus. Students who remember the Latin phrases but not the use case confuse which "command" or "body" goes with which writ.
+**Trap:** A reverses the two writs — many students think habeas corpus is preventive because it sounds like "stop detention," but it is issued *after* a person is detained. C places mandamus in the wrong category — mandamus is always curative. D reverses both.
 
 **See also:** [[../../polity/05 - Fundamental Rights#Five writs|Five Writs]]
 </details>
@@ -367,9 +359,9 @@ Article 30(1) gives all minorities — religious *and* linguistic — the right 
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 5 | q1, q3, q5, q8, q10, q13 |
+| Recall | 6 | q1, q3, q5, q8, q10, q13 |
 | Apply | 6 | q2, q4, q7, q9, q12, q14 |
-| Tricky / two-step | 4 | q6, q11, q15 |
+| Tricky / two-step | 3 | q6, q11, q15 |
 
 ## Cross-references
 

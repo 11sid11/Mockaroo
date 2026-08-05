@@ -59,26 +59,22 @@ LPG = Liberalisation, Privatisation, Globalisation. The reforms were announced o
 ---
 
 @qeco.basics.q3 difficulty=apply subject=economics chapter=1
-Match each country with its dominant economic system:
+A government has limited tax revenues of ₹100 crore. It must decide how to allocate expenditure across three competing priorities — a primary-health centre upgrade (₹30 cr), a new national highway segment (₹50 cr), and a one-time capital subsidy to a private microchip fabrication plant (₹20 cr). The public-good portion is the health and highway spend; the private-sector support is the subsidy.
 
-1. USA — predominantly private ownership, market-determined prices
-2. Cuba — predominantly state ownership, central planning
-3. India (post-1991) — coexistence of public and private sectors
-
-The correct classification is:
-- A) 1-Capitalist, 2-Socialist, 3-Mixed
-- B) 1-Socialist, 2-Capitalist, 3-Mixed
-- C) 1-Mixed, 2-Socialist, 3-Capitalist
-- D) 1-Capitalist, 2-Mixed, 3-Socialist
+Using the standard **Mixed Economy** classification, the public-good spend as a share of total government expenditure is closest to:
+- A) 20%
+- B) 50%
+- C) 80%
+- D) 100%
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A**
+**Answer: C**
 
-Capitalist = market-driven, private ownership (USA). Socialist = state control of means of production (Cuba). Mixed = both sectors coexist (India). Three-system classification is standard in Indian school curricula.
+In a Mixed Economy (India's post-1991 model), the government both (i) provides public goods itself and (ii) supports private-sector activity. Here, public-good spend = health centre (₹30 cr) + highway (₹50 cr) = ₹80 cr. Share = 80 / 100 = **80%**. The microchip subsidy (₹20 cr) is the private-sector-support share (20%). This composition — heavy direct provisioning plus residual industrial promotion — is the hallmark of the Indian mixed model.
 
-**Trap:** Option (C) tempts students who think India = capitalist because of 1991 reforms, but India did not abandon the public sector — it only reduced its dominance.
+**Trap:** Option (B) 50% tempts those who count only the highway; option (A) 20% is the subsidy share (it's the *private*-support component, not the *public*-good share). The student must read which share the question asks for.
 
 **See also:** [[../../economics/01 - Basics of Economy#The economic system can be classified into three types]]
 </details>
@@ -232,42 +228,42 @@ The claim over-generalises. Direct taxes are *typically* progressive (the more y
 
 ---
 
-@qeco.basics.q11 difficulty=recall subject=economics chapter=1
-Which of the following best characterises the tertiary (services) sector?
-- A) It involves extraction of raw materials and is dominant in low-income economies
-- B) It produces intangible outputs and is dominated by white-collar, formal-sector employment
-- C) It consists solely of agricultural activities and contributes the least to GDP in India
-- D) It refers only to manufacturing activities carried out in factories
-@@
-
-<details><summary>Answer & explanation</summary>
-
-**Answer: B**
-
-The tertiary sector provides services — intangible outputs like banking, transport, education, and IT-enabled services. In India it is the largest GDP contributor and is associated with white-collar, formal-sector jobs.
-
-**Trap:** Option (A) describes the primary sector, and (D) describes the secondary sector — students often blur the three by remembering only "which produces goods."
-
-**See also:** [[../../economics/01 - Basics of Economy#Tertiary Sector]]
-</details>
-
----
-
-@qeco.basics.q12 difficulty=recall subject=economics chapter=1
-The five recognised sectors of the economy, in the order commonly taught from low-to-high value-added skill content, are:
-- A) Primary, Secondary, Tertiary, Quaternary, Quinary
-- B) Primary, Tertiary, Secondary, Quinary, Quaternary
-- C) Secondary, Primary, Tertiary, Quaternary, Quinary
-- D) Primary, Secondary, Quinary, Tertiary, Quaternary
+@qeco.basics.q11 difficulty=apply subject=economics chapter=1
+A rural district has 100 workers. 60 work on farms cultivating paddy, 25 work in a small-scale garment stitching unit, and 15 work as contract teachers in a private school run by a non-government trust. Per Planning Commission conventions, the workers in each activity fall into which sector respectively?
+- A) Primary, Secondary, Tertiary
+- B) Primary, Tertiary, Secondary
+- C) Tertiary, Secondary, Primary
+- D) Primary, Secondary, Quaternary
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: A**
 
-The standard ordering is Primary (agriculture/mining) → Secondary (manufacturing/construction) → Tertiary (trade, transport, finance) → Quaternary (IT, R&D, knowledge services) → Quinary (top decision-makers, scientists, domestic services).
+Paddy cultivation → **Primary** sector (agriculture). Garment stitching → **Secondary** sector (manufacturing/processing). Contract teachers in a school → **Tertiary** sector (services). The classification follows the activity's nature — *what* is being produced (raw materials vs processed goods vs services) — not the income level or formality of the worker.
 
-**Trap:** Options (B), (C), and (D) rearrange quaternary and quinary — a frequent slip because both sit "above" tertiary and students can't remember which comes first.
+**Trap:** Option (D) tempts students who label teaching as "knowledge work = quaternary"; the textbook convention places ordinary teaching in tertiary, reserving quaternary for higher-end knowledge services (R&D, IT, consultancy).
+
+**See also:** [[../../economics/01 - Basics of Economy#Tertiary Sector]]
+</details>
+
+---
+
+@qeco.basics.q12 difficulty=apply subject=economics chapter=1
+According to the 2011 Census composition of India's workforce, the primary sector accounts for the largest share (~54.4%), the secondary sector for about 24%, the tertiary sector for about 28%, and the remaining is distributed across higher-tier activities. If India's total workforce is approximately 480 million, the workforce engaged in activities that are NOT agriculture, mining, manufacturing or standard services — i.e., knowledge work, R&D, top-tier decision-making, and high-end domestic services — is closest to which share of total employment?
+- A) About 0.5%
+- B) About 2.5%
+- C) About 7%
+- D) About 12%
+@@
+
+<details><summary>Answer & explanation</summary>
+
+**Answer: C**
+
+The four broad sectors (primary + secondary + tertiary, plus residual household/uncategorised) already account for roughly **93%** of India's workforce per 2011 Census estimates. The **higher-tier activities** — quaternary (IT, R&D, design) and quinary (top decision-makers, high-end research, policy, professional domestic services) — account for the residual roughly **~7%**. This is small but disproportionately important because of its high value-added per worker.
+
+**Trap:** Option (B) 2.5% undercounts by ignoring quinary domestic-services activity. Option (D) 12% overcounts by including manufacturing. Option (A) is unrealistically tiny. The "skill-content" ordering — Primary < Secondary < Tertiary < Quaternary < Quinary — places quaternary and quinary together at the top.
 
 **See also:** [[../../economics/01 - Basics of Economy#SECTORS OF ECONOMY]]
 </details>
@@ -278,8 +274,8 @@ The standard ordering is Primary (agriculture/mining) → Secondary (manufacturi
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 4 | q1, q2, q11, q12 |
-| Apply | 5 | q3, q4, q5, q6, q7 |
+| Recall | 2 | q1, q2 |
+| Apply | 7 | q3, q4, q5, q6, q7, q11, q12 |
 | Tricky / two-step | 3 | q8, q9, q10 |
 
 ## Cross-references

@@ -105,31 +105,23 @@ A laboratory specimen is found to be a single-celled eukaryote with a true nucle
 ---
 
 @qbio.kingdom.q5 difficulty=apply subject=biology chapter=3
-Match the plant group with its key characteristic:
+Which of the following correctly **distinguishes dicots from monocots**?
 
-| Group | Characteristic |
-|---|---|
-| (i) Thallophyta | (a) Non-vascular "amphibians of plant kingdom" (mosses) |
-| (ii) Bryophyta | (b) Body not differentiated into root/stem/leaf (algae, fungi-like) |
-| (iii) Pteridophyta | (c) First vascular plants; seedless (ferns, *Pteris*) |
-| (iv) Gymnosperms | (d) Vascular, naked seeds (no fruit); e.g. *Pinus* |
-
-- A) i-b, ii-a, iii-c, iv-d
-- B) i-a, ii-b, iii-c, iv-d
-- C) i-b, ii-a, iii-d, iv-c
-- D) i-c, ii-d, iii-a, iv-b
+- A) Dicots have a single cotyledon; monocots have two
+- B) Dicots have parallel leaf venation; monocots have reticulate
+- C) Dicots have fibrous roots and floral parts in multiples of three; monocots have tap roots and floral parts in multiples of four or five
+- D) Dicots have vascular bundles arranged in a ring; monocots have scattered vascular bundles in the stem
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A**
+**Answer: D** — In a **dicot** stem, vascular bundles are arranged in a **ring** around the central pith; in a **monocot** stem, vascular bundles are **scattered** throughout the ground tissue.
 
-- (i) **Thallophyta** → body not differentiated into root/stem/leaf (algae) = (b)
-- (ii) **Bryophyta** → non-vascular, "amphibians" of plant kingdom (mosses) = (a)
-- (iii) **Pteridophyta** → first vascular plants, seedless (ferns) = (c)
-- (iv) **Gymnosperms** → naked seeds (no fruit); e.g. *Pinus* = (d)
+- A ✗ — reverses the actual relationship (dicots = 2 cotyledons; monocots = 1).
+- B ✗ — reverses leaf venation (dicots = reticulate; monocots = parallel).
+- C ✗ — reverses roots and floral-part counts (dicots = tap root + parts in 4s/5s; monocots = fibrous + parts in 3s).
 
-**Trap:** Mixing gymnosperms and angiosperms — gymnosperms have *naked seeds* (no fruit), while angiosperms have seeds enclosed in *fruit*. C and D swap gymnosperms and pteridophytes.
+**Trap:** A, B, and C each reverse a single characteristic that students commonly get backwards. SSC questions frequently pair all four "dicot vs monocot" axes in a single question to trap rote learners who only remember *one* feature.
 
 **See also:** [[../../biology/03 - Plant and Animal Kingdom#KINGDOM PLANTAE]]
 </details>
@@ -319,8 +311,8 @@ Most reptiles have a three-chambered heart (2 atria + 1 ventricle with incomplet
 | Tier | Count | Question IDs |
 | --- | --- | --- |
 | Recall | 4 | q1, q2, q3, q6 |
-| Apply | 5 | q4, q5, q7, q8, q10, q12 |
-| Tricky / two-step | 3 | q9, q11 |
+| Apply | 6 | q4, q5, q7, q8, q10, q12 |
+| Tricky / two-step | 2 | q9, q11 |
 
 ## Cross-references
 

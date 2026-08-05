@@ -336,31 +336,32 @@ The GOI Act, 1919 provided for the establishment of a Public Service Commission,
 ---
 
 @qpol.important_acts.q15 difficulty=tricky subject=polity chapter=14
-Match the Act with its year and salient feature:
+Three landmark Acts shaped the British-era constitutional evolution of India — the Indian Councils Act 1909, the Government of India Act 1919, and the Government of India Act 1935. Consider the following statements about their year and key innovation:
+1. The Indian Councils Act 1909 introduced separate electorates for Muslims.
+2. The Government of India Act 1919 introduced dyarchy in the provinces.
+3. The Government of India Act 1935 introduced the three-list structure and the Federal Court.
 
-| Act | Year | Salient feature |
-|---|---|---|
-| (i) Indian Councils Act 1909 | (a) 1919 | (p) Dyarchy in provinces |
-| (ii) Government of India Act | (b) 1935 | (q) Federal Court, RBI, three lists |
-| (iii) Montagu-Chelmsford Reforms | (c) 1909 | (r) Separate electorates for Muslims |
+Which of the above statements is/are INCORRECT?
 
-- A) i-c-r, ii-b-q, iii-a-p
-- B) i-a-p, ii-b-q, iii-c-r
-- C) i-c-r, ii-a-p, iii-b-q
-- D) i-a-q, ii-b-r, iii-c-p
+- A) 1 only
+- B) 2 only
+- C) 1 and 2 only
+- D) None — all three statements are correct
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A**
+**Answer: D**
 
-- Indian Councils Act 1909 (c) → Separate electorates for Muslims (r).
-- Government of India Act 1935 (b) → Federal Court, RBI, three lists (q).
-- Montagu-Chelmsford Reforms = GOI Act 1919 (a) → Dyarchy in provinces (p).
+All three statements are correct, so none is incorrect. Therefore the answer is **D (None — all three are correct)**.
 
-**Trap:** B is wrong because it links the 1909 Act to 1919 and 1935 — students swap years when the years aren't listed in the same order. The trap is the cross-year matching.
+- Statement 1 ✓ — Indian Councils Act 1909 (Morley-Minto Reforms) introduced separate electorates for Muslims; Lord Minto is called the "Father of Communal Electorate" in India.
+- Statement 2 ✓ — GOI Act 1919 (Montagu-Chelmsford Reforms) introduced dyarchy in the provinces (transferred and reserved subjects) and bicameralism at the Centre.
+- Statement 3 ✓ — GOI Act 1935 introduced the three-list structure (Federal, Provincial, Concurrent) — adopted by the Indian Constitution as the Seventh Schedule — and provided for the Federal Court (1937) and the RBI.
 
-**See also:** [[../../polity/14 - Important Acts#Indian Councils Act, 1909|Match-the-Following]]
+**Trap:** The framing "which is INCORRECT" tempts students to find an error. But all three statements are textbook-verified. Students who second-guess themselves and pick one of A/B/C will get this wrong. The lesson: trust the verified facts.
+
+**See also:** [[../../polity/14 - Important Acts#Important Acts Timeline|Important Acts]]
 </details>
 
 ---
@@ -369,9 +370,9 @@ Match the Act with its year and salient feature:
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 5 | q1, q3, q5, q8, q10, q13 |
+| Recall | 6 | q1, q3, q5, q8, q10, q13 |
 | Apply | 6 | q2, q4, q7, q9, q12, q14 |
-| Tricky / two-step | 4 | q6, q11, q15 |
+| Tricky / two-step | 3 | q6, q11, q15 |
 
 ## Cross-references
 

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>06 - Acid, Base and Salt — Questions · Mockaroo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="../../app/css/chapter.css?v=2">
+</head><body>
+<div class="read-progress"></div>
+<nav class="chap-nav"><div class="chap-nav-inner">
+<a class="brand" href="../../index.html">Mockaroo</a>
+<span class="sep">/</span>
+<span class="here">06 - Acid, Base and Salt — Questions</span>
+<a class="home" href="../../index.html">← Home</a>
+</div></nav>
+<div class="chap-shell">
+
+<article class="chap">
+
+</article>
+</div>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var bar = document.querySelector('.read-progress');
+  var btn = document.querySelector('.back-to-top');
+  var rail = document.getElementById('plate-rail');
+  var plateLinks = Array.prototype.slice.call(document.querySelectorAll('.plate-col a.plate, .plate-rail-floating a'));
+  var h2s = Array.prototype.slice.call(document.querySelectorAll('h2[id]'));
+  function onScroll(){
+    var sc = window.scrollY;
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (bar) bar.style.transform = 'scaleX(' + (max > 0 ? sc / max : 0) + ')';
+    if (btn) btn.classList.toggle('visible', sc > 400);
+    if (rail) rail.classList.toggle('visible', sc > 200 && window.innerWidth > 1100);
+    var active = null;
+    for (var i = 0; i < h2s.length; i++) {
+      if (h2s[i].getBoundingClientRect().top <= 110) active = h2s[i];
+      else break;
+    }
+    var activeId = active ? active.id : null;
+    plateLinks.forEach(function(a){
+      var href = a.getAttribute('href') || '';
+      a.classList.toggle('active', href === '#' + activeId);
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  if (btn) btn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+</body></html>

@@ -83,29 +83,29 @@ The USA contributed **Fundamental Rights**, **Judicial Review**, independence of
 ---
 
 @qpol.sources.q4 difficulty=apply subject=polity chapter=15
-Match the feature with the country from which it is borrowed:
+The Indian Constitution draws from multiple foreign constitutions and the GOI Act, 1935. Consider the following statements:
+1. The phrase "procedure established by law" in Article 21 is borrowed from the Japanese Constitution.
+2. The concept of Fundamental Rights and Judicial Review is borrowed from the USA.
+3. The federal structure with a strong Centre (residual powers to the Centre) is borrowed from Canada.
 
-| Feature | Country |
-|---|---|
-| (i) Federal structure, Office of Governor, Emergency Provisions | (a) USA |
-| (ii) Procedure established by law (Article 21) | (b) Government of India Act, 1935 |
-| (iii) Fundamental Rights, Judicial Review | (c) Japan |
+Which of the above statements is/are correct?
 
-- A) i-a, ii-b, iii-c
-- B) i-b, ii-c, iii-a
-- C) i-c, ii-a, iii-b
-- D) i-b, ii-a, iii-c
+- A) 1 and 2 only
+- B) 1 and 3 only
+- C) 2 and 3 only
+- D) 1, 2 and 3
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: B**
+**Answer: D**
 
-- Federal structure, Office of Governor, Emergency Provisions, Public Service Commissions, integrated judiciary, administrative details → borrowed from the **Government of India Act, 1935**.
-- "Procedure established by law" → borrowed from **Japan**.
-- Fundamental Rights, Judicial Review, written Constitution, Preamble, President/VP, impeachment, removal of judges, separation of powers → borrowed from the **USA**.
+All three statements are correct:
+- Statement 1 ✓ — "Procedure established by law" is borrowed from the **Japanese Constitution** (post-WWII). The US uses "due process of law" (broader); India deliberately chose the narrower Japanese formulation.
+- Statement 2 ✓ — **Fundamental Rights** and **Judicial Review** are borrowed from the **USA**. The USA also gave India the offices of President and Vice President, the impeachment procedure, the removal process for SC/HC judges, and the idea of separation of powers.
+- Statement 3 ✓ — The federal structure with a **strong Centre** (residuary powers to the Centre, appointment of state Governors by the Centre, advisory jurisdiction of the SC) is borrowed from the **Canadian Constitution**. Australia, by contrast, gave the Concurrent List, freedom of trade, and joint sitting.
 
-**Trap:** D is the trap — it places "procedure established by law" with USA. The US has "due process of law," which is broader; India deliberately chose the narrower Japanese phrasing.
+**Trap:** Students frequently confuse Australia and Canada because both are Commonwealth federations. Both contributed to India's federal design but in different ways: Australia gave the *Concurrent List*; Canada gave the *strong Centre*.
 
 **See also:** [[../../polity/15 - Sources of the Indian Constitution#Government of India Act, 1935|Source Mapping]]
 </details>
@@ -251,9 +251,9 @@ The Emergency provisions (Articles 352, 356, 360) — including the suspension o
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 3 | q1, q3, q5, q8 |
+| Recall | 4 | q1, q3, q5, q8 |
 | Apply | 4 | q2, q4, q7, q9 |
-| Tricky / two-step | 3 | q6, q10 |
+| Tricky / two-step | 2 | q6, q10 |
 
 ## Cross-references
 

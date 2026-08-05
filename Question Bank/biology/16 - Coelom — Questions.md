@@ -83,29 +83,23 @@ Which phylum has a **pseudocoelom** (a body cavity *not fully lined* by mesoderm
 ---
 
 @qbio.coelom.q4 difficulty=apply subject=biology chapter=16
-Match each phylum to its coelom type:
+A biologist dissects an organism and observes the body cavity between the gut and body wall. The cavity is **fluid-filled**, and **mesoderm completely lines** both the outer (body-wall side) and inner (gut-wall side) surfaces of the cavity. The organism's coelom is best classified as:
 
-| Phylum | Coelom type |
-|---|---|
-| (i) Platyhelminthes | (a) Acoelomate |
-| (ii) Nematoda | (b) Eucoelomate (true coelom) |
-| (iii) Annelida | (c) Pseudocoelomate |
-
-- A) i-a, ii-c, iii-b
-- B) i-c, ii-a, iii-b
-- C) i-a, ii-b, iii-c
-- D) i-b, ii-c, iii-a
+- A) Acoelomate
+- B) Pseudocoelomate
+- C) Eucoelomate (true coelom)
+- D) Haemocoel
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: A**
+**Answer: C** — A **true coelom (eucoelom)** is *completely* lined by mesoderm on both the body-wall side (parietal peritoneum) and the gut-wall side (visceral peritoneum). This is what allows organs to hang from mesenteries and move independently of the body wall, and it is the hallmark of phyla like **Annelida, Mollusca, Echinodermata, and Chordata**.
 
-- (i) **Platyhelminthes** → Acoelomate = (a)
-- (ii) **Nematoda / Aschelminthes** → Pseudocoelomate = (c)
-- (iii) **Annelida** → Eucoelomate (true coelom) = (b)
+- A ✗ — acoelomates have *no* body cavity at all (the space is filled with mesoderm).
+- B ✗ — pseudocoelomates have a cavity, but mesoderm lines it only on the *outer* (body-wall) side; the gut wall is not covered by mesoderm.
+- D ✗ — haemocoel is the open body cavity of an *open* circulatory system (e.g. arthropods), not a coelom type.
 
-**Trap:** B swaps Platyhelminthes and Nematoda; C is scrambled.
+**Trap:** B is tempting because pseudocoelomate *also* has a cavity — but the key distinction is the **complete vs partial** mesoderm lining.
 
 **See also:** [[../../biology/16 - Coelom#Quick Reference]]
 </details>

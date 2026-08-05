@@ -204,31 +204,21 @@ Article 143 — the **advisory jurisdiction** of the Supreme Court. The Presiden
 ---
 
 @qpol.supreme_court.q9 difficulty=apply subject=polity chapter=11
-Match the Union Territory with the High Court that has jurisdiction over it:
+Article 230 extends the jurisdiction of a state High Court to certain Union Territories. Two UTs — Lakshadweep and Andaman & Nicobar — share a curious feature: they are island UTs but are attached to two *different* High Courts. Which of the following correctly identifies which High Court covers each island UT?
 
-| Union Territory | High Court |
-|---|---|
-| (i) Lakshadweep | (a) Calcutta HC |
-| (ii) Andaman & Nicobar | (b) Kerala HC |
-| (iii) Puducherry | (c) Madras HC |
-| (iv) Chandigarh | (d) Punjab & Haryana HC |
-
-- A) i-a, ii-b, iii-c, iv-d
-- B) i-b, ii-a, iii-c, iv-d
-- C) i-c, ii-d, iii-a, iv-b
-- D) i-d, ii-c, iii-b, iv-a
+- A) Lakshadweep — Madras HC; Andaman & Nicobar — Kerala HC
+- B) Lakshadweep — Kerala HC; Andaman & Nicobar — Calcutta HC
+- C) Lakshadweep — Bombay HC; Andaman & Nicobar — Calcutta HC
+- D) Lakshadweep — Kerala HC; Andaman & Nicobar — Madras HC
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: B**
 
-- Lakshadweep → Kerala HC (b).
-- Andaman & Nicobar → Calcutta HC (a).
-- Puducherry → Madras HC (c).
-- Chandigarh → Punjab & Haryana HC (d).
+**Lakshadweep** falls under the **Kerala High Court** (geographically proximate to Kochi). **Andaman & Nicobar Islands** fall under the **Calcutta High Court** (because of historical administrative links to the erstwhile Bengal Presidency). This is why the two island UTs are *not* under the same HC — a common SSC trap.
 
-**Trap:** A swaps Lakshadweep and Andaman — easy to slip because both are "island" UTs. Remember: Lakshadweep = near Kerala (so Kerala HC); A&N = near Bay of Bengal (so Calcutta HC).
+**Trap:** A reverses both — students assume "island = same HC." C places Lakshadweep under Bombay HC, which is geographically absurd but is a known distractor. D attaches Andaman to Madras HC, which is wrong because the A&N's administrative heritage is from Bengal, not Madras.
 
 **See also:** [[../../polity/11 - Supreme Court and High Court#Article 230 - Extension of Jurisdiction to Union Territories|Article 230]]
 </details>
@@ -308,9 +298,9 @@ Article 220 — a retired judge of a High Court cannot practise law in any court
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 4 | q1, q3, q5, q8, q10 |
+| Recall | 5 | q1, q3, q5, q8, q10 |
 | Apply | 5 | q2, q4, q7, q9, q12 |
-| Tricky / two-step | 3 | q6, q11 |
+| Tricky / two-step | 2 | q6, q11 |
 
 ## Cross-references
 

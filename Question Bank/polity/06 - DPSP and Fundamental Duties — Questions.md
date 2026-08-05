@@ -83,31 +83,28 @@ DPSP are borrowed from the **Irish Constitution**, which itself derived them fro
 ---
 
 @qpol.dpsp.q4 difficulty=apply subject=polity chapter=6
-Match the following DPSP comments with their authors:
+The Directive Principles of State Policy are sometimes described as "non-justiciable" — meaning citizens cannot go to court to enforce them. However, in practice, courts have repeatedly used DPSP to interpret laws and to fill gaps in statutes. Consider the following statements:
+1. DPSP are enforceable in court just like Fundamental Rights.
+2. DPSP are fundamental to governance but not legally enforceable by themselves.
+3. K. T. Shah famously called DPSP "a cheque payable by the bank at its own convenience."
 
-| Comment | Author |
-|---|---|
-| (i) "Conscience of the Constitution" | (a) K. T. Shah |
-| (ii) "Cheque payable by the bank at its own convenience" | (b) Granville Austin |
-| (iii) "Moral Percepts for the authorities of state" | (c) B. N. Rau |
+Which of the above statements is/are correct?
 
-- A) i-a, ii-b, iii-c
-- B) i-b, ii-a, iii-c
-- C) i-b, ii-c, iii-a
-- D) i-c, ii-a, iii-b
+- A) 1 and 2 only
+- B) 2 and 3 only
+- C) 1 and 3 only
+- D) 1, 2 and 3
 @@
 
 <details><summary>Answer & explanation</summary>
 
 **Answer: B**
 
-- Granville Austin → "Conscience of the Constitution."
-- K. T. Shah → "Cheque payable by the bank at its own convenience."
-- B. N. Rau → "Moral Percepts for the authorities of state."
+Statement 2 ✓ — Article 37 explicitly says DPSP are "fundamental to the governance of the country" but are NOT legally enforceable in a court of law. Statement 3 ✓ — K. T. Shah's "cheque payable by the bank at its own convenience" quote is the classic description of the DPSP's non-justiciability. Statement 1 ✗ — DPSP are *not* enforceable like Fundamental Rights; that is the very distinction between Part III and Part IV.
 
-**Trap:** A swaps (i) and (ii). Students remember Austin and Shah as "famous commentators" but mix which quote belongs to whom.
+**Trap:** A and D both include statement 1, which is wrong. The dominant confusion is between "fundamental to governance" (true) and "enforceable in court" (false). The Constitution carefully separates the two.
 
-**See also:** [[../../polity/06 - DPSP and Fundamental Duties#Comments on DPSP|Comments on DPSP]]
+**See also:** [[../../polity/06 - DPSP and Fundamental Duties#Article 37|Article 37]]
 </details>
 
 ---
@@ -302,9 +299,9 @@ DPSP are borrowed from the **Irish** Constitution; Fundamental Duties are borrow
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 4 | q1, q3, q5, q8, q10 |
+| Recall | 5 | q1, q3, q5, q8, q10 |
 | Apply | 5 | q2, q4, q7, q9, q12 |
-| Tricky / two-step | 3 | q6, q11 |
+| Tricky / two-step | 2 | q6, q11 |
 
 ## Cross-references
 

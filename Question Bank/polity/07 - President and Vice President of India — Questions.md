@@ -83,29 +83,26 @@ A candidate for the Presidency must be at least **35 years old**, a citizen of I
 ---
 
 @qpol.president.q4 difficulty=apply subject=polity chapter=7
-Match the type of veto with the correct description:
+The President of India has three types of veto powers — absolute veto, suspensive veto, and pocket veto. Consider the following situations:
+1. The President rejects a private member's bill outright.
+2. The President returns a government bill to Parliament for reconsideration; Parliament re-passes it; the President gives assent.
+3. The President takes no action on a government bill for two months.
 
-| Veto | Description |
-|---|---|
-| (i) Absolute Veto | (a) President withholds assent indefinitely without acting |
-| (ii) Suspensive Veto | (b) President rejects the bill outright |
-| (iii) Pocket Veto | (c) President returns the bill for reconsideration; Parliament can repass |
+Which situation describes the use of the POCKET veto specifically?
 
-- A) i-a, ii-b, iii-c
-- B) i-b, ii-c, iii-a
-- C) i-c, ii-a, iii-b
-- D) i-b, ii-a, iii-c
+- A) Situation 1
+- B) Situation 2
+- C) Situation 3
+- D) All three together
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: B**
+**Answer: C**
 
-- Absolute Veto — rejects the bill outright.
-- Suspensive Veto — returns for reconsideration; Parliament can repass and the President must then assent.
-- Pocket Veto — President sits on the bill and does nothing for an indefinite period (no time limit in the Indian Constitution).
+The **pocket veto** (situation 3) is exercised when the President simply *takes no action* on a bill — neither rejects it nor returns it nor assents to it. The Constitution places no time limit on this inaction, so the bill effectively dies. The pocket veto has been used rarely (e.g., the Indian Post Office (Amendment) Bill, 1986). Situation 1 is an absolute veto. Situation 2 is a suspensive veto (the President returns the bill, Parliament re-passes, and the President MUST assent).
 
-**Trap:** A swaps (i) and (ii) — many students confuse "absolute" with "pocket" because both involve the President withholding assent. The difference: absolute veto is a *decision* (rejected); pocket veto is *inaction*.
+**Trap:** A is the dominant trap — students confuse "absolute veto" (active rejection) with "pocket veto" (passive inaction). B is the suspensive veto — students think the President has discretion even after re-passage, but the President is bound to assent after re-passage.
 
 **See also:** [[../../polity/07 - President and Vice President of India#Veto Powers|Veto Powers]]
 </details>
@@ -295,9 +292,9 @@ Article 65 says the Vice President can act as President (or discharge the Presid
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 4 | q1, q3, q5, q8, q10 |
+| Recall | 5 | q1, q3, q5, q8, q10 |
 | Apply | 5 | q2, q4, q7, q9, q12 |
-| Tricky / two-step | 3 | q6, q11 |
+| Tricky / two-step | 2 | q6, q11 |
 
 ## Cross-references
 

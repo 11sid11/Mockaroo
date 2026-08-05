@@ -178,29 +178,29 @@ The CVC was established in 1964 by an executive resolution on the recommendation
 ---
 
 @qpol.constitutional_bodies.q8 difficulty=recall subject=polity chapter=13
-Match the body with the article under which it is established:
+Three key constitutional bodies — UPSC, Finance Commission, and National Commission for Backward Classes (NCBC) — are established under different Articles of the Constitution. Consider the following pairings:
+1. UPSC — Article 315
+2. Finance Commission — Article 280
+3. NCBC — Article 338B (after the 102nd CAA, 2018)
 
-| Body | Article |
-|---|---|
-| (i) UPSC | (a) Article 338B |
-| (ii) Finance Commission | (b) Article 280 |
-| (iii) National Commission for Backward Classes (NCBC) | (c) Article 315 |
+Which of the above pairings is/are correct?
 
-- A) i-a, ii-b, iii-c
-- B) i-c, ii-b, iii-a
-- C) i-b, ii-c, iii-a
-- D) i-c, ii-a, iii-b
+- A) 1 only
+- B) 1 and 2 only
+- C) 2 and 3 only
+- D) 1, 2 and 3
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: B**
+**Answer: D**
 
-- UPSC → Article 315 (c).
-- Finance Commission → Article 280 (b).
-- NCBC → Article 338B (a) — constitutional status conferred by the 102nd CAA, 2018.
+All three pairings are correct:
+- UPSC ✓ — Article 315 provides for the establishment of Public Service Commissions for the Union and the States (UPSC, SPSC, and Joint PSC for two or more states).
+- Finance Commission ✓ — Article 280 provides for the constitution of a Finance Commission by the President every five years (or earlier) to recommend the distribution of net tax proceeds between the Centre and the States.
+- NCBC ✓ — Article 338B, inserted by the 102nd Constitutional Amendment Act, 2018, conferred constitutional status on the NCBC (which had existed as a statutory body since 1993).
 
-**Trap:** D swaps UPSC and Finance Commission articles — students sometimes confuse 315 with 280 because both are "3xx" articles.
+**Trap:** C is the trap — students remember 280 (Finance Commission) but forget that the NCBC was also given constitutional status in 2018. Many assume NCBC remains a statutory body.
 
 **See also:** [[../../polity/13 - Constitutional and Non-Constitutional Bodies#Articles Mapping|Article Mapping]]
 </details>
@@ -373,9 +373,9 @@ Which of the above statements is/are correct?
 
 | Tier | Count | Question IDs |
 | --- | --- | --- |
-| Recall | 5 | q1, q3, q5, q8, q10, q13 |
+| Recall | 6 | q1, q3, q5, q8, q10, q13 |
 | Apply | 6 | q2, q4, q7, q9, q12, q14 |
-| Tricky / two-step | 4 | q6, q11, q15 |
+| Tricky / two-step | 3 | q6, q11, q15 |
 
 ## Cross-references
 

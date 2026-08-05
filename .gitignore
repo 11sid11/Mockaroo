@@ -19,6 +19,8 @@ _obsidian/
 # Local dev
 *.log
 .env
+server.err
+chrome_data/
 
 # Agent scratch files (sub-agents sometimes dump these at root)
 /build_gen.py

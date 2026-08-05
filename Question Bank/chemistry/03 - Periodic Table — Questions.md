@@ -1,4 +1,4 @@
----
+﻿---
 title: "Periodic Table — Questions"
 subject: chemistry
 chapter: 3
@@ -17,7 +17,7 @@ Scoring: SSC CGL rules — **+2 correct, -0.50 wrong, 0 unattempted**.
 ---
 
 @qchem.periodic_table.q1 difficulty=recall subject=chemistry chapter=3
-Which statement correctly describes Döbereiner's Law of Triads (1817)?
+Döbereiner noticed that three chemically similar elements (a "triad") — say, with atomic masses 7, 23, and 39 — had a striking property: the middle element's atomic mass was approximately the average of the other two. Which of the following statements is the chapter's formal description of this **Law of Triads** (1817)?
 
 - A) In a three-element group arranged by increasing atomic mass, the middle element's atomic mass is approximately the average of the first and third
 - B) Every first and eighth element have similar properties when elements are arranged by increasing atomic mass
@@ -29,9 +29,9 @@ Which statement correctly describes Döbereiner's Law of Triads (1817)?
 
 **Answer: A**
 
-Döbereiner arranged elements with similar properties into groups of three called **triads**. In increasing atomic-mass order, the middle element's mass was approximately the average of the first and third elements' masses.
+Döbereiner arranged elements with similar properties into groups of three called **triads**. In increasing atomic-mass order, the middle element's mass was approximately the average of the first and third elements' masses. With the numbers above, the average of 7 and 39 is 23, exactly the middle element's mass.
 
-**Trap:** B describes Newland's Law of Octaves. C substitutes the modern table's atomic-number basis, while D distorts Lothar Meyer's atomic-volume plot.
+**Trap:** B describes **Newland's Law of Octaves**. C substitutes the modern table's atomic-number basis. D distorts Lothar Meyer's atomic-volume plot. The 7/23/39 example is the chapter's own lithium–sodium–potassium triad.
 
 **See also:** [[../../chemistry/03 - Periodic Table#Döbereiner's Law of Triads (1817)]]
 </details>
@@ -105,21 +105,26 @@ The modern periodic table was given by **Henry Moseley in 1913**. Elements are c
 ---
 
 @qchem.periodic_table.q5 difficulty=recall subject=chemistry chapter=3
-Which element-property pairing is explicitly given in the chapter?
+In a chemistry class, the teacher writes two facts on the board:
 
-- A) Chlorine — highest electronegativity
-- B) Fluorine — highest electron affinity
-- C) Fluorine — highest electronegativity
-- D) Chlorine — lowest electron affinity
+- Fact 1: "The element with the highest electronegativity is in group 17, period 2."
+- Fact 2: "The element with the highest electron affinity is in group 17, period 3."
+
+Which pair of element names matches these facts?
+
+- A) Chlorine and fluorine
+- B) Fluorine and chlorine
+- C) Oxygen and chlorine
+- D) Fluorine and bromine
 @@
 
 <details><summary>Answer & explanation</summary>
 
-**Answer: C**
+**Answer: B**
 
-The chapter identifies **fluorine** as the element with the **highest electronegativity**. It separately identifies chlorine as the element with the highest electron affinity.
+The chapter identifies **fluorine** (group 17, period 2) as the element with the **highest electronegativity** and **chlorine** (group 17, period 3) as the element with the highest electron affinity. The two superlatives are awarded to two different halogens.
 
-**Trap:** A and B swap the two named elements and properties. D reverses the source's statement about chlorine.
+**Trap:** A swaps the two — and is the most common SSC trap because both elements are in the same group. C puts electronegativity on oxygen, which is wrong (oxygen is not the highest). D substitutes bromine for chlorine in the electron-affinity slot.
 
 **See also:** [[../../chemistry/03 - Periodic Table#Electronegativity]]
 </details>
